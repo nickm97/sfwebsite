@@ -6,20 +6,20 @@
   </head>
   <div class="flex h-[calc(100vh-50px)] w-full relative">
     <!-- Left Image (visible on all screens) -->
-    <div class="flex-1">
+    <div class="hidden sm:block flex-1">
       <img
-        src="/assets/pictures/buik.jpg"
+        src="/public/assets/pictures/wedding-07.jpg"
         alt="First Image"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover object-top"style="object-position: center 20%;"
       />
     </div>
 
     <!-- Right Image (hidden on small screens, visible on larger screens) -->
-    <div class="hidden sm:block flex-1">
+    <div class="sm:block flex-1">
       <img
-        src="/assets/pictures/loes.jpg"
+        src="/public/assets/pictures/wedding-03.jpg"
         alt="Second Image"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover object-top"style="object-position: center 90%;"
       />
     </div>
 
@@ -38,7 +38,7 @@
   <!-- New Section with Title and Photos -->
   <div class="bg-offWhite py-[50px] sm:py-[80px] px-[0px] lg:px-[140px]">
     <!-- Title -->
-    <h2 class="text-center text-[18px] sm:text-3xl font-textNav pb-[50px] sm:pb-[80px] tracking-wider font-extralight">
+    <h2 class="text-center text-[16px] sm:text-3xl font-textNav px-2 pb-[50px] sm:pb-[80px] tracking-wider font-extralight">
       FOR THE ONES WHO 
       DARE A LITTLE, <br />
       LET GO A LITTLE 
@@ -49,35 +49,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
       <!-- Photo 1 -->
       <div class="text-center group">
-        <a href="/portfolio" class="relative w-[290px] h-[375px] mx-auto block">
-          <img
-            src="/assets/pictures/loes3.jpg"
-            alt="Sanneloes Fotografie Bruiloften"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
-          />
-          <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
-          >
-            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
-              PORTFOLIO
-            </span>
-          </div>
-        </a>
-        <a
-          href="/portfolio"
-          class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
-        >
-          PORTFOLIO
-        </a>
-      </div>
-
-      <!-- Photo 2 -->
-      <div class="text-center group">
         <a href="/bruiloften" class="relative w-[290px] h-[375px] mx-auto block">
           <img
-            src="/assets/pictures/sexy1.jpg"
+            src="/public/assets/pictures/wedding-09.jpg"
             alt="Sanneloes Fotografie Bruiloften"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
+            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top"style="object-position: center 100%;"
           />
           <div
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
@@ -94,6 +70,30 @@
           WEDDINGS
         </a>
       </div>
+
+      <!-- Photo 2 -->
+      <div class="text-center group">
+        <a href="/shoots" class="relative w-[290px] h-[375px] mx-auto block">
+          <img
+            src="/assets/pictures/shoot-02.jpg"
+            alt="Sanneloes Fotografie Bruiloften"
+            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
+          />
+          <div
+            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
+          >
+            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
+              SHOOTS
+            </span>
+          </div>
+        </a>
+        <a
+          href="/shoots"
+          class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
+        >
+          SHOOTS
+        </a>
+      </div>      
 
       <!-- Photo 3 -->
       <div class="text-center group">
@@ -119,10 +119,11 @@
       </div>
 
       <!-- Photo 4 -->
+      
       <div class="text-center group">
-        <a href="/shoots" class="relative w-[290px] h-[375px] mx-auto block">
+        <a href="/commercial" class="relative w-[290px] h-[375px] mx-auto block">
           <img
-            src="/assets/pictures/sexy3.jpg"
+            src="/public/assets/pictures/branding-01.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
           />
@@ -130,22 +131,23 @@
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
           >
             <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
-              SHOOTS
+              BRANDING
             </span>
           </div>
         </a>
         <a
-          href="/shoots"
+          href="/commercial"
           class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
         >
-          SHOOTS
+          BRANDING
         </a>
       </div>
+
     </div>
   </div>
 
   
-  <div class="sm:hidden bg-offWhite border-t border-b border-gray-400">
+  <div class="sm:hidden bg-naturalBeige border-t border-gray-400">
     <div class="flex h-[450px]">
         <div class="border-l border-r border-gray-400 flex h-full bg-white justify-center items-center min-w-[60px]">
             <!-- Eén enkele span voor de tekst met &nbsp; voor de spatie -->
@@ -160,21 +162,24 @@
     </div>
     <div class="pl-4 py-6">
         <h3 class="text-2xl text-black font-textNav font-semibold mb-4">HI THERE!</h3>
-        <p class="text-black text-lg font-light font-textNav leading-relaxed">
-            Heyy, ik ben Sanneloes. Ik hou ervan om unieke, 
-            emotionele momenten vast te leggen die jouw verhaal op de mooiste en meest eerlijke manier vertellen.
-            Mijn fotografie gaat over het vinden van magie 
-            in het alledaagse en het creëren van herinneringen die voor altijd blijven.
-        </p>
+      <p class="text-black text-lg font-bold tracking-wider font-extralight">
+          Heyy, ik ben Sanneloes. Ik hou ervan om unieke, 
+          emotionele momenten vast te leggen die jouw verhaal op de mooiste en meest eerlijke manier vertellen.
+          Mijn fotografie gaat over het vinden van magie 
+          in het alledaagse en het creëren van herinneringen die voor altijd blijven.
+      </p>
+        
+      <button class="mt-4 hover:-translate-y-1 transform transition duration-300 bg-buttonColor rounded-lg py-2 px-2">
+        <a href="/about" class="text-sm font-semibold text-white transition duration-300">
+          MEER OVER SANNELOES
+        </a>
+      </button>
     </div>
- </div>
-
-
-
-    
+  </div>
+ 
 
   <!-- New Section -->
-  <div class="hidden lg:flex h-[600px] bg-offWhite border-t border-gray-400">
+  <div class="hidden sm:flex h-[600px] bg-naturalBeige border-t border-gray-400">
     <!-- Left Side (Photo) -->
     <div class="flex-1 flex relative">
       <img
@@ -184,7 +189,7 @@
     </div>
 
     <!-- Middle Section (Vertical Text) -->
-    <div class="border-l border-r border-gray-400 flex justify-center items-center max-w-[300px]">
+    <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center max-w-[300px]">
       <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
         SANNELOES
       </span>
@@ -195,16 +200,16 @@
       <!-- Top Right Text -->
       <div class="mb-4 mt-[30px] flex-1 px-10">
         <h3 class="text-2xl text-gray-700 font-semibold mb-4">HI THERE!</h3>
-        <p class="text-gray-600 text-lg font-light leading-relaxed">
+        <p class="text-black text-lg font-bold tracking-wider font-extralight">
           Heyy, ik ben Sanneloes. Ik hou ervan om unieke, 
           emotionele momenten vast te leggen die jouw verhaal op de mooiste en meest eerlijke manier vertellen.
           Mijn fotografie gaat over het vinden van magie 
           in het alledaagse en het creëren van herinneringen die voor altijd blijven.
         </p>
 
-        <button class="mt-4 hover:-translate-y-1 transform transition duration-300">
-          <a href="/about" class="text-sm font-semibold border-2 border-black py-2 px-2 rounded-lg bg-white text-black transition duration-300">
-            Meer over Sanneloes
+        <button class="mt-4 hover:-translate-y-1 transform transition duration-300 bg-buttonColor rounded-lg py-2 px-2">
+          <a href="/about" class="text-sm font-bold text-white transition duration-300">
+            MEER OVER SANNELOES
           </a>
         </button>
       </div>
@@ -220,56 +225,57 @@
     </div>
   </div>
 
-  <div class="flex flex-col lg:flex-row h-auto bg-orange-100 py-6 px-4 lg:py-[70px] lg:px-[100px] border border-gray-200 items-center lg:justify-center relative">
-    
-    <svg id="next-button" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer w-[50px] h-8 text-black absolute top-3 right-3 sm:top-6 sm:right-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.75">
-        <line x1="-10" y1="12" x2="19" y2="12" />
-        <polyline points="12 5 19 12 12 19" />
-    </svg>
+  <div class="flex flex-col sm:py-4 h-auto sm:h-auto bg-lightBeige items-center"> 
 
-    <!-- "LIEVE WOORDEN" tekst (horizontaal bovenaan op mobiel) -->
-    <div class="w-full text-center mb-4 lg:mb-0 lg:absolute lg:top-[50px] lg:left-[10px]">
-      <span class="text-gray-700 text-lg font-textNav tracking-widest lg:text-xl">
-        "LIEVE WOORDEN"
-      </span>
-      <!-- <i id="next-button" class="text-white cursor-pointer fa-solid fa-arrow-right-long scale-x-[50px]"></i> -->
-    </div>
-
-    <!-- Foto Sectie -->
-    <div id="review-photo" class="flex flex-col items-center lg:flex-row lg:relative lg:flex-1">
-      <!-- Alleen de eerste afbeelding op mobiel -->
-      <img id="photo1" src="" alt="Review Photo 1" class="w-[200px] h-[300px] lg:w-[250px] lg:h-[400px] object-contain mb-6 lg:mb-0 lg:relative lg:-top-6 lg:left-[10px] z-10"/>
-      <img id="photo2" src="" alt="Review Photo 2" class="hidden lg:block w-[250px] h-[400px] object-contain lg:relative lg:top-6 lg:right-[10px] z-0"/>
-    </div>
-
-    <!-- Review Tekst Sectie -->
-    <div class="w-full lg:w-[600px] p-4 lg:p-8 flex flex-col">
-      <div id="review-text" class="flex flex-col space-y-4 text-center lg:text-left">
-        <!-- Dynamisch gegenereerde tekst -->
+    <div class="flex flex-col sm:flex-row sm:gap-[75px] items-center">
+      <div class="hidden sm:flex">
+        <i @click="showNextReview('previous')" class="fa-solid fa-chevron-left text-3xl text-white cursor-pointer"></i>
       </div>
-    </div>
 
+      <div class="sm:hidden flex h-[400px]">
+        <div id="review-photo">
+          <img src="" alt="Review Photo 1" class="review-photo w-full h-[400px] sm:px-0 sm:w-[350px] sm:h-[400px] object-cover sm:mb-0"/>
+        </div>
+        <div class="border-r border-gray-400 flex h-full bg-white justify-center items-center min-w-[20px] w-[100px]">
+            <span class="text-gray-700 text-2xl font-textNav tracking-widest transform -rotate-90">
+                "LOVE&nbsp;NOTES"
+            </span>
+        </div>
+      </div>
+
+      <div class="gap-10 flex flex-col sm:flex-row py-2 h-auto items-center">    
+        <div id="review-photo" class="sm:flex hidden ">
+          <img src="" alt="Review Photo 1" class="review-photo w-[200px] h-[300px] sm:px-0 sm:w-[350px] sm:h-[400px] object-contain sm:mb-0"/>
+        </div>
+
+        <div class="w-full py-0 sm:w-[600px] flex sm:block items-center">
+          <div class="hidden mb-4 mr-6 sm:mb-4 sm:block">
+            <span class="text-black text-lg font-textNav tracking-widest lg:text-xl">
+              "LOVE NOTES"
+            </span>
+          </div>
+
+          <div class="sm:hidden px-4">
+            <i @click="showNextReview('previous')" class="fa-solid fa-chevron-left text-xl text-white cursor-pointer"></i>
+          </div>
+
+          <div id="review-text" class="flex text-left sm:text-left py-4">
+          </div>
+
+          <div class="sm:hidden px-4">
+            <i id="next-button" @click="showNextReview('next')" class="fa-solid fa-chevron-right text-xl text-white cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-2 sm:py-0 hidden sm:flex">
+        <i id="next-button" @click="showNextReview('next')" class="fa-solid fa-chevron-right text-3xl text-white cursor-pointer"></i>
+      </div>
+      
+    </div>
   </div>
-
-
   
-  <!-- <div class="relative flex h-[650px] w-full parallax">
-    <img
-      src="/assets/pictures/liggende_foto.jpg"
-      alt="Sanneloes Fotografie contact"
-      class="absolute inset-0 w-full h-full object-cover rounded-[2px]"
-    />
-
-    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-      <a
-        href="/contact"
-        class="text-white text-sm font-semibold border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
-          Laat mij jullie verhaal vastleggen
-      </a>
-    </div>
-  </div> -->
-  
-    <div class="relative parallax">
+  <div class="relative parallax">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
       <!-- Knop -->
@@ -281,48 +287,43 @@
     </div>
   </div>
 
-  
-
   <footer class="bg-offWhite-800 text-black font-textNav py-4 px-4 sm:px-20">
-  <!-- Flex Container for Footer -->
-  <div class="flex flex-col sm:flex-row items-center justify-center w-full space-y-4 sm:space-y-0">
-    
-    <!-- Logo -->
-    <div class="flex items-center justify-center sm:justify-start -mt-3 sm:mt-0 -mb-4 sm:mb-0">
-      <img src="/assets/pictures/logo-klein.svg" alt="Your Logo" class="w-[100px] sm:w-[125px] h-auto" />
+    <!-- Flex Container for Footer -->
+    <div class="flex flex-col sm:flex-row items-center justify-center w-full space-y-4 sm:space-y-0">
+      
+      <!-- Logo -->
+      <div class="flex items-center justify-center sm:justify-start -mt-3 sm:mt-0 -mb-4 sm:mb-0 cursor-pointer">
+        <a href="/"><img src="/assets/pictures/logo-klein.svg" alt="Your Logo" class="w-[100px] sm:w-[125px] h-auto" /></a>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="flex flex-wrap items-center justify-center text-center space-x-2 sm:space-x-4">
+        <a href="mailto:info@sanneloesfotografie.nl" class="text-sm sm:text-lg hover:underline">info@sanneloesfotografie.nl</a>
+        <span>|</span>
+        <a href="tel:+31617193407" class="text-sm sm:text-lg hover:underline">+31617193407</a>
+        <span>|</span>
+        <a href="/contact" class="text-sm sm:text-lg hover:underline">Contact</a>
+        <span>|</span>
+        <a href="/algemene-voorwaarde" class="text-sm sm:text-lg hover:underline">Algemene Voorwaarde</a>
+        <span>|</span>
+        <a href="/privacy-verklaring" class="text-sm sm:text-lg hover:underline">Privacy Verklaring</a>
+        <span>|</span>
+        <span class="text-sm sm:text-lg">KvK 77018753</span>
+      </div>
     </div>
 
-    <!-- Footer Links -->
-    <div class="flex flex-wrap items-center justify-center text-center space-x-2 sm:space-x-4">
-      <a href="mailto:info@sanneloesfotografie.nl" class="text-sm sm:text-lg hover:underline">info@sanneloesfotografie.nl</a>
-      <span>|</span>
-      <a href="tel:+31617193407" class="text-sm sm:text-lg hover:underline">+31617193407</a>
-      <span>|</span>
-      <a href="/contact" class="text-sm sm:text-lg hover:underline">Contact</a>
-      <span>|</span>
-      <a href="/algemene-voorwaarde" class="text-sm sm:text-lg hover:underline">Algemene Voorwaarde</a>
-      <span>|</span>
-      <a href="/privacy-verklaring" class="text-sm sm:text-lg hover:underline">Privacy Verklaring</a>
-      <span>|</span>
-      <span class="text-sm sm:text-lg">KvK 77018753</span>
+    <!-- Social Media - Outside of Links Section -->
+    <div class="flex items-center justify-center mt-2 sm:-mt-8">	
+      <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl instagram-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
     </div>
-  </div>
 
-  <!-- Social Media - Outside of Links Section -->
-  <div class="flex items-center justify-center mt-2 sm:-mt-8">	
-    <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl instagram-icon">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-  </div>
-
-  <!-- Copyright Section -->
-  <div class="mt-4 text-center">
-    <p class="text-sm">© 2024 Sanneloes Fotografie. All Rights Reserved.</p>
-  </div>
-</footer>
-
-
-
+    <!-- Copyright Section -->
+    <div class="mt-4 text-center">
+      <p class="text-sm">© 2024 Sanneloes Fotografie. All Rights Reserved.</p>
+    </div>
+  </footer>
 </template>
 
 <script setup>
@@ -333,83 +334,88 @@
       behavior: "smooth" // zorgt voor een vloeiende scroll
     });
   };
+  
+  var currentReviewIndex = 0;
 
-  import { onMounted } from 'vue';
-
-  onMounted(() => {
-    // Array met reviews en bijbehorende foto's
-    const reviews = [
+  // Array met reviews en bijbehorende foto's
+  const reviews = [
       {
-        text: "Wij zijn ontzettend blij met de prachtige foto's die Sanneloes voor ons heeft gemaakt tijdens onze bruiloft. Een herinnering voor het leven. Zo'n lieve meid, die vanaf moment één ons een vertrouwd gevoel gaf en ons liet shinen. Met oog voor detail, enthousiasme en passie voor haar vak is zij de beste fotograaf die wij kennen.<br><br> Wij zijn Sanneloes dankbaar voor deze onvergetelijke herinnering aan onze dag.<br><br> Liefs Ward & Nicky",
+        text: "&quot;Wij zijn ontzettend blij met de prachtige foto's die Sanneloes voor ons heeft gemaakt tijdens onze bruiloft. Een herinnering voor het leven. Zo'n lieve meid, die vanaf moment één ons een vertrouwd gevoel gaf en ons liet shinen. Met oog voor detail, enthousiasme en passie voor haar vak is zij de beste fotograaf die wij kennen.<br><br> Wij zijn Sanneloes dankbaar voor deze onvergetelijke herinnering aan onze dag.<br><br> Liefs Ward & Nicky&quot;",
         photo1: "/assets/pictures/wedding.jpg",
-        photo2: "/assets/pictures/wedding-nicky.jpg"
       },
       {
         text: "Sanneloes heeft onze bruiloft vastgelegd op de mooiste manier die we ons konden voorstellen. Ze maakte ons helemaal op ons gemak en haar foto’s spreken voor zich. Bedankt voor alles, Sanneloes! Groetjes, Lisa & Mark",
         photo1: "/assets/pictures/sexy1.jpg",
-        photo2: "/assets/pictures/sexy2.jpg"
       },
       {
         text: "Wat een fantastische ervaring met Sanneloes! Ze is professioneel, vriendelijk en weet precies hoe ze de mooiste momenten vastlegt. We zouden haar voor geen goud willen missen. Bedankt voor alles, Kim & Tom",
         photo1: "/assets/pictures/loes3.jpg",
-        photo2: "/assets/pictures/loes2.jpg"
       }
     ];
 
-    let currentReviewIndex = 0;
-
-    const reviewText = document.getElementById('review-text');
-    const photo1 = document.getElementById('photo1');
-    const photo2 = document.getElementById('photo2');
-
-    // Functie om de review en foto's dynamisch bij te werken
+    // Update functie
     function updateReview() {
+      
+      const reviewText = document.getElementById('review-text');
+      const photos = document.querySelectorAll('.review-photo'); // Selecteer alle foto's met de class 'review-photo'
+
       const review = reviews[currentReviewIndex];
 
-      // Update tekst en afbeeldingen
       reviewText.innerHTML = `
-        <span class="text-gray-600 text-l italic font-textNav tracking-wider font-extralight">
+        <span class="text-black text-l font-bold tracking-wider font-extralight">
           ${review.text}
         </span>
       `;
-      photo1.src = review.photo1;
-      photo2.src = review.photo2;
+
+      // Loop door de foto's en update de 'src' afhankelijk van de index
+      photos.forEach((photo, index) => {
+        photo.src = review.photo1;
+      });
     }
 
     // Functie om naar de volgende review te gaan met fade-effect
-    function showNextReview() {
+    function showNextReview(handling) {
+      const reviewText = document.getElementById('review-text');
+      const photos = document.querySelectorAll('.review-photo'); // Selecteer alle foto's met de class 'review-photo'
+      
       // Voeg fade-out klasse toe
       reviewText.classList.add('fade-out');
-      photo1.classList.add('fade-out');
-      photo2.classList.add('fade-out');
+      photos.forEach(photo => photo.classList.add('fade-out'));
 
       // Wacht tot de fade-out transitie voltooid is
       setTimeout(() => {
         // Update de review
-        currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+        if (handling === "next") {
+          currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+        } else {
+          // currentReviewIndex = (currentReviewIndex - 1) % reviews.length;
+          currentReviewIndex = currentReviewIndex - 1 < 0 ? reviews.length - 1 : currentReviewIndex - 1;
+        }
+        console.log(currentReviewIndex);
         updateReview();
 
         // Voeg fade-in klasse toe
         reviewText.classList.remove('fade-out');
-        photo1.classList.remove('fade-out');
-        photo2.classList.remove('fade-out');
+        photos.forEach(photo => photo.classList.remove('fade-out'));
         reviewText.classList.add('fade-in');
-        photo1.classList.add('fade-in');
-        photo2.classList.add('fade-in');
+        photos.forEach(photo => photo.classList.add('fade-in'));
 
         // Verwijder de fade-in klasse na de animatie
         setTimeout(() => {
           reviewText.classList.remove('fade-in');
-          photo1.classList.remove('fade-in');
-          photo2.classList.remove('fade-in');
-        }, 500); // Zelfde tijd als de transitie
-      }, 500); // Zelfde tijd als de fade-out transitie
+          photos.forEach(photo => photo.classList.remove('fade-in'));
+        }, 1000); // Zelfde tijd als de transitie
+      }, 1000); // Zelfde tijd als de fade-out transitie
     }
 
-    // Event listener voor de "next" knop
-    document.getElementById('next-button').addEventListener('click', showNextReview);
+  import { onMounted } from 'vue';
 
-    // Eerste review laden
+  onMounted(() => {
+    
+  // // Event listener voor de "next" knop
+  // document.getElementById('next-button').addEventListener('click', showNextReview);
+
+  // Eerste review laden
     updateReview();
   });
 </script>
@@ -418,7 +424,7 @@
 <style scoped>
   .parallax {
     /* The image used */
-    background-image: url("/assets/pictures/liggende_foto.jpg");
+    background-image: url("/public/assets/pictures/wedding-01.jpg");
 
     /* Set a specific height */
     min-height: 500px;

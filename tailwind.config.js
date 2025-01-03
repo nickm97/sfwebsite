@@ -14,7 +14,10 @@ export default {
         'calc-100vh-50px': 'calc(100vh - 50px)',
       },
       colors: {
-        naturalBeige: "#f5f1ec",
+        naturalBeige: "#decab9",
+        darkBrown: "#6a4c2d",
+        buttonColor: "#3d3935",
+        lightBeige: "#eee5de",
         offWhite: '#f8f8f5', // Voeg hier jouw gewenste kleur toe
         formButton: '#c49131'
       },

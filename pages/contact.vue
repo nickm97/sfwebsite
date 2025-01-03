@@ -99,7 +99,7 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <div class="bg-[url('/assets/pictures/liggende_foto.jpg')] bg-cover bg-center pt-[100px] px-8">
+  <div class="bg-[url('/assets/pictures/liggend_back-01.jpg')] bg-contain bg-center pt-[100px] px-8">
     <!-- items-center justify-center -->
     <div class="max-w-[700px] mx-auto bg-white p-10 pb-2 border-0 r">
       <!-- Header: CONTACT tekst -->
@@ -206,7 +206,7 @@ const onSubmit = () => {
         <!-- Left Image Section -->
         <div class="flex-1">
           <img
-            src="/assets/pictures/buik.jpg"
+            src="/assets/pictures/faqs.jpg"
             alt="First Image"
             class="w-full h-[600px] object-cover"
           />
@@ -231,60 +231,43 @@ const onSubmit = () => {
     </div>
   </section>
 
-  <footer class="bg-offWhite-800 text-black font-textNav py-8 px-4 sm:px-20">
-  <!-- Divider -->
-  <div class="border-t-2 border-black mb-4 w-full"></div>
+  <footer class="bg-offWhite-800 text-black font-textNav py-4 px-4 sm:px-20">
+    <!-- Flex Container for Footer -->
+    <div class="flex flex-col sm:flex-row items-center justify-center w-full space-y-4 sm:space-y-0">
+      
+      <!-- Logo -->
+      <div class="flex items-center justify-center sm:justify-start -mt-3 sm:mt-0 -mb-4 sm:mb-0 cursor-pointer">
+        <a href="/"><img src="/assets/pictures/logo-klein.svg" alt="Your Logo" class="w-[100px] sm:w-[125px] h-auto" /></a>
+      </div>
 
-  <!-- Flex Container -->
-  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start items-center text-center sm:text-left space-y-6 sm:space-y-0">
-    <!-- Left: Contact Info -->
-    <div class="flex-1 sm:order-1">
-      <div class="mb-4">
-        <p class="text-lg">Email: <a href="mailto:info@sanneloesfotografie.nl" class="">info@sanneloesfotografie.nl</a></p>
-        <p class="text-lg">Phone: <a href="tel:+31617193407" class="">+31617193407</a></p>
-      </div>
-      <!-- Social Media Links -->
-      <div class="flex space-x-6 itmes-center justify-center mt-4">
-        <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl instagram-icon">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- <div class="border-t-2 border-black mb-4 w-3/4 mx-auto sm:hidden"></div> -->
-
-    <!-- Middle: Logo -->
-    <div class="flex-1 sm:order-2">
-      <img src="/assets/pictures/logo-klein.svg" alt="Your Logo" class="w-[100px] sm:w-[125px] h-auto mx-auto" />
-    </div>
-    <!-- <div class="border-t-2 border-black mb-4 w-3/4 mx-auto sm:hidden"></div> -->
-
-    <!-- Right: Links (with correct alignment) -->
-    <div class="flex-1 sm:order-3 sm:text-right">
-      <div>
-        <a href="/contact" class="text-lg block">Contact</a>
-      </div>
-      <div>
-        <a href="/algemene-voorwaarde" class="text-lg block">Algemene Voorwaarde</a>
-      </div>
-      <div>
-        <a href="/privacy-verklaring" class="text-lg block">Privacy Verklaring</a>
-      </div>
-      <div>
-        <a class="text-lg block">KvK 77018753</a>
+      <!-- Footer Links -->
+      <div class="flex flex-wrap items-center justify-center text-center space-x-2 sm:space-x-4">
+        <a href="mailto:info@sanneloesfotografie.nl" class="text-sm sm:text-lg hover:underline">info@sanneloesfotografie.nl</a>
+        <span>|</span>
+        <a href="tel:+31617193407" class="text-sm sm:text-lg hover:underline">+31617193407</a>
+        <span>|</span>
+        <a href="/contact" class="text-sm sm:text-lg hover:underline">Contact</a>
+        <span>|</span>
+        <a href="/algemene-voorwaarde" class="text-sm sm:text-lg hover:underline">Algemene Voorwaarde</a>
+        <span>|</span>
+        <a href="/privacy-verklaring" class="text-sm sm:text-lg hover:underline">Privacy Verklaring</a>
+        <span>|</span>
+        <span class="text-sm sm:text-lg">KvK 77018753</span>
       </div>
     </div>
-  </div>
 
-  <!-- Copyright Section -->
-  <div class="mt-6 sm:mt-0 text-center sm:text-center">
-    <p class="text-sm">© 2024 Sanneloes Fotografie. All Rights Reserved.</p>
-  </div>
-</footer>
+    <!-- Social Media - Outside of Links Section -->
+    <div class="flex items-center justify-center mt-2 sm:-mt-8">	
+      <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl instagram-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
 
-
-
-
+    <!-- Copyright Section -->
+    <div class="mt-4 text-center">
+      <p class="text-sm">© 2024 Sanneloes Fotografie. All Rights Reserved.</p>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
