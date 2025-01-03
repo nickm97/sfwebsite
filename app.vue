@@ -17,14 +17,19 @@
 
       <!-- Logo in the center (visible on small screens) -->
       <div class="absolute left-1/2 transform -translate-x-1/2">
-        <img src="/public/logo.svg" alt="Sanneloes Fotografie" class="w-[180px] h-auto" />
+        <a href="/">
+          <img src="/public/logo.svg" alt="Sanneloes Fotografie" class="w-[200px] h-auto" />
+        </a>
       </div>
     </div>
 
 
       <!-- Middle: Logo on larger screens (centered) -->
-      <div class="hidden sm:flex justify-center items-center w-[250px] mx-auto absolute left-1/2 transform -translate-x-1/2">
-        <img src="/public/logo.svg" alt="Sanneloes Fotografie" />
+      <div class="hidden sm:flex justify-center items-center w-[250px] mx-auto absolute left-1/2 transform -translate-x-1/2 cursor-pointer">
+        <a href="/">
+          <img src="/public/logo.svg" alt="Sanneloes Fotografie" />
+        </a>
+        <!-- <img src="/public/logo.svg" alt="Sanneloes Fotografie" />  -->
       </div>
 
       <!-- Right section: Links for larger screens -->

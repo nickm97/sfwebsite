@@ -9,22 +9,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  // modules: [
-  //   ['nuxt-mail', {
-  //     message: {
-  //       to: 'mijnemail@voorbeeld.com', // E-mailadres waarnaar de berichten moeten worden gestuurd
-  //     },
-  //     smtp: {
-  //       host: 'smtp.mailtrap.io', // Gebruik de SMTP-host van je provider
-  //       port: 2525,              // Poortnummer (bijv. 587, 465 of 2525)
-  //       auth: {
-  //         user: 'jouw_smtp_user', // Gebruikersnaam van je SMTP-server
-  //         pass: 'jouw_smtp_pass', // Wachtwoord van je SMTP-server
-  //       },
-  //     },
-  //   }],
-  // ],
   modules: [
+    '@nuxt/image', // Voeg de module hier toe
     ['nuxt-mail', {
       message: {
         to: 'nm.nickmichiels@gmail.com', // Het e-mailadres waar je berichten naartoe wilt sturen
@@ -39,4 +25,17 @@ export default defineNuxtConfig({
       },
     }],
   ],
+  image: {
+    // Configuratie voor @nuxt/image
+    screens: {
+      // Standaardafmetingen voor responsieve afbeeldingen
+      sm: 320,
+      md: 640,
+      lg: 1024,
+      xl: 1280,
+    },
+    format: ['webp', 'jpg'], // Ondersteunde afbeeldingsformaten
+  
+  }
 })
+

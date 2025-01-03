@@ -7,8 +7,8 @@
   <div class="flex h-[calc(100vh-50px)] w-full relative">
     <!-- Left Image (visible on all screens) -->
     <div class="hidden sm:block flex-1">
-      <img
-        src="/public/assets/pictures/wedding-07.jpg"
+      <nuxt-img
+        src="/assets/pictures/wedding-07.jpg"
         alt="First Image"
         class="w-full h-full object-cover object-top"style="object-position: center 20%;"
       />
@@ -16,8 +16,8 @@
 
     <!-- Right Image (hidden on small screens, visible on larger screens) -->
     <div class="sm:block flex-1">
-      <img
-        src="/public/assets/pictures/wedding-03.jpg"
+      <nuxt-img
+        src="/assets/pictures/wedding-03.jpg"
         alt="Second Image"
         class="w-full h-full object-cover object-top"style="object-position: center 90%;"
       />
@@ -50,8 +50,8 @@
       <!-- Photo 1 -->
       <div class="text-center group">
         <a href="/bruiloften" class="relative w-[290px] h-[375px] mx-auto block">
-          <img
-            src="/public/assets/pictures/wedding-09.jpg"
+          <nuxt-img
+            src="/assets/pictures/wedding-09.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top"style="object-position: center 100%;"
           />
@@ -74,7 +74,7 @@
       <!-- Photo 2 -->
       <div class="text-center group">
         <a href="/shoots" class="relative w-[290px] h-[375px] mx-auto block">
-          <img
+          <nuxt-img
             src="/assets/pictures/shoot-02.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
@@ -98,7 +98,7 @@
       <!-- Photo 3 -->
       <div class="text-center group">
         <a href="/strong-women" class="relative w-[290px] h-[375px] mx-auto block">
-          <img
+          <nuxt-img
             src="/assets/pictures/sexy2.jpg"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
           />
@@ -122,8 +122,8 @@
       
       <div class="text-center group">
         <a href="/commercial" class="relative w-[290px] h-[375px] mx-auto block">
-          <img
-            src="/public/assets/pictures/branding-01.jpg"
+          <nuxt-img
+            src="/assets/pictures/branding-01.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
           />
@@ -155,12 +155,12 @@
                 SANNELOES&nbsp;FOTOGRAFIE
             </span>
         </div>
-        <img
-            src="/public/assets/pictures/loes.jpg"	
+        <nuxt-img
+            src="/assets/pictures/loes.jpg"	
             alt="Sanneloes"
             class="w-[250px] object-cover object-top"/>
     </div>
-    <div class="pl-4 py-6">
+    <div class="pl-4 py-10">
         <h3 class="text-2xl text-black font-textNav font-semibold mb-4">HI THERE!</h3>
       <p class="text-black text-lg font-bold tracking-wider font-extralight">
           Heyy, ik ben Sanneloes. Ik hou ervan om unieke, 
@@ -182,8 +182,8 @@
   <div class="hidden sm:flex h-[600px] bg-naturalBeige border-t border-gray-400">
     <!-- Left Side (Photo) -->
     <div class="flex-1 flex relative">
-      <img
-        src="/public/assets/pictures/rsz_1loes-sjaal.jpg"	
+      <nuxt-img
+        src="/assets/pictures/rsz_1loes-sjaal.jpg"	
         alt="Sanneloes"
         class="w-full h-full object-cover object-top"/>
     </div>
@@ -216,7 +216,7 @@
       
       <!-- Bottom Right Small Photo -->
       <div class="h-[50%]">
-        <img
+        <nuxt-img
           src="/assets/pictures/loes2.jpg"
           alt="Sanneloes small photo"
           class="w-full h-full object-cover border-t border-gray-400"
@@ -234,7 +234,7 @@
 
       <div class="sm:hidden flex h-[400px]">
         <div id="review-photo">
-          <img src="" alt="Review Photo 1" class="review-photo w-full h-[400px] sm:px-0 sm:w-[350px] sm:h-[400px] object-cover sm:mb-0"/>
+          <nuxt-img :src="imageSrc" alt="Review Photo 1" class="review-photo w-full h-[400px] sm:px-0 sm:w-[350px] sm:h-[400px] object-cover sm:mb-0"/>
         </div>
         <div class="border-r border-gray-400 flex h-full bg-white justify-center items-center min-w-[20px] w-[100px]">
             <span class="text-gray-700 text-2xl font-textNav tracking-widest transform -rotate-90">
@@ -244,9 +244,17 @@
       </div>
 
       <div class="gap-10 flex flex-col sm:flex-row py-2 h-auto items-center">    
-        <div id="review-photo" class="sm:flex hidden ">
-          <img src="" alt="Review Photo 1" class="review-photo w-[200px] h-[300px] sm:px-0 sm:w-[350px] sm:h-[400px] object-contain sm:mb-0"/>
+        <!-- <div id="review-photo" class="sm:flex hidden "> -->
+          <!-- <nuxt-img src="" alt="Review Photo 1" class="review-photo w-[200px] h-[300px] sm:px-0 sm:w-[350px] sm:h-[400px] object-contain sm:mb-0"/> -->
+        <!-- </div> -->
+        <div id="review-photo" class="sm:flex hidden">
+          <nuxt-img 
+            :src="imageSrc" 
+            alt="Review Photo 1" 
+            class="review-photo w-[200px] h-[300px] sm:px-0 sm:w-[350px] sm:h-[400px] object-contain sm:mb-0"
+            style="object-position: center 20%;" />
         </div>
+
 
         <div class="w-full py-0 sm:w-[600px] flex sm:block items-center">
           <div class="hidden mb-4 mr-6 sm:mb-4 sm:block">
@@ -259,7 +267,7 @@
             <i @click="showNextReview('previous')" class="fa-solid fa-chevron-left text-xl text-white cursor-pointer"></i>
           </div>
 
-          <div id="review-text" class="flex text-left sm:text-left py-4">
+          <div id="review-text" class="flex text-left sm:text-left py-10">
           </div>
 
           <div class="sm:hidden px-4">
@@ -287,43 +295,7 @@
     </div>
   </div>
 
-  <footer class="bg-offWhite-800 text-black font-textNav py-4 px-4 sm:px-20">
-    <!-- Flex Container for Footer -->
-    <div class="flex flex-col sm:flex-row items-center justify-center w-full space-y-4 sm:space-y-0">
-      
-      <!-- Logo -->
-      <div class="flex items-center justify-center sm:justify-start -mt-3 sm:mt-0 -mb-4 sm:mb-0 cursor-pointer">
-        <a href="/"><img src="/assets/pictures/logo-klein.svg" alt="Your Logo" class="w-[100px] sm:w-[125px] h-auto" /></a>
-      </div>
-
-      <!-- Footer Links -->
-      <div class="flex flex-wrap items-center justify-center text-center space-x-2 sm:space-x-4">
-        <a href="mailto:info@sanneloesfotografie.nl" class="text-sm sm:text-lg hover:underline">info@sanneloesfotografie.nl</a>
-        <span>|</span>
-        <a href="tel:+31617193407" class="text-sm sm:text-lg hover:underline">+31617193407</a>
-        <span>|</span>
-        <a href="/contact" class="text-sm sm:text-lg hover:underline">Contact</a>
-        <span>|</span>
-        <a href="/algemene-voorwaarde" class="text-sm sm:text-lg hover:underline">Algemene Voorwaarde</a>
-        <span>|</span>
-        <a href="/privacy-verklaring" class="text-sm sm:text-lg hover:underline">Privacy Verklaring</a>
-        <span>|</span>
-        <span class="text-sm sm:text-lg">KvK 77018753</span>
-      </div>
-    </div>
-
-    <!-- Social Media - Outside of Links Section -->
-    <div class="flex items-center justify-center mt-2 sm:-mt-8">	
-      <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl instagram-icon">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-    </div>
-
-    <!-- Copyright Section -->
-    <div class="mt-4 text-center">
-      <p class="text-sm">© 2024 Sanneloes Fotografie. All Rights Reserved.</p>
-    </div>
-  </footer>
+  <footer-sf></footer-sf>
 </template>
 
 <script setup>
@@ -352,6 +324,15 @@
         photo1: "/assets/pictures/loes3.jpg",
       }
     ];
+    
+    import { ref } from 'vue';
+
+    const imageSrc = ref(''); // Reageerbare variabele voor de afbeelding
+
+    // Je kunt de 'imageSrc' variabele ergens in je code bijwerken
+    function updateImageSource(newSrc) {
+      imageSrc.value = newSrc;
+    }
 
     // Update functie
     function updateReview() {
@@ -367,13 +348,13 @@
         </span>
       `;
 
+      updateImageSource(review.photo1);
       // Loop door de foto's en update de 'src' afhankelijk van de index
       photos.forEach((photo, index) => {
         photo.src = review.photo1;
       });
     }
 
-    // Functie om naar de volgende review te gaan met fade-effect
     function showNextReview(handling) {
       const reviewText = document.getElementById('review-text');
       const photos = document.querySelectorAll('.review-photo'); // Selecteer alle foto's met de class 'review-photo'
@@ -384,19 +365,22 @@
 
       // Wacht tot de fade-out transitie voltooid is
       setTimeout(() => {
-        // Update de review
+        // Update de review (tekst en afbeelding) na fade-out
         if (handling === "next") {
           currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
         } else {
-          // currentReviewIndex = (currentReviewIndex - 1) % reviews.length;
           currentReviewIndex = currentReviewIndex - 1 < 0 ? reviews.length - 1 : currentReviewIndex - 1;
         }
+
         console.log(currentReviewIndex);
+
+        // Update de review en afbeelding pas na de fade-out
         updateReview();
 
         // Voeg fade-in klasse toe
         reviewText.classList.remove('fade-out');
         photos.forEach(photo => photo.classList.remove('fade-out'));
+
         reviewText.classList.add('fade-in');
         photos.forEach(photo => photo.classList.add('fade-in'));
 
@@ -408,12 +392,10 @@
       }, 1000); // Zelfde tijd als de fade-out transitie
     }
 
+
   import { onMounted } from 'vue';
 
   onMounted(() => {
-    
-  // // Event listener voor de "next" knop
-  // document.getElementById('next-button').addEventListener('click', showNextReview);
 
   // Eerste review laden
     updateReview();

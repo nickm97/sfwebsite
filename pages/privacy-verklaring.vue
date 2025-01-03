@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-4xl mx-auto pt-[50px] pb-[150px] px-[100px]">
-      <h1 class="text-3xl font-textNav text-center text-gray-800 mb-6">Privacyverklaring Sanneloes Fotografie</h1>
+    <div class="max-w-4xl mx-auto py-6 px-4 sm:py-[50px] sm:px-[100px]">
+      <h1 class="text-lg sm:text-3xl font-textNav text-center text-gray-800 mb-6">Privacyverklaring Sanneloes Fotografie</h1>
       <p class="text-gray-700 mb-6">
         Sanneloes Fotografie hecht veel waarde aan de bescherming van uw persoonsgegevens.
         In deze privacyverklaring leggen wij uit welke gegevens wij verwerken, waarom wij
@@ -101,49 +101,7 @@
         </p>
       </section>
     </div>
-    <!-- Footer Section -->
-    <footer class="bg-offWhite-800 text-black font-textNav py-8 px-20">
-        <div class="border-t-2 border-black mb-4 w-full">
-
-        </div>
-        <div class="flex justify-between items-start">
-        <!-- Left: Contact Info -->
-        <div class="flex-1 text-left">
-            <div class="mb-4">
-            <p class="text-lg">Email: <a href="mailto:info@sanneloesfotografie.nl" class="underline">info@sanneloesfotografie.nl</a></p>
-            <p class="text-lg">Phone: <a href="tel:+31617193407" class="underline">+31617193407</a></p>
-            </div>
-            <!-- Social Media Links -->
-            <div class="flex space-x-6">
-            <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-3xl">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            </div>
-        </div>
-
-        <!-- Middle: Logo and Copyright -->
-        <div class="flex-1 text-center">
-            <img src="/assets/pictures/logo-klein.svg" alt="Your Logo" class="w-[125px] h-auto mx-auto" />
-            <div class="mt-2 text-sm">© 2024 Sanneloes Fotografie. All Rights Reserved.</div>
-        </div>
-
-        <!-- Right: Contact Page Link -->
-        <div class="flex-1 text-right">
-            <div>
-            <a href="/contact" class="text-lg underline">Contact</a>
-            </div>
-            <div>
-            <a href="/algemene-voorwaarde" class="text-lg underline">Algemene voorwaarde</a>
-            </div>
-            <div>
-            <a href="/privacy-verklaring" class="text-lg underline">Privacy verklaring</a>
-            </div>
-            <div>
-            <a class="text-lg">KvK 77018753</a>
-            </div>
-        </div>
-        </div>
-    </footer>
+    <footer-sf></footer-sf>
   </template>
   
   <script>
