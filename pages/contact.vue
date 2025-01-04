@@ -11,7 +11,8 @@
     { question: 'Hoe kan ik contact opnemen?', answer: 'Je kunt ons bereiken via het contactformulier op de website of via e-mail.' },
     { question: 'Hoe kan ik mezelf voorbereiden op een shoot?', answer: 'We bieden een 30-dagen retourbeleid voor de meeste producten.' },
     { question: 'Hoe zit het met de privacy verklaring?', answer: 'We bieden een 30-dagen retourbeleid voor de meeste producten.' },
-    { question: 'Kan extra info krijgen voor bruiloften?', answer: 'We bieden een 30-dagen retourbeleid voor de meeste producten.' },
+    { question: 'Kan ik extra info krijgen voor bruiloften?', answer: 'We bieden een 30-dagen retourbeleid voor de meeste producten.' },
+    { question: 'Wat als ik extra fotos wil?', answer: 'We bieden een 30-dagen retourbeleid voor de meeste producten.' },
     { question: 'Wat voor meer vragen?', answer: 'Ja, we bieden regelmatig kortingen aan, volg ons op social media voor de laatste aanbiedingen.' },
   ];
 

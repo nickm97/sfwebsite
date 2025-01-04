@@ -37,3 +37,11 @@
     </div>
   </footer>
 </template>
+
+<style scoped>
+  .instagram-icon i {
+    background: linear-gradient(45deg, #F77737, #FDCB82, #9B59B6);
+    background-clip: text;
+    color: transparent;
+  }
+</style>

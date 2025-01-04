@@ -25,6 +25,7 @@ export default {
         standard: ['"Arial"', 'sans-serif'], // Voeg hier jouw gewenste lettertype toe
         theSeasons: ['"The Seasons"', 'san-serif'],
         textNav: ["Times New Roman", 'serif'], // Lettertype voor de navigatie
+        fancy: ['"Waterfall"', 'serif'], // Correcte naam en stijl
       },
       fontSize: {
         sizeNavText: '18px', // Voeg de gewenste grootte toe voor navigatietekst
