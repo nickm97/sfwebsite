@@ -34,23 +34,23 @@
 
       <!-- Right section: Links for larger screens -->
       <div class="hidden sm:flex items-center space-x-4">
-        <NuxtLink to="/" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-          Home
+        <NuxtLink to="/" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          HOME
         </NuxtLink>
-        <NuxtLink to="/weddings" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-          Weddings
+        <NuxtLink to="/weddings" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          WEDDINGS
         </NuxtLink>
-        <NuxtLink to="/shoots" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-          Shoots
+        <NuxtLink to="/shoots" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          SHOOTS
         </NuxtLink>
-        <NuxtLink to="/portfolio" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-          Portfolio
+        <NuxtLink to="/portfolio" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          PORTFOLIO
         </NuxtLink>
-        <NuxtLink to="/about" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-          About
+        <NuxtLink to="/about" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          ABOUT
         </NuxtLink>
-        <NuxtLink to="/contact" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-          Contact
+        <NuxtLink to="/contact" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          CONTACT
         </NuxtLink>
       </div>
     </nav>

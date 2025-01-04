@@ -53,8 +53,10 @@
       <div class="text-center group">
         <a href="/bruiloften" class="relative w-[290px] h-[375px] mx-auto block">
           <nuxt-img
-            src="/assets/pictures/wedding-09.jpg"
+            src="/assets/pictures/wedding-index.jpg"
             alt="Sanneloes Fotografie Bruiloften"
+            width="290"
+            height="375"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top group-hover:scale-105 transition-transform duration-500"style="object-position: center 100%;"
           />
           <div
@@ -77,8 +79,10 @@
       <div class="text-center group">
         <a href="/shoots" class="relative w-[290px] h-[375px] mx-auto block">
           <nuxt-img
-            src="/assets/pictures/shoot-02.jpg"
+            src="/assets/pictures/shoots-index.jpg"
             alt="Sanneloes Fotografie Bruiloften"
+            width="290"
+            height="375"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
@@ -99,10 +103,12 @@
 
       <!-- Photo 3 -->
       <div class="text-center group">
-        <a href="/strong-women" class="relative w-[290px] h-[375px] mx-auto block">
+        <a href="/strong-women" class="relative w-[290px] h-[375px] block">
           <nuxt-img
-            src="/assets/pictures/sexy2.jpg"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
+            src="/assets/pictures/strong-woman-index.jpg"
+            width="290"
+            height="375"
+            class="w-full h-full object-cover rounded-[2px] cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
@@ -125,8 +131,10 @@
       <div class="text-center group">
         <a href="/commercial" class="relative w-[290px] h-[375px] mx-auto block">
           <nuxt-img
-            src="/assets/pictures/branding-01.jpg"
+            src="/assets/pictures/branding-index.jpg"
             alt="Sanneloes Fotografie Bruiloften"
+            width="290"
+            height="375"
             class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
@@ -158,7 +166,7 @@
             </span>
         </div>
         <nuxt-img
-            src="/assets/pictures/loes.jpg"	
+            src="/assets/pictures/loes-index.jpg"	
             alt="Sanneloes"
             class="w-[250px] object-cover object-top"/>
     </div>
@@ -182,21 +190,7 @@
 
   <!-- New Section -->
   <div class="hidden sm:flex h-[600px] bg-naturalBeige border-t border-gray-400">
-    <!-- Left Side (Photo) -->
-    <div class=" flex ">
-      <nuxt-img
-        placeholder
-        src="/assets/pictures/rsz_1loes-sjaal.jpg"	
-        alt="Sanneloes"
-        class="h-full object-cover object-top"/>
-    </div>
-
-    <!-- Middle Section (Vertical Text) -->
-    <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center max-w-[300px]">
-      <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
-        SANNELOES
-      </span>
-    </div>
+    
 
     <!-- Right Side (Text and Small Photo) -->
     <div class="flex-1 flex flex-col justify-between">
@@ -226,6 +220,24 @@
         />
       </div>
     </div>
+
+    <!-- Middle Section (Vertical Text) -->
+    <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center max-w-[300px]">
+      <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
+        SANNELOES
+      </span>
+    </div>
+
+    <!-- Left Side (Photo) -->
+    <div class=" flex ">
+      <nuxt-img
+        placeholder
+        src="/assets/pictures/loes-index.jpg"	
+        alt="Sanneloes"
+        class="h-full object-cover object-top"/>
+    </div>
+
+    
   </div>
 
   <!-- <love-notes></love-notes>  -->
@@ -271,7 +283,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */

@@ -1,5 +1,8 @@
 <template>
-    <div class="w-full h-[450px] flex items-center justify-center bg-white py-12 gap-16">
+  <div class="flex flex-col">
+    
+    <h2 class="text-2xl font-textNav font-light tracking-wide text-center pt-4 text-gray-500">"REVIEWS"</h2>
+    <div class="w-full h-[450px] flex items-center justify-center bg-white pb-12 gap-16">
       <!-- Container voor afbeelding en tekst -->
       <div class="group w-[200px] h-[380px] flex flex-col bg-white items-center border border-1 border-black">
         
@@ -7,7 +10,7 @@
         <div class="group-hover:hidden">
           <nuxt-img
             placeholder
-            src="/assets/pictures/wedding.jpg"
+            src="/assets/pictures/sam&inge.jpg"
             alt="Sanneloes"
             class="w-full h-full object-cover p-2"
           />
@@ -41,7 +44,7 @@
         <div class="group-hover:hidden">
           <nuxt-img
             placeholder
-            src="/assets/pictures/wedding.jpg"
+            src="/assets/pictures/nicky&ward.jpg"
             alt="Sanneloes"
             class="w-full h-full object-cover p-2"
           />
@@ -74,14 +77,14 @@
         <div class="group-hover:hidden">
           <nuxt-img
             placeholder
-            src="/assets/pictures/wedding.jpg"
+            src="/assets/pictures/brit&lotte.jpg"
             alt="Sanneloes"
             class="w-full h-full object-cover p-2"
           />
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Britt & Lotte</p>
+        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Brit & Lotte</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -109,7 +112,7 @@
         <div class="group-hover:hidden">
           <nuxt-img
             placeholder
-            src="/assets/pictures/wedding.jpg"
+            src="/assets/pictures/luuk&mandy.jpg"
             alt="Sanneloes"
             class="w-full h-full object-cover p-2"
           />
@@ -143,7 +146,7 @@
         <div class="group-hover:hidden">
           <nuxt-img
             placeholder
-            src="/assets/pictures/wedding.jpg"
+            src="/assets/pictures/rick&marlou.jpg"
             alt="Sanneloes"
             class="w-full h-full object-cover p-2"
           />
@@ -171,6 +174,8 @@
         </div>
       </div>
     </div>
+  </div>
+    
 
     
   
