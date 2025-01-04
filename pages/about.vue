@@ -20,8 +20,8 @@
           <h4 class="text-4xl font-serif font-normal tracking-tight font-black">
             Hi, I'm Sanneloes
           </h4>
-          <p class="text-lg font-fancy font-light mt-6 tracking-tight">
-            If you like raw & honest photos,<br>I'm you wing woman.
+          <p class="text-4xl font-fancy mt-6 tracking-tight">
+            If you like raw & honest photos,<br>I'm your wing woman.
           </p>
           <p class="text-lg font-sans font-light mt-6 tracking-tight">
             I'm a photographer based in the Netherlands. I love capturing the beauty of everyday life and the people in it. I'm here to help you feel confident and beautiful in front of the camera. Let's create some magic together!

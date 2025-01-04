@@ -55,10 +55,10 @@
           <nuxt-img
             src="/assets/pictures/wedding-09.jpg"
             alt="Sanneloes Fotografie Bruiloften"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top"style="object-position: center 100%;"
+            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top group-hover:scale-105 transition-transform duration-500"style="object-position: center 100%;"
           />
           <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
+            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
           >
             <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
               WEDDINGS
@@ -79,10 +79,10 @@
           <nuxt-img
             src="/assets/pictures/shoot-02.jpg"
             alt="Sanneloes Fotografie Bruiloften"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
+            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
+            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
           >
             <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
               SHOOTS
@@ -102,10 +102,10 @@
         <a href="/strong-women" class="relative w-[290px] h-[375px] mx-auto block">
           <nuxt-img
             src="/assets/pictures/sexy2.jpg"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
+            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
+            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
           >
             <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
               STRONG WOMEN
@@ -127,10 +127,10 @@
           <nuxt-img
             src="/assets/pictures/branding-01.jpg"
             alt="Sanneloes Fotografie Bruiloften"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90"
+            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px]"
+            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
           >
             <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
               BRANDING

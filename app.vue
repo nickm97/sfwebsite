@@ -37,6 +37,9 @@
         <NuxtLink to="/" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
           Home
         </NuxtLink>
+        <NuxtLink to="/weddings" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          Weddings
+        </NuxtLink>
         <NuxtLink to="/shoots" class="font-textNav text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
           Shoots
         </NuxtLink>
