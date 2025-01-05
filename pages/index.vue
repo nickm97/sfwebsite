@@ -35,129 +35,108 @@
     </div>
   </div>
 
-
-
-  <!-- New Section with Title and Photos -->
-  <div class="bg-offWhite py-[50px] sm:py-[80px] px-[0px] lg:px-[140px]">
+  <div class="flex items-center justify-center text-center py-12 px-2 pb-[50px]">
     <!-- Title -->
-    <h2 class="text-center text-[16px] sm:text-3xl font-textNav px-2 pb-[50px] sm:pb-[80px] tracking-wider font-extralight">
+    <h2 class="text-[16px] sm:text-3xl font-textNav tracking-wider font-extralight">
       FOR THE ONES WHO 
       DARE A LITTLE, <br />
       LET GO A LITTLE 
       AND LOVE TO THE FULLEST
     </h2>
+  </div>
 
-    <!-- Grid of Photos -->
-    <div class="flex sm:flex-row flex-col gap-5">
-      <!-- Photo 1 -->
-      <div class="text-center group">
-        <a href="/bruiloften" class="relative w-[290px] h-[425px] mx-auto block">
-          <nuxt-img
-            src="/assets/pictures/wedding-index.jpg"
-            alt="Sanneloes Fotografie Bruiloften"
-            width="290"
-            height="425"
-            format="webp"
-            style="object-position: center bottom;"
-            class="object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top group-hover:scale-105 transition-transform duration-500"
-          />
-          <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
-          >
-            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
-              WEDDINGS
-            </span>
-          </div>
-        </a>
-        <a
-          href="/bruiloften"
-          class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
+  <!-- New Section with Title and Photos -->
+  <div class="py-[50px] sm:py-0 sm:pb-12 px-[0px] sm:px-[140px] items flex items-center justify-center">
+    
+
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-10xl w-full">
+      <!-- Tile 1 -->
+      <div class="relative group overflow-hidden bg-gray-300">
+        <!-- Background Image -->
+        <img
+          src="/assets/pictures/wedding-index.jpg"
+          alt="Tile Image 1"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <!-- White Border Inside -->
+        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
+        <!-- Content Overlay -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
-          WEDDINGS
-        </a>
+          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 1</h2> -->
+          <button
+            @click="redirect('/weddings')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            WEDDINGS
+          </button>
+        </div>
       </div>
 
-      <!-- Photo 2 -->
-      <div class="text-center group">
-        <a href="/shoots" class="relative w-[290px] h-[425px] mx-auto block">
-          <nuxt-img
-            src="/assets/pictures/daisy-index.jpg"
-            alt="Sanneloes Fotografie Bruiloften"
-            width="290"
-            height="425"
-            style="object-position: center bottom;"
-            format="webp"
-            class="object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
-          />
-          <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
-          >
-            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
-              SHOOTS
-            </span>
-          </div>
-        </a>
-        <a
-          href="/shoots"
-          class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
+      <!-- Repeat for the other 3 tiles -->
+      <div class="relative group overflow-hidden bg-gray-300">
+        <img
+          src="/assets/pictures/shoot-02.jpg"
+          alt="Tile Image 2"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
-          SHOOTS
-        </a>
-      </div>      
-
-      <!-- Photo 3 -->
-      <div class="text-center group">
-        <a href="/strong-women" class="relative w-[290px] h-[425px] block">
-          <nuxt-img
-            src="/assets/pictures/strong-woman-index.jpg"
-            width="290"
-            height="425"
-            class="object-cover rounded-[2px] cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
-          />
-          <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
+          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 2</h2> -->
+          <button
+            @click="redirect('/shoots')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
-              STRONG WOMEN
-            </span>
-          </div>
-        </a>
-        <a
-          href="/strong-women"
-          class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
-        >
-          STRONG WOMEN
-        </a>
+            SHOOTS
+          </button>
+        </div>
       </div>
 
-      <!-- Photo 4 -->
-      
-      <div class="text-center group">
-        <a href="/commercial" class="relative w-[290px] h-[425px] mx-auto block">
-          <nuxt-img
-            src="/assets/pictures/branding-index.jpg"
-            alt="Sanneloes Fotografie Bruiloften"
-            width="290"
-            height="425"
-            class="object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
-          />
-          <div
-            class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
-          >
-            <span class="text-white text-sm font-semibold border border-white px-4 py-2 rounded">
-              BRANDING
-            </span>
-          </div>
-        </a>
-        <a
-          href="/commercial"
-          class="tracking-wider mt-2 text-lg font-standard group-hover:text-gray-500 transition duration-300 font-thin cursor-pointer block"
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+        <nuxt-img
+          src="/assets/pictures/strong-woman-index.jpg"
+          alt="Tile Image 3"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
-          BRANDING
-        </a>
+          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 3</h2> -->
+          <button
+            @click="redirect('/strong-women')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            STRONG WOMEN
+          </button>
+        </div>
       </div>
 
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+        <nuxt-img
+          src="/assets/pictures/branding-index.jpg"
+          alt="Tile Image 4"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        >
+          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 4</h2> -->
+          <button
+            @click="redirect('/commercial')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            BRANDING
+          </button>
+        </div>
+      </div>
     </div>
+
+    
   </div>
 
   
@@ -264,6 +243,9 @@
 </template>
 
 <script setup>
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter();
   function scrollToNextSection() {
     // Scroll naar de volgende sectie (vervang de selector naar je gewenste sectie)
     window.scrollBy({
@@ -271,7 +253,9 @@
       behavior: "smooth" // zorgt voor een vloeiende scroll
     });
   };
-  
+  function redirect(path) {
+    router.push(path); // Navigeer naar de gewenste route
+  }
 </script>
 
 
