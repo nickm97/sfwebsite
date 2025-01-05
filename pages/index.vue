@@ -51,13 +51,15 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
       <!-- Photo 1 -->
       <div class="text-center group">
-        <a href="/bruiloften" class="relative w-[290px] h-[375px] mx-auto block">
+        <a href="/bruiloften" class="relative w-[290px] h-[425px] mx-auto block">
           <nuxt-img
             src="/assets/pictures/wedding-index.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             width="290"
-            height="375"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top group-hover:scale-105 transition-transform duration-500"style="object-position: center 100%;"
+            height="425"
+            format="webp"
+            style="object-position: center bottom;"
+            class="object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 object-top group-hover:scale-105 transition-transform duration-500"
           />
           <div
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
@@ -77,13 +79,15 @@
 
       <!-- Photo 2 -->
       <div class="text-center group">
-        <a href="/shoots" class="relative w-[290px] h-[375px] mx-auto block">
+        <a href="/shoots" class="relative w-[290px] h-[425px] mx-auto block">
           <nuxt-img
-            src="/assets/pictures/shoots-index.jpg"
+            src="/assets/pictures/daisy-index.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             width="290"
-            height="375"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
+            height="425"
+            style="object-position: center bottom;"
+            format="webp"
+            class="object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
@@ -103,12 +107,12 @@
 
       <!-- Photo 3 -->
       <div class="text-center group">
-        <a href="/strong-women" class="relative w-[290px] h-[375px] block">
+        <a href="/strong-women" class="relative w-[290px] h-[425px] block">
           <nuxt-img
             src="/assets/pictures/strong-woman-index.jpg"
             width="290"
-            height="375"
-            class="w-full h-full object-cover rounded-[2px] cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
+            height="425"
+            class="object-cover rounded-[2px] cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"
@@ -129,13 +133,13 @@
       <!-- Photo 4 -->
       
       <div class="text-center group">
-        <a href="/commercial" class="relative w-[290px] h-[375px] mx-auto block">
+        <a href="/commercial" class="relative w-[290px] h-[425px] mx-auto block">
           <nuxt-img
             src="/assets/pictures/branding-index.jpg"
             alt="Sanneloes Fotografie Bruiloften"
             width="290"
-            height="375"
-            class="w-full h-full object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
+            height="425"
+            class="object-cover rounded-[2px] transition duration-300 cursor-pointer group-hover:brightness-90 group-hover:scale-105 transition-transform duration-500"
           />
           <div
             class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300 rounded-[2px] group-hover:scale-105 transition-transform duration-500"

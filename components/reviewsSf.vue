@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="sm:flex flex-col">
     
     <h2 class="text-2xl font-textNav font-light tracking-wide text-center pt-4 text-gray-500">"REVIEWS"</h2>
     <div class="w-full h-[450px] flex items-center justify-center bg-white pb-12 gap-16">

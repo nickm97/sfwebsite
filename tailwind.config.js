@@ -28,7 +28,7 @@ export default {
         fancy: ['"Waterfall"', 'serif'], // Correcte naam en stijl
       },
       fontSize: {
-        sizeNavText: '18px', // Voeg de gewenste grootte toe voor navigatietekst
+        sizeNavText: '16px', // Voeg de gewenste grootte toe voor navigatietekst
       },
     },
     screens: {

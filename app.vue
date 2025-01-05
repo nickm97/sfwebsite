@@ -6,33 +6,24 @@
   </head>
 
     <!-- Navbar -->
-    <nav class="bg-offWhite text-black p-4 flex items-center justify-between h-[50px] border-b border-gray-500">
+    <nav class="bg-offWhite text-black px-4 py-2 flex items-center justify-between h-[70px] border-b border-gray-500">
+       <!-- Left section: Hamburger Menu (Only on small screens) -->
       <!-- Left section: Hamburger Menu (Only on small screens) -->
-      <!-- Left section: Hamburger Menu (Only on small screens) -->
-    <div class="sm:hidden flex justify-between items-center w-full relative">
-      <!-- Hamburger Icon (Left side) -->
-      <button @click="toggleMenu" class="text-[30px] flex-shrink-0">
-        <i class="fas fa-bars"></i> 
-      </button>
+      <div class="sm:hidden flex justify-between items-center w-full relative">
+        <!-- Hamburger Icon (Left side) -->
+        <button @click="toggleMenu" class="text-[30px] flex-shrink-0">
+          <i class="fas fa-bars"></i> 
+        </button>
 
-      <!-- Logo in the center (visible on small screens) -->
-      <div class="absolute left-1/2 transform -translate-x-1/2">
-        <a href="/">
-          <img src="/public/logo.svg" alt="Sanneloes Fotografie" class="w-[200px] h-auto" />
-        </a>
-      </div>
-    </div>
-
-
-      <!-- Middle: Logo on larger screens (centered) -->
-      <div class="hidden sm:flex justify-center items-center w-[250px] mx-auto absolute left-1/2 transform -translate-x-1/2 cursor-pointer">
-        <a href="/">
-          <img src="/public/logo.svg" alt="Sanneloes Fotografie" />
-        </a>
-        <!-- <img src="/public/logo.svg" alt="Sanneloes Fotografie" />  -->
+        <!-- Logo in the center (visible on small screens) -->
+        <div class="sm:hidden absolute left-1/2 transform -translate-x-1/2">
+          <a href="/">
+            <img src="/public/logo.svg" alt="Sanneloes Fotografie" class="w-[200px] h-auto" />
+          </a>
+        </div>
       </div>
 
-      <!-- Right section: Links for larger screens -->
+      <!-- Left Section: 3 Links -->
       <div class="hidden sm:flex items-center space-x-4">
         <NuxtLink to="/" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
           HOME
@@ -43,6 +34,17 @@
         <NuxtLink to="/shoots" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
           SHOOTS
         </NuxtLink>
+      </div>
+
+      <!-- Middle: Logo -->
+      <div class="hidden sm:flex justify-center items-center w-[250px] mx-auto cursor-pointer">
+        <a href="/">
+          <img src="/public/logo.svg" alt="Sanneloes Fotografie" class="w-[250px] h-auto" />
+        </a>
+      </div>
+
+      <!-- Right Section: 3 Links -->
+      <div class="hidden sm:flex items-center space-x-4">
         <NuxtLink to="/portfolio" class="font-textNav tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
           PORTFOLIO
         </NuxtLink>
