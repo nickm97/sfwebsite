@@ -48,7 +48,7 @@
     </h2>
 
     <!-- Grid of Photos -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="flex sm:flex-row flex-col gap-5">
       <!-- Photo 1 -->
       <div class="text-center group">
         <a href="/bruiloften" class="relative w-[290px] h-[425px] mx-auto block">
