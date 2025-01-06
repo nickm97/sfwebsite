@@ -46,12 +46,11 @@
   </div>
 
   <!-- New Section with Title and Photos -->
-  <div class="py-[50px] sm:py-0 sm:pb-12 px-[0px] sm:px-[140px] items flex items-center justify-center">
+  <div class="pb-[20px] sm:py-0 sm:pb-12 px-[10px] sm:px-[140px] items flex items-center justify-center">
     
-
-    <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-10xl w-full">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">
       <!-- Tile 1 -->
-      <div class="relative group overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <!-- Background Image -->
         <img
           src="/assets/pictures/wedding-index.jpg"
@@ -62,7 +61,7 @@
         <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
         <!-- Content Overlay -->
         <div
-          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          class="absolute inset-0 flex items-center justify-center flex-col text-white"
         >
           <!-- <h2 class="text-2xl font-bold mb-4">Gallery 1</h2> -->
           <button
@@ -75,7 +74,7 @@
       </div>
 
       <!-- Repeat for the other 3 tiles -->
-      <div class="relative group overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
           src="/assets/pictures/shoot-02.jpg"
           alt="Tile Image 2"
@@ -83,7 +82,7 @@
         />
         <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
         <div
-          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          class="absolute inset-0 flex items-center justify-center flex-col text-white"
         >
           <!-- <h2 class="text-2xl font-bold mb-4">Gallery 2</h2> -->
           <button
@@ -102,8 +101,11 @@
           class="object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
-        <div
+        <!-- <div
           class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        > -->
+        <div
+          class="absolute inset-0 flex items-center justify-center flex-col text-white"
         >
           <!-- <h2 class="text-2xl font-bold mb-4">Gallery 3</h2> -->
           <button
@@ -123,7 +125,7 @@
         />
         <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
         <div
-          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          class="absolute inset-0 flex items-center justify-center flex-col text-white"
         >
           <!-- <h2 class="text-2xl font-bold mb-4">Gallery 4</h2> -->
           <button
@@ -172,14 +174,29 @@
  
 
   <!-- New Section -->
-  <div class="hidden sm:flex h-[600px] bg-naturalBeige border-t border-gray-400">
+  <div class="hidden sm:flex h-[700px] bg-naturalBeige border-t border-gray-400">
     
+    <!-- Left Side (Photo) -->
+    <div class=" flex ">
+      <nuxt-img
+        placeholder
+        src="/assets/pictures/loes-index-01.jpg"	
+        alt="Sanneloes"
+        class="object-cover object-top"/>
+    </div>
+
+    <!-- Middle Section (Vertical Text) -->
+    <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center">
+      <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
+        SANNELOES
+      </span>
+    </div>
 
     <!-- Right Side (Text and Small Photo) -->
-    <div class="flex-1 flex flex-col justify-between">
+    <div class="flex-1 flex flex-col justify-between h-full">
       <!-- Top Right Text -->
-      <div class="mb-4 mt-[30px] flex-1 px-10">
-        <h3 class="text-2xl text-gray-700 font-semibold mb-4">HI THERE!</h3>
+      <div class="flex-1 px-10 items-center justify-center">
+        <h3 class="text-2xl text-gray-700 font-semibold mb-1 mt-4">HI THERE!</h3>
         <p class="text-black text-lg font-bold tracking-wider font-extralight">
           Heyy, ik ben Sanneloes. Ik hou ervan om unieke, 
           emotionele momenten vast te leggen die jouw verhaal op de mooiste en meest eerlijke manier vertellen.
@@ -195,31 +212,14 @@
       </div>
       
       <!-- Bottom Right Small Photo -->
-      <div class="h-[50%]">
+      <div class="w-full">
         <nuxt-img
           src="/assets/pictures/loes2.jpg"
           alt="Sanneloes small photo"
-          class="w-full h-full object-cover border-t border-gray-400"
+          class="h-full w-full object-cover border-t border-gray-400"
         />
       </div>
     </div>
-
-    <!-- Middle Section (Vertical Text) -->
-    <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center max-w-[300px]">
-      <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
-        SANNELOES
-      </span>
-    </div>
-
-    <!-- Left Side (Photo) -->
-    <div class=" flex ">
-      <nuxt-img
-        placeholder
-        src="/assets/pictures/loes-index.jpg"	
-        alt="Sanneloes"
-        class="h-full object-cover object-top"/>
-    </div>
-
     
   </div>
 

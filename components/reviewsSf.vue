@@ -1,29 +1,31 @@
 <template>
-  <div class="sm:flex flex-col">
-    
-    <h2 class="text-2xl font-textNav font-light tracking-wide text-center pt-4 text-gray-500">"REVIEWS"</h2>
-    <div class="w-full h-[450px] flex items-center justify-center bg-white pb-12 gap-16">
+  <div class="flex flex-col items-center justify-start px-6 py-4">
+    <!-- Titel -->
+    <h2 class="text-2xl font-textNav font-light tracking-wide text-center text-gray-500 mt-12">
+      "REVIEWS"
+    </h2>
+    <div class="flex items-center justify-center bg-white py-12 gap-12 grid grid-cols-1 sm:grid-cols-5">
       <!-- Container voor afbeelding en tekst -->
-      <div class="group w-[200px] h-[380px] flex flex-col bg-white items-center border border-1 border-black">
+      <div class="group w-[225px] h-[365px] flex flex-col bg-white items-center border border-1 border-black rounded-lg">
         
         <!-- Afbeelding (wordt verborgen bij hover) -->
-        <div class="group-hover:hidden">
+        <div class="group-hover:hidden pl-4 pr-4 pt-4">
           <nuxt-img
             placeholder
             src="/assets/pictures/sam&inge.jpg"
             alt="Sanneloes"
-            class="w-full h-full object-cover p-2"
+            class="w-full h-full object-cover"
           />
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Sam & Inge</p>
+        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Sam & Inge</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
         
         <!-- Datum (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-light text-xs py-2">13/Jul/24</p>
+        <p class="group-hover:hidden font-light text-xs py-1">13/Jul/24</p>
         
         <!-- Review tekst (wordt zichtbaar bij hover) -->
         <div class="group-hover:flex hidden text-left px-2 py-1 text-xs">
@@ -38,26 +40,26 @@
       </div>
 
       <!-- Container voor afbeelding en tekst -->
-      <div class="group w-[200px] h-[380px] flex flex-col bg-white items-center border border-1 border-black">
+      <div class="group w-[225px] h-[365px] flex flex-col bg-white items-center border border-1 border-black rounded-lg">
         
         <!-- Afbeelding (wordt verborgen bij hover) -->
-        <div class="group-hover:hidden">
+        <div class="group-hover:hidden pl-4 pr-4 pt-4">
           <nuxt-img
             placeholder
             src="/assets/pictures/nicky&ward.jpg"
             alt="Sanneloes"
-            class="w-full h-full object-cover p-2"
+            class="w-full h-full object-cover"
           />
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Nicky & Ward</p>
+        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Nicky & Ward</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
         
         <!-- Datum (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-light text-xs py-2">24/Aug/24</p>
+        <p class="group-hover:hidden font-light text-xs py-1">24/Aug/24</p>
         
         <!-- Review tekst (wordt zichtbaar bij hover) -->
         <div class="group-hover:flex hidden text-left px-2 py-1 text-xs">
@@ -71,26 +73,26 @@
       </div>
 
       <!-- Container voor afbeelding en tekst -->
-      <div class="group w-[200px] h-[380px] flex flex-col bg-white items-center border border-1 border-black">
+      <div class="group w-[225px] h-[365px] flex flex-col bg-white items-center border border-1 border-black rounded-lg">
         
         <!-- Afbeelding (wordt verborgen bij hover) -->
-        <div class="group-hover:hidden">
+        <div class="group-hover:hidden pl-4 pr-4 pt-4">
           <nuxt-img
             placeholder
             src="/assets/pictures/brit&lotte.jpg"
             alt="Sanneloes"
-            class="w-full h-full object-cover p-2"
+            class="w-full h-full object-cover"
           />
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Brit & Lotte</p>
+        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Brit & Lotte</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
         
         <!-- Datum (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-light text-xs py-2">12/Okt/24</p>
+        <p class="group-hover:hidden font-light text-xs py-1">12/Okt/24</p>
         
         <!-- Review tekst (wordt zichtbaar bij hover) -->
         <div class="group-hover:flex hidden text-left px-2 py-1 text-xs">
@@ -106,26 +108,26 @@
       </div>
 
       <!-- Container voor afbeelding en tekst -->
-      <div class="group w-[200px] h-[380px] flex flex-col bg-white items-center border border-1 border-black">
+      <div class="group w-[225px] h-[365px] flex flex-col bg-white items-center border border-1 border-black rounded-lg">
         
         <!-- Afbeelding (wordt verborgen bij hover) -->
-        <div class="group-hover:hidden">
+        <div class="group-hover:hidden pl-4 pr-4 pt-4">
           <nuxt-img
             placeholder
             src="/assets/pictures/luuk&mandy.jpg"
             alt="Sanneloes"
-            class="w-full h-full object-cover p-2"
+            class="w-full h-full object-cover"
           />
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Luuk & Mandy</p>
+        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Luuk & Mandy</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
         
         <!-- Datum (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-light text-xs py-2">5/Okt/24</p>
+        <p class="group-hover:hidden font-light text-xs py-1">5/Okt/24</p>
         
         <!-- Review tekst (wordt zichtbaar bij hover) -->
         <div class="group-hover:flex hidden text-left px-2 py-1 text-xs">
@@ -140,26 +142,26 @@
       </div>
 
       <!-- Container voor afbeelding en tekst -->
-      <div class="group w-[200px] h-[380px] flex flex-col bg-white items-center border border-1 border-black">
+      <div class="group w-[225px] h-[365px] flex flex-col bg-white items-center border border-1 border-black rounded-lg">
         
         <!-- Afbeelding (wordt verborgen bij hover) -->
-        <div class="group-hover:hidden">
+        <div class="group-hover:hidden pl-4 pr-4 pt-4">
           <nuxt-img
             placeholder
             src="/assets/pictures/rick&marlou.jpg"
             alt="Sanneloes"
-            class="w-full h-full object-cover p-2"
+            class="w-full h-full object-cover"
           />
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-2">Rick & Marlou</p>
+        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Rick & Marlou</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
         
         <!-- Datum (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-light text-xs py-2">24/Mei/24</p>
+        <p class="group-hover:hidden font-light text-xs py-1">24/Mei/24</p>
         
         <!-- Review tekst (wordt zichtbaar bij hover) -->
         <div class="group-hover:flex hidden text-left px-2 py-1 text-xs">
