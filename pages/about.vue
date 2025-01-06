@@ -32,9 +32,6 @@
             placeholder
             src="/assets/pictures/loes-schattig.jpg"
             alt="First Image"
-            width="800"
-            height="800"
-            fit="cover"
             class=""
           />
         </div>
