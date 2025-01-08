@@ -37,7 +37,7 @@
 
   <div class="flex items-center justify-center text-center py-12 px-2 pb-[50px]">
     <!-- Title -->
-    <h2 class="text-[16px] sm:text-3xl font-textNav tracking-wider font-extralight">
+    <h2 class="text-[16px] sm:text-3xl py-6 font-playFair tracking-wider font-extralight">
       FOR THE ONES WHO 
       DARE A LITTLE, <br />
       LET GO A LITTLE 
@@ -46,7 +46,7 @@
   </div>
 
   <!-- New Section with Title and Photos -->
-  <div class="pb-[20px] sm:py-0 sm:pb-12 px-[10px] sm:px-[140px] items flex items-center justify-center">
+  <div class="pb-[20px] sm:py-0 sm:pb-20 px-[10px] sm:px-[140px] items flex items-center justify-center">
     
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">
       <!-- Tile 1 -->

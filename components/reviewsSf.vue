@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-start px-6 py-4">
     <!-- Titel -->
-    <h2 class="text-2xl font-textNav font-light tracking-wide text-center text-gray-500 mt-12">
+    <h2 class="text-2xl font-playFair font-light tracking-wide text-center text-gray-500 mt-12">
       "REVIEWS"
     </h2>
     <div class="flex items-center justify-center bg-white py-12 gap-12 grid grid-cols-1 sm:grid-cols-5">
@@ -19,7 +19,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Sam & Inge</p>
+        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Sam en Inge</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -53,7 +53,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Nicky & Ward</p>
+        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Nicky en Ward</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -86,7 +86,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Brit & Lotte</p>
+        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Brit en Lotte</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -121,7 +121,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Luuk & Mandy</p>
+        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Luuk en Mandy</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -155,7 +155,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-textNav font-light tracking-widest text-sm py-1">Rick & Marlou</p>
+        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Rick en Marlou</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>

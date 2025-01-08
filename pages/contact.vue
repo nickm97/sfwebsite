@@ -9,7 +9,7 @@
   // FAQ Items
   const faqItems = [
     { question: 'Hoe lang duurt een fotoshoot?', answer: 'Een lifestylefotoshoot duurt 45-60 minuten. Een newbornshoot duurt 60-90 min. zodat we iets meer tijd en rust kunnen nemen voor de shoot en ons kunnen aanpassen op de baby.' },
-    { question: 'Waar zal de fotoshoot plaatsvinden?', answer: 'De shootlocatie is geheel naar eigen keuze. Dit kan buiten in de natuur zijn, bij jullie thuis, in het stadscentrum, op de boerderij, in een af te huren locatie of fotostudio, in mijn studio: Daylight Studio La Luz. Waar jullie maar willen! Let wel op: de reiskosten zijn inbegrepen tot 10 km rondom Casteren. Voor het gebruikmaken van Daylight Studio La Luz wordt een kleine vergoedinggerekend. Reiskosten zijn daar al bij inbegrepen.' },
+    { question: 'Waar zal de fotoshoot plaatsvinden?', answer: 'De shootlocatie is geheel naar eigen keuze. Dit kan buiten in de natuur zijn, bij jullie thuis, in het stadscentrum, op de boerderij, in een af te huren locatie of fotostudio, in mijn studio: Daylight Studio La Luz. Waar jullie maar willen! Let wel op: de reiskosten zijn inbegrepen tot 10 km rondom Casteren. Voor het gebruikmaken van Daylight Studio La Luz wordt een kleine vergoeding gerekend. Reiskosten zijn daar al bij inbegrepen.' },
     { question: 'Hoe bereid ik me voor op de fotoshoot?', answer: 'Bepaal waar jullie de shoot willen doen. Kies een locatie wat bij jullie past en/of wat jullie mooi vinden. Jullie krijgen van mij een styling guide die jullie zal helpen bij het kiezen en afstemmen van de kleding. Als je gaat shooten met kinderen, adviseert Sanneloes Fotografie om niet te veel druk te leggen op de kinderen. Hoe minder ze bezig zijn met wat ze wel en niet mogen en moeten doen, hoe meer ze (waarschijnlijk) zichzelf zullen zijn en hoe fijner de shoot zal verlopen. Vertel bijvoorbeeld dat jullie ergens fijn samen gaan spelen en dat er ook iemand bij zal zijn die wat fotootjes zal maken.' },
     { question: "Kan ik ook foto's bijbestellen?", answer: "Natuurlijk kan dat. Bij het afleveren van de galerij, kunnen jullie je favorieten selecteren. In deze mail vind je ook informatie met voordeel pakketprijzen en prijzen voor enkele losse extra foto's. Daarnaast is er een mogelijkheid om wanddecoratie, fotoafdrukken of albums te bestellen." },
     { question: 'Hoe kan ik meer informatie krijgen voor bruiloften?', answer: 'Wat leuk dat jullie gaan trouwen! Je kan via de contactpagina het contactformulier voor bruiloften invullen. Probeer deze zo compleet mogelijk in te vullen. Sanneloes Fotografie zal dan z.s.m. contact met jullie opnemen.' },
@@ -216,21 +216,21 @@ const onSubmit = () => {
           <nuxt-img
             src="/assets/pictures/faqs.jpg"
             alt="First Image"
-            class="w-full h-[600px] object-cover"
+            class="w-full object-cover"
           />
         </div>
 
         <!-- Right FAQ Section -->
         <div class="space-y-0">
-          <h2 class="text-2xl font-textNav text-gray-800">Frequently Asked Questions</h2>
+          <h2 class="flex itemns-center justify-center text-3xl font-playFair text-gray-800 mb-2">Frequently Asked Questions</h2>
 
           <div v-for="(item, index) in faqItems" :key="index">
-            <div @click="toggleAnswer(index)" class="flex items-center justify-between cursor-pointer p-2 bg-transparant  border-b-2 border-gray-400 hover:translate-y-[-2px]">
-              <h3 class="text-lg font-medium text-gray-900">{{ item.question }}</h3>
+            <div @click="toggleAnswer(index)" class="flex items-center justify-between cursor-pointer p-2 bg-transparant  border-b border-lightBeige hover:translate-y-[-2px]">
+              <h3 class="text-sm font-standard font-medium text-gray-900">{{ item.question }}</h3>
               <span class="text-xl text-gray-600">{{ activeIndex === index ? '-' : '+' }}</span>
             </div>
 
-            <p v-if="activeIndex === index" class="px-4 py-2 text-gray-700 bg-naturalBeige rounded-b-lg">
+            <p v-if="activeIndex === index" class="px-4 py-2 text-buttonColor font-standard text-sm bg-naturalBeige rounded-b-lg">
               {{ item.answer }}
             </p>
           </div>

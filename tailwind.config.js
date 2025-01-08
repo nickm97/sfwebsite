@@ -22,7 +22,8 @@ export default {
         formButton: '#c49131'
       },
       fontFamily: {
-        standard: ['"Arial"', 'sans-serif'], // Voeg hier jouw gewenste lettertype toe
+        standard: ['"Quicksand"', 'serif'], // Voeg hier jouw gewenste lettertype toe
+        playFair: ['"Playfair Display"', 'serif'], // Voeg hier jouw gewenste lettertype toe
         theSeasons: ['"The Seasons"', 'san-serif'],
         textNav: ["Times New Roman", 'serif'], // Lettertype voor de navigatie
         fancy: ['"Waterfall"', 'serif'], // Correcte naam en stijl

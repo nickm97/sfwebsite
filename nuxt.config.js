@@ -5,7 +5,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: "https://fonts.googleapis.com/css2?family=Meow+Script&family=Send+Flowers&family=Waterfall&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Meow+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Send+Flowers&family=Waterfall&display=swap",
         },
       ],
     },
