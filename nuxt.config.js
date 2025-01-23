@@ -36,6 +36,9 @@ export default defineNuxtConfig({
     }],
   ],
   image: {
+    imgix: {
+      baseURL: 'https://assets.imgix.net'
+    },
     // Configuratie voor @nuxt/image
     screens: {
       // Standaardafmetingen voor responsieve afbeeldingen
