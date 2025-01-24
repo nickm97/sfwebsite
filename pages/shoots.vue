@@ -76,7 +76,7 @@
   </section>
 
   <div
-    class="flex flex-col items-center justify-center cursor-pointer py-10 font-standard"
+    class="flex flex-col items-center justify-center cursor-pointer py-10 font-standard bg-background_1"
     @click="scrollToNextSection"
   >
     <div>SCROLL TO DISCOVER MORE</div>

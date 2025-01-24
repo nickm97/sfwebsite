@@ -21,6 +21,13 @@
   </section>
 
   <section class="bg-gray-100 flex items-center justify-center px-6">
+    <div class="absolute ml-[-88%] z-10">
+      <nuxt-img
+        src="/assets/pictures/newborn-page/little-stories.png"
+        alt="Love Stories"
+        class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
+      />
+    </div>
     <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
@@ -179,6 +186,16 @@
             />
         </div>
     </div>
+
+    <section class="flex flex-col items-center justify-center px-2 py-2 bg-buttonColor">	
+        <div class=" w-[90%] flex items-center justify-center">
+        <nuxt-img
+            src="/assets/pictures/newborn-page/timeless-tomorrow.png"
+            alt="Tell Stories"
+            class=""
+        />
+        </div>
+    </section>
 
   <footer-sf></footer-sf>
 </template>
