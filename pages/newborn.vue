@@ -1,3 +1,200 @@
 <template>
-    hello
+    <section class="bg-gray-100 flex justify-center">
+    <div class="flex items-center justify-center gap-[50px] w-[70%] py-16">
+      <nuxt-img
+        src="/assets/pictures/newborn-page/new-chapter.png"
+        alt="Your story told"
+        class="sm:w-[500px] sm:h-[175px] "
+      />
+      <p class="text-gray-700 font-standard">
+        De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, 
+        kostbare details die je nooit wilt vergeten. Die piepkleine handjes en
+        zachte haartjes, ze groeien sneller dan je denkt.<br><br>
+        Met een newborn fotoshoot leg ik deze bijzondere momenten vast op een pure,
+        tijdloze manier. Geen druk, geen haast alleen liefdevolle beelden van jullie nieuwe begin.
+        We creëren samen een ontspannen sfeer, zodat zowel jullie als jullie kleintje zich op hun gemak voelen.<br><br>
+
+        Kleine momenten. Grote herinneringen.
+        Laten we samen deze eerste bladzijde in jullie verhaal vereeuwigen. 
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 flex items-center justify-center px-6">
+    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+      <!-- Tile 1 -->
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+        <img
+          src="/assets/pictures/newborn-shoot.jpg"
+          alt="Tile Image 1"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">LUÉN</h2>
+          <button
+            @click="redirect('/newborn')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+      <!-- Tile 2 -->
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+        <img
+          src="/assets/pictures/champagne.jpg"
+          alt="Tile Image 2"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">LOÏS</h2>
+          <button
+            @click="redirect('/strong-women')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+      <!-- Tile 3 -->
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+        <img
+          src="/assets/pictures/shoot-02.jpg"
+          alt="Tile Image 3"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">SEP</h2>
+          <button
+            @click="redirect('/strong-women')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div
+    class="flex flex-col items-center justify-center cursor-pointer py-10 font-standard bg-background_1"
+    @click="scrollToNextSection"
+  >
+    <div>SCROLL TO DISCOVER MORE</div>
+    <i class="fa-solid fa-chevron-down text-sm mt-1"></i>
+  </div>
+
+  <section class="bg-gray-100 flex items-center justify-center px-6">
+    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-12 px-24 sm:px-0 w-[85%]">
+        <!-- Tile 1 -->
+        <div class="relative rounded-lg overflow-hidden flex flex-col">
+            <p class="font-playFair text-4xl font-light leading-[2.5rem] py-4 text-right">
+                WHAT TO<br>EXPECT?
+            </p>
+            <!-- <p class="font-standard font-light text-right w-[80%] ml-auto"> -->
+            <p class="font-standard font-light text-right">
+                Een ontspannen fotosessie van 60-90 minuten, met alle tijd voor jullie kleintje<br><br>
+                Échtheid, natuurlijk licht en zachte tinten<br><br>
+                Foto’s vol warmte, liefde en details die je nooit wilt vergeten<br><br>
+                Een fotograaf met rust en geduld<br><br>
+                Een stylingguide en tips voor de voorbereiding van de shoot<br><br>
+            </p>
+        </div>
+
+        <!-- Tile 2 -->   
+        <div class="relative group rounded-lg overflow-hidden">
+            <img
+            src="/assets/pictures/champagne.jpg"
+            alt="Tile Image 2"
+            class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <h2 class="text-2xl font-playFair mb-2">LAURIE</h2>
+            <button
+                @click="redirect('/strong-women')"
+                class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+                View More
+            </button>
+            </div>
+        
+        </div>
+
+      <!-- Tile 3 -->
+      <div class="relative rounded-lg overflow-hidden flex flex-col">
+        <p class="font-playFair text-4xl font-light leading-[2.5rem] py-4">
+            PRICES
+        </p>
+        <p class="font-standard font-light">
+            Een reguliere newbornshoot incl. 25 foto's (zelf te kiezen uit een uitgebreide galerij)<br>
+            €425<br><br>
+            Een combishoot; zwangerschap én newborn incl. 
+            25 foto's bij elke fotoshoot (zelf te kiezen uit een uitgebreide galerij)<br>
+            €695<br><br>
+            Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.<br><br>
+            Extra foto's zijn achteraf bij te bestellen met voordeelpakketten.<br><br>
+            Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW<br>
+            Per extra spread +€4,95
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="flex flex-col items-center justify-center py-6 font-standard bg-background_1">
+    <button
+        @click="redirect('/contact')"
+        class="px-6 py-2 rounded-full bg-naturalBeige font-standard py-12 cursor-pointer"
+    >
+    Boek jouw newbornshoot en leg jullie mooiste begin vast
+    </button>
+  </div>
+
+    <div class="flex bg-background_1 items-center justify-center relative pb-6">
+        <!-- Tekstgedeelte -->
+        <div class="flex flex-col items-center justify-center pb-6 font-standard bg-background_1 text-center">
+            <p class="font-playFair text-4xl font-light leading-[2.5rem] py-4">
+            LITTLE MILESTONES - PACKAGE
+            </p>
+            <p>
+            Een fotosessie voor elk kwartaal van het eerste levensjaar om de ontwikkeling van<br>
+            het eerste levensjaar van je kindje vast te leggen.<br>
+            <u>Bijvoorbeeld:</u> 0,3,6,9 maanden OF 3,6,9,12 maanden<br><br>
+            4 fotoshoots per jaar (één keer per kwartaal)<br>
+            7 professionele foto's per shoot (mogelijkheid om extra foto's bij te bestellen)<br>
+            Toegang tot een online galerij om de foto's uit te kiezen<br>
+            Advies over kleding en styling<br>
+            Mogelijk op verschillende locaties<br>
+            €725 inclusief BTW
+            </p>
+        </div>
+
+        <!-- Afbeelding -->
+        <div class="absolute right-24 -top-10">
+            <nuxt-img
+            src="/assets/pictures/newborn-page/extra-aanbod.png"
+            alt="Extra aanbod"
+            class="sm:w-[250px] sm:h-[250px]"
+            />
+        </div>
+    </div>
+
+  <footer-sf></footer-sf>
 </template>
+
+<script setup>
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter();
+  function scrollToNextSection() {
+    // Scroll naar de volgende sectie (vervang de selector naar je gewenste sectie)
+    window.scrollBy({
+      top: window.innerHeight, // scrollt een volledige viewport naar beneden
+      behavior: "smooth" // zorgt voor een vloeiende scroll
+    });
+  };
+  function redirect(path) {
+    router.push(path); // Navigeer naar de gewenste route
+  }
+</script>

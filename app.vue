@@ -22,7 +22,7 @@
             SHOOTS
           </NuxtLink>
           <NuxtLink to="/shoots" class="font-playFair tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
-            BOEKEN
+            BRANDING
           </NuxtLink>
         </div>
         
