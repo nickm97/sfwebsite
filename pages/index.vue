@@ -4,36 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-  <div class="flex h-[calc(100vh-50px)] w-full relative">
-    <!-- Left Image (visible on all screens) -->
-    <div class="hidden sm:block flex-1">
+  <section class="flex h-[calc(100vh-70px)] w-full relative">
+    <!-- Left Image (Slideshow) -->
+    <div class="hidden sm:block flex-1 relative overflow-hidden">
       <nuxt-img
-        placeholder
-        src="/assets/pictures/wedding-07.jpg"
-        alt="First Image"
-        class="w-full h-full object-cover object-top"style="object-position: center 20%;"
+        v-for="(image, index) in leftImages"
+        :key="'left-' + index"
+        :src="image"
+        alt="Left Image"
+        class="w-full h-full object-cover absolute transition-opacity duration-1000 object-top"style="object-position: center 90%;"
+        :style="{ opacity: currentLeftImage === index ? 1 : 0 }"
       />
     </div>
 
-    <!-- Right Image (hidden on small screens, visible on larger screens) -->
-    <div class="sm:block flex-1">
+    <!-- Right Image (Slideshow) -->
+    <div class="sm:block flex-1 relative overflow-hidden">
       <nuxt-img
-        placeholder
-        src="/assets/pictures/wedding-03.jpg"
-        alt="Second Image"
-        class="w-full h-full object-cover object-top"style="object-position: center 90%;"
+        v-for="(image, index) in rightImages"
+        :key="'right-' + index"
+        :src="image"
+        alt="Right Image"
+        class="w-full h-full object-cover absolute transition-opacity duration-1000 object-top"style="object-position: center 20%;"
+        :style="{ opacity: currentRightImage === index ? 1 : 0 }"
       />
     </div>
 
-    <!-- Scroll to Discover Text -->
+    <!-- Discover More (Overlapping) -->
     <div
-      class="text-center absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-base italic font-textNav cursor-pointer mt-[-20px]"
-      @click="scrollToNextSection">
-      <div>Scroll to Discover</div>
-      <!-- Chevron Icon -->
-      <i class="fa-solid fa-chevron-down text-sm mt-1 white"></i>
+      class="absolute bottom-[40px] text-white left-1/2 transform -translate-x-1/2 font-standard text-center cursor-pointer"
+      @click="scrollToNextSection"
+    >
+      <div>SCROLL TO DISCOVER MORE</div>
+      <i class="fa-solid fa-chevron-down text-sm mt-1"></i>
     </div>
-  </div>
+  </section>
 
   <div class="flex items-center justify-center text-center py-12 px-2 pb-[50px]">
     <!-- Title -->
@@ -46,7 +50,7 @@
   </div>
 
   <!-- New Section with Title and Photos -->
-  <div class="pb-[20px] sm:py-0 sm:pb-20 px-[10px] sm:px-[140px] items flex items-center justify-center">
+  <div class="px-[10px] sm:px-[140px] items flex items-center justify-center pb-20">
     
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">
       <!-- Tile 1 -->
@@ -141,7 +145,73 @@
     
   </div>
 
-  
+  <section class="flex items-center justify-center px-6 pb-20">
+    <div class="relative grid grid-cols-1 sm:grid-cols-5 gap-24 px-24 sm:px-0 w-[85%] max-w-[1300px]">
+      <!-- Tile 1 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/home-page/icon_1.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">WARMTH</h2>
+        </div>
+      </div>
+
+      <!-- Tile 2 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/home-page/icon_2.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">TOUCH</h2>
+        </div>
+      </div>
+
+      <!-- Tile 3 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/home-page/icon_3.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">JOY</h2>
+        </div>
+      </div>
+      
+      <!-- Tile 4 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/home-page/icon_4.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">EMOTION</h2>
+        </div>
+      </div>
+
+      <!-- Tile 5 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/home-page/icon_5.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">LOOKS</h2>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
   <div class="sm:hidden bg-naturalBeige border-t border-gray-400">
     <div class="flex h-[450px]">
         <div class="border-l border-r border-gray-400 flex h-full bg-white justify-center items-center min-w-[60px]">
@@ -250,22 +320,53 @@
   <footer-sf></footer-sf>
 </template>
 
+
 <script setup>
   import { useRouter } from 'vue-router';
+  import { ref, onMounted } from 'vue';
 
+  // Vue-router voor navigatie
   const router = useRouter();
+
+  // Scroll naar de volgende sectie
   function scrollToNextSection() {
-    // Scroll naar de volgende sectie (vervang de selector naar je gewenste sectie)
     window.scrollBy({
-      top: window.innerHeight, // scrollt een volledige viewport naar beneden
-      behavior: "smooth" // zorgt voor een vloeiende scroll
+      top: window.innerHeight, // Scrollt een volledige viewport naar beneden
+      behavior: "smooth" // Vloeiende scroll animatie
     });
   };
+
+  // Redirect naar een nieuwe route
   function redirect(path) {
     router.push(path); // Navigeer naar de gewenste route
   }
-</script>
 
+  // Afwisselende afbeeldingen voor de slideshow
+  const leftImages = [
+    "/assets/pictures/home-page/banner-image-01.webp",
+    "/assets/pictures/home-page/banner-image-02.webp"  // Voeg hier de alternatieve afbeelding toe
+  ];
+  const rightImages = [
+    "/assets/pictures/home-page/banner-image-03.webp",
+    "/assets/pictures/home-page/banner-image-03.webp"    // Voeg hier de alternatieve afbeelding toe
+  ];
+
+  const currentLeftImage = ref(0); // Hou bij welke afbeelding zichtbaar is aan de linkerkant
+  const currentRightImage = ref(0); // Hou bij welke afbeelding zichtbaar is aan de rechterkant
+
+  // Functie om de afbeelding om de zoveel tijd te wisselen
+  function startSlideshow() {
+    setInterval(() => {
+      currentLeftImage.value = (currentLeftImage.value + 1) % leftImages.length;
+      currentRightImage.value = (currentRightImage.value + 1) % rightImages.length;
+    }, 7000); // Wisselt elke 5 seconden
+  }
+
+  // Start de slideshow zodra het component is geladen
+  onMounted(() => {
+    startSlideshow();
+  });
+</script>
 
 <style scoped>
   .parallax {
@@ -287,13 +388,5 @@
       background-attachment: scroll;
     }
   }
-
-  .instagram-icon i {
-    background: linear-gradient(45deg, #F77737, #FDCB82, #9B59B6);
-    background-clip: text;
-    color: transparent;
-  }
-
-
 
 </style>

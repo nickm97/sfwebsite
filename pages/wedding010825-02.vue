@@ -1,4 +1,15 @@
 <template>
+  <section class="flex flex-col items-center justify-center px-6 bg-buttonColor">
+    <div class="w-[50%] flex items-center justify-center">
+      <!-- canva 800x300 -->
+      <nuxt-img
+        src="/assets/pictures/wedding-page/wedding-010825-02/cynthia&tom.png"
+        alt="Bruiloft"
+        class="h-[100px] flex items-center justify-center"
+      />
+    </div>
+  </section>
+
     <section class="py-8 px-4">
       <h1 class="text-3xl font-standard text-center mb-8">TOM & CYNTHIA</h1>
 

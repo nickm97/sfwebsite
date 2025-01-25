@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-gray-100 flex justify-center">
+  <section class="bg-gray-100 flex justify-center">
     <div class="flex items-center justify-center gap-[50px] w-[70%] py-16">
       <nuxt-img
         src="/assets/pictures/newborn-page/new-chapter.png"
@@ -20,7 +20,7 @@
     </div>
   </section>
 
-  <section class="bg-gray-100 flex items-center justify-center px-6">
+  <section class="bg-background_1 flex items-center justify-center px-6">
     <div class="absolute ml-[-88%] z-10">
       <nuxt-img
         src="/assets/pictures/newborn-page/little-stories.png"
@@ -96,11 +96,11 @@
     <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-12 px-24 sm:px-0 w-[85%]">
         <!-- Tile 1 -->
         <div class="relative rounded-lg overflow-hidden flex flex-col">
-            <p class="font-playFair text-4xl font-light leading-[2.5rem] py-4 text-right">
+            <p class="font-playFair text-4xl font-light leading-[2.5rem] text-right">
                 WHAT TO<br>EXPECT?
             </p>
             <!-- <p class="font-standard font-light text-right w-[80%] ml-auto"> -->
-            <p class="font-standard font-light text-right">
+            <p class="font-standard font-light text-right pt-4">
                 Een ontspannen fotosessie van 60-90 minuten, met alle tijd voor jullie kleintje<br><br>
                 Échtheid, natuurlijk licht en zachte tinten<br><br>
                 Foto’s vol warmte, liefde en details die je nooit wilt vergeten<br><br>
@@ -130,19 +130,18 @@
 
       <!-- Tile 3 -->
       <div class="relative rounded-lg overflow-hidden flex flex-col">
-        <p class="font-playFair text-4xl font-light leading-[2.5rem] py-4">
+        <p class="font-playFair text-4xl font-light leading-[2.5rem]">
             PRICES
         </p>
-        <p class="font-standard font-light">
-            Een reguliere newbornshoot incl. 25 foto's (zelf te kiezen uit een uitgebreide galerij)<br>
-            €425<br><br>
-            Een combishoot; zwangerschap én newborn incl. 
-            25 foto's bij elke fotoshoot (zelf te kiezen uit een uitgebreide galerij)<br>
-            €695<br><br>
-            Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.<br><br>
-            Extra foto's zijn achteraf bij te bestellen met voordeelpakketten.<br><br>
-            Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW<br>
-            Per extra spread +€4,95
+        <p class="font-standard font-light pt-4">
+          Een reguliere zwangerschapsshoot incl. 25 foto's (zelf te kiezen uit een uitgebreide galerij)<br>
+          €330 met partner, €285 alleen, €400 met gezin - inclusief BTW<br><br>
+          Een combishoot; zwangerschap én newborn incl. 25 foto's bij elke fotoshoot (zelf te kiezen uit een uitgebreide galerij)<br>
+          €695 inclusief BTW<br><br>
+          Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.<br><br>
+          Extra foto's zijn achteraf bij te bestellen met voordeelpakketten<br><br>
+          Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW
+          Per extra spread +€4,95 
         </p>
       </div>
 

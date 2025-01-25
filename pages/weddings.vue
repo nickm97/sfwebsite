@@ -34,7 +34,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">RICK & MARLOU</h2>
+          <h2 class="text-2xl font-playFair mb-2">RICK EN MARLOU</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -51,7 +51,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">GIJS & BRITT</h2>
+          <h2 class="text-2xl font-playFair mb-2">GIJS EN BRITT</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -68,7 +68,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">SAM & INGE</h2>
+          <h2 class="text-2xl font-playFair mb-2">SAM EN INGE</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -128,7 +128,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">MARTIJN & KRISTEL</h2>
+          <h2 class="text-2xl font-playFair mb-2">MARTIJN EN KRISTEL</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -145,7 +145,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">PETER & EVY</h2>
+          <h2 class="text-2xl font-playFair mb-2">PETER EN EVY</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -162,7 +162,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">WARD & NICKY</h2>
+          <h2 class="text-2xl font-playFair mb-2">WARD EN NICKY</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -213,9 +213,9 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">TOM & CYNTHIA</h2>
+          <h2 class="text-2xl font-playFair mb-2">TOM EN CYNTHIA</h2>
           <button
-            @click="redirect('/strong-women')"
+            @click="redirect('/wedding010825-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -230,7 +230,7 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">BRIT & LOTTE</h2>
+          <h2 class="text-2xl font-playFair mb-2">BRIT EN LOTTE</h2>
           <button
             @click="redirect('/strong-women')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
@@ -247,9 +247,9 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">DAVID & SERENA</h2>
+          <h2 class="text-2xl font-playFair mb-2">DAVID EN SERENA</h2>
           <button
-            @click="redirect('/wedding01082502')"
+            @click="redirect('/wedding010825-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More

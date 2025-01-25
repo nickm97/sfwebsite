@@ -27,10 +27,10 @@ export default {
         playFair: ['"Playfair Display"', 'serif'], // Voeg hier jouw gewenste lettertype toe
         theSeasons: ['"The Seasons"', 'san-serif'],
         textNav: ["Times New Roman", 'serif'], // Lettertype voor de navigatie
-        fancy: ['"Waterfall"', 'serif'], // Correcte naam en stijl
+        fancy: ['"Meow"', 'serif'], // Correcte naam en stijl
       },
       fontSize: {
-        sizeNavText: '16px', // Voeg de gewenste grootte toe voor navigatietekst
+        sizeNavText: '14px', // Voeg de gewenste grootte toe voor navigatietekst
       },
     },
     screens: {
