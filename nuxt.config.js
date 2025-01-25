@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  buildModules: [
+  modules: [
     '@nuxt/image'
   ],
   image: {
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
     },
-    format: ['webp', 'jpg'], // Ondersteunde afbeeldingsformaten
+    format: ['webp', 'jpg', 'png'], // Ondersteunde afbeeldingsformaten
   
   }
 })
