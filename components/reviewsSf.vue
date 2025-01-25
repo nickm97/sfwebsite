@@ -1,10 +1,16 @@
 <template>
   <div class="flex flex-col items-center justify-start px-6 py-4">
     <!-- Titel -->
-    <h2 class="text-2xl font-playFair font-light tracking-wide text-center text-gray-500 mt-12">
-      "REVIEWS"
-    </h2>
-    <div class="flex items-center justify-center bg-white py-12 gap-12 grid grid-cols-1 sm:grid-cols-5">
+    <div class="pb-2">
+      <nuxt-img
+        placeholder
+        src="/assets/pictures/home-page/reviews.webp"
+        alt="Reviews"
+        class="h-[130px]"
+      />
+    </div>
+          
+    <div class="flex items-center justify-center bg-white pb-12 gap-12 grid grid-cols-1 sm:grid-cols-5">
       <!-- Container voor afbeelding en tekst -->
       <div class="group w-[225px] h-[365px] flex flex-col bg-white items-center border border-1 border-black rounded-lg">
         

@@ -300,8 +300,6 @@
     </div>
 
   </section>
-
-  <!-- <love-notes></love-notes>  -->
   
   <reviews-sf></reviews-sf>
 

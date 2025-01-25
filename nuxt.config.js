@@ -19,26 +19,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@nuxt/image', // Voeg de module hier toe
-    ['nuxt-mail', {
-      message: {
-        to: 'nm.nickmichiels@gmail.com', // Het e-mailadres waar je berichten naartoe wilt sturen
-      },
-      smtp: {
-        host: 'smtp.gmail.com', // Gmail SMTP-host
-        port: 587,              // Gebruik poort 587 voor TLS
-        auth: {
-          user: 'nm.nickmichiels@gmail.com', // Je Gmail-adres
-          pass: 'frhk ixhy lqmz flyw', // Het app-specifieke wachtwoord dat je hebt gegenereerd
-        },
-      },
-    }],
+  buildModules: [
+    '@nuxt/image'
   ],
   image: {
-    imgix: {
-      baseURL: 'https://assets.imgix.net'
-    },
     // Configuratie voor @nuxt/image
     screens: {
       // Standaardafmetingen voor responsieve afbeeldingen

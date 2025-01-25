@@ -7,13 +7,22 @@
         alt="Bruiloft"
         class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
       />
-      <p class="text-gray-700 font-standard">
-        WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd!
-        Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan,
-        waaronder het kiezen van een fotograaf voor jullie droomdag. Ik voel me vereerd dat jullie
-        interesse hebben in mij als jullie potentiële fotografe. Ik doe mijn werk met enorm veel passie,
-        liefde en enthousiasme. Hopelijk zoeken jullie precies zo iemand voor jullie bruiloft!
-      </p>
+      <div class="flex flex-col justify-center">
+        <p class="text-gray-700 font-standard">
+          WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd!
+          Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan,
+          waaronder het kiezen van een fotograaf voor jullie droomdag. Ik voel me vereerd dat jullie
+          interesse hebben in mij als jullie potentiële fotografe. Ik doe mijn werk met enorm veel passie,
+          liefde en enthousiasme. Hopelijk zoeken jullie precies zo iemand voor jullie bruiloft!
+        </p>
+        <div
+          class="font-standard cursor-pointer flex py-2 items-center gap-2" 
+          @click="scrollToSection"
+        >
+          <div>CLICK FOR PACKAGES</div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -259,7 +268,7 @@
     </div>
   </section>
   
-  <section class="bg-gray-100 flex flex-col items-center justify-center px-6 py-12">
+  <section id="packages" class="bg-gray-100 flex flex-col items-center justify-center px-6 py-12">
     <div class="flex items-center justify-center">
       <nuxt-img
         src="/assets/pictures/wedding-page/wedding-packages.png"
@@ -290,7 +299,7 @@
         Ga je voor een kleine gemeentebruiloft en wil je toch even graag bij mij informeren voor een klein pakketje? Of heb je plannen om in het buitenland te trouwen? Neem gerust contact op. <br><br>
       </p>
       <button
-            @click="redirect('/contact')"
+            @click="redirect('/contact-wedding')"
             class="px-6 py-2 rounded-full bg-naturalBeige w-[400px] font-standard"
           >
           Wij willen de brochure graag ontvangen!
@@ -346,5 +355,11 @@
   };
   function redirect(path) {
     router.push(path); // Navigeer naar de gewenste route
+  }
+  function scrollToSection() {
+    const section = document.getElementById('packages');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 </script>

@@ -107,107 +107,18 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <div class="bg-[url('/assets/pictures/liggend_back-02.jpg')] bg-cover bg-center pt-[100px] px-8">
-    <!-- items-center justify-center -->
-    <div class="max-w-[500px] mx-auto bg-white p-10 pb-2 border-0 r">
-      <!-- Header: CONTACT tekst -->
-      <div class="text-center relative">
-        <h1 
-          class="text-3xl sm:text-[60px] md:text-5xl lg:text-[60px] font-textNav text-black absolute top-0 sm:-top-6 lg:top-0 left-0 right-0 mx-auto transform translate-y-[-165%] lg:translate-y-[-120%]">
-          CONTACT
-        </h1>
-      </div>
+  <section class="contact-form flex items-center justify-center bg-naturalBeige py-6">
 
-      <!-- Vraagtekst bovenaan -->
-      <div class="text-center mb-4">
-        <p class="text-xl font-textNav text-gray-800">Enjoy your special day and I’ll make sure every beautiful moment is captured</p>
-      </div>
-
-      <!-- Formulier -->
-      <form @submit.prevent="onSubmit" class="space-y-4">
-        <!-- Naam -->
-        <div>
-          <!-- <label for="name" class="block text-sm font-medium text-gray-700">Naam + Achternaam *</label> -->
-          <input
-            id="name"
-            name="name"
-            type="text"
-            v-model="form.name"
-            class="w-full mt-[2px] p-2 border-2 rounded-md bg-white focus:orange-2 focus:ring-orange-500"
-            placeholder="Voornaam + Achternaam *"
-            required
-          />
-          <p v-if="errors.name" class="text-red-500 text-sm mt-1">{{ errors.name }}</p>
-        </div>
-
-        <!-- E-mailadres -->
-        <div>
-          <!-- <label for="email" class="block text-sm font-medium text-gray-700">E-mailadres *</label> -->
-          <input
-            id="email"
-            name="email"
-            type="email"
-            v-model="form.email"
-            placeholder="E-mailadres *"
-            class="w-full mt-[2px] p-2 border-2 rounded-md bg-white focus:orange-2 focus:ring-orange-500"
-            required
-          />
-          <p v-if="errors.email" class="text-red-500 text-sm mt-1">{{ errors.email }}</p>
-        </div>
-
-        <!-- Telefoon -->
-        <div>
-          <!-- <label for="phone" class="block text-sm font-medium text-gray-700">Telefoon</label> -->
-          <input
-            id="phone"
-            name="phone"
-            type="phone"
-            v-model="form.phone"
-            placeholder="Telefoonnummer"
-            class="w-full mt-[2px] p-2 border-2 rounded-md bg-white focus:orange-2 focus:ring-orange-500"
-          />
-        </div>
-
-        <!-- Bericht -->
-        <div>
-          <!-- <label for="message" class="block text-sm font-medium text-gray-700">Bericht *</label> -->
-          <textarea
-            id="message"
-            name="message"
-            rows="6"
-            v-model="form.message"
-            placeholder="Vertel me over je fotoshoot, bruiloft of andere wensen!"
-            class="w-full mt-[2px] p-2 border-2 rounded-md bg-white focus:orange-2 focus:ring-orange-500"
-            required
-          ></textarea>
-          <p v-if="errors.message" class="text-red-500 text-sm mt-1">{{ errors.message }}</p>
-        </div>
-
-        <!-- Submit -->
-        <div class="text-center">
-          <button
-            type="submit"
-            class="bg-orange-200 text-black border-4 border-orange-200 py-3 px-6 rounded-lg w-full hover:bg-orange-400 hover:text-white hover:border-orange-400 hover:font-bold hover:translate-y-[-2px] transition-all duration-300">
-            Verstuur Bericht
-          </button>
-        </div>
-      </form>
-
-      <div class="text-center mt-4">
-        <!-- Succesbericht, wordt alleen getoond als showSuccessMessage waar is -->
-        <p v-if="showSuccessMessage" class="text-gray-700 transition-opacity duration-500 opacity-100">
-          Bedankt voor de inzending!<br>Ik probeer je vraag zo snel mogelijk te beantwoorden!
-        </p>
-      </div>
-      <!-- Social Media Links -->
-      <div class="flex space-x-6 itmes-center justify-center mt-4">
-        <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-6xl instagram-icon">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
+    <!-- Tweede formulier -->
+    <div class="contact-form w-full max-w-xl">
+      <iframe
+        class="w-full h-[1153px] border-0"
+        id="sn-form-lnjgg"
+        src="https://app.studioninja.co/contactform/parser/0a800fc9-93e4-1c01-8194-3c2e8aff7820/0a800fc9-93e4-1c01-8194-3c50f32e02a8"
+        allowfullscreen
+      ></iframe>
     </div>
-  </div>
-
+  </section>
   <section class="py-16 bg-naturalBeige">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -241,6 +152,28 @@ const onSubmit = () => {
 
   <footer-sf></footer-sf>
 </template>
+
+
+<script>
+export default {
+  mounted() {
+    // Voeg het script dynamisch toe voor beide formulieren
+    const script1 = document.createElement("script");
+    script1.src =
+      "https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js";
+    script1.type = "text/javascript";
+    script1.dataset.iframeId = "sn-form-01ysk";
+    document.body.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.src =
+      "https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js";
+    script2.type = "text/javascript";
+    script2.dataset.iframeId = "sn-form-lnjgg";
+    document.body.appendChild(script2);
+  },
+};
+</script>
 
 <style scoped>
   .instagram-icon i {
