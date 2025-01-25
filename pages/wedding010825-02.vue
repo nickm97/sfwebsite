@@ -11,7 +11,7 @@
   </section>
 
   <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
-    <div v-for="(photo, index) in photos" :key="index" class="">
+    <div v-for="(photo, index) in photos" :key="index">
       <!-- Gebruik nu de nuxt-img component voor lazy loading -->
       <nuxt-img :src="photo.url" :alt="photo.alt" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
     </div>
