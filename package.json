@@ -17,6 +17,8 @@
     "nuxt-mail": "^5.1.1",
     "vee-validate": "^4.15.0",
     "vue": "latest",
+    "vue-lazyload": "^3.0.0",
+    "vue-masonry-css": "^1.0.3",
     "vue-router": "latest",
     "yup": "^1.6.1"
   },

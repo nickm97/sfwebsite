@@ -4,7 +4,7 @@
   import { ref } from 'vue';
 
   // Reactieve variabele om de status van de succesmelding te volgen
-  const showSuccessMessage = ref(false);
+  // const showSuccessMessage = ref(false);
 
   // FAQ Items
   const faqItems = [
@@ -23,87 +23,87 @@
     { question: 'Kan ik bij jou ook een cadeaubon kopen?', answer: "Dat kan zeker. Je bestelt bij mij een TWV cadeaubon. Je bepaalt dus zelf het bedrag wat erop mag komen. Dat kan het volledige shootbedrag zijn, of een bedrag naar keuze. De bon is een jaar geldig. Ik pak het leuk voor je in en je kan de bon bij mij thuis op komen halen, zodat jij iemand hier blij mee kan verrassen! Het enige wat jij door hoeft te geven is ‘voor wie’, ‘van wie’ en het bedrag."},
   ];
 
-  // State for tracking the active FAQ item
-  const activeIndex = ref(null);
+//   // State for tracking the active FAQ item
+//   const activeIndex = ref(null);
 
-  // Function to toggle answer visibility
-  const toggleAnswer = (index) => {
-    activeIndex.value = activeIndex.value === index ? null : index;
-  };
+//   // Function to toggle answer visibility
+//   const toggleAnswer = (index) => {
+//     activeIndex.value = activeIndex.value === index ? null : index;
+//   };
 
-  const mail = useMail();
+//   const mail = useMail();
 
-  // Formulierdata
-  const form = reactive({
-    name: "",
-    email: "",
-    message: "",
-    phone: "", // Voeg telefoon toe als je dat wilt gebruiken
-  });
+//   // Formulierdata
+//   const form = reactive({
+//     name: "",
+//     email: "",
+//     message: "",
+//     phone: "", // Voeg telefoon toe als je dat wilt gebruiken
+//   });
 
-  // Validatiefouten
-  const errors = reactive({
-    name: "",
-    email: "",
-    message: "",
-    phone: "",
-  });
+//   // Validatiefouten
+//   const errors = reactive({
+//     name: "",
+//     email: "",
+//     message: "",
+//     phone: "",
+//   });
 
-  // Validatie & Formulierverwerking
-  const validateForm = () => {
-    errors.name = form.name ? "" : "Naam is verplicht.";
-    errors.email = form.email.includes("@") ? "" : "Geef een geldig e-mailadres op.";
-    errors.message = form.message ? "" : "Bericht is verplicht.";
+//   // Validatie & Formulierverwerking
+//   const validateForm = () => {
+//     errors.name = form.name ? "" : "Naam is verplicht.";
+//     errors.email = form.email.includes("@") ? "" : "Geef een geldig e-mailadres op.";
+//     errors.message = form.message ? "" : "Bericht is verplicht.";
 
-    // Validatie van telefoonnummer (optioneel)
-    errors.phone = form.phone ? "" : "";
+//     // Validatie van telefoonnummer (optioneel)
+//     errors.phone = form.phone ? "" : "";
 
-    // Controleer of er fouten zijn
-    return !errors.name && !errors.email && !errors.message;
-  };
+//     // Controleer of er fouten zijn
+//     return !errors.name && !errors.email && !errors.message;
+//   };
 
-  // Functie om e-mail te verzenden
-  const sendEmail = async () => {
-    try {
-      const response = await mail.send({
-        from: 'shop.nm.nickmichiels@gamil.com', // Gebruik een no-reply adres als afzender
-        replyTo: form.email, // Het e-mailadres van de bezoeker
-        subject: 'Contactformulier van je website',
-        text: `
-          Naam: ${form.name}
-          E-mail: ${form.email}
-          Telefoon: ${form.phone}
-          Bericht: ${form.message}`,
-      });
-      console.log('E-mail succesvol verzonden:', response);
-      // alert("Bericht succesvol verzonden!");
-      // Hier kun je form resetten na succesvol verzenden
-      form.name = "";
-      form.email = "";
-      form.message = "";
-      form.phone = "";
-    } catch (error) {
-      console.error('Fout bij het verzenden van e-mail:', error);
-      // alert("Er is een fout opgetreden, probeer het later opnieuw.");
-    }
-};
+//   // Functie om e-mail te verzenden
+//   const sendEmail = async () => {
+//     try {
+//       const response = await mail.send({
+//         from: 'shop.nm.nickmichiels@gamil.com', // Gebruik een no-reply adres als afzender
+//         replyTo: form.email, // Het e-mailadres van de bezoeker
+//         subject: 'Contactformulier van je website',
+//         text: `
+//           Naam: ${form.name}
+//           E-mail: ${form.email}
+//           Telefoon: ${form.phone}
+//           Bericht: ${form.message}`,
+//       });
+//       console.log('E-mail succesvol verzonden:', response);
+//       // alert("Bericht succesvol verzonden!");
+//       // Hier kun je form resetten na succesvol verzenden
+//       form.name = "";
+//       form.email = "";
+//       form.message = "";
+//       form.phone = "";
+//     } catch (error) {
+//       console.error('Fout bij het verzenden van e-mail:', error);
+//       // alert("Er is een fout opgetreden, probeer het later opnieuw.");
+//     }
+// };
 
-// Functie die wordt aangeroepen bij form submit
-const onSubmit = () => {
-  if (validateForm()) {
-    console.log("Formulier succesvol verzonden:", form);
-    sendEmail(); // Verzend de e-mail als de validatie is geslaagd
-    // Stel showSuccessMessage in op true wanneer het formulier succesvol is verzonden
-    showSuccessMessage.value = true;
+// // Functie die wordt aangeroepen bij form submit
+// const onSubmit = () => {
+//   if (validateForm()) {
+//     console.log("Formulier succesvol verzonden:", form);
+//     sendEmail(); // Verzend de e-mail als de validatie is geslaagd
+//     // Stel showSuccessMessage in op true wanneer het formulier succesvol is verzonden
+//     showSuccessMessage.value = true;
 
-    // Verberg de succesmelding na 5 seconden
-    setTimeout(() => {
-      showSuccessMessage.value = false;
-    }, 5000);
-  } else {
-    console.log("Formulier bevat fouten.");
-  }
-};
+//     // Verberg de succesmelding na 5 seconden
+//     setTimeout(() => {
+//       showSuccessMessage.value = false;
+//     }, 5000);
+//   } else {
+//     console.log("Formulier bevat fouten.");
+//   }
+// };
 </script>
 
 <template>
@@ -119,7 +119,8 @@ const onSubmit = () => {
       ></iframe>
     </div>
   </section>
-  <section class="py-16 bg-naturalBeige">
+
+  <section id="faq" class="py-16 bg-naturalBeige">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Image Section -->
@@ -133,7 +134,7 @@ const onSubmit = () => {
 
         <!-- Right FAQ Section -->
         <div class="space-y-0">
-          <h2 class="flex itemns-center justify-center text-3xl font-playFair text-gray-800 mb-2">Frequently Asked Questions</h2>
+          <h2 class="flex itemns-center justify-center text-3xl font-playFair text-gray-800 mb-2 uppercase font-bold">Frequently Asked Questions</h2>
 
           <div v-for="(item, index) in faqItems" :key="index">
             <div @click="toggleAnswer(index)" class="flex items-center justify-between cursor-pointer p-2 bg-transparant  border-b border-lightBeige hover:translate-y-[-2px]">
@@ -166,13 +167,15 @@ export default {
     document.body.appendChild(script1);
 
     const script2 = document.createElement("script");
-    script2.src =
+    script2.src =     
       "https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js";
     script2.type = "text/javascript";
     script2.dataset.iframeId = "sn-form-lnjgg";
     document.body.appendChild(script2);
   },
+  
 };
+
 </script>
 
 <style scoped>
@@ -181,4 +184,5 @@ export default {
     background-clip: text;
     color: transparent;
 }
+  
 </style>

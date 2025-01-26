@@ -7,7 +7,7 @@
         alt="Bruiloft"
         class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
       />
-      <div class="flex flex-col justify-center">
+      <div class="block">
         <p class="text-gray-700 font-standard">
           WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd!
           Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan,
@@ -16,11 +16,11 @@
           liefde en enthousiasme. Hopelijk zoeken jullie precies zo iemand voor jullie bruiloft!
         </p>
         <div
-          class="font-standard cursor-pointer flex py-2 items-center gap-2" 
+          class="font-standard cursor-pointer flex mt-4 items-center gap-2" 
           @click="scrollToSection"
         >
-          <div>CLICK FOR PACKAGES</div>
-          <i class="fa-solid fa-chevron-right"></i>
+          <div><u>CLICK FOR PACKAGES</u></div>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
       </div>
     </div>

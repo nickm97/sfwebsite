@@ -19,7 +19,13 @@
 
           <a href="/privacy-verklaring" class="hover:underline">Privacy Verklaring</a><br><br>
 
-          <a href="/contact" class="hover:underline">FAQ</a>
+          <!-- <a href="/contact#faq" class="hover:underline">FAQ</a> -->
+          <a @click="navigateToSection('faq')" class="hover:underline cursor-pointer">FAQ</a>
+
+
+
+
+          
         </p>
       </div>
     </div>
@@ -47,4 +53,53 @@
     background-clip: text;
     color: transparent;
   } */
+   
 </style>
+
+<script>
+export default {
+  methods: {
+  navigateToSection(sectionId) {
+    const targetPage = '/contact';
+
+    if (this.$route && this.$route.path !== targetPage) {
+      // Als je Vue Router gebruikt, navigeer naar de andere pagina
+      this.$router.push(targetPage).then(() => {
+        // Wacht even om er zeker van te zijn dat de DOM is geladen
+        this.scrollToSectionAfterNavigation(sectionId);
+      });
+    } else if (window.location.pathname !== targetPage) {
+      // Als je geen Vue Router gebruikt, navigeer met window.location
+      window.location.href = `${targetPage}#${sectionId}`;
+      
+      // Gebruik een event listener om te wachten tot de pagina is geladen
+      window.addEventListener('load', () => {
+        this.scrollToSection(sectionId);
+      });
+    } else {
+      // Als je al op de pagina bent, scroll direct
+      this.scrollToSection(sectionId);
+    }
+  },
+
+  scrollToSectionAfterNavigation(sectionId) {
+    // Wacht een klein beetje na navigatie voor scrollen
+    setTimeout(() => {
+      this.scrollToSection(sectionId);
+    }, 100); // Pas aan indien nodig
+  },
+
+  scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
+
+
+
+
+};
+
+</script>
