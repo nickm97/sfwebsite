@@ -151,6 +151,72 @@
     </div>
   </section>
 
+  <section class="flex items-center justify-center px-6 pb-20">
+    <div class="relative grid grid-cols-1 sm:grid-cols-5 gap-24 px-24 sm:px-0 w-[85%] max-w-[1300px]">
+      <!-- Tile 1 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/contact-page/icon_1.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">WARMTH</h2>
+        </div>
+      </div>
+
+      <!-- Tile 2 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/contact-page/icon_2.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">TOUCH</h2>
+        </div>
+      </div>
+
+      <!-- Tile 3 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/contact-page/icon_3.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">JOY</h2>
+        </div>
+      </div>
+      
+      <!-- Tile 4 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/contact-page/icon_4.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">EMOTION</h2>
+        </div>
+      </div>
+
+      <!-- Tile 5 -->
+      <div class="relative group">
+        <img
+          src="/assets/pictures/contact-page/icon_5.webp"
+          alt="Tile Image 1"
+          class="object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">LOOKS</h2>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
   <footer-sf></footer-sf>
 </template>
 

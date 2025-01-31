@@ -31,7 +31,7 @@
 
     <!-- Discover More (Overlapping) -->
     <div
-      class="absolute bottom-[40px] text-white left-1/2 transform -translate-x-1/2 font-standard text-center cursor-pointer"
+      class="absolute bottom-[65px] sm:bottom-[40px] text-white left-1/2 transform -translate-x-1/2 font-standard text-center cursor-pointer"
       @click="scrollToNextSection"
     >
       <div>SCROLL TO DISCOVER MORE</div>
@@ -39,19 +39,76 @@
     </div>
   </section>
 
-  <div class="flex items-center justify-center text-center py-12 px-2 pb-[50px]">
-    <!-- Title -->
-    <h2 class="text-[16px] sm:text-3xl py-6 font-playFair tracking-wider font-extralight">
-      FOR THE ONES WHO 
-      DARE A LITTLE, <br />
-      LET GO A LITTLE 
-      AND LOVE TO THE FULLEST
-    </h2>
-  </div>
+  <section class="flex flex-col items-center justify-center text-center py-12 px-2 pb-[50px] bg-buttonColor">
+    <nuxt-img
+      src="/assets/pictures/home-page/dare_a_little.webp"
+      alt="Sanneloes Fotografie Logo"
+      class="object-cover h-[45px] sm:h-[150px]"
+    />
+    <div class="sm:flex sm:w-[1250px] text-center sm:text-left text-white items-center sm:gap-12 py-6 font-standard font-light">
+      <p class="sm:w-1/2">
+        Sanneloes is een professionele en creatieve fotografe die de kunst 
+        van het vastleggen van bijzondere momenten beheerst. Met een oog voor 
+        detail en een passie voor storytelling, biedt Sanneloes Fotografie unieke
+        fotosessies die emoties en spontaniteit benadrukken. Liefde voor jezelf of 
+        elkaar staat voorop. 
+      </p>
+      <p class="sm:w-1/2">
+        Of het nu gaat om pure portretten, bruiloften of plezierige gezinsfoto's, 
+        de stijl van Sanneloes combineert warmte en authenticiteit. De beelden vertellen
+        een verhaal dat je keer op keer wilt herbeleven. Perfect voor iedereen die op zoek 
+        is naar tijdloze herinneringen! Dat alles in een jasje van liefde, plezier en echtheid.
+      </p>
+    </div>
+    <p class="text-white font-standard pt-6 font-light">
+      Fotograaf voor bruiloften, branding en lifestyle shoots omgeving Eindhoven, Noord-Brabant
+    </p>
+  </section>
+
+  <section class="relative parallax">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+      <!-- Knop -->
+      <a
+        href="/contact"
+        class="text-white text-sm font-semibold border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
+          Laat mij jullie verhaal vastleggen
+      </a>
+    </div>
+  </section>
+
+  <section class="items-center justify-center">
+    <div class="flex gap-16 items-center justify-center py-12 w-full max-w-[1200px] mx-auto">
+      <div class="w-1/2 px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/home-page/review-home-page.webp"
+          alt="Sanneloes"
+          class="w-[400px]"
+        />
+      </div>
+      <div class="flex-col w-1/2">
+        <p class="font-standard font-light text-left">
+          “Hoe zoek je nou dé juiste fotograaf voor je bruiloft? Nou: boek Sanneloes!<br><br>
+          Zij is diegene die je er bij wilt hebben op je dag: vrolijk, energiek, enthousiast en 
+          gepassioneerd. Een daggast met een camera in haar handen! De foto’s overtroffen al onze 
+          verwachtingen! Na een paar dagen al de méga preview en wat later alle foto’s. Ze zijn 
+          prachtig en hebben alles zo vastgelegd dat we de dag telkens opnieuw kunnen beleven én
+          momenten konden beleven waar we zelf niet bij waren geweest.”
+        </p>
+        <nuxt-img
+          src="/assets/pictures/home-page/review-name.webp"
+          alt="Sanneloes"
+          class="w-[100px]"
+        />
+      </div>
+    </div>
+  </section>
 
   <!-- New Section with Title and Photos -->
-  <div class="px-[10px] sm:px-[140px] items flex items-center justify-center pb-20">
-    
+  <section class="px-[10px] sm:px-[140px] items flex-col items-center justify-center pb-20">
+    <p class="text-5xl font-playFair font-light text-center mb-8 mt-12">
+      PHOTOGRAPHY AND INFORMATION
+    </p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
@@ -141,81 +198,62 @@
         </div>
       </div>
     </div>
+  </section>
 
-    
-  </div>
-
-  <section class="flex items-center justify-center px-6 pb-20">
-    <div class="relative grid grid-cols-1 sm:grid-cols-5 gap-24 px-24 sm:px-0 w-[85%] max-w-[1300px]">
-      <!-- Tile 1 -->
-      <div class="relative group">
-        <img
-          src="/assets/pictures/home-page/icon_1.webp"
-          alt="Tile Image 1"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
+  <section class="items-center justify-center bg-background_2">
+    <div class="flex gap-16 items-center justify-center py-12 w-full max-w-[1200px] mx-auto">
+      <div class="w-1/2 px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/home-page/about-home-page.webp"
+          alt="Sanneloes"
+          class="w-[400px]"
         />
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">WARMTH</h2>
-        </div>
       </div>
-
-      <!-- Tile 2 -->
-      <div class="relative group">
-        <img
-          src="/assets/pictures/home-page/icon_2.webp"
-          alt="Tile Image 1"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">TOUCH</h2>
+      <div class="flex-col w-1/2 relative">
+        <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
+        <p class="absolute text-[125px] font-playFair left-1/2 transform translate-x-[-50%] top-[-220px]">ABOUT</p>
+        <div class="absolute left-1/2 transform translate-x-[-50%] top-[-125px]">
+          <nuxt-img
+            src="/assets/pictures/home-page/about-sanneloes.webp"
+            alt="Sanneloes"
+            class="w-[250px]"
+          />
         </div>
-      </div>
+        <p class="uppercase font-playFair text-2xl mb-4 w-full text-left">hi there</p>
+        <p class="font-standard font-light text-left">
+          Dag lieve lezer! Welkom op mijn website. Ik ben Sanneloes van Kessel, 
+          fulltime ondernemer; professioneel fotograaf, eigenaar van Daylight Studio 
+          La Luz en mede-oprichter van Savvy Styling. Een bezig bijtje kan je wel stellen.<br><br>
 
-      <!-- Tile 3 -->
-      <div class="relative group">
-        <img
-          src="/assets/pictures/home-page/icon_3.webp"
-          alt="Tile Image 1"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">JOY</h2>
-        </div>
-      </div>
-      
-      <!-- Tile 4 -->
-      <div class="relative group">
-        <img
-          src="/assets/pictures/home-page/icon_4.webp"
-          alt="Tile Image 1"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">EMOTION</h2>
-        </div>
-      </div>
+          Ik hou ervan om unieke, échte en emotionele momenten vast te leggen die jouw 
+          verhaal op de mooiste en meest eerlijke manier vertelt. Ik wil dat  connecties 
+          en dierbare momenten bevroren worden in de tijd, zodat jij, maar ook anderen 
+          na tientallen jaren nog veel plezier kunnen hebben van de foto’s. Zo blijven 
+          dierbare herinneringen en personen bevroren en zullen ze nooit vergeten worden.<br><br>
 
-      <!-- Tile 5 -->
-      <div class="relative group">
-        <img
-          src="/assets/pictures/home-page/icon_5.webp"
-          alt="Tile Image 1"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">LOOKS</h2>
+          Benieuwd naar wat ik maak? Neem rustig een kijkje op mijn website en kom meer 
+          te weten. Bij vragen, weet me te vinden via mijn contactpagina. 
+        </p>
+
+        <div class="flex flex-col items-center justify-center py-6 font-standard">
+          <button
+            @click="redirect('/about')"
+            class="px-6 py-2 rounded-full bg-naturalBeige font-standard py-12 cursor-pointer"
+          >
+            MEER OVER SANNELOES
+          </button>
         </div>
       </div>
 
     </div>
-
   </section>
+  
+  
 
 
-  <div class="sm:hidden bg-naturalBeige border-t border-gray-400">
+  <!-- <div class="sm:hidden bg-naturalBeige border-t border-gray-400">
     <div class="flex h-[450px]">
         <div class="border-l border-r border-gray-400 flex h-full bg-white justify-center items-center min-w-[60px]">
-            <!-- Eén enkele span voor de tekst met &nbsp; voor de spatie -->
             <span class="text-gray-700 text-2xl font-textNav tracking-widest transform -rotate-90">
                 SANNELOES&nbsp;FOTOGRAFIE
             </span>
@@ -240,15 +278,13 @@
         </a>
       </button>
     </div>
-  </div>
+  </div> -->
  
 
   <!-- Updated Section -->
-  <section class="hidden sm:flex sm:flex-row h-[800px] w-full bg-naturalBeige border-t border-gray-400">
+  <!-- <section class="hidden sm:flex sm:flex-row h-[800px] w-full bg-naturalBeige border-t border-gray-400">
     
-    <!-- Right Side (Text and Small Photo) -->
     <div class="flex-1 flex flex-col h-auto w-[45%]">
-      <!-- Top Right Text -->
       <div class="flex flex-col justify-center h-[55%] px-10"> 
           <h3 class="text-2xl text-gray-700 font-semibold mb-1 mt-4">HI THERE!</h3>
           <p class="text-black text-lg font-bold tracking-wider font-extralight">
@@ -271,8 +307,6 @@
           </div>
       </div>
 
-      
-      <!-- Bottom Right Small Photo -->
       <div class="w-full h-[45%]">
         <nuxt-img
           src="/assets/pictures/loes2.jpg"
@@ -282,14 +316,12 @@
       </div>
     </div>
 
-    <!-- Middle Section (Vertical Text) -->
     <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center w-[20%]">
       <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
         SANNELOES
       </span>
     </div>
 
-    <!-- Left Side (Photo) -->
     <div class="flex w-[35%]" >
       <nuxt-img
         placeholder
@@ -299,22 +331,99 @@
       />
     </div>
 
-  </section>
+  </section> -->
+  
   
   <reviews-sf></reviews-sf>
 
-  <div class="relative parallax">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-      <!-- Knop -->
-      <a
-        href="/contact"
-        class="text-white text-sm font-semibold border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
-          Laat mij jullie verhaal vastleggen
-      </a>
+  <section class="bg-buttonColor flex items-center justify-center py-12">
+    <div class="flex-col">
+      <div class="flex items-center justify-center text-white text-center font-standard font-light max-w-[600px] px-4">
+        <p>
+          Sanneloes Fotografie focust zich met name op bruiloften, gezinsfotografie, 
+          boudoir, zwangerschappen, newborns en enthousiaste ondernemers die content 
+          nodig hebben voor hun website of sociale media.
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center py-6 font-standard">
+        <button
+          @click="redirect('/contact')"
+          class="px-6 py-2 rounded-full bg-buttonColor border border-1-white text-white font-standard py-12 cursor-pointer"
+        >
+        Top! Dan kan jij me vast helpen
+        </button>
+      </div>
     </div>
-  </div>
+  </section>
 
+  <section>
+    <div class="flex-col items-center justify-center ">
+      <div class="flex items-center justify-center py-12 ">
+        <p class="uppercase font-standard text-2xl font-light">
+          #SANNELOESFOTOGRAFIE
+        </p>
+      </div>
+      <div class="flex gap-6 items-center justify-center">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_1.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_2.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_3.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_4.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_5.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_6.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+          <nuxt-img
+            src="/assets/pictures/home-page/social_link_7.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[200px]"
+          />
+        </a>
+
+      </div>
+    </div>
+
+  </section>
   <footer-sf></footer-sf>
 </template>
 
@@ -371,7 +480,7 @@
     /* The image used */
     background-image: url("/public/assets/pictures/SF_00707.jpg");
 
-    min-height: 500px;
+    min-height: 350px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

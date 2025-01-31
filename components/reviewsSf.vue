@@ -1,14 +1,15 @@
 <template>
   <div class="flex flex-col items-center justify-start px-6 py-4">
     <!-- Titel -->
-    <div class="pb-2">
+    <!-- <div class="pb-2">
       <nuxt-img
         placeholder
         src="/assets/pictures/home-page/reviews.webp"
         alt="Reviews"
         class="h-[130px]"
       />
-    </div>
+    </div> -->
+    <p class="uppercase items-center justify-center font-playFair text-center text-4xl py-4">What the brides and grooms said</p>
           
     <div class="flex items-center justify-center bg-white pb-12 gap-12 grid grid-cols-1 sm:grid-cols-5">
       <!-- Container voor afbeelding en tekst -->
@@ -25,7 +26,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Sam en Inge</p>
+        <p class="group-hover:hidden font-standard uppercase tracking-widest text-sm py-1">Sam & Inge</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -59,7 +60,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Nicky en Ward</p>
+        <p class="group-hover:hidden font-standard uppercase tracking-widest text-sm py-1">Nicky en Ward</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -92,7 +93,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Brit en Lotte</p>
+        <p class="group-hover:hidden font-standard uppercase tracking-widest text-sm py-1">Brit en Lotte</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -127,7 +128,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Luuk en Mandy</p>
+        <p class="group-hover:hidden font-standard uppercase tracking-widest text-sm py-1">Luuk en Mandy</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
@@ -161,7 +162,7 @@
         </div>
         
         <!-- Naam (wordt verborgen bij hover) -->
-        <p class="group-hover:hidden font-playFair font-light tracking-widest text-sm py-1">Rick en Marlou</p>
+        <p class="group-hover:hidden font-standard uppercase tracking-widest text-sm py-1">Rick en Marlou</p>
         
         <!-- Scheidingslijn (wordt verborgen bij hover) -->
         <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>

@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-footerColor">
-    <div class="flex grid grid-cols-1 sm:grid-cols-3 items-center justify-center px-4 py-12 sm:px-[200px]">
-      <div>
+    <div class="flex grid grid-cols-1 sm:grid-cols-3 items-center justify-center px-4 py-6 sm:py-12 sm:px-[200px]">
+      <div class="text-center sm:text-left mb-4 sm:mb-0">
         <p class="font-standard text-sm">
           Sanneloes van Kessel<br>
           Casteren, Noord-Brabant, Nederland<br>
@@ -10,29 +10,28 @@
           KVK: 77018753
         </p>
       </div>
-      <div class="flex items-center justify-center">
-        <a href="/"><nuxt-img src="/assets/pictures/logo_klein.webp" alt="Sanneloes Fotografie" class="w-[100px] sm:w-[200px] h-auto"/></a>
+      <div class="flex items-center justify-center mb-4 sm:mb-0">
+        <a href="/"><nuxt-img src="/assets/pictures/logo_klein.webp" alt="Sanneloes Fotografie" class="w-[200px] sm:w-[200px] h-auto"/></a>
       </div>
       <div>
-        <p class="font-standard text-sm text-right">
-          <a href="/algemene-voorwaarden" class="hover:underline">Algemene Voorwaarden</a><br><br>
+        <p class="font-standard text-center text-sm sm:text-right">
+          <a href="/algemene-voorwaarden" class="hover:underline">Algemene Voorwaarden</a>
+          <br class="sm:inline"> <!-- 1 enter op kleine schermen -->
+          <br class="hidden sm:inline"> <!-- Extra enter op grote schermen -->
 
-          <a href="/privacy-verklaring" class="hover:underline">Privacy Verklaring</a><br><br>
+          <a href="/privacy-verklaring" class="hover:underline">Privacy Verklaring</a>
+          <br class="sm:inline"> <!-- 1 enter op kleine schermen -->
+          <br class="hidden sm:inline"> <!-- Extra enter op grote schermen -->
 
-          <!-- <a href="/contact#faq" class="hover:underline">FAQ</a> -->
           <a @click="navigateToSection('faq')" class="hover:underline cursor-pointer">FAQ</a>
-
-
-
-
           
         </p>
       </div>
     </div>
     
-    <section class="flex grid grid-cols-2 items-center justify-center px-[150px] py-4 bg-buttonColor px-6 text-sm">	
-      <div class="flex">
-        <p class="text-white uppercase">
+    <section class="flex grid grid-cols-2 items-center justify-center px-[10px] sm:px-[150px] py-4 bg-buttonColor text-sm">	
+      <div>
+        <p class="text-white uppercase whitespace-nowrap">
           © 2025 Sanneloes Fotografie
         </p>
       </div>

@@ -20,8 +20,9 @@ export default {
         lightBeige: "#eee5de",
         offWhite: '#f8f8f5', // Voeg hier jouw gewenste kleur toe
         formButton: '#c49131',
-        background_1: '#f3f4f6',
-        footerColor: '#ffff'
+        background_1: '#f3f4f6', // gray
+        footerColor: '#ffff',
+        background_2: '#d3c9bf' // beige
       },
       fontFamily: {
         standard: ['"Quicksand"', 'serif'], // Voeg hier jouw gewenste lettertype toe
