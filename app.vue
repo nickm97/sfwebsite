@@ -35,7 +35,7 @@
         </div>
         
         <div class="flex items-center space-x-6 justify-end">
-          <NuxtLink to="/portfolio" class="font-standard tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
+          <NuxtLink to="/event-styling" class="font-standard tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
             EVENT STYLING
           </NuxtLink>
           <NuxtLink to="/daylightstudio" class="font-standard tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">

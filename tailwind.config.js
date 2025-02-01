@@ -22,7 +22,8 @@ export default {
         formButton: '#c49131',
         background_1: '#f3f4f6', // gray
         footerColor: '#ffff',
-        background_2: '#d3c9bf' // beige
+        background_2: '#d3c9bf', // beige
+        page_title: '#9b775c', //bruinig
       },
       fontFamily: {
         standard: ['"Quicksand"', 'serif'], // Voeg hier jouw gewenste lettertype toe

@@ -6,15 +6,18 @@
         alt="Your story told"
         class="sm:w-[500px] sm:h-[175px] "
       />
-      <p class="text-gray-700 font-standard">
-        Een fotoshoot bij Sanneloes Fotografie gaat niet om stom poseren, 
-        je ongemakkelijk voelen en je anders voordoen dan je bent. Het draait 
-        om het vastleggen van échte momenten, precies zoals ze gebeuren. Geen 
-        stijve poses of geforceerde glimlachen, maar spontane, oprechte beelden waarin 
-        jij, je familie of je geliefden centraal staan. Dit zijn de foto's waarin je jezelf 
-        herkent – de kleine blikken, het echte gelach, de subtiele aanrakingen die het verhaal 
-        vertellen van wie jij bent.
-      </p>
+      <div class="flex-col">
+        <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Shoots</h1>
+        <p class="text-gray-700 font-standard">
+          Een fotoshoot bij Sanneloes Fotografie gaat niet om stom poseren, 
+          je ongemakkelijk voelen en je anders voordoen dan je bent. Het draait 
+          om het vastleggen van échte momenten, precies zoals ze gebeuren. Geen 
+          stijve poses of geforceerde glimlachen, maar spontane, oprechte beelden waarin 
+          jij, je familie of je geliefden centraal staan. Dit zijn de foto's waarin je jezelf 
+          herkent – de kleine blikken, het echte gelach, de subtiele aanrakingen die het verhaal 
+          vertellen van wie jij bent.
+        </p>
+      </div>
     </div>
   </section>
 

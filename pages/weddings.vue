@@ -8,6 +8,7 @@
         class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
       />
       <div class="block">
+        <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Bruiloften</h1>
         <p class="text-gray-700 font-standard">
           WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd!
           Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan,

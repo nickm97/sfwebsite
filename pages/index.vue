@@ -221,18 +221,22 @@
         </div>
         <p class="uppercase font-playFair text-2xl mb-4 w-full text-left">hi there</p>
         <p class="font-standard font-light text-left">
-          Dag lieve lezer! Welkom op mijn website. Ik ben Sanneloes van Kessel, 
-          fulltime ondernemer; professioneel fotograaf, eigenaar van Daylight Studio 
-          La Luz en mede-oprichter van Savvy Styling. Een bezig bijtje kan je wel stellen.<br><br>
+            Dag lieve lezer! Welkom op mijn website. Ik ben Sanneloes van Kessel, 
+            fulltime ondernemer; professioneel fotograaf, eigenaar van 
+            <a href="https://daylightstudio-laluz.nl/" target="_blank" style="text-decoration: underline;">Daylight Studio La Luz</a> 
+            en mede-oprichter van 
+            <a href="https://savvy-styling.nl/" target="_blank" style="text-decoration: underline;">Savvy Styling</a>. 
+            Een bezig bijtje kan je wel stellen.<br><br>
 
-          Ik hou ervan om unieke, échte en emotionele momenten vast te leggen die jouw 
-          verhaal op de mooiste en meest eerlijke manier vertelt. Ik wil dat  connecties 
-          en dierbare momenten bevroren worden in de tijd, zodat jij, maar ook anderen 
-          na tientallen jaren nog veel plezier kunnen hebben van de foto’s. Zo blijven 
-          dierbare herinneringen en personen bevroren en zullen ze nooit vergeten worden.<br><br>
+            Ik hou ervan om unieke, échte en emotionele momenten vast te leggen die jouw 
+            verhaal op de mooiste en meest eerlijke manier vertelt. Ik wil dat connecties 
+            en dierbare momenten bevroren worden in de tijd, zodat jij, maar ook anderen 
+            na tientallen jaren nog veel plezier kunnen hebben van de foto’s. Zo blijven 
+            dierbare herinneringen en personen bevroren en zullen ze nooit vergeten worden.<br><br>
 
-          Benieuwd naar wat ik maak? Neem rustig een kijkje op mijn website en kom meer 
-          te weten. Bij vragen, weet me te vinden via mijn contactpagina. 
+            Benieuwd naar wat ik maak? Neem rustig een kijkje op mijn website en kom meer 
+            te weten. Bij vragen, weet me te vinden via mijn 
+            <a href="https://sanneloesfotografie.nl/contact" style="text-decoration: underline;">contactpagina</a>.
         </p>
 
         <div class="flex flex-col items-center justify-center py-6 font-standard">
@@ -348,7 +352,7 @@
       <div class="flex flex-col items-center justify-center py-6 font-standard">
         <button
           @click="redirect('/contact')"
-          class="px-6 py-2 rounded-full bg-buttonColor border border-1-white text-white font-standard py-12 cursor-pointer"
+          class="px-6 py-2 rounded-full bg-buttonColor border border-1-white text-white font-standard py-12 cursor-pointer hover:bg-white hover:text-black"
         >
         Top! Dan kan jij me vast helpen
         </button>

@@ -7,17 +7,20 @@
                 alt="Your story told"
                 class="sm:w-[500px] sm:h-[175px] "
             />
-            <p class="text-gray-700 font-standard">
-                De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, 
-                kostbare details die je nooit wilt vergeten. Die piepkleine handjes en
-                zachte haartjes, ze groeien sneller dan je denkt.<br><br>
-                Met een newborn fotoshoot leg ik deze bijzondere momenten vast op een pure,
-                tijdloze manier. Geen druk, geen haast alleen liefdevolle beelden van jullie nieuwe begin.
-                We creëren samen een ontspannen sfeer, zodat zowel jullie als jullie kleintje zich op hun gemak voelen.<br><br>
+            <div class="flex-col">
+              <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Zwangerschap</h1>
+              <p class="text-gray-700 font-standard">
+                  De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, 
+                  kostbare details die je nooit wilt vergeten. Die piepkleine handjes en
+                  zachte haartjes, ze groeien sneller dan je denkt.<br><br>
+                  Met een newborn fotoshoot leg ik deze bijzondere momenten vast op een pure,
+                  tijdloze manier. Geen druk, geen haast alleen liefdevolle beelden van jullie nieuwe begin.
+                  We creëren samen een ontspannen sfeer, zodat zowel jullie als jullie kleintje zich op hun gemak voelen.<br><br>
 
-                Kleine momenten. Grote herinneringen.
-                Laten we samen deze eerste bladzijde in jullie verhaal vereeuwigen. 
-            </p>
+                  Kleine momenten. Grote herinneringen.
+                  Laten we samen deze eerste bladzijde in jullie verhaal vereeuwigen. 
+              </p>
+            </div>
         </div>
   </section>
 

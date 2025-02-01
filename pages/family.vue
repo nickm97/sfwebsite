@@ -7,16 +7,19 @@
                 alt="Your story told"
                 class="sm:w-[500px] sm:h-[175px] "
             />
-            <p class="text-gray-700 font-standard">
-                Echte momenten, waardevolle herinneringen!
-                Een gezin groeit, verandert en leeft volop in het moment. Het zijn die kleine gebaren, 
-                knuffels, het gelach en zelfs de chaos die jullie uniek maken. Een gezinsshoot draait om het 
-                vastleggen van deze echte momente precies zoals jullie zijn.<br><br>
+            <div class="flex-col">
+              <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Gezinnetjes</h1>
+              <p class="text-gray-700 font-standard">
+                  Echte momenten, waardevolle herinneringen!
+                  Een gezin groeit, verandert en leeft volop in het moment. Het zijn die kleine gebaren, 
+                  knuffels, het gelach en zelfs de chaos die jullie uniek maken. Een gezinsshoot draait om het 
+                  vastleggen van deze echte momente precies zoals jullie zijn.<br><br>
 
-                Geen stijve poses, maar spontane beelden vol warmte en liefde. Of het nu thuis is, buiten in de 
-                natuur of op een favoriete plek, ik zorg dat jullie je ontspannen voelen en het plezier kunnen laten spreken.
-                Want de mooiste herinneringen zijn vaak de alledaagse momenten. Laten we ze samen vastleggen voor altijd. 
-            </p>
+                  Geen stijve poses, maar spontane beelden vol warmte en liefde. Of het nu thuis is, buiten in de 
+                  natuur of op een favoriete plek, ik zorg dat jullie je ontspannen voelen en het plezier kunnen laten spreken.
+                  Want de mooiste herinneringen zijn vaak de alledaagse momenten. Laten we ze samen vastleggen voor altijd. 
+              </p>
+            </div>
         </div>
   </section>
 
