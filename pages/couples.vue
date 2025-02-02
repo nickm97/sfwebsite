@@ -2,23 +2,25 @@
     <section class="bg-background_1 flex justify-center">
         <!-- canva image settings 400x150 -->
         <div class="flex items-center justify-center gap-[50px] w-[70%] max-w-[1200px] py-16">
+          <div class="w-1/2">  
             <nuxt-img
                 src="/assets/pictures/couples-page/freeze-the-moment.png"
                 alt="Your story told"
                 class="sm:w-[500px] sm:h-[175px] "
             />
-            <div class="flex-col">
-              <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Koppels</h1>
-              <p class="text-gray-700 font-standard">
-                  Jullie liefde verdient het om vastgelegd te worden. Een koppelshoot draait om verbinding, 
-                  spontaniteit en échte momenten. Of je nu net verloofd bent, een jubileum viert of gewoon 
-                  jullie verhaal wilt bevriezen in de tijd – ik zorg voor beelden die laten zien wie jullie zijn samen.<br><br>
+          </div>
+          <div class="flex-col w-1/2">
+            <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Koppels</h1>
+            <p class="text-gray-700 font-standard">
+                Jullie liefde verdient het om vastgelegd te worden. Een koppelshoot draait om verbinding, 
+                spontaniteit en échte momenten. Of je nu net verloofd bent, een jubileum viert of gewoon 
+                jullie verhaal wilt bevriezen in de tijd – ik zorg voor beelden die laten zien wie jullie zijn samen.<br><br>
 
-                  Geen standaard poses, maar pure emoties, warmte, veel plezier en liefdevolle blikken en aanrakingen. 
-                  We zoeken samen naar een locatie die bij jullie past en creëren een ontspannen sfeer waarin jullie gewoon 
-                  jezelf kunnen zijn, want de mooiste beelden beginnen met jullie connectie en verhaal.
-              </p>
-            </div> 
+                Geen standaard poses, maar pure emoties, warmte, veel plezier en liefdevolle blikken en aanrakingen. 
+                We zoeken samen naar een locatie die bij jullie past en creëren een ontspannen sfeer waarin jullie gewoon 
+                jezelf kunnen zijn, want de mooiste beelden beginnen met jullie connectie en verhaal.
+            </p>
+          </div> 
         </div>
   </section>
 

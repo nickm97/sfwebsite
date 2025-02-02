@@ -78,16 +78,21 @@
   </section>
 
   <section class="items-center justify-center">
-    <div class="flex gap-16 items-center justify-center py-12 w-full max-w-[1200px] mx-auto">
-      <div class="w-1/2 px-4 flex items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:gap-16 items-center justify-center py-12 w-full sm:max-w-[1200px] sm:mx-auto">
+  
+      <!-- Afbeelding -->
+      <div class="w-full sm:w-1/2 px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/home-page/review-home-page.webp"
           alt="Sanneloes"
-          class="w-[400px]"
+          class="w-[300px] sm:w-[500px]"
         />
       </div>
-      <div class="flex-col w-1/2">
-        <p class="font-standard font-light text-left">
+
+      <!-- Tekst -->
+      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-4 sm:py-0 px-4 sm:px-0">
+        <h1 class="uppercase font-playFair text-4xl py-2">HEARTWARMING WORDS</h1>
+        <p class="font-standard font-light text-xl">
           “Hoe zoek je nou dé juiste fotograaf voor je bruiloft? Nou: boek Sanneloes!<br><br>
           Zij is diegene die je er bij wilt hebben op je dag: vrolijk, energiek, enthousiast en 
           gepassioneerd. Een daggast met een camera in haar handen! De foto’s overtroffen al onze 
@@ -98,9 +103,10 @@
         <nuxt-img
           src="/assets/pictures/home-page/review-name.webp"
           alt="Sanneloes"
-          class="w-[100px]"
+          class="w-[80px] sm:w-[100px] mx-auto sm:mx-0"
         />
       </div>
+
     </div>
   </section>
 
@@ -211,7 +217,7 @@
       </div>
       <div class="flex-col w-1/2 relative">
         <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
-        <p class="absolute text-[125px] font-playFair left-1/2 transform translate-x-[-50%] top-[-220px]">ABOUT</p>
+        <p class="hidden sm:block absolute text-[125px] font-playFair left-1/2 transform translate-x-[-50%] top-[-220px]">ABOUT</p>
         <div class="absolute left-1/2 transform translate-x-[-50%] top-[-125px]">
           <nuxt-img
             src="/assets/pictures/home-page/about-sanneloes.webp"
@@ -242,7 +248,7 @@
         <div class="flex flex-col items-center justify-center py-6 font-standard">
           <button
             @click="redirect('/about')"
-            class="px-6 py-2 rounded-full bg-naturalBeige font-standard py-12 cursor-pointer"
+            class="px-6 py-2 rounded-full bg-buttonColor_2 font-standard py-12 cursor-pointer border-[1px] border-black"
           >
             MEER OVER SANNELOES
           </button>
@@ -361,76 +367,78 @@
   </section>
 
   <section>
-    <div class="flex-col items-center justify-center ">
-      <div class="flex items-center justify-center py-12 ">
-        <p class="uppercase font-standard text-2xl font-light">
+    <div class="flex-col items-center justify-center py-6">
+      <div class="flex items-center justify-center py-2 ">
+        <p class="uppercase font-standard sm:text-2xl text-lg text-center font-light">
           #SANNELOESFOTOGRAFIE
         </p>
       </div>
-      <div class="flex gap-6 items-center justify-center">
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+      
+      <social-links></social-links>
+      <!-- <div class="flex gap-6 items-center w-full justify-center">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_1.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
 
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_2.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
 
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_3.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
 
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_4.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
 
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_5.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
 
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_6.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
 
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank">
+        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
           <nuxt-img
             src="/assets/pictures/home-page/social_link_7.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[200px]"
+            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
           />
         </a>
+        
+      </div> -->
 
-      </div>
     </div>
 
-  </section>
+  </section>\
   <footer-sf></footer-sf>
 </template>
-
 
 <script setup>
   import { useRouter } from 'vue-router';
@@ -445,7 +453,7 @@
       top: window.innerHeight, // Scrollt een volledige viewport naar beneden
       behavior: "smooth" // Vloeiende scroll animatie
     });
-  };
+  }
 
   // Redirect naar een nieuwe route
   function redirect(path) {
@@ -470,12 +478,35 @@
     setInterval(() => {
       currentLeftImage.value = (currentLeftImage.value + 1) % leftImages.length;
       currentRightImage.value = (currentRightImage.value + 1) % rightImages.length;
-    }, 7000); // Wisselt elke 5 seconden
+    }, 7000); // Wisselt elke 7 seconden
   }
 
-  // Start de slideshow zodra het component is geladen
+  // Slider logica
+  const currentIndex = ref(0);
+  const maxIndex = 6; // Aantal afbeeldingen minus 1 (7 afbeeldingen)
+
+  function moveLeft() {
+    if (currentIndex.value > 0) {
+      currentIndex.value--;
+      updateSliderPosition();
+    }
+  }
+
+  function moveRight() {
+    if (currentIndex.value < maxIndex) {
+      currentIndex.value++;
+      updateSliderPosition();
+    }
+  }
+
+  function updateSliderPosition() {
+    const slider = document.querySelector('.content');
+    const offset = currentIndex.value * 320; // Breedte van de afbeelding (320px)
+    slider.style.transform = `translateX(-${offset}px)`;
+  }
+
   onMounted(() => {
-    startSlideshow();
+    startSlideshow(); // Start de slideshow bij het laden van de component
   });
 </script>
 
@@ -499,5 +530,7 @@
       background-attachment: scroll;
     }
   }
+
+  
 
 </style>

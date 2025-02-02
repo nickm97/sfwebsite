@@ -24,13 +24,13 @@ export default defineNuxtConfig({
   ],
   image: {
     // Configuratie voor @nuxt/image
-    screens: {
-      // Standaardafmetingen voor responsieve afbeeldingen
-      sm: 320,
-      md: 640,
-      lg: 1024,
-      xl: 1280,
-    },
+    // screens: {
+    //   // Standaardafmetingen voor responsieve afbeeldingen
+    //   sm: 2000,
+    //   md: 1024,
+    //   lg: 2048,
+    //   xl: 4096,
+    // },
     format: ['webp', 'jpg', 'png'], // Ondersteunde afbeeldingsformaten
   
   }

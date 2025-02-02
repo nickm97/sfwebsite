@@ -2,21 +2,23 @@
   <section class="bg-background_1 flex justify-center">
       <!-- canva image settings 400x150 -->
       <div class="flex items-center justify-center gap-[50px] w-[70%] max-w-[1200px] py-16">
+        <div class="w-1/2">
           <nuxt-img
               src="/assets/pictures/boudior-page/every-woman-deserves.png"
               alt="Your story told"
               class="sm:w-[500px] sm:h-[175px] "
           />
-          <div class="flex-col">
-            <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Boudior</h1>
-            <p class="text-gray-700 font-standard">
-              Een boudoirshoot is meer dan alleen een fotoshoot – het is jou op je krachtigst neerzetten. 
-              Het is een kans om je lichaam, je zelfvertrouwen en je unieke schoonheid te omarmen. Of je nu een 
-              speciale gelegenheid viert of gewoon iets voor jezelf doet, deze boudoir sessies zijn ontworpen om 
-              je sterk, sexy en mooi te laten voelen in je eigen huid. Boudoirfotografie biedt ruimte voor creativiteit. 
-              Voor out of the box denken. Het creëren van kunst. Stap in je zelfvertrouwen en laat mij de echte jij vastleggen.
-            </p>
-          </div>
+        </div>
+        <div class="flex-col w-1/2">
+          <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Boudior</h1>
+          <p class="text-gray-700 font-standard">
+            Een boudoirshoot is meer dan alleen een fotoshoot – het is jou op je krachtigst neerzetten. 
+            Het is een kans om je lichaam, je zelfvertrouwen en je unieke schoonheid te omarmen. Of je nu een 
+            speciale gelegenheid viert of gewoon iets voor jezelf doet, deze boudoir sessies zijn ontworpen om 
+            je sterk, sexy en mooi te laten voelen in je eigen huid. Boudoirfotografie biedt ruimte voor creativiteit. 
+            Voor out of the box denken. Het creëren van kunst. Stap in je zelfvertrouwen en laat mij de echte jij vastleggen.
+          </p>
+        </div>
       </div>
 </section>
 

@@ -16,7 +16,8 @@ export default {
       colors: {
         naturalBeige: "#decab9",
         darkBrown: "#6a4c2d",
-        buttonColor: "#3d3935",
+        buttonColor: "#3d3935", // black
+        buttonColor_2: "#e3dad3", // beige 
         lightBeige: "#eee5de",
         offWhite: '#f8f8f5', // Voeg hier jouw gewenste kleur toe
         formButton: '#c49131',

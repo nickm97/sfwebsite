@@ -2,12 +2,14 @@
 
   <section class="bg-gray-100 flex justify-center">
     <div class="flex items-center justify-center gap-[100px] w-[70%]">
-      <nuxt-img
-        src="/assets/pictures/wedding-page/lets-get-married.png"
-        alt="Bruiloft"
-        class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
-      />
-      <div class="block">
+      <div class="w-1/2">
+        <nuxt-img
+          src="/assets/pictures/wedding-page/lets-get-married.png"
+          alt="Bruiloft"
+          class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
+        />  
+      </div>
+      <div class="flex-col w-1/2">
         <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Bruiloften</h1>
         <p class="text-gray-700 font-standard">
           WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd!

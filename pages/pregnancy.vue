@@ -2,12 +2,14 @@
     <section class="bg-background_1 flex justify-center">
         <!-- canva image settings 400x150 -->
         <div class="flex items-center justify-center gap-[50px] w-[70%] max-w-[1200px] py-16">
-            <nuxt-img
-                src="/assets/pictures/pregnancy-page/no-greather-power.png"
-                alt="Your story told"
-                class="sm:w-[500px] sm:h-[175px] "
-            />
-            <div class="flex-col">
+            <div class="w-1/2">  
+              <nuxt-img
+                    src="/assets/pictures/pregnancy-page/no-greather-power.png"
+                    alt="Your story told"
+                    class="sm:w-[500px] sm:h-[175px] "
+                />
+            </div>
+            <div class="flex-col w-1/2">
               <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Zwangerschap</h1>
               <p class="text-gray-700 font-standard">
                   De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, 

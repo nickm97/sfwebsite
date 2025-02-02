@@ -1,12 +1,14 @@
 <template>
   <section class="bg-gray-100 flex justify-center">
     <div class="flex items-center justify-center gap-[50px] w-[70%] py-16">
-      <nuxt-img
+      <div class="w-1/2">
+        <nuxt-img
         src="/assets/pictures/shoots-page/your-story-told.png"
         alt="Your story told"
         class="sm:w-[500px] sm:h-[175px] "
       />
-      <div class="flex-col">
+      </div>
+      <div class="flex-col w-1/2">
         <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Shoots</h1>
         <p class="text-gray-700 font-standard">
           Een fotoshoot bij Sanneloes Fotografie gaat niet om stom poseren, 

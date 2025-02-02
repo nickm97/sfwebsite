@@ -2,22 +2,24 @@
     <section class="bg-background_1 flex justify-center">
         <!-- canva image settings 800x300 -->
         <div class="flex items-center justify-center gap-[50px] w-[70%] max-w-[1200px] py-16">
+          <div class="w-1/2">
             <nuxt-img
-                src="/assets/pictures/branding-page/great-branding.png"
-                alt="Branding"
-                class="sm:w-[500px] sm:h-[175px] "
+              src="/assets/pictures/branding-page/great-branding.png"
+              alt="Branding"
+              class="sm:w-[500px] sm:h-[175px] "
             />
-            <div class="flex-col">
-              <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Bedrijven en Ondernemers</h1>
-              <p class="text-gray-700 font-standard">
-                  Een brandingshoot is de perfecte manier om jouw merk of jouw bedrijf visueel tot leven te brengen. 
-                  Of je nu een ondernemer of creatieveling bent, ik help je om jouw bedrijf of de mensen binnen het bedrijf 
-                  krachtig en authentiek vast te leggen. Van professionele portretten tot beelden die je bedrijfscultuur en 
-                  visie weerspiegelen... Jouw foto's passen bij jouw boodschap. Samen creëren we beelden die jouw verhaal 
-                  vertellen en je bedrijf een gezicht geven dat jouw doelgroep aanspreekt. Professionaliteit begint bij een
-                  goede fundering.
-              </p>
-            </div>
+          </div>
+          <div class="flex-col w-1/2">
+            <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Bedrijven en Ondernemers</h1>
+            <p class="text-gray-700 font-standard">
+                Een brandingshoot is de perfecte manier om jouw merk of jouw bedrijf visueel tot leven te brengen. 
+                Of je nu een ondernemer of creatieveling bent, ik help je om jouw bedrijf of de mensen binnen het bedrijf 
+                krachtig en authentiek vast te leggen. Van professionele portretten tot beelden die je bedrijfscultuur en 
+                visie weerspiegelen... Jouw foto's passen bij jouw boodschap. Samen creëren we beelden die jouw verhaal 
+                vertellen en je bedrijf een gezicht geven dat jouw doelgroep aanspreekt. Professionaliteit begint bij een
+                goede fundering.
+            </p>
+          </div>
         </div>
   </section>
 
