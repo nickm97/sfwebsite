@@ -375,64 +375,7 @@
       </div>
       
       <social-links></social-links>
-      <!-- <div class="flex gap-6 items-center w-full justify-center">
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_1.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_2.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_3.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_4.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_5.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_6.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/sanneloesfotografie" target="_blank" class="shrink-0">
-          <nuxt-img
-            src="/assets/pictures/home-page/social_link_7.webp"
-            alt="Sanneloes Fotografie Logo"
-            class="object-cover w-full max-w-[200px] sm:max-w-[300px]"
-          />
-        </a>
-        
-      </div> -->
+      
 
     </div>
 
