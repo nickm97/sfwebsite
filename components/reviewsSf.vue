@@ -29,7 +29,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import ReviewCard from '@/components/ReviewCard.vue'
 
 // Review data
 const reviews = ref([
