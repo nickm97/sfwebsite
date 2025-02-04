@@ -112,7 +112,7 @@
 
   <!-- New Section with Title and Photos -->
   <section class="px-[10px] sm:px-[140px] items flex-col items-center justify-center pb-20">
-    <p class="text-5xl font-playFair font-light text-center mb-8 mt-12">
+    <p class="hidden sm:block text-4xl font-playFair font-light text-center mb-8 mt-12">
       PHOTOGRAPHY AND INFORMATION
     </p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">

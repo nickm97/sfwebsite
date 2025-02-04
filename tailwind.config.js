@@ -25,6 +25,8 @@ export default {
         footerColor: '#ffff',
         background_2: '#d3c9bf', // beige
         page_title: '#9b775c', //bruinig
+        background_3: '#41371d', // groenig
+        textBeige: '#b6a89f'
       },
       fontFamily: {
         standard: ['"Quicksand"', 'serif'], // Voeg hier jouw gewenste lettertype toe

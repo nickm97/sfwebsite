@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center w-full py-4">
       <!-- Desktop: Grid Layout -->
       <div class="hidden xl:flex gap-6 items-center justify-center w-full">
-        <a v-for="(link, index) in socialLinks" :key="index" :href="link.url" target="_blank" class="shrink-0">
+        <a v-for="(link, index) in socialLinks" :key="index" :href="link.url" target="_blank">
           <nuxt-img :src="link.image" alt="Sanneloes Fotografie" class="object-cover w-full max-w-[200px] sm:max-w-[300px]" />
         </a>
       </div>
@@ -17,7 +17,7 @@
         </div>
   
         <!-- Navigatie Knoppen -->
-        <div class="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-4">
+        <div class="hidden sm:absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-4">
           <button @click="prevImage" class="bg-black text-white p-2 rounded-full">◀</button>
           <button @click="nextImage" class="bg-black text-white p-2 rounded-full">▶</button>
         </div>

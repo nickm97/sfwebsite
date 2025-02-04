@@ -40,7 +40,7 @@
       alt="Sanneloes Fotografie Logo"
       class="object-cover h-[45px] sm:h-[150px] z-10 "
     />
-    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light">
+    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
       <p class="sm:w-1/2">
         Hi! Mijn naam is Sanneloes van Kessel. Geboren in ‘98 en woon al zolang ik me kan herinneren 
         in het kleine dorpje Casteren. Op de middelbare school begon mijn passie voor fotografie. 
@@ -121,7 +121,7 @@
         
         <!-- Content Overlay -->
         <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Harde<br>werker</h1>
+          <h1 class="uppercase font-playFair text-2xl text-white z-10 text-center">Harde<br>werker</h1>
         </div>
         <div class="absolute inset-0 bg-black/50"></div>
       </div>
@@ -177,7 +177,7 @@
   </section>
 
   <section class="flex flex-col items-center justify-center text-center py-12 px-2 bg-buttonColor">
-    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light">
+    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
       <p class="sm:w-1/2">
         Na het behalen van mijn diploma als leerkracht basisonderwijs, heb ik me vrijwel direct 
         ingeschreven bij de KVK onder de naam ‘Sanneloes Fotografie’. Het avontuur begon. Het opbouwen 
@@ -199,45 +199,145 @@
     </div>
   </section>
   
-  <div class="bg-lightBeige">
-    
-    <div class="justify-center flex flex-col items-center">
-      <h2 class="text-sm font-serif font-thin mt-12 tracking-widest">BEHIND THE BRAND</h2>
-      <p class="text-3xl font-serif font-light mt-6 tracking-tight font-black">Photographer & Your Newest Hype Woman</p>
+  <section>
+  <div class="flex items-center justify-center bg-[url('/assets/pictures/about-page/me-banner.webp')] bg-cover bg-center h-[450px]">
+    <!-- Container voor foto's en tekst -->
+    <div class="relative flex flex-row items-center justify-center py-4 px-4 bg-buttonColor">
+      <!-- Foto's -->
       <nuxt-img
-        placeholder
-        src="/assets/pictures/loes2.jpg"
-        alt="First Image"
-        width="800"
-        height="400"
-        fit="cover"
-        class="mt-12 filter grayscale"
+        src="/assets/pictures/about-page/me-01.webp"
+        alt="Sanneloes Fotografie"
+        class="object-cover h-[45px] sm:h-[350px] z-10"
+      />
+      <nuxt-img
+        src="/assets/pictures/about-page/me-02.webp"
+        alt="Sanneloes Fotografie"
+        class="object-cover h-[45px] sm:h-[350px] z-10"
+      />
+      <nuxt-img
+        src="/assets/pictures/about-page/me-03.webp"
+        alt="Sanneloes Fotografie"
+        class="object-cover h-[45px] sm:h-[350px] z-10"
       />
 
-      <div class="flex flex-row mt-12 pb-12">
-        <div class="w-[50%] px-36">
-          <h4 class="text-2xl font-serif font-normal tracking-tight font-black">
-            Hi, I'm Sanneloes
-          </h4>
-          <p class="text-2xl font-fancy mt-6 tracking-tight">
-            If you like raw & honest photos,<br>I'm your wing woman.
-          </p>
-          <p class="text-lg font-sans font-light mt-6 tracking-tight">
-            I'm a photographer based in the Netherlands. I love capturing the beauty of everyday life and the people in it. I'm here to help you feel confident and beautiful in front of the camera. Let's create some magic together!
-          </p>
-        </div>
-        <div class="w-[50%] px-24">
+      <div class="absolute flex z-10" style="top: 16%; left: 29.75%;">
+        <p class="text-black text-5xl font-playFair uppercase text-center">
+          sa<br>nn<br>e
+        </p>
+      </div>
+      <div class="absolute flex z-10" style="top: 16%; right: 29.75%;">
+        <p class="text-black text-5xl font-playFair uppercase text-center">
+          lo<br>es
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="flex flex-col items-center justify-center text-center py-0 px-2 pb-[50px] bg-white">
+    <nuxt-img
+      src="/assets/pictures/about-page/my-vision.webp"
+      alt="Sanneloes Fotografie Logo"
+      class="object-cover h-[45px] sm:h-[150px] z-10 "
+    />
+    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-black sm:gap-12 py-0 font-standard text-[14.5px]">
+      <p class="sm:w-1/2">
+        Waarom werd ik fotograaf? Wat maakt nou dat ik zo veel om dit vak geef? Dat ik zo veel waarde hecht 
+        aan foto's? Een moeilijke vraag, waar ik echt wel even over na moest denken.<br><br>
+
+        Voor mij zit het hem niet alleen in creatief bezig zijn of in het aandacht hebben voor 
+        grote dingen die gebeuren... In het vastleggen van gebeurtenissen of gewoon een mooie foto maken.....<br><br>
+
+        Voor mij zit het hem in <strong>connecties</strong>, in schoonheid (absoluut niet het ideaalbeeld, maar
+        juist om alle kleine imperfecties die mooi worden), in <strong>puurheid</strong>, in <strong>liefde</strong> tussen mensen vastleggen.... 
+        In aanrakingen, emoties vangen, kleine dingen waar jij misschien niet eens aan zou denken om te fotograferen.
+        Om licht, creativiteit, vrijheid en nog het meest om iets te creëren wat <strong>waardevol</strong> is voor mijn klanten.   
+      </p>
+      <p class="sm:w-1/2">
+        Uiteindelijk gaat het als fotograaf namelijk helemaal niet om mij. 
+        Het gaat om mooie of bijzondere <strong>herinneringen</strong> voor de klant vastleggen, 
+        zodat zij daar nog jaren van kunnen genieten, maar ook zodat zij af en toe eens 
+        te kunnen <strong>ontsnappen uit het hier en nu</strong> en terug te kunnen naar een waardevolle tijd 
+        of een fijn moment. Elke keer als ik foto's van mezelf uit het verleden terugkijk, 
+        gaat er zo veel door me heen. Euforie, herinneringen, warme gevoelens... Het is fijn 
+        om soms kort terug te kunnen naar toen en nu voor even te kunnen vergeten.<br><br>
+
+        Ook gaat het me om beelden te kunnen creëren waar iemand <strong>trots</strong> op is. ‘Kijk eens hoe mooi 
+        deze foto's zijn... dit ben IK gewoon!’ Hoe tof is het als je iemand <strong>zelfvertrouwen</strong> en wat 
+        liefde voor henzelf mee kan geven? IEDEREEN kan foto's van zichzelf hebben waar hij of zij 
+        blij van wordt. Dat je trots kan zijn op jezelf en je blij bent met hoe je bent. Laat jezelf 
+        eens door een professional vastleggen.
+      </p>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center text-center py-12 px-2 bg-[#d3c9bf]">
+    <p class="uppercase font-playFair text-3xl text-black">
+      You can wake me up for
+    </p>
+    <p class="font-standard text-black text-sm ">
+      Laten we meteen starten met een disclaimer: JE MAG ME NIET WAKKER MAKEN. Mijn slaap is veel te heilig. Ik slaap het liefst minstens 9 uur per nacht, dus mij niet bellen. 
+    </p>
+  </section>
+
+  <wake-me-sf></wake-me-sf>
+
+  <section>
+    <div class="flex justify-center w-full pt-[100px] pb-[50px] pl-[100px] pr-12">
+      <div class="flex relative items-center justify-center w-1/2">
+        <div>
           <nuxt-img
-            placeholder
-            src="/assets/pictures/loes-schattig.jpg"
-            alt="First Image"
-            class=""
+            src="/assets/pictures/about-page/describe-me-01.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[550px]"
+          />
+        </div>
+        <div class="p-1 bg-white absolute z-10 flex" style="top: 15%; left: 65%;">
+          <nuxt-img
+            src="/assets/pictures/about-page/describe-me-02.webp"
+            alt="Sanneloes Fotografie Logo"
+            class="object-cover h-[45px] sm:h-[375px]"
           />
         </div>
       </div>
-    </div>
+      <div class="w-[calc(50%-100px)]">
+        <div class="flex -ml-[150px]">
+          <p class="uppercase font-playFair text-4xl text-right">How my sweet clients<br>describe me</p>
+        </div>
+        <div class="flex">
+          <div class="ml-12 mt-12">
+            <p class="font-standard font-light uppercase">
+              Stelt je op je gemak<br><br>
 
-  </div>
+              ENERGIEK<br><br>
+
+              sociaal<br><br>
+
+              LIEVE MEID<br><br>
+
+              Professioneel
+            </p>
+          </div>
+          <div class="-ml-12 mt-[120px]">
+            <p class="font-standard font-light text-right uppercase">
+              enthousiast<br><br>
+
+              toegankelijk<br><br>
+
+              gepassioneerd<br><br>
+
+              let op details<br><br>
+
+              vertrouwd gevoel
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
   <footer-sf></footer-sf>
 </template>
   

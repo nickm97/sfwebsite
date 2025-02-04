@@ -7,7 +7,7 @@
         {{ review.name }}
       </p>
       <div class="group-hover:hidden border-1 border-b border-black w-[60%]"></div>
-      <p class="group-hover:hidden font-light text-xs py-1">
+      <p class="group-hover:hidden font-light font-standard text-xs py-1">
         {{ review.date }}
       </p>
       <div class="group-hover:flex hidden text-left px-2 py-1 text-xs select-none pointer-events-none">
