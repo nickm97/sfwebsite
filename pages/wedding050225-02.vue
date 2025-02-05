@@ -1,10 +1,10 @@
 <template>
   <section class="flex flex-col items-center justify-center px-6 bg-buttonColor">
     <div class="w-[50%] flex items-center justify-center">
-      <!-- canva 800x300 -->
+      <!-- canva 800x300 160 lettertype -->
       <nuxt-img
-        src="/assets/pictures/wedding-page/wedding-010825-02/tom&cynthia.webp"
-        alt="Bruiloft"
+        src="/assets/pictures/wedding-page/wedding-050225-02/gijs&britt.webp"
+        alt="Sanneloes Fotografie Bruiloft"
         class="h-[100px] flex items-center justify-center"
       />
     </div>

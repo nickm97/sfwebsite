@@ -3,7 +3,7 @@
     <div class="w-[50%] flex items-center justify-center">
       <!-- canva 800x300 -->
       <nuxt-img
-        src="/assets/pictures/wedding-page/wedding-010825-01/serena&david.png"
+        src="/assets/pictures/wedding-page/wedding-010825-01/david&serena.webp"
         alt="Bruiloft"
         class="h-[100px] flex items-center justify-center"
       />

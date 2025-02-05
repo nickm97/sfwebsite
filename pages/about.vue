@@ -1,16 +1,13 @@
 
 <template class="bg-white">
 
-  <section id="banner" class="flex">
+  <section id="banner">
     <div>
       <nuxt-img
         placeholder
         src="/assets/pictures/about-page/banner-background.webp"
         alt="Sanneloes fotografie"
-        width="1920"
-        height="700"
-        fit="cover"
-        class="w-[100%] h-[600px] bg-cover bg-center"
+        class="w-[100%] h-[300px] sm:h-[600px] bg-cover bg-center"
       />
     </div>
     <div class="absolute" style="top: 18%; left: 5%;">
@@ -18,29 +15,38 @@
         placeholder
         src="/assets/pictures/about-page/banner-photo.webp"
         alt="Sanneloes fotografie"
-        class="w-[430px] h-[600px]"
+        class="h-[300px] w-[205px] sm:w-[430px] sm:h-[600px]"
       />
     </div>
     <div class="absolute" style="top: 18%; right: 33%;">
-      <h1 class="uppercase font-playFair text-[70px] tracking-widest">About</h1>
+      <h1 class="uppercase font-playFair text-[40px] sm:text-[70px] tracking-widest">About</h1>
     </div>
     <div class="absolute" style="top: 27%; right: 31%;">
       <nuxt-img
         placeholder
         src="/assets/pictures/about-page/banner-name.webp"
         alt="Sanneloes fotografie"
-        class="w-[100%] h-[175px] bg-cover bg-center"
+        class="w-[100%] h-[70px] sm:h-[175px] bg-cover bg-center"
       />
     </div>
   </section>
 
   <section class="flex flex-col items-center justify-center text-center py-0 px-2 pb-[50px] bg-buttonColor">
-    <nuxt-img
-      src="/assets/pictures/about-page/about-qoute.webp"
-      alt="Sanneloes Fotografie Logo"
-      class="object-cover h-[45px] sm:h-[150px] z-10 "
-    />
-    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
+    <div class="hidden sm:flex items-center justify-center z-10">
+      <nuxt-img
+        src="/assets/pictures/about-page/about-qoute.webp"
+        alt="Sanneloes Fotografie Logo"
+        class="object-cover h-[45px] sm:h-[150px] z-10 "
+      />
+    </div>
+    <div class="sm:hidden items-center justify-center z-10 mt-4">
+      <nuxt-img
+        src="/assets/pictures/about-page/about-qoute-mobile.webp"
+        alt="Sanneloes Fotografie Logo"
+        class="object-cover h-[70px] sm:h-[150px] z-10 "
+      />
+    </div>
+    <div class="text-left px-4 sm:flex sm:w-[1300px] sm:text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light sm:text-[14.5px] text-[13px]">
       <p class="sm:w-1/2">
         Hi! Mijn naam is Sanneloes van Kessel. Geboren in ‘98 en woon al zolang ik me kan herinneren 
         in het kleine dorpje Casteren. Op de middelbare school begon mijn passie voor fotografie. 
@@ -57,125 +63,7 @@
     </div>
   </section>
 
-  <section class="px-[10px] sm:px-[10px] items flex-col items-center justify-center pb-20">
-    <p class="text-3xl font-playFair font-light text-center mb-2 mt-10 uppercase">
-      Words that describe me
-    </p>
-    <div class="grid grid-cols-2 sm:grid-cols-7 gap-4 max-w-10xl w-full">
-      <!-- Tile 1 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\lief.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Lief</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <!-- Tile 2 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\creatief.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Creatief</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <!-- Tile 3 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\zorgzaam.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Zorgzaam</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <!-- Tile 4 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\harde-werker.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10 text-center">Harde<br>werker</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <!-- Tile 5 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\reislustig.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Reislustig</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <!-- Tile 6 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\open.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Open</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <!-- Tile 7 -->
-      <div class="relative group overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="\assets\pictures\about-page\enthousiast.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        <!-- Content Overlay -->
-        <div class="absolute inset-0 flex items-center justify-center flex-col">
-          <h1 class="uppercase font-playFair text-2xl text-white z-10">Enthousiast</h1>
-        </div>
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div>
-    </div>
-  </section>
-
+  <describe-me></describe-me>
   <section class="flex flex-col items-center justify-center text-center py-12 px-2 bg-buttonColor">
     <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
       <p class="sm:w-1/2">

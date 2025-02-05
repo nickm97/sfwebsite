@@ -11,11 +11,11 @@
         
         <!-- Navigatie Knoppen -->
         <div class="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-0">
-          <button @click="prevReview" class="skip-button bg-black text-white p-2 rounded-full">
-            <i class="fa-solid fa-chevron-left"></i>
+          <button @click="prevReview" class="skip-button text-white p-2 rounded-full">
+            <i class="fa-solid fa-chevron-left text-3xl"></i>
           </button>
-          <button @click="nextReview" class="skip-button bg-black text-white p-2 rounded-full">
-            <i class="fa-solid fa-chevron-right"></i>
+          <button @click="nextReview" class="skip-button text-white p-2 rounded-full">
+            <i class="fa-solid fa-chevron-right text-3xl"></i>
           </button>
         </div>
       </div>
@@ -78,12 +78,7 @@
   </script>
   
   <style scoped>
-  .skip-button {
-    transition: all 0.2s ease-in-out;
-  }
-  .skip-button:hover {
-    background-color: gray;
-  }
+    
   </style>
   
       <!-- Titel -->

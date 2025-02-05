@@ -45,7 +45,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">LUÉN</h2>
           <button
-            @click="redirect('/newborn')"
+            @click="redirect('/newborn050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -62,7 +62,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">LOÏS</h2>
           <button
-            @click="redirect('/strong-women')"
+            @click="redirect('/newborn050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -77,9 +77,9 @@
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">SEP</h2>
+          <h2 class="text-2xl font-playFair mb-2">LAURIE</h2>
           <button
-            @click="redirect('/strong-women')"
+            @click="redirect('/newborn050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -123,9 +123,9 @@
             class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-            <h2 class="text-2xl font-playFair mb-2">LAURIE</h2>
+            <h2 class="text-2xl font-playFair mb-2">LOTUS</h2>
             <button
-                @click="redirect('/strong-women')"
+                @click="redirect('/newborn050225-04')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
                 View More
