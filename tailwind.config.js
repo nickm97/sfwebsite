@@ -26,6 +26,7 @@ export default {
         background_2: '#d3c9bf', // beige
         page_title: '#9b775c', //bruinig
         background_3: '#41371d', // groenig
+        background_4: '#f7f0ec', //licht beige
         textBeige: '#b6a89f'
       },
       fontFamily: {

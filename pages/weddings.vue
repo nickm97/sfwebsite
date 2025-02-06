@@ -1,38 +1,66 @@
 <template>
 
-  <section class="bg-gray-100 flex justify-center">
-    <div class="flex items-center justify-center gap-[100px] w-[70%]">
-      <div class="w-1/2">
+  <section>
+    <!-- background pic -->
+    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+      <nuxt-img
+        src="/assets/pictures/wedding-page/wedding-banner.webp"
+        alt="Wedding Background"
+        class="w-full h-full object-cover object-center"
+      />
+    </div>
+    <div>
+      <p class="absolute top-1/2 left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        Weddings
+      </p>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
+    <div class="w-[70%]">
+      <p class="text-white uppercase font-standard font-bold">
+        Bruiloften
+      </p>
+    </div>
+    <div class="mt-6 w-[70%]">
+      <p class="text-white font-standard font-light">
+        WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd! 
+        Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan, 
+        waaronder het kiezen van een fotograaf voor jullie droomdag. Ik voel me vereerd dat jullie 
+        interesse hebben in mij als jullie potentiële fotografe. Ik doe mijn werk met enorm veel passie, 
+        liefde en enthousiasme. Hopelijk zoeken jullie precies zo iemand voor jullie bruiloft! 
+      </p>
+    </div>
+  </section>
+
+  <section class="items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_2">
+  
+      <!-- Afbeelding -->
+      <div class="px-4 flex items-center justify-center">
         <nuxt-img
-          src="/assets/pictures/wedding-page/lets-get-married.png"
-          alt="Bruiloft"
-          class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
-        />  
+          src="/assets/pictures/wedding-page/wedding-photo-qoute.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px] rounded-lg"
+        />
       </div>
-      <div class="flex-col w-1/2">
-        <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Bruiloften</h1>
-        <p class="text-gray-700 font-standard">
-          WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd!
-          Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan,
-          waaronder het kiezen van een fotograaf voor jullie droomdag. Ik voel me vereerd dat jullie
-          interesse hebben in mij als jullie potentiële fotografe. Ik doe mijn werk met enorm veel passie,
-          liefde en enthousiasme. Hopelijk zoeken jullie precies zo iemand voor jullie bruiloft!
-        </p>
-        <div
-          class="font-standard cursor-pointer flex mt-4 items-center gap-2" 
-          @click="scrollToSection"
-        >
-          <div><u>CLICK FOR PACKAGES</u></div>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
+
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/wedding-page/wedding-qoute-01.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px]"
+        />
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-100 flex items-center justify-center px-6 py-6">
+  <section class="bg-gray-100 flex items-center justify-center px-6 py-[75px] bg-background_4">
     <div class="absolute ml-[-88%] z-10">
       <nuxt-img
-        src="/assets/pictures/wedding-page/love-stories.png"
+        src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
         class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
       />
@@ -41,7 +69,7 @@
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/newborn-shoot.jpg"
+          src="/assets/pictures/wedding-page/rick&marlou.webp"
           alt="Tile Image 1"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -58,7 +86,7 @@
       <!-- Tile 2 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/champagne.jpg"
+          src="/assets/pictures/wedding-page/gijs&britt.webp"
           alt="Tile Image 2"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -75,7 +103,7 @@
       <!-- Tile 3 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/shoot-02.jpg"
+          src="/assets/pictures/wedding-page/sam&inge.webp"
           alt="Tile Image 3"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -89,21 +117,12 @@
           </button>
         </div>
       </div>
-
-      <!-- Scroll to Discover Text -->
-      <!-- <div
-        class="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 text-black text-base text-center cursor-pointer"
-        @click="scrollToNextSection"
-      >
-        <div>SCROLL TO DISCOVER</div>
-        <i class="fa-solid fa-chevron-down text-sm mt-1"></i>
-      </div> -->
     </div>
   </section>
 
-  <section class="bg-gray-100 flex justify-center">
-    <div class="flex items-center justify-center gap-[20px] w-[70%] px-6 py-6">
-      <p class="text-gray-700 font-standard">
+  <section class="flex justify-center bg-buttonColor">
+    <div class="flex items-center justify-center gap-[20px] w-[50%] px-6 py-6">
+      <p class="text-white font-standard font-light text-[14.5px]">
         Ik maak <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Ik vang de momenten waarop 
         heel hard gelachen wordt of als er een traan over een wang rolt. Ik heb aandacht voor kleine dingen, 
         zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, ik voel emoties 
@@ -115,6 +134,8 @@
         tweetjes en verder ben ik heel de dag scherp op allerlei warme momenten om te vangen in een foto. Jullie genieten 
         gewoon van de dag, doen jullie ding en ik zorg voor de visuele herinnering van jullie bruiloft. 
       </p>
+    </div>
+    <div>
       <nuxt-img
         src="/assets/pictures/wedding-page/i-notice.png"
         alt="i-notice"
@@ -122,96 +143,60 @@
       />
     </div>
   </section>
-
-  <section class="bg-gray-100 flex items-center justify-center px-6 py-6">
-    <div class="absolute ml-[-88%] z-10">
+  
+  <section>
+    <div class="relative h-screen max-h-[calc(100vh)]">
       <nuxt-img
-        src="/assets/pictures/wedding-page/love-stories.png"
-        alt="Love Stories"
-        class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
-      />
-    </div>
-    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
-      <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/newborn-shoot.jpg"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">MARTIJN EN KRISTEL</h2>
-          <button
-            @click="redirect('/wedding050225-04')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
-      </div>
-      <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/champagne.jpg"
-          alt="Tile Image 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">PETER EN EVY</h2>
-          <button
-            @click="redirect('/wedding050225-05')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
-      </div>
-      <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/shoot-02.jpg"
-          alt="Tile Image 3"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">WARD EN NICKY</h2>
-          <button
-            @click="redirect('/wedding050225-06')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
+        src="/assets/pictures/wedding-page/banner-i-notice.webp"
+        alt="Wedding Background"
+        class="w-full h-full object-cover object-bottom"
+      /> 
+
+      <!-- Tekst gecentreerd bovenin -->
+      <p class="absolute w-full top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[50px] font-bold font-playFair uppercase text-center">
+        I notice connections, emotions and details
+      </p>
+
+      <!-- Knop onder de tekst -->
+      <div class="absolute w-full top-[18%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
+        <button
+          @click="scrollToSection"
+          class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
+          cursor-pointer border-[1px] border-black font-bold text-black text-[14.5px]">
+          IK WIL GRAAG MEER INFORMATIE
+        </button>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-100 flex justify-center">
-    <div class="flex items-center justify-center gap-[20px] w-[70%] py-6 px-6">
-      <nuxt-img
-        src="/assets/pictures/wedding-page/lets-go-on-an-adventure.png"
-        alt="lets go on an adventure"
-        class="w-500 h-500 sm:w-[500px] sm:h-[300px] "
-      />
-      <p class="text-gray-700 font-standard">
-        YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn jullie helemaal 
-        verzot op het land waar jullie willen gaan trouwen en daar ga ik maar al te graag mee naartoe, 
-        want ‘HALLOOOO, je praat met een héle grote reisfanaat!’ Zelf heb ik al vele mooie reizen gemaakt
-        in bijna alle continenten en ik geniet enorm van al het schoons wat je in andere landen ziet, wat 
-        je in Nederland niet of minder tegenkomt. 
+  <section class="justify-center bg-buttonColor py-12">
+    <div class="flex items-center justify-center gap-[20px] px-12">
+      <p class="text-white font-standard font-light text-[14.5px]">
+        YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn 
+        jullie helemaal verzot op het land waar jullie willen gaan trouwen en daar ga ik maar al te graag 
+        mee naartoe, want ‘HALLOOOO, je praat met een héle grote reisfanaat!’ Zelf heb ik al vele mooie reizen 
+        gemaakt in bijna alle continenten en ik geniet enorm van al het schoons wat je in andere landen ziet, 
+        wat je in Nederland niet of minder tegenkomt.<br><br>
+
         In 2024 heb ik een prachtige bruiloft in zuid-Spanje mogen vastleggen én heb ik mooie editorial foto’s 
         kunnen maken van bruidsparen in Marrakech. In 2025 staat een gave bruiloft in midden Italië gepland en 
         hopelijk zal ik nog meer mooie bruiloften in het buitenland mogen bijwonen én fotograferen. Kan nu al 
-        niet wachten op al dat moois! Ook voor <strong>‘Elopement Weddings’</strong> mag je zeker contact met mij opnemen. 
-        Ik zie jullie al helemaal staan op een prachtige, unieke plek midden in de natuur! 
+        niet wachten op al dat moois! Ook voor <strong>‘Elopement Weddings’</strong> mag je zeker contact met mij opnemen. Ik 
+        zie jullie al helemaal staan op een prachtige, unieke plek midden in de natuur! 
+      </p>
+    </div>
+    <div>
+      <p class="uppercase text-white font-playFair text-[50px] mt-6 px-12">
+        Trouwen in het buitenland
       </p>
     </div>
   </section>
 
-  <section class="bg-gray-100 flex items-center justify-center px-6 py-6">
+  <section class="bg-gray-100 flex items-center justify-center px-6 py-[75px] bg-background_4">
     <div class="absolute ml-[-88%] z-10">
       <nuxt-img
-        src="/assets/pictures/wedding-page/love-stories.png"
+        src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
         class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
       />
@@ -220,14 +205,14 @@
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/newborn-shoot.jpg"
+          src="/assets/pictures/wedding-page/tom&cynthia.webp"
           alt="Tile Image 1"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">TOM EN CYNTHIA</h2>
           <button
-            @click="redirect('/wedding010825-02')"
+            @click="redirect('/wedding050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -237,14 +222,14 @@
       <!-- Tile 2 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/champagne.jpg"
+          src="/assets/pictures/wedding-page/brit&lotte.webp"
           alt="Tile Image 2"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">BRIT EN LOTTE</h2>
           <button
-            @click="redirect('/wedding050225-07')"
+            @click="redirect('/wedding050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -254,34 +239,51 @@
       <!-- Tile 3 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/shoot-02.jpg"
+          src="/assets/pictures/wedding-page/david&serena.webp"
           alt="Tile Image 3"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">DAVID EN SERENA</h2>
           <button
-            @click="redirect('/wedding010825-01')"
+            @click="redirect('/wedding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
           </button>
         </div>
       </div>
+
     </div>
   </section>
-  
-  <section id="packages" class="bg-gray-100 flex flex-col items-center justify-center px-6 py-12">
+
+  <section class="relative parallax">
+    <div class="relative h-screen max-h-[calc(100vh)]">
+      <!-- <nuxt-img
+        src="/assets/pictures/wedding-page/banner-scroll.webp"
+        alt="Wedding Background"
+        class="w-full h-full object-cover object-bottom"
+      /> -->
+
+      <nuxt-img
+        src="/assets/pictures/wedding-page/banner-scroll-qoute-white.webp"
+        alt="Love Stories"
+        class="w-[1100px] absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      />
+    </div>
+  </section>
+
+  <section id="packages" class="flex flex-col items-center justify-center px-6 py-12 bg-buttonColor">
     <div class="flex items-center justify-center">
       <nuxt-img
-        src="/assets/pictures/wedding-page/wedding-packages.png"
+        src="/assets/pictures/wedding-page/wedding-packages.webp"
         alt="Wedding Packages"
-        class="w-[500px] h-[150px] "
+        class="h-[150px]"
       />
     </div>
     <div class="flex items-center justify-center gap-[20px] w-[70%] px-6 py-6">
       <div class="flex flex-col w-2/3">
-        <p class="text-gray-700 font-standard">
+        <p class="text-white font-standard font-light">
         Prijzen vanaf €1800 inclusief BTW.<br>
         Vanaf 6 uur fotografie.<br><br>
 
@@ -319,31 +321,67 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
-    <div class=" w-[50%] m-[-50px]">
-      <nuxt-img
-        src="/assets/pictures/wedding-page/tell-stories.png"
-        alt="Tell Stories"
-        class=""
-      />
-    </div>
-    <div class="mt-12 w-[70%]">
-      <p class="text-white">
-        Ik doe mijn best om het gevoel van de dag terug te brengen in 
-        alle beelden, zodat jullie jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br> 
+  <section class="items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:gap-1 items-center justify-center py-8 w-full sm:mx-auto bg-background_4">
+  
+      <!-- Afbeelding -->
+      <div class="w-1/2 px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/wedding-page/telling-stories.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px] rounded-lg border-[1px] border-black"
+        />
+      </div>
 
-        <strong>Ik vind jullie verhaal belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk vinden, waar jullie van dromen,
-        waarom je zo gek bent op elkaar, wat jullie chemie is, wie de belangrijkste mensen voor jullie zijn, enzovoorts, 
-        enzovoorts. <br><br>
-        Ik luister naar jullie. Ik leer jullie graag écht kennen. 
+      <div class="w-1/2 px-12 items-center justify-center">
+        <p class="text-center font-playFair text-4xl w-[80%] py-6">
+          I DON'T TAKE PICTURES<br>
+          I TELL STORIES
+        </p>
+        
+        <p class="text-center font-standard font-light w-[80%]">
+          Ik doe mijn best om het gevoel van de dag terug te brengen in alle beelden, zodat jullie 
+          jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br>
 
-      </p>
+          <strong>Ik vind jullie verhaal belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk 
+          vinden, waar jullie van dromen, waarom je zo gek bent op elkaar, wat jullie chemie is, 
+          wie de belangrijkste mensen voor jullie zijn, enzovoorts, enzovoorts. Ik luister naar jullie. 
+          Ik leer jullie graag écht kennen. 
+
+        </p>
+      </div>
+      <div>
+      </div>
+
     </div>
   </section>
+
 
   <footer-sf></footer-sf>
 </template>
 
+
+<style scoped>
+  .parallax {
+      /* The image used */
+      background-image: url("/public/assets/pictures/wedding-page/banner-scroll.webp");
+
+      min-height: 400px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+</style>
 
 <script setup>
   import { useRouter } from 'vue-router';
