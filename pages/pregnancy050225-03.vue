@@ -3,8 +3,8 @@
     <div class="w-[50%] flex items-center justify-center">
       <!-- canva 800x300 160 lettertype -->
       <nuxt-img
-        src="/assets/pictures/pregnancy-page/pregnancy-050225-03/emma.webp"
-        alt="Sanneloes Fotografie Bruiloft"
+        src="/assets/pictures/pregnancy-page/pregnancy-050225-03/jackie.webp"
+        alt="Sanneloes Fotografie Zwangerschap"
         class="h-[120px] flex items-center justify-center"
       />
     </div>

@@ -4,7 +4,7 @@
       <!-- canva 800x300 160 lettertype -->
       <nuxt-img
         src="/assets/pictures/pregnancy-page/pregnancy-050225-02/astrid.webp"
-        alt="Sanneloes Fotografie Bruiloft"
+        alt="Sanneloes Fotografie Zwangerschap"
         class="h-[120px] flex items-center justify-center"
       />
     </div>

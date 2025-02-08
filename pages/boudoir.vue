@@ -1,4 +1,74 @@
 <template>
+  <section>
+    <!-- background pic -->
+    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+      <nuxt-img
+        src="/assets/pictures/boudoir-page/banner.webp"
+        alt="Family Background"
+        class="w-full h-full object-cover object-center"style="object-position: center 50%;"
+      />
+    </div>
+    <div>
+      <p class="absolute top-1/2 left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        BOUDOIR
+      </p>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
+    <div class="w-[70%]">
+      <p class="text-white uppercase font-standard font-bold">
+        BOUDOIR
+      </p>
+    </div>
+    <div class="mt-6 w-[70%]">
+      <p class="text-white font-standard font-light">
+        Een boudoirshoot is meer dan alleen een fotoshoot – het is jou op je krachtigst neerzetten. 
+        Het is een kans om je lichaam, je zelfvertrouwen en je unieke schoonheid te omarmen. Of je 
+        nu een speciale gelegenheid viert of gewoon iets voor jezelf doet, deze boudoir sessies zijn 
+        ontworpen om je sterk, sexy en mooi te laten voelen in je eigen huid. Boudoirfotografie biedt 
+        ruimte voor creativiteit. Voor out of the box denken. Het creëren van kunst. Stap in je zelfvertrouwen
+        en laat mij de echte jij vastleggen.
+      </p>
+    </div>
+  </section>
+
+  <section class="items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
+  
+      <!-- Afbeelding -->
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/couples-page/couples-qoute-01.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px] rounded-lg"
+        />
+      </div>
+
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/couples-page/couples-photo-qoute.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[300px] rounded-lg"
+        />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <section class="bg-background_1 flex justify-center">
       <!-- canva image settings 400x150 -->
       <div class="flex items-center justify-center gap-[50px] w-[70%] max-w-[1200px] py-16">

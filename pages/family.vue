@@ -1,167 +1,109 @@
 <template>
-    <section class="bg-background_1 flex justify-center">
-        <!-- canva image settings 400x150 -->
-        <div class="flex items-center justify-center gap-[50px] w-[70%] max-w-[1200px] py-16">
-            <div class="w-1/2">  
-              <nuxt-img
-                    src="/assets/pictures/family-page/best-portraits.png"
-                    alt="Your story told"
-                    class="sm:w-[500px] sm:h-[175px] "
-                />
-            </div>
-            <div class="flex-col w-1/2">
-              <h1 class="mb-2 text-page_title text-center text-4xl font-playFair uppercase">Gezinnetjes</h1>
-              <p class="text-gray-700 font-standard">
-                  Echte momenten, waardevolle herinneringen!
-                  Een gezin groeit, verandert en leeft volop in het moment. Het zijn die kleine gebaren, 
-                  knuffels, het gelach en zelfs de chaos die jullie uniek maken. Een gezinsshoot draait om het 
-                  vastleggen van deze echte momente precies zoals jullie zijn.<br><br>
-
-                  Geen stijve poses, maar spontane beelden vol warmte en liefde. Of het nu thuis is, buiten in de 
-                  natuur of op een favoriete plek, ik zorg dat jullie je ontspannen voelen en het plezier kunnen laten spreken.
-                  Want de mooiste herinneringen zijn vaak de alledaagse momenten. Laten we ze samen vastleggen voor altijd. 
-              </p>
-            </div>
-        </div>
-  </section>
-
-  <section class="bg-gray-100 flex items-center justify-center px-6">
-    <div class="absolute ml-[-88%] z-10">
+  <section>
+    <!-- background pic -->
+    <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-        src="/assets/pictures/newborn-page/little-stories.png"
-        alt="Love Stories"
-        class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
+        src="/assets/pictures/family-page/banner.webp"
+        alt="Family Background"
+        class="w-full h-full object-cover object-center"style="object-position: center 20%;"
       />
     </div>
-    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
-      <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/newborn-shoot.jpg"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    <div>
+      <p class="absolute top-1/2 left-[8%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        Little<br>FAMILIES
+      </p>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
+    <div class="w-[70%]">
+      <p class="text-white uppercase font-standard font-bold">
+        FAMILIES
+      </p>
+    </div>
+    <div class="mt-6 w-[70%]">
+      <p class="text-white font-standard font-light">
+        Echte momenten, waardevolle herinneringen! Een gezin groeit, verandert en leeft volop in het moment. 
+        Het zijn die kleine gebaren, knuffels, het gelach en zelfs de chaos die jullie uniek maken. Een gezinsshoot 
+        draait om het vastleggen van deze echte momenten – precies zoals jullie zijn.<br><br>
+
+        Geen stijve poses, maar spontane beelden vol warmte en liefde. Of het nu thuis is, 
+        buiten in de natuur of op een favoriete plek, ik zorg dat jullie je ontspannen voelen 
+        en het plezier kunnen laten spreken.
+      </p>
+    </div>
+  </section>
+
+  <section class="items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
+  
+      <!-- Afbeelding -->
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/family-page/families-photo-qoute.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px] rounded-lg"
         />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <!-- <h2 class="text-2xl font-playFair mb-2">DAISY</h2> -->
-          <button
-            @click="redirect('/newborn')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
       </div>
-      <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/champagne.jpg"
-          alt="Tile Image 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/family-page/families-qoute-01.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px]"
         />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <!-- <h2 class="text-2xl font-playFair mb-2">ASTRID</h2> -->
-          <button
-            @click="redirect('/strong-women')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
-      </div>
-      <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/shoot-02.jpg"
-          alt="Tile Image 3"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <!-- <h2 class="text-2xl font-playFair mb-2">PUCK</h2> -->
-          <button
-            @click="redirect('/strong-women')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
       </div>
     </div>
   </section>
 
-  <div
-    class="flex flex-col items-center justify-center cursor-pointer py-10 font-standard bg-background_1"
-    @click="scrollToNextSection"
-  >
-    <div>SCROLL TO DISCOVER MORE</div>
-    <i class="fa-solid fa-chevron-down text-sm mt-1"></i>
-  </div>
-
-  <section class="bg-gray-100 flex items-center justify-center px-6">
-    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-12 px-24 sm:px-0 w-[85%]">
-        <!-- Tile 1 -->
-        <div class="relative rounded-lg overflow-hidden flex flex-col">
-            <p class="font-playFair text-4xl font-light leading-[2.5rem] text-right">
-                WHAT TO<br>EXPECT?
+  <section>
+    <div class="bg-background_2 flex items-center justify-center px-6 py-20">
+      <div class="flex flex-col items-center justify-center">
+        <div class="w-[90%] flex flex-row">
+          <div class="flex flex-col w-[60%]">
+            <p class="font-playFair text-4xl font-light">
+              WHAT TO EXPECT?
             </p>
-            <!-- <p class="font-standard font-light text-right w-[80%] ml-auto"> -->
-            <p class="font-standard font-light text-right pt-4">
-                Een ontspannen fotosessie van 60-90 minuten met lekker veel spelen en knuffelen<br><br>
-                Beelden vol spontaniteit en echtheid<br><br>
-                Herinneringen die een leven lang meegaan<br><br>
-                Een stylingguide en tips voor de voorbereiding van de shoot<br><br>
+            <ul class="list-disc pl-6 font-standard text-[14.5px] font-light leading-[2rem] py-6">
+              <li class="pl-2">Een ontspannen fotosessie van 60-90 minuten</li>
+              <li class="pl-2">Beelden vol spontaniteit en echtheid</li>
+              <li class="pl-2">Herinneringen die een leven lang meegaan</li>
+              <li class="pl-2">Een stylingguide en tips voor de voorbereiding van de shoot</li>
+            </ul>
+            
+          </div> 
+          <div class="flex flex-col w-[60%]">
+            <p class="font-playFair text-4xl font-light">
+              PACKAGES AND PRICES
             </p>
+            <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[2rem] py-6">
+              <li class="pl-2">Een reguliere gezinsshoot tot 4 personen incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) - €425 inclusief BTW - €25 per extra persoon</li>
+              <li class="pl-2">Gebruik studio: +€39,50</li>
+              <li class="pl-2">Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.</li>
+              <li class="pl-2">Extra foto's zijn achteraf bij te bestellen met voordeelpakketten.</li>
+              <li class="pl-2">Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW - per extra spread +€4,95</li>
+            </ul>
+            
+          </div> 
+        </div>       
+        <div class="w-full flex items-center justify-center">
+          <button
+            @click="redirect('/contact')"
+            class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
+            cursor-pointer border-[0.5px] border-black text-black text-[14.5px] uppercase">
+            Boek jullie gezinsshoot en leg de waardevolle momenten samen vast
+          </button>
         </div>
-
-        <!-- Tile 2 -->   
-        <div class="relative group rounded-lg overflow-hidden">
-            <img
-            src="/assets/pictures/champagne.jpg"
-            alt="Tile Image 2"
-            class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-            <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-            <h2 class="text-2xl font-playFair mb-2">LAURIE</h2>
-            <button
-                @click="redirect('/strong-women')"
-                class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-            >
-                View More
-            </button>
-            </div>
-        
-        </div>
-
-      <!-- Tile 3 -->
-      <div class="relative rounded-lg overflow-hidden flex flex-col">
-        <p class="font-playFair text-4xl font-light leading-[2.5rem]">
-            PRICES
-        </p>
-        <p class="font-standard font-light pt-4">
-            Een reguliere gezinsshoot tot 4 personen incl. 25 foto's (zelf te kiezen uit een uitgebreide galerij)<br>
-            €425 inclusief BTW - €25 per extra persoon<br><br>
-            Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.<br><br>
-            Extra foto's zijn achteraf bij te bestellen met voordeelpakketten<br><br>
-            Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW
-            Per extra spread +€4,95  
-        </p>
       </div>
-
     </div>
-  </section>
+  </section>  
 
-  <div class="flex flex-col items-center justify-center py-6 font-standard bg-background_1">
-    <button
-        @click="redirect('/contact')"
-        class="px-6 py-2 rounded-full bg-naturalBeige font-standard py-12 cursor-pointer"
-    >
-    Boek jullie gezinsshoot en leg de waardevolle momenten samen vast 
-    </button>
-  </div>
-
-    <section class="flex flex-col">
-        <div class="flex bg-background_1 items-center justify-center relative pb-6">
+  <section class="flex flex-col">
+        <div class="flex bg-background_4 items-center justify-center relative pt-12 pb-6">
             <!-- Tekstgedeelte -->
-            <div class="flex flex-col items-center justify-center pb-6 font-standard bg-background_1 text-center">
+            <div class="flex flex-col items-center justify-center pb-6 font-standard bg-background_4 text-center">
                 <p class="font-playFair text-4xl font-light leading-[2.5rem] py-4">
                     OUR LITTLE FAMILY STORY - PACKAGE
                 </p>
@@ -177,9 +119,9 @@
             </div>
 
             <!-- Afbeelding -->
-            <div class="absolute right-24 -top-[200px]">
+            <div class="absolute right-24 -top-[125px]">
                 <nuxt-img
-                src="/assets/pictures/newborn-page/extra-aanbod.png"
+                src="/assets/pictures/newborn-page/extra-aanbod.webp"
                 alt="Extra aanbod"
                 class="sm:w-[250px] sm:h-[250px]"
                 />
@@ -187,7 +129,7 @@
 
         </div>
 
-        <div class="flex justify-center bg-background_1 gap-6">
+        <div class="flex justify-center bg-background_4 gap-6 pb-12">
             <div class="w-[50%]">
                 <p class="font-standard text-right font-light">
                     <u class="font-medium">Inhoud reportage:</u><br>
@@ -215,26 +157,88 @@
                 </ul>
             </div>
         </div>
-    </section>
-    
-    <div class="flex flex-col items-center justify-center py-12 font-standard bg-background_1">
-        <button
-            @click="redirect('/contact')"
-            class="px-6 py-2 rounded-full bg-buttonColor font-standard py-12 cursor-pointer uppercase text-white"
-        >
-        geweldig! dit wil ik! 
-        </button>
-    </div>
-
-    <!-- <section class="flex flex-col items-center justify-center px-2 py-2 bg-buttonColor">	
-        <div class=" w-[90%] flex items-center justify-center">
-        <nuxt-img
-            src="/assets/pictures/newborn-page/timeless-tomorrow.png"
-            alt="Tell Stories"
-            class=""
-        />
+        <div class="flex flex-col items-center justify-center pb-12 font-standard bg-background_4">
+          <button
+              @click="redirect('/contact')"
+              class="px-6 py-2 rounded-full bg-buttonColor text-[14px] font-standard cursor-pointer uppercase text-white hover:bg-white hover:text-black"
+          >
+          geweldig! dit wil ik! 
+          </button>
         </div>
-    </section> -->
+    </section>
+
+    <section class="bg-background_4 flex items-center justify-center px-6 pb-12">
+      <div class="absolute ml-[-88%] z-10">
+        <nuxt-img
+          src="/assets/pictures/newborn-page/little-stories.webp"
+          alt="Love Stories"
+          class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
+        />
+      </div>
+      <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+        <!-- Tile 1 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+          <img
+            src="/assets/pictures/family-page/family-01.webp"
+            alt="Tile Image 1"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <!-- <h2 class="text-2xl font-playFair mb-2">DAISY</h2> -->
+            <button
+              @click="redirect('/newborn')"
+              class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+        <!-- Tile 2 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+          <img
+            src="/assets/pictures/family-page/family-02.webp"
+            alt="Tile Image 2"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <!-- <h2 class="text-2xl font-playFair mb-2">ASTRID</h2> -->
+            <button
+              @click="redirect('/strong-women')"
+              class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+        <!-- Tile 3 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+          <img
+            src="/assets/pictures/family-page/family-03.webp"
+            alt="Tile Image 3"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <!-- <h2 class="text-2xl font-playFair mb-2">PUCK</h2> -->
+            <button
+              @click="redirect('/strong-women')"
+              class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center px-2 py-2 bg-buttonColor">  	
+    <div class=" w-[70%] flex items-center justify-center">
+      <nuxt-img
+          src="/assets/pictures/family-page/families-qoute-02.webp"
+          alt="Sanneloes fotografie familie shoot"
+          class=""
+      />
+    </div>
+  </section>
 
     <footer-sf></footer-sf>
 </template>
