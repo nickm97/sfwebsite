@@ -1,4 +1,69 @@
 <template>
+  <section>
+    <!-- background pic -->
+    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+      <nuxt-img
+        src="/assets/pictures/newborn-page/banner.webp"
+        alt="Newborn Background"
+        class="w-full h-full object-cover object-center"style="object-position: center 30%;"
+      />
+    </div>
+    <div>
+      <p class="absolute top-1/2 left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        Newborn
+      </p>
+    </div>
+  </section>
+
+  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
+    <div class="w-[70%]">
+      <p class="text-white uppercase font-standard font-bold">
+        BABY'S
+      </p>
+    </div>
+    <div class="mt-6 w-[70%]">
+      <p class="text-white font-standard font-light">
+        De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, kostbare details 
+        die je nooit wilt vergeten. Die piepkleine handjes, zachte haartjes en rustige slaapplekjes 
+        – ze groeien sneller dan je denkt.<br>
+        Met een newborn fotoshoot leg ik deze bijzondere momenten vast op een pure, tijdloze manier. 
+        Geen druk, geen haast – alleen liefdevolle beelden van jullie nieuwe begin. We creëren samen 
+        een ontspannen sfeer, zodat zowel jullie als jullie kleintje zich op hun gemak voelen.
+      </p>
+    </div>
+  </section>
+
+  <section class="items-center justify-center">
+    <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
+  
+      <!-- Afbeelding -->
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/newborn-page/newborn-photo-qoute.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px] rounded-lg"
+        />
+      </div>
+
+      <div class="px-4 flex items-center justify-center">
+        <nuxt-img
+          src="/assets/pictures/newborn-page/newborn-qoute-01.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px]"
+        />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
   <section class="bg-gray-100 flex justify-center">
     <div class="flex items-center justify-center gap-[50px] w-[70%] py-16">
       <div>

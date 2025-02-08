@@ -5,15 +5,19 @@
 
   </head>
   <section class="flex h-[calc(100vh-70px)] w-full relative">
+
     <!-- Left Image (Slideshow) -->
     <div class="hidden sm:block flex-1 relative overflow-hidden">
       <nuxt-img
         v-for="(image, index) in leftImages"
         :key="'left-' + index"
-        :src="image"
+        :src="image.src"
         alt="Left Image"
-        class="w-full h-full object-cover absolute transition-opacity duration-1000 object-top"style="object-position: center 90%;"
-        :style="{ opacity: currentLeftImage === index ? 1 : 0 }"
+        class="w-full h-full object-cover absolute transition-opacity duration-1000"
+        :style="{ 
+          opacity: currentLeftImage === index ? 1 : 0,
+          objectPosition: image.position || 'center 85%'
+        }"
       />
     </div>
 
@@ -22,19 +26,56 @@
       <nuxt-img
         v-for="(image, index) in rightImages"
         :key="'right-' + index"
-        :src="image"
+        :src="image.src"
         alt="Right Image"
-        class="w-full h-full object-cover absolute transition-opacity duration-1000 object-top"style="object-position: center 20%;"
-        :style="{ opacity: currentRightImage === index ? 1 : 0 }"
+        class="w-full h-full object-cover absolute transition-opacity duration-1000"
+        :style="{ 
+          opacity: currentRightImage === index ? 1 : 0,
+          objectPosition: image.position || 'center 75%'
+        }"
       />
     </div>
+
+    <!-- Left Arrow -->
+    <button @click="previousImage" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl z-10">
+      &#8592;
+    </button>
+
+    <!-- Right Arrow -->
+    <button @click="nextImage" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl z-10">
+      &#8594;
+    </button>
+
+    <!-- Left Image (Slideshow) -->
+    <!-- <div class="hidden sm:block flex-1 relative overflow-hidden">
+      <nuxt-img
+        v-for="(image, index) in leftImages"
+        :key="'left-' + index"
+        :src="image"
+        alt="Left Image"
+        class="w-full h-full object-cover absolute transition-opacity duration-1000 object-top"style="object-position: center 85%;"
+        :style="{ opacity: currentLeftImage === index ? 1 : 0 }"
+      />
+    </div> -->
+
+    <!-- Right Image (Slideshow) -->
+    <!-- <div class="sm:block flex-1 relative overflow-hidden">
+      <nuxt-img
+        v-for="(image, index) in rightImages"
+        :key="'right-' + index"
+        :src="image"
+        alt="Right Image"
+        class="w-full h-full object-cover absolute transition-opacity duration-1000 object-top"style="object-position: center 75%;"
+        :style="{ opacity: currentRightImage === index ? 1 : 0 }"
+      />
+    </div> -->
 
     <!-- Discover More (Overlapping) -->
     <div
       class="absolute bottom-[65px] sm:bottom-[40px] text-white left-1/2 transform -translate-x-1/2 font-standard text-center cursor-pointer"
       @click="scrollToNextSection"
     >
-      <div>SCROLL TO DISCOVER MORE</div>
+      <div class="text-[13px]">SCROLL TO DISCOVER MORE</div>
       <i class="fa-solid fa-chevron-down text-sm mt-1"></i>
     </div>
   </section>
@@ -111,8 +152,8 @@
   </section>
 
   <!-- New Section with Title and Photos -->
-  <section class="px-[10px] sm:px-[140px] items flex-col items-center justify-center pb-20">
-    <p class="hidden sm:block text-4xl font-playFair font-light text-center mb-8 mt-12">
+  <section class="px-[10px] sm:px-[140px] items flex-col items-center justify-center pt-6 pb-[100px] bg-buttonColor">
+    <p class="hidden sm:block text-4xl font-playFair text-white font-light text-center mb-8 mt-12">
       PHOTOGRAPHY AND INFORMATION
     </p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">
@@ -143,7 +184,7 @@
       <!-- Repeat for the other 3 tiles -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/shoot-02.jpg"
+          src="/assets/pictures/home-page/page_links_01.webp"
           alt="Tile Image 2"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -186,7 +227,7 @@
 
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <nuxt-img
-          src="/assets/pictures/branding-index.jpg"
+          src="/assets/pictures/home-page/page_links_02.webp"
           alt="Tile Image 4"
           class="object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -206,6 +247,18 @@
     </div>
   </section>
 
+  <section class="relative parallax_02">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+      <!-- Knop -->
+      <!-- <a
+        href="/contact"
+        class="text-white text-sm font-semibold border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
+          Laat mij jullie verhaal vastleggen
+      </a> -->
+    </div>
+  </section>
+
   <section class="items-center justify-center bg-background_2">
     <div class="flex gap-16 items-center justify-center py-12 w-full max-w-[1200px] mx-auto">
       <div class="w-1/2 px-4 flex items-center justify-center">
@@ -217,7 +270,7 @@
       </div>
       <div class="flex-col w-1/2 relative">
         <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
-        <p class="hidden sm:block absolute text-[125px] font-playFair left-1/2 transform translate-x-[-50%] top-[-220px]">ABOUT</p>
+        <p class="hidden sm:block absolute text-[125px] font-playFair left-1/2 transform translate-x-[-50%] top-[-220px] text-white">ABOUT</p>
         <div class="absolute left-1/2 transform translate-x-[-50%] top-[-125px]">
           <nuxt-img
             src="/assets/pictures/home-page/about-sanneloes.webp"
@@ -258,92 +311,6 @@
     </div>
   </section>
   
-  
-
-
-  <!-- <div class="sm:hidden bg-naturalBeige border-t border-gray-400">
-    <div class="flex h-[450px]">
-        <div class="border-l border-r border-gray-400 flex h-full bg-white justify-center items-center min-w-[60px]">
-            <span class="text-gray-700 text-2xl font-textNav tracking-widest transform -rotate-90">
-                SANNELOES&nbsp;FOTOGRAFIE
-            </span>
-        </div>
-        <nuxt-img
-            src="/assets/pictures/loes-index.jpg"	
-            alt="Sanneloes"
-            class="w-[250px] object-cover object-top"/>
-    </div>
-    <div class="pl-4 py-10">
-        <h3 class="text-2xl text-black font-textNav font-semibold mb-4">HI THERE!</h3>
-      <p class="text-black text-lg font-bold tracking-wider font-extralight">
-          Heyy, ik ben Sanneloes. Ik hou ervan om unieke, 
-          emotionele momenten vast te leggen die jouw verhaal op de mooiste en meest eerlijke manier vertellen.
-          Mijn fotografie gaat over het vinden van magie 
-          in het alledaagse en het creëren van herinneringen die voor altijd blijven.
-      </p>
-        
-      <button class="mt-4 hover:-translate-y-1 transform transition duration-300 bg-buttonColor rounded-lg py-2 px-2">
-        <a href="/about" class="text-sm font-semibold text-white transition duration-300">
-          MEER OVER SANNELOES
-        </a>
-      </button>
-    </div>
-  </div> -->
- 
-
-  <!-- Updated Section -->
-  <!-- <section class="hidden sm:flex sm:flex-row h-[800px] w-full bg-naturalBeige border-t border-gray-400">
-    
-    <div class="flex-1 flex flex-col h-auto w-[45%]">
-      <div class="flex flex-col justify-center h-[55%] px-10"> 
-          <h3 class="text-2xl text-gray-700 font-semibold mb-1 mt-4">HI THERE!</h3>
-          <p class="text-black text-lg font-bold tracking-wider font-extralight">
-            Dag lieve lezer! Welkom op mijn website.
-            Ik ben Sanneloes, fulltime ondernemer; professioneel fotograaf, 
-            eigenaar van Daylight Studio La Luz en mede-oprichter van Savvy Styling. 
-            Een bezig bijtje kan je wel stellen. Ik hou ervan om unieke, 
-            échte en emotionele momenten vast te leggen die jouw verhaal op de mooiste en meest eerlijke manier vertelt. 
-            Ik wil dat momenten bevroren worden in de tijd, zodat jij, maar ook anderen na tientallen jaren nog veel 
-            plezier kunnen hebben van de foto's. Zo blijven dierbare herinneringen en personen bevroren en zullen ze 
-            nooit vergeten worden. 
-          </p>
-          <div>
-            <button
-              @click="redirect('/commercial')"
-              class="px-6 py-2 mt-4 border border-white text-white rounded-full hover:scale-105 hover:bg-white hover:text-black transition-colors duration-500"
-            >
-              MEER OVER MIJ
-            </button>
-          </div>
-      </div>
-
-      <div class="w-full h-[45%]">
-        <nuxt-img
-          src="/assets/pictures/loes2.jpg"
-          alt="Sanneloes small photo"
-          class="h-full w-full object-cover border-t border-gray-400"
-        />
-      </div>
-    </div>
-
-    <div class="bg-offWhite border-l border-r border-gray-400 flex justify-center items-center w-[20%]">
-      <span class="text-gray-700 text-6xl font-textNav tracking-widest transform -rotate-90">
-        SANNELOES
-      </span>
-    </div>
-
-    <div class="flex w-[35%]" >
-      <nuxt-img
-        placeholder
-        src="/assets/pictures/loes-index.jpg"	
-        alt="Sanneloes"
-        class="object-cover object-top"
-      />
-    </div>
-
-  </section> -->
-  
-  
   <reviews-sf></reviews-sf>
 
   <section class="bg-buttonColor flex items-center justify-center py-12">
@@ -367,8 +334,11 @@
   </section>
 
   <section>
-    <div class="flex-col items-center justify-center py-6">
-      <div class="flex items-center justify-center py-2 ">
+    <div class="flex-col items-center justify-center py-12">
+      <div class="flex items-center justify-center py-2 gap-6">
+        <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl text-black instagram-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
         <p class="uppercase font-standard sm:text-2xl text-lg text-center font-light">
           #SANNELOESFOTOGRAFIE
         </p>
@@ -379,7 +349,20 @@
 
     </div>
 
-  </section>\
+  </section>
+
+  <section class="flex items-center justify-center py-8">
+    <div class="flex-col">
+      <div class="flex items-center justify-center px-4 bg-background_2 py-6">
+        <p class="text-black text-center uppercase font-standard w-[60%]">
+          omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!
+          keer je als klant teRUG EN KOM JE NOG EENS VOOR DE LENS STAAN? ONTVANG JE 5 
+          EXTRA FOTO'S CADEAU! GEEF BIJ JE RESERVERING <strong>‘TERUGKERENDE KLANT’</strong> AAN EN DOE JEZELF EEN CADEAUTJE
+        </p>
+      </div>
+    </div>
+  </section>
+
   <footer-sf></footer-sf>
 </template>
 
@@ -403,26 +386,62 @@
     router.push(path); // Navigeer naar de gewenste route
   }
 
-  // Afwisselende afbeeldingen voor de slideshow
   const leftImages = [
-    "/assets/pictures/home-page/banner-image-01.webp",
-    "/assets/pictures/home-page/banner-image-02.webp"  // Voeg hier de alternatieve afbeelding toe
+    { src: "/assets/pictures/home-page/banner-image-01.webp", position: "center 85%" },
+    { src: "/assets/pictures/home-page/banner-image-02.webp", position: "center 80%" },
+    { src: "/assets/pictures/home-page/banner-image-03.webp", position: "center 10%" },
+    { src: "/assets/pictures/home-page/banner-image-04-02.webp", position: "center 10%" },
+    { src: "/assets/pictures/home-page/banner-image-05.webp", position: "center 70%" }
   ];
+
   const rightImages = [
-    "/assets/pictures/home-page/banner-image-03.webp",
-    "/assets/pictures/home-page/banner-image-03.webp"    // Voeg hier de alternatieve afbeelding toe
+    { src: "/assets/pictures/home-page/banner-image-01-1.webp", position: "center 75%" },
+    { src: "/assets/pictures/home-page/banner-image-02-01.webp", position: "center 80%" },
+    { src: "/assets/pictures/home-page/banner-image-03-01.webp", position: "center 55%" },
+    { src: "/assets/pictures/home-page/banner-image-04-01.webp", position: "center 30%" },
+    { src: "/assets/pictures/home-page/banner-image-05-01.webp", position: "center 30%" }
   ];
+// Huidige afbeelding bijhouden
+const currentLeftImage = ref(0);
+const currentRightImage = ref(0);
 
-  const currentLeftImage = ref(0); // Hou bij welke afbeelding zichtbaar is aan de linkerkant
-  const currentRightImage = ref(0); // Hou bij welke afbeelding zichtbaar is aan de rechterkant
+// Interval ID voor de slideshow
+let slideshowInterval = null;
 
-  // Functie om de afbeelding om de zoveel tijd te wisselen
-  function startSlideshow() {
-    setInterval(() => {
-      currentLeftImage.value = (currentLeftImage.value + 1) % leftImages.length;
-      currentRightImage.value = (currentRightImage.value + 1) % rightImages.length;
-    }, 7000); // Wisselt elke 7 seconden
+// Functie om de slideshow te starten
+function startSlideshow() {
+  // Start de interval timer
+  slideshowInterval = setInterval(() => {
+    nextImage();
+  }, 7000); // Elke 7 seconden
+}
+
+// Functie om de interval te stoppen
+function stopSlideshow() {
+  if (slideshowInterval) {
+    clearInterval(slideshowInterval);
   }
+}
+
+// Functie om de interval opnieuw te starten
+function resetSlideshow() {
+  stopSlideshow();  // Stop de huidige slideshow
+  startSlideshow(); // Start de slideshow opnieuw
+}
+
+// Functies voor het navigeren naar de volgende en vorige afbeelding (voor beide afbeeldingen tegelijk)
+function nextImage() {
+  currentLeftImage.value = (currentLeftImage.value + 1) % leftImages.length;
+  currentRightImage.value = (currentRightImage.value + 1) % rightImages.length;
+  resetSlideshow(); // Reset de slideshow timer
+}
+
+function previousImage() {
+  currentLeftImage.value = (currentLeftImage.value - 1 + leftImages.length) % leftImages.length;
+  currentRightImage.value = (currentRightImage.value - 1 + rightImages.length) % rightImages.length;
+  resetSlideshow(); // Reset de slideshow timer
+
+}
 
   // Slider logica
   const currentIndex = ref(0);
@@ -458,7 +477,19 @@
     /* The image used */
     background-image: url("/public/assets/pictures/SF_00707.jpg");
 
-    min-height: 350px;
+    min-height: 450px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax_02 {
+    /* The image used */
+    background-image: url("/public/assets/pictures/home-page/scroll_banner_02.webp");
+
+    min-height: 450px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

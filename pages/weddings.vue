@@ -120,36 +120,54 @@
     </div>
   </section>
 
-  <section class="flex justify-center bg-buttonColor">
-    <div class="flex items-center justify-center gap-[20px] w-[50%] px-6 py-6">
-      <p class="text-white font-standard font-light text-[14.5px]">
-        Ik maak <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Ik vang de momenten waarop 
-        heel hard gelachen wordt of als er een traan over een wang rolt. Ik heb aandacht voor kleine dingen, 
-        zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, ik voel emoties 
-        en ik lach hard met jullie mee. Wellicht moet ik bij mooie momenten ook af en toe een klein traantje wegpinken, 
-        want ‘sorry, not sorru’ ik ben gevoelig, haha.<br><br>
-        Jullie kleurrijke galerij met ‘a touch of black and white’ zal een mix zijn van <strong>documentaire fotografie en editorial</strong>. 
-        Ik zoek naar mooi licht, sierlijke posities of interessante composities. Bij groepsfoto's trek ik al mijn <strong>enthousiasme </strong>
-        uit de kast om de foto's zo spontaan mogelijk te krijgen. Ik ben jullie ‘hypegirl’ bij jullie fotomoment met z'n 
-        tweetjes en verder ben ik heel de dag scherp op allerlei warme momenten om te vangen in een foto. Jullie genieten 
-        gewoon van de dag, doen jullie ding en ik zorg voor de visuele herinnering van jullie bruiloft. 
-      </p>
-    </div>
-    <div>
-      <nuxt-img
-        src="/assets/pictures/wedding-page/i-notice.png"
-        alt="i-notice"
-        class="w-500 h-500 sm:w-[400px] sm:h-[150px] "
-      />
+  <section class="items-center justify-center bg-buttonColor">
+    <div class="flex flex-col sm:flex-row sm:gap-16 items-center justify-center py-12 w-full sm:max-w-[1200px] sm:mx-auto">
+      <!-- Tekst -->
+      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-4 sm:py-0 px-4 sm:px-0">
+        <p class="font-standard font-light text-[16px] text-white">
+          Ik maak <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Ik vang de momenten waarop 
+          heel hard gelachen wordt of als er een traan over een wang rolt. Ik heb aandacht voor kleine dingen, 
+          zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, ik voel emoties 
+          en ik lach hard met jullie mee. Wellicht moet ik bij mooie momenten ook af en toe een klein traantje wegpinken, 
+          want ‘sorry, not sorry’ ik ben gevoelig, haha.<br><br>
+          Jullie kleurrijke galerij met ‘a touch of black and white’ zal een mix zijn van <strong>documentaire fotografie en editorial</strong>. 
+          Ik zoek naar mooi licht, sierlijke posities of interessante composities. Bij groepsfoto's trek ik al mijn <strong>enthousiasme</strong>
+          uit de kast om de foto's zo spontaan mogelijk te krijgen. Ik ben jullie ‘hypegirl’ bij jullie fotomoment met z'n 
+          tweetjes en verder ben ik heel de dag scherp op allerlei warme momenten om te vangen in een foto. Jullie genieten 
+          gewoon van de dag, doen jullie ding en ik zorg voor de visuele herinnering van jullie bruiloft.
+        </p>
+      </div>
+
+      <!-- Carousel Component -->
+      <PhotoCarousel :images="weddingImages" />
+
+      <!-- Afbeelding met overlay en animatie -->
+      <!-- <div class="relative group rounded-lg overflow-hidden bg-gray-300 shadow-lg w-[350px]">
+        <img
+          src="/assets/pictures/wedding-page/peter&evy.webp"
+          alt="Sanneloes Fotografie"
+          class="h-[500px] w-[350px] object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105 mx-auto block"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+          <h2 class="text-2xl font-playFair mb-2 tracking-wide">PETER EN EVY</h2>
+          <button
+            @click="redirect('/wedding050225-03')"
+            class="px-6 py-2 border border-white text-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
+          >
+            View More
+          </button>
+        </div>
+      </div> -->
+      
     </div>
   </section>
-  
+
   <section>
     <div class="relative h-screen max-h-[calc(100vh)]">
       <nuxt-img
         src="/assets/pictures/wedding-page/banner-i-notice.webp"
         alt="Wedding Background"
-        class="w-full h-full object-cover object-bottom"
+        class="w-full h-full object-cover object-bottom"style="object-position: center 80%;"
       /> 
 
       <!-- Tekst gecentreerd bovenin -->
@@ -386,6 +404,8 @@
 <script setup>
   import { useRouter } from 'vue-router';
 
+  import { ref } from "vue";
+
   const router = useRouter();
   function scrollToNextSection() {
     // Scroll naar de volgende sectie (vervang de selector naar je gewenste sectie)
@@ -403,4 +423,10 @@
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  const weddingImages = ref([
+    { src: "/assets/pictures/wedding-page/peter&evy.webp", alt: "Peter & Evy", title: "PETER EN EVY", link: "/wedding050225-05" },
+    { src: "/assets/pictures/wedding-page/martijn&kristel.webp", alt: "Martijn & Kristel", title: "MARTIJN EN KRISTEL", link: "/wedding050225-04" },
+    { src: "/assets/pictures/wedding-page/ward&nicky.webp", alt: "Ward & Nicky", title: "WARD EN NICKY", link: "/wedding050225-06" }
+  ]);
 </script>
