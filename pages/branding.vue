@@ -28,7 +28,7 @@
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/newborn-shoot.jpg"
+          src="/assets/pictures/home-page/page_links_01.webp"
           alt="Tile Image 1"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -45,7 +45,7 @@
       <!-- Tile 2 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/champagne.jpg"
+          src="/assets/pictures/home-page/page_links_01.webp"
           alt="Tile Image 2"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -62,7 +62,7 @@
       <!-- Tile 3 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
-          src="/assets/pictures/shoot-02.jpg"
+          src="/assets/pictures/home-page/page_links_01.webp"
           alt="Tile Image 3"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -108,7 +108,7 @@
         <!-- Tile 2 -->   
         <div class="relative group rounded-lg overflow-hidden">
             <img
-            src="/assets/pictures/champagne.jpg"
+            src="/assets/pictures/home-page/page_links_01.webp"
             alt="Tile Image 2"
             class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -126,7 +126,7 @@
         <!-- Tile 3 -->   
         <div class="relative group rounded-lg overflow-hidden">
             <img
-            src="/assets/pictures/champagne.jpg"
+            src="/assets/pictures/home-page/page_links_01.webp"
             alt="Tile Image 2"
             class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
             />

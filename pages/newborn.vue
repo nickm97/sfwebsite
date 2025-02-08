@@ -93,7 +93,7 @@
           <button
             @click="redirect('/contact')"
             class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
-            cursor-pointer border-[0.5px] border-black text-black text-[14.5px] uppercase">
+            cursor-pointer border-[0.5px] border-white text-black text-[14.5px] uppercase">
             Boek jouw newbornshoot en leg jullie mooiste begin vast
           </button>
         </div>
@@ -128,7 +128,7 @@
       <nuxt-img
         src="/assets/pictures/newborn-page/little-stories.webp"
         alt="Love Stories"
-        class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
+        class="w-100 h-500 sm:w-[80px] sm:h-[250px] "
       />
     </div>
     <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">

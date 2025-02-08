@@ -161,7 +161,7 @@
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <!-- Background Image -->
         <img
-          src="/assets/pictures/wedding-index.jpg"
+          src="/assets/pictures/home-page/page_links_03.webp"
           alt="Tile Image 1"
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -204,7 +204,7 @@
 
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <nuxt-img
-          src="/assets/pictures/strong-woman-index.jpg"
+          src="/assets/pictures/home-page/page_links_04.webp"
           alt="Tile Image 3"
           class="object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -475,7 +475,7 @@ function previousImage() {
 <style scoped>
   .parallax {
     /* The image used */
-    background-image: url("/public/assets/pictures/SF_00707.jpg");
+    background-image: url("/public/assets/pictures/home-page/scroll_banner.webp");
 
     min-height: 450px;
 

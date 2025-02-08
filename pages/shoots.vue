@@ -176,7 +176,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">BOUDIOR</h2>
           <button
-            @click="redirect('/boudior')"
+            @click="redirect('/boudoir')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More

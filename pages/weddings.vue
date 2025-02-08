@@ -181,7 +181,7 @@
         <button
           @click="scrollToSection"
           class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
-          cursor-pointer border-[1px] border-black font-bold text-black text-[14.5px]">
+          cursor-pointer border-[1px] border-white font-bold text-black text-[14.5px]">
           IK WIL GRAAG MEER INFORMATIE
         </button>
       </div>

@@ -83,7 +83,7 @@
           <button
             @click="redirect('/contact')"
             class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
-            cursor-pointer border-[0.5px] border-black text-black text-[14.5px] uppercase">
+            cursor-pointer border-[0.5px] border-white text-black text-[14.5px] uppercase">
             BOEK JOUW ZWANGERSCHAPSSHOOT
           </button>
         </div>
