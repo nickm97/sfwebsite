@@ -217,10 +217,10 @@
         >
           <!-- <h2 class="text-2xl font-bold mb-4">Gallery 3</h2> -->
           <button
-            @click="redirect('/strong-women')"
+            @click="redirect('/boudoir')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            STRONG WOMEN
+            BOUDOIR
           </button>
         </div>
       </div>
@@ -237,7 +237,7 @@
         >
           <!-- <h2 class="text-2xl font-bold mb-4">Gallery 4</h2> -->
           <button
-            @click="redirect('/commercial')"
+            @click="redirect('/branding')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             BRANDING

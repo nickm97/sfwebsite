@@ -67,14 +67,25 @@
       />
     </div>
     <div class="absolute top-1/2 left-[25%] transform -translate-x-1/2 -translate-y-1/2 
-          text-white tracking-widest font-playFair uppercase text-center">
-      <nuxt-img
-        src="/assets/pictures/boudoir-page/boudoir-photo-02.webp"
-        alt="Family Background"
-        class="h-[500px] object-cover object-center rounded-2xl border-2 border-black"
-      />
-      
+          text-white tracking-widest uppercase text-center">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+        <img
+          src="/assets/pictures/boudoir-page/boudoir-photo-02.webp"
+          alt="Tile Image 1"
+          class="h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <!-- <h2 class="text-2xl font-playFair mb-2">JAY EN SANNE</h2> -->
+          <button
+            @click="redirect('/boudoir050225-01')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
     </div>
+    
   </section>
 
   <section>
@@ -155,7 +166,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <!-- <h2 class="text-2xl font-playFair mb-2">GUUS EN LISA</h2> -->
           <button
-            @click="redirect('/boudoir050225-01')"
+            @click="redirect('/boudoir050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
@@ -172,7 +183,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <!-- <h2 class="text-2xl font-playFair mb-2">WARD EN NICKY</h2> -->
           <button
-            @click="redirect('/boudoir050225-01')"
+            @click="redirect('/boudoir050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             View More
