@@ -1,12 +1,13 @@
 <template>
 
-    <section class="bg-naturalBeige py-6">
+    <section class="bg-[#fffcf7] py-6">
         <iframe
-        height="1419"
-        style="min-width: 100%; max-width: 680px; border: 0;"
-        id="sn-form-01ysk"
-        src="https://app.studioninja.co/contactform/parser/0a800fc9-93e4-1c01-8194-3c2e8aff7820/0a800fc9-93e4-1c01-8194-3c2e8b237822"
-        allowfullscreen
+        
+        
+         class="w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto "
+          id="sn-form-01ysk"
+          src="https://app.studioninja.co/contactform/parser/0a800fc9-93e4-1c01-8194-3c2e8aff7820/0a800fc9-93e4-1c01-8194-3c2e8b237822"
+          allowfullscreen
         ></iframe>
     </section>
     

@@ -190,38 +190,48 @@
         </div>
       </div>
       <div class="w-[calc(50%-100px)]">
-        <div class="flex -ml-[150px]">
-          <p class="uppercase font-playFair text-4xl text-right">How my sweet clients<br>describe me</p>
+        <div class="flex justify-center py-4">
+          <p class="uppercase font-playFair text-2xl font-bold">How my sweet clients describe me</p>
         </div>
-        <div class="flex">
-          <div class="ml-12 mt-12">
-            <p class="font-standard font-light uppercase">
-              Stelt je op je gemak<br><br>
 
-              ENERGIEK<br><br>
-
-              sociaal<br><br>
-
-              LIEVE MEID<br><br>
-
-              Professioneel
-            </p>
+        <div class="border-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+            LIEVE MEID
           </div>
-          <div class="-ml-12 mt-[120px]">
-            <p class="font-standard font-light text-right uppercase">
-              enthousiast<br><br>
-
-              toegankelijk<br><br>
-
-              gepassioneerd<br><br>
-
-              let op details<br><br>
-
-              vertrouwd gevoel
-            </p>
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+            PROFESSIONEEL
           </div>
         </div>
-        
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto uppercase font-playFair text-[15px]">
+          GEEFT JE EEN VERTROUWD GEVOEL
+        </div>
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+            SOCIAAL
+          </div>
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+            GEPASSIONEERD
+          </div>
+        </div>
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+            LET OP DETAILS
+          </div>
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+            ENERGIEK
+          </div>
+        </div>
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto uppercase font-playFair text-[15px]">
+          STELT JE OP JE GEMAK
+        </div>
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+            ENTHOUSIAST
+          </div>
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+            TOEGANKELIJK
+          </div>
+        </div>
       </div>
     </div>
   </section>

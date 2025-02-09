@@ -262,11 +262,35 @@
   <section class="items-center justify-center bg-background_2">
     <div class="flex gap-16 items-center justify-center py-12 w-full max-w-[1200px] mx-auto">
       <div class="w-1/2 px-4 flex items-center justify-center">
-        <nuxt-img
-          src="/assets/pictures/home-page/about-home-page.webp"
-          alt="Sanneloes"
-          class="w-[400px]"
-        />
+        <div class="relative">
+          <nuxt-img
+            src="/assets/pictures/home-page/about-home-page.webp"
+            alt="Sanneloes"
+            class="w-[400px]"
+          />
+          <div class="absolute w-full top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
+            <button
+              @click="redirect('/portfolio')"
+              class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
+              cursor-pointer border-[1px] border-white text-black text-[14.5px]">
+              TAP TO SEE MY WORK
+            </button>
+          </div>
+          <p class="absolute w-full top-[30%] left-[15%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+            PO
+          </p>
+          <p class="absolute w-full top-[40%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+            RT
+          </p>
+          <p class="absolute w-full top-[50%] right-[26%] transform translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+            FO
+          </p>
+          <p class="absolute w-full top-[60%] right-[18%] transform translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+            LIO
+          </p>
+        </div>
+       
+        
       </div>
       <div class="flex-col w-1/2 relative">
         <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
@@ -301,7 +325,7 @@
         <div class="flex flex-col items-center justify-center py-6 font-standard">
           <button
             @click="redirect('/about')"
-            class="px-6 py-2 rounded-full bg-buttonColor_2 font-standard py-12 cursor-pointer border-[1px] border-black"
+            class="px-6 py-2 rounded-full bg-buttonColor_2 font-standard py-12 cursor-pointer border-[1px] border-white hover:bg-white hover:text-black hover:bg-white"
           >
             MEER OVER SANNELOES
           </button>
@@ -475,7 +499,7 @@ function previousImage() {
 <style scoped>
   .parallax {
     /* The image used */
-    background-image: url("/public/assets/pictures/home-page/scroll_banner.webp");
+    background-image: url("/public/assets/pictures/home-page/scroll-banner.webp");
 
     min-height: 450px;
 
