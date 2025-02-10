@@ -72,7 +72,7 @@
 
     <!-- Discover More (Overlapping) -->
     <div
-      class="absolute bottom-[65px] sm:bottom-[40px] text-white left-1/2 transform -translate-x-1/2 font-standard text-center cursor-pointer"
+      class="hidden sm:block absolute bottom-[65px] sm:bottom-[40px] text-white left-1/2 transform -translate-x-1/2 font-standard text-center cursor-pointer"
       @click="scrollToNextSection"
     >
       <div class="text-[13px]">SCROLL TO DISCOVER MORE</div>
@@ -162,93 +162,73 @@
       PHOTOGRAPHY AND INFORMATION
     </p>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full">
-      <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <!-- Background Image -->
-        <img
-          src="/assets/pictures/home-page/page_links_03.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <!-- White Border Inside -->
-        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
-        <!-- Content Overlay -->
-        <div
-          class="absolute inset-0 flex items-center justify-center flex-col text-white"
+    <!-- Tile 1 -->
+    <div class="relative group rounded-lg overflow-hidden bg-background_4">
+      <img
+        src="/assets/pictures/home-page/page_links_03.webp"
+        alt="Tile Image 1"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex items-center justify-center flex-col text-white">
+        <button
+          @click="redirect('/weddings')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 1</h2> -->
-          <button
-            @click="redirect('/weddings')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            WEDDINGS
-          </button>
-        </div>
+          WEDDINGS
+        </button>
       </div>
+    </div>
 
-      <!-- Repeat for the other 3 tiles -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/home-page/page_links_01.webp"
-          alt="Tile Image 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
-        <div
-          class="absolute inset-0 flex items-center justify-center flex-col text-white"
+    <!-- Tile 2 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <img
+        src="/assets/pictures/home-page/page_links_01.webp"
+        alt="Tile Image 2"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex items-center justify-center flex-col text-white">
+        <button
+          @click="redirect('/shoots')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 2</h2> -->
-          <button
-            @click="redirect('/shoots')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            SHOOTS
-          </button>
-        </div>
+          SHOOTS
+        </button>
       </div>
+    </div>
 
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <nuxt-img
-          src="/assets/pictures/home-page/page_links_04.webp"
-          alt="Tile Image 3"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
-        <!-- <div
-          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        > -->
-        <div
-          class="absolute inset-0 flex items-center justify-center flex-col text-white"
+    <!-- Tile 3 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:order-3 order-4">
+      <nuxt-img
+        src="/assets/pictures/home-page/page_links_04.webp"
+        alt="Tile Image 3"
+        class="object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex items-center justify-center flex-col text-white">
+        <button
+          @click="redirect('/boudoir')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 3</h2> -->
-          <button
-            @click="redirect('/boudoir')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            BOUDOIR
-          </button>
-        </div>
+          BOUDOIR
+        </button>
       </div>
+    </div>
 
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <nuxt-img
-          src="/assets/pictures/home-page/page_links_02.webp"
-          alt="Tile Image 4"
-          class="object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <!-- <div class="absolute inset-3 border-2 border-white pointer-events-none"></div> -->
-        <div
-          class="absolute inset-0 flex items-center justify-center flex-col text-white"
+    <!-- Tile 4 (Moet wisselen op mobiel) -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:order-4 order-3">
+      <nuxt-img
+        src="/assets/pictures/home-page/page_links_02.webp"
+        alt="Tile Image 4"
+        class="object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex items-center justify-center flex-col text-white">
+        <button
+          @click="redirect('/branding')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          <!-- <h2 class="text-2xl font-bold mb-4">Gallery 4</h2> -->
-          <button
-            @click="redirect('/branding')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            BRANDING
-          </button>
-        </div>
+          BRANDING
+        </button>
       </div>
+    </div>
     </div>
   </section>
 
@@ -514,6 +494,7 @@ function previousImage() {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
   .parallax_02 {
     /* The image used */

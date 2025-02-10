@@ -4,7 +4,7 @@
     <!-- background pic -->
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-        src="/assets/pictures/wedding-page/wedding-banner.webp"
+        src="/assets/pictures/wedding-page/banner.jpg"
         alt="Wedding Background"
         class="w-full h-full object-cover object-center"
       />
@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center sm:px-6 py-10 bg-buttonColor">
+  <section class="flex flex-col items-center px-6 py-10 bg-buttonColor">
     <div class="w-full sm:w-[70%]">
       <p class="text-white uppercase font-standard text-left font-bold">
         Bruiloften
@@ -53,7 +53,7 @@
         <nuxt-img
           src="/assets/pictures/wedding-page/wedding-qoute-01.webp"
           alt="Sanneloes"
-          class="w-[250px] sm:w-[400px] translate-x-10 sm:translate-x-0"
+          class="w-[250px] sm:w-[400px] translate-x-10 sm:translate-x-0 mt-8 sm:mt-0"
         />
       </div>
     </div>
@@ -79,7 +79,7 @@
 
     <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden">
       <!-- Slider container -->
-      <div ref="sliderContainer" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+      <div v-for="(slider, index) in 1" :key="index" ref="sliders" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
         <!-- Tile 1 -->
         <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
           <img
@@ -254,7 +254,7 @@
   </section>
 
   <section class="justify-center bg-buttonColor pt-12 pb-[100px] sm:pb-12">
-    <div class="flex items-center justify-center gap-[20px] sm:px-12 px-10 ">
+    <div class="flex items-center justify-center gap-[20px] sm:px-12 sm:px-10 px-4">
       <p class="text-white font-standard font-light text-[14.5px]">
         YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn 
         jullie helemaal verzot op het land waar jullie willen gaan trouwen en daar ga ik maar al te graag 
@@ -270,13 +270,13 @@
       </p>
     </div>
     <div>
-      <p class="uppercase text-white font-playFair text-[18px] sm:text-[50px] mt-6 w-full px-10 sm:px-12">
+      <p class="uppercase text-white font-playFair text-[18px] sm:text-[50px] mt-6 w-full px-4 sm:px-10 sm:px-12">
         Trouwen in het buitenland
       </p>
     </div>
   </section>
 
-  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 pb-6 sm:py-[75px] bg-background_4">
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 pb-20 sm:pb-6 sm:py-[75px] bg-background_4">
     <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
@@ -293,9 +293,9 @@
       />
     </div>
 
-    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden">
+    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
       <!-- Slider container -->
-      <div ref="sliderContainer" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+      <div v-for="(slider, index) in 1" :key="index" ref="sliders" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
         <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
         <img
@@ -421,7 +421,7 @@
   </section>
 
   <section id="packages" class="flex flex-col items-center justify-center sm:px-6 py-6 sm:py-12 sm:bg-buttonColor bg-[#281c14]">
-    <div class="px-6 sm:px-0 flex flex-col items-center justify-center">
+    <div class="sm:px-6 sm:px-0 flex flex-col items-center justify-center">
       <div class="flex items-center justify-center">
       <nuxt-img
         src="/assets/pictures/wedding-page/wedding-packages.webp"
@@ -431,7 +431,7 @@
     </div>
     <div class="flex sm:flex-row flex-col items-center justify-center sm:gap-[20px] sm:w-[70%] sm:px-6 py-6">
       <div class="flex flex-col sm:w-2/3">
-        <p class="text-white font-standard font-light w-full sm:px-4 sm:px-0 text-[14.5px] sm:text-[16px]">
+        <p class="text-white font-standard font-light w-full px-4 sm:px-0 text-[14.5px] sm:text-[16px]">
         Prijzen vanaf €1800 inclusief BTW.<br>
         Vanaf 6 uur fotografie.<br><br>
 
@@ -451,15 +451,18 @@
 
         Ga je voor een kleine gemeentebruiloft en wil je toch even graag bij mij informeren voor een klein pakketje? Of heb je plannen om in het buitenland te trouwen? Neem gerust contact op. <br><br>
       </p>
-      <button
+      <div class="px-4 sm:px-0">
+        <button
             @click="redirect('/contact-wedding')"
-            class="sm:ml-4 px-2 sm:px-6 py-1 sm:py-2 rounded-full bg-transparant text-[14.5px] sm:text-[16px] text-white border-[1px] border-white sm:hover:bg-white sm:hover:text-black sm:w-[400px] font-standard"
+            class=" px-2 sm:px-6 py-1 sm:py-2 rounded-full bg-transparant text-[14.5px] sm:text-[16px] text-white border-[1px] border-white sm:hover:bg-white sm:hover:text-black sm:w-[400px] font-standard"
           >
           Wij willen de brochure graag ontvangen!
           </button>
       </div>
       
-      <div class="mt-6 sm:mt-0 sm:w-1/3 flex items-center justify-center">  
+      </div>
+      
+      <div class="mt-6 sm:mt-0 sm:w-1/3 flex items-center justify-center px-4 sm:px-0">  
         <nuxt-img
           src="/assets/pictures/luuk&mandy.webp"
           alt="packages"
@@ -467,7 +470,7 @@
         />
       </div>
 
-      <p class="sm:hidden font-standard font-light text-[14.5px] mt-6">
+      <p class="sm:hidden font-standard font-light text-[14.5px] mt-6 px-4 sm:px-4">
           Ik doe mijn best om het gevoel van de dag terug te brengen in alle beelden, zodat jullie 
           jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br>
 
@@ -569,7 +572,7 @@
 <script setup>
   import { useRouter } from 'vue-router';
 
-  import { ref } from "vue";
+  import { ref, onMounted, nextTick } from "vue";
 
   const router = useRouter();
   function scrollToNextSection() {
@@ -595,29 +598,23 @@
     { src: "/assets/pictures/wedding-page/martijn&kristel.webp", alt: "Martijn & Kristel", title: "MARTIJN EN KRISTEL", link: "/wedding050225-04" },
   ]);
 
-  const sliderContainer = ref(1)
-  
-  onMounted(() => {
-  // Gebruik setTimeout om er zeker van te zijn dat de DOM volledig geladen is
-  setTimeout(() => {
-    if (sliderContainer.value) {
-      // Bereken de totale breedte van de container
-      const containerWidth = sliderContainer.value.offsetWidth;
-      
-      // Bereken de breedte van een enkel item
-      const itemWidth = sliderContainer.value.querySelector('div').offsetWidth;
+  const sliders = ref([]); // Array van refs voor meerdere sliders
 
-      // Bereken hoeveel items er in totaal zijn
-      const totalItems = sliderContainer.value.children.length;
+const scrollToMiddle = (slider) => {
+  if (slider) {
+    const tileWidth = 270 +16; // 270px breedte + 8px gap
+    const middleTileIndex = 1; // Tweede afbeelding (index 1)
 
-      // Bereken de scrollpositie om de middelste afbeelding te tonen
-      const middleItemIndex = Math.floor(totalItems / 2);
-      const middlePosition = middleItemIndex * itemWidth - (containerWidth / 2) + (itemWidth / 2);
-      
-      // Stel de scrollLeft in om het midden te bereiken
-      sliderContainer.value.scrollLeft = middlePosition;
-    }
-  }, 100); // Wacht even zodat de elementen geladen zijn voordat je de scroll instelt
+    // Scrollpositie berekenen
+    slider.scrollLeft =
+      middleTileIndex * tileWidth - slider.clientWidth / 2 + tileWidth / 2;
+  }
+};
+
+onMounted(() => {
+  nextTick(() => {
+    sliders.value.forEach((slider) => scrollToMiddle(slider));
+  });
 });
 
 </script>

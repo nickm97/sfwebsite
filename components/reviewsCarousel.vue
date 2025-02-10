@@ -6,7 +6,7 @@
       <p class="sm:hidden uppercase font-playFair text-center text-4xl sm:text-4xl sm:py-4 pt-4 sm:pt-0">
         WEDDING<br>REVIEWS
       </p>
-      <p class="sm:hidden uppercase font-standard font-light text-[15px] text-center sm:text-4xl py-4">
+      <p class="sm:hidden uppercase font-standard font-light text-[12px] text-center sm:text-4xl py-4">
         Scroll to see more and tap to read
       </p>
       <!-- Desktop Grid Layout -->
