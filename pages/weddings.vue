@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center px-6 py-10 bg-buttonColor">
+  <section class="flex flex-col items-center sm:px-6 py-10 bg-buttonColor">
     <div class="w-full sm:w-[70%]">
       <p class="text-white uppercase font-standard text-left font-bold">
         Bruiloften
@@ -40,7 +40,7 @@
     <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_2">
     
       <!-- Afbeelding 1 -->
-      <div class="px-4 flex items-center justify-center">
+      <div class="sm:px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/wedding-page/wedding-photo-qoute.webp"
           alt="Sanneloes"
@@ -49,7 +49,7 @@
       </div>
 
       <!-- Afbeelding 2 (naar rechts uitgelijnd op kleine schermen) -->
-      <div class="px-4 flex sm:items-center justify-center sm:ml-0">
+      <div class="sm:px-4 flex sm:items-center justify-center sm:ml-0">
         <nuxt-img
           src="/assets/pictures/wedding-page/wedding-qoute-01.webp"
           alt="Sanneloes"
@@ -60,7 +60,7 @@
   </section>
 
 
-  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center px-6 py-[75px] bg-background_4">
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
     <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
@@ -69,11 +69,11 @@
       />
     </div>
 
-    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-6 -mt-12">
+    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-1 -mt-12">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
-        class="w-[100px]"
+        class="w-[70px]"
       />
     </div>
 
@@ -236,13 +236,13 @@
       /> 
 
       <!-- Tekst gecentreerd bovenin -->
-      <p class="absolute w-full top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+      <p class="absolute w-[99%] top-[15%] sm:top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 
           text-white text-[20px] sm:text-[50px] font-bold font-playFair uppercase text-center">
         I notice connections, emotions and details
       </p>
 
       <!-- Knop onder de tekst -->
-      <div class="absolute w-full top-[22%] sm:top-[18%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
+      <div class="absolute w-full top-[29%] sm:top-[18%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
         <button
           @click="scrollToSection"
           class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
@@ -276,7 +276,7 @@
     </div>
   </section>
 
-  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center px-6 pb-6 sm:py-[75px] bg-background_4">
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 pb-6 sm:py-[75px] bg-background_4">
     <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
@@ -285,11 +285,11 @@
       />
     </div>
 
-    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-6 -mt-12">
+    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-1 -mt-12">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
-        class="w-[100px]"
+        class="w-[70px]"
       />
     </div>
 
@@ -407,32 +407,31 @@
   </section>
 
   <section class="relative parallax">
-    <div class="relative h-screen max-h-[calc(100vh)]">
-      <!-- <nuxt-img
-        src="/assets/pictures/wedding-page/banner-scroll.webp"
-        alt="Wedding Background"
-        class="w-full h-full object-cover object-bottom"
-      /> -->
-
       <nuxt-img
         src="/assets/pictures/wedding-page/banner-scroll-qoute-white.webp"
         alt="Love Stories"
-        class="w-[1100px] absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        class="hidden sm:flex w-[1100px] absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       />
-    </div>
+      <nuxt-img
+        src="/assets/pictures/wedding-page/banner-scroll-qoute-mobile.webp"
+        alt="Love Stories"
+        class="sm:hidden absolute w-[300px] top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      />
+    
   </section>
 
-  <section id="packages" class="flex flex-col items-center justify-center px-6 py-12 bg-buttonColor">
-    <div class="flex items-center justify-center">
+  <section id="packages" class="flex flex-col items-center justify-center sm:px-6 py-6 sm:py-12 sm:bg-buttonColor bg-[#281c14]">
+    <div class="px-6 sm:px-0 flex flex-col items-center justify-center">
+      <div class="flex items-center justify-center">
       <nuxt-img
         src="/assets/pictures/wedding-page/wedding-packages.webp"
         alt="Wedding Packages"
-        class="h-[150px]"
+        class="h-[100px] sm:h-[150px]"
       />
     </div>
-    <div class="flex items-center justify-center gap-[20px] w-[70%] px-6 py-6">
-      <div class="flex flex-col w-2/3">
-        <p class="text-white font-standard font-light">
+    <div class="flex sm:flex-row flex-col items-center justify-center sm:gap-[20px] sm:w-[70%] sm:px-6 py-6">
+      <div class="flex flex-col sm:w-2/3">
+        <p class="text-white font-standard font-light w-full sm:px-4 sm:px-0 text-[14.5px] sm:text-[16px]">
         Prijzen vanaf €1800 inclusief BTW.<br>
         Vanaf 6 uur fotografie.<br><br>
 
@@ -454,27 +453,55 @@
       </p>
       <button
             @click="redirect('/contact-wedding')"
-            class="px-6 py-2 rounded-full bg-naturalBeige w-[400px] font-standard"
+            class="sm:ml-4 px-2 sm:px-6 py-1 sm:py-2 rounded-full bg-transparant text-[14.5px] sm:text-[16px] text-white border-[1px] border-white sm:hover:bg-white sm:hover:text-black sm:w-[400px] font-standard"
           >
           Wij willen de brochure graag ontvangen!
           </button>
       </div>
       
-      <div class="w-1/3 flex items-center justify-center">  
+      <div class="mt-6 sm:mt-0 sm:w-1/3 flex items-center justify-center">  
         <nuxt-img
-          src="/assets/pictures/luuk&mandy.jpg"
+          src="/assets/pictures/luuk&mandy.webp"
           alt="packages"
-          class=""
+          class="rounded-xl"
         />
       </div>
+
+      <p class="sm:hidden font-standard font-light text-[14.5px] mt-6">
+          Ik doe mijn best om het gevoel van de dag terug te brengen in alle beelden, zodat jullie 
+          jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br>
+
+          <strong>Ik vind jullie verhaal belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk 
+          vinden, waar jullie van dromen, waarom je zo gek bent op elkaar, wat jullie chemie is, 
+          wie de belangrijkste mensen voor jullie zijn, enzovoorts, enzovoorts. Ik luister naar jullie. 
+          Ik leer jullie graag écht kennen. 
+
+        </p>
+    </div>
+    </div>
+    
+  </section>
+  
+  <section class="sm:hidden">
+    <div class="relative">
+      <nuxt-img
+        src="/assets/pictures/wedding-page/telling-stories.webp"
+        alt="Sanneloes"
+        class="w-full object-cover"
+      />
+      <p class="w-full text-center font-playFair text-2xl text-white absolute top-[15%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+        I DON'T TAKE PICTURES<br>
+        I TELL STORIES
+      </p>
     </div>
   </section>
 
-  <section class="items-center justify-center">
-    <div class="flex flex-col sm:flex-row sm:gap-1 items-center justify-center py-8 w-full sm:mx-auto bg-background_4">
+
+  <section class="hidden sm:block items-center justify-center">
+    <div class="flex sm:flex-row flex-col-reverse sm:flex-row sm:gap-1 items-center justify-center py-8 w-full sm:mx-auto bg-background_4">
   
       <!-- Afbeelding -->
-      <div class="w-1/2 px-4 flex items-center justify-center">
+      <div class="w-full sm:w-1/2 sm:px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/wedding-page/telling-stories.webp"
           alt="Sanneloes"
@@ -482,13 +509,13 @@
         />
       </div>
 
-      <div class="w-1/2 px-12 items-center justify-center">
-        <p class="text-center font-playFair text-4xl w-[80%] py-6">
+      <div class="w-1/2 sm:px-12 items-center justify-center">
+        <p class="sm:block hidden text-center font-playFair text-4xl w-[80%] py-6">
           I DON'T TAKE PICTURES<br>
           I TELL STORIES
         </p>
         
-        <p class="text-center font-standard font-light w-[80%]">
+        <p class="sm:block hidden text-center font-standard font-light w-[80%]">
           Ik doe mijn best om het gevoel van de dag terug te brengen in alle beelden, zodat jullie 
           jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br>
 
@@ -511,6 +538,13 @@
 
 
 <style scoped>
+
+@media (max-width: 640px) { /* Alleen op schermen kleiner dan 640px */
+    #packages {
+      background: linear-gradient(to bottom, #281c14 75%, #f7f0ec 25%);
+    }
+  }
+
   .parallax {
       /* The image used */
       background-image: url("/public/assets/pictures/wedding-page/banner-scroll.webp");
@@ -581,7 +615,7 @@
       const middlePosition = middleItemIndex * itemWidth - (containerWidth / 2) + (itemWidth / 2);
       
       // Stel de scrollLeft in om het midden te bereiken
-      sliderContainer.value.scrollLeft = 1;
+      sliderContainer.value.scrollLeft = middlePosition;
     }
   }, 100); // Wacht even zodat de elementen geladen zijn voordat je de scroll instelt
 });
