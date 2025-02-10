@@ -80,13 +80,18 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center text-center py-12 px-2 pb-[50px] bg-buttonColor">
+  <section class="flex flex-col items-center justify-center text-center py-12 px-4 pb-[50px] bg-buttonColor">
     <nuxt-img
       src="/assets/pictures/home-page/dare_a_little.webp"
       alt="Sanneloes Fotografie Logo"
-      class="object-cover h-[45px] sm:h-[150px]"
+      class="hidden sm:block object-cover h-[45px] sm:h-[150px]"
     />
-    <div class="sm:flex sm:w-[1250px] text-center sm:text-left text-white items-center sm:gap-12 py-6 font-standard font-light">
+    <nuxt-img
+      src="/assets/pictures/home-page/home-page-mobile-qoute-01.webp"
+      alt="Sanneloes Fotografie Logo"
+      class="sm:hidden object-cover h-[80px]"
+    />
+    <div class="sm:flex sm:w-[1250px] text-left sm:text-left text-[14.5px] sm:text-[16px] text-white items-center sm:gap-12 py-4 sm:py-6 font-standard font-light">
       <p class="sm:w-1/2">
         Sanneloes is een professionele en creatieve fotografe die de kunst 
         van het vastleggen van bijzondere momenten beheerst. Met een oog voor 
@@ -94,14 +99,14 @@
         fotosessies die emoties en spontaniteit benadrukken. Liefde voor jezelf of 
         elkaar staat voorop. 
       </p>
-      <p class="sm:w-1/2">
+      <p class="mt-4 sm:mt-0 sm:w-1/2">
         Of het nu gaat om pure portretten, bruiloften of plezierige gezinsfoto's, 
         de stijl van Sanneloes combineert warmte en authenticiteit. De beelden vertellen
         een verhaal dat je keer op keer wilt herbeleven. Perfect voor iedereen die op zoek 
         is naar tijdloze herinneringen! Dat alles in een jasje van liefde, plezier en echtheid.
       </p>
     </div>
-    <p class="text-white font-standard pt-6 font-light">
+    <p class="text-white text-left sm:text-center font-standard sm:pt-6 font-light text-[14.5px] sm:text-[16px]">
       Fotograaf voor bruiloften, branding en lifestyle shoots omgeving Eindhoven, Noord-Brabant
     </p>
   </section>
@@ -131,9 +136,9 @@
       </div>
 
       <!-- Tekst -->
-      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-4 sm:py-0 px-4 sm:px-0">
-        <h1 class="uppercase font-playFair text-4xl py-2">HEARTWARMING WORDS</h1>
-        <p class="font-standard font-light text-xl">
+      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-0 sm:py-0 px-4 sm:px-0">
+        <h1 class="uppercase font-playFair text-[28px] sm:text-4xl py-2">HEARTWARMING WORDS</h1>
+        <p class="font-standard font-light sm:text-xl text-[14.5px] text-left">
           “Hoe zoek je nou dé juiste fotograaf voor je bruiloft? Nou: boek Sanneloes!<br><br>
           Zij is diegene die je er bij wilt hebben op je dag: vrolijk, energiek, enthousiast en 
           gepassioneerd. Een daggast met een camera in haar handen! De foto’s overtroffen al onze 
@@ -144,7 +149,7 @@
         <nuxt-img
           src="/assets/pictures/home-page/review-name.webp"
           alt="Sanneloes"
-          class="w-[80px] sm:w-[100px] mx-auto sm:mx-0"
+          class="w-[80px] sm:w-[100px] hidden sm:block"
         />
       </div>
 
@@ -152,11 +157,11 @@
   </section>
 
   <!-- New Section with Title and Photos -->
-  <section class="px-[10px] sm:px-[140px] items flex-col items-center justify-center pt-6 pb-[100px] bg-buttonColor">
+  <section class="px-[10px] md:px-[140px] items flex-col items-center justify-center pt-0 sm:pt-6 pb-12 sm:pb-[100px] sm:bg-buttonColor">
     <p class="hidden sm:block text-4xl font-playFair text-white font-light text-center mb-8 mt-12">
       PHOTOGRAPHY AND INFORMATION
     </p>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-10xl w-full">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <!-- Background Image -->
@@ -260,50 +265,50 @@
   </section>
 
   <section class="items-center justify-center bg-background_2">
-    <div class="flex gap-16 items-center justify-center py-12 w-full max-w-[1200px] mx-auto">
-      <div class="w-1/2 px-4 flex items-center justify-center">
+    <div class="flex flex-col-reverse sm:flex-row sm:gap-16 items-center justify-center sm:py-12 py-10 w-full max-w-[1200px] mx-auto">
+      <div class="sm:w-1/2 px-12 sm:px-4 flex items-center justify-center">
         <div class="relative">
           <nuxt-img
             src="/assets/pictures/home-page/about-home-page.webp"
             alt="Sanneloes"
             class="w-[400px]"
           />
-          <div class="absolute w-full top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
+          <div class="absolute w-full sm:top-[10%] top-[95%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
             <button
               @click="redirect('/portfolio')"
-              class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
+              class="px-4 py-1 sm:py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
               cursor-pointer border-[1px] border-white text-black text-[14.5px]">
               TAP TO SEE MY WORK
             </button>
           </div>
-          <p class="absolute w-full top-[30%] left-[15%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+          <p class="absolute top-[30%] left-[15%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair sm:text-[80px] text-[55px]">
             PO
           </p>
-          <p class="absolute w-full top-[40%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+          <p class="absolute top-[40%] left-[25%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair sm:text-[80px] text-[55px]">
             RT
           </p>
-          <p class="absolute w-full top-[50%] right-[26%] transform translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+          <p class="absolute top-[50%] right-[26%] transform translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair sm:text-[80px] text-[55px]">
             FO
           </p>
-          <p class="absolute w-full top-[60%] right-[18%] transform translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair text-[80px]">
+          <p class="absolute top-[60%] right-[18%] transform translate-x-1/2 -translate-y-1/2 z-10 flex justify-center text-white opacity-50 font-playFair sm:text-[80px] text-[55px]">
             LIO
           </p>
         </div>
        
         
       </div>
-      <div class="flex-col w-1/2 relative">
+      <div class="flex-col sm:w-1/2 relative sm:px-0 px-4">
         <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
-        <p class="hidden sm:block absolute text-[125px] font-playFair left-1/2 transform translate-x-[-50%] top-[-220px] text-white">ABOUT</p>
-        <div class="absolute left-1/2 transform translate-x-[-50%] top-[-125px]">
+        <p class="block sm:block absolute text-[100px] sm:text-[125px] font-playFair left-1/2 transform translate-x-[-50%] sm:top-[-220px] top-[-130px] sm:text-white">ABOUT</p>
+        <div class="absolute left-1/2 transform translate-x-[-50%] sm:top-[-125px] top-[-50px]">
           <nuxt-img
             src="/assets/pictures/home-page/about-sanneloes.webp"
             alt="Sanneloes"
-            class="w-[250px]"
+            class="sm:h-[150px] h-[100px] w-[170px] "
           />
         </div>
-        <p class="uppercase font-playFair text-2xl mb-4 w-full text-left">hi there</p>
-        <p class="font-standard font-light text-left">
+        <p class="uppercase font-playFair text-2xl mb-4 w-full text-left mt-12 sm:mt-0">hi there</p>
+        <p class="font-standard font-light text-left sm:text-left text-[14.5px] sm:text-[16px] text-black">
             Dag lieve lezer! Welkom op mijn website. Ik ben Sanneloes van Kessel, 
             fulltime ondernemer; professioneel fotograaf, eigenaar van 
             <a href="https://daylightstudio-laluz.nl/" target="_blank" style="text-decoration: underline;">Daylight Studio La Luz</a> 
@@ -325,7 +330,7 @@
         <div class="flex flex-col items-center justify-center py-6 font-standard">
           <button
             @click="redirect('/about')"
-            class="px-6 py-2 rounded-full bg-buttonColor_2 font-standard py-12 cursor-pointer border-[1px] border-white hover:bg-white hover:text-black hover:bg-white"
+            class="text-[14.5px] sm:text-[16px] px-6 py-2 rounded-full bg-buttonColor_2 font-standard py-12 cursor-pointer border-[1px] border-white hover:bg-white hover:text-black hover:bg-white"
           >
             MEER OVER SANNELOES
           </button>
@@ -335,7 +340,8 @@
     </div>
   </section>
   
-  <reviews-sf></reviews-sf>
+  <!-- <reviews-sf></reviews-sf> -->
+  <reviews-carousel></reviews-carousel>
 
   <section class="bg-buttonColor flex items-center justify-center py-12">
     <div class="flex-col">
@@ -375,10 +381,10 @@
 
   </section>
 
-  <section class="flex items-center justify-center py-8">
+  <section class="flex items-center justify-center sm:py-8">
     <div class="flex-col">
       <div class="flex items-center justify-center px-4 bg-background_2 py-6">
-        <p class="text-black text-center uppercase font-standard w-[60%]">
+        <p class="text-black text-center uppercase font-standard sm:w-[60%]">
           omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!
           keer je als klant teRUG EN KOM JE NOG EENS VOOR DE LENS STAAN? ONTVANG JE 5 
           EXTRA FOTO'S CADEAU! GEEF BIJ JE RESERVERING <strong>‘TERUGKERENDE KLANT’</strong> AAN EN DOE JEZELF EEN CADEAUTJE
@@ -420,7 +426,7 @@
 
   const rightImages = [
     { src: "/assets/pictures/home-page/banner-image-01-1.webp", position: "center 75%" },
-    { src: "/assets/pictures/home-page/banner-image-02-01.webp", position: "center 80%" },
+    { src: "/assets/pictures/home-page/banner-image-02-01.webp", position: "center 20%" },
     { src: "/assets/pictures/home-page/banner-image-03-01.webp", position: "center 55%" },
     { src: "/assets/pictures/home-page/banner-image-04-01.webp", position: "center 30%" },
     { src: "/assets/pictures/home-page/banner-image-05-01.webp", position: "center 30%" }
@@ -522,12 +528,15 @@ function previousImage() {
     background-size: cover;
   }
 
-  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed
   @media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
     }
   }
+  html, body {
+  overflow-x: hidden;
+} */
 
   
 

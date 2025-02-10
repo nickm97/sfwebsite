@@ -1,8 +1,8 @@
 <template>
   <footer class="bg-footerColor">
-    <div class="flex grid grid-cols-1 sm:grid-cols-3 items-center justify-center px-4 py-6 sm:py-12 sm:px-[200px]">
+    <div class="flex flex-col-reverse sm:flex-row grid grid-cols-1 sm:grid-cols-3 items-center justify-center px-4 py-6 sm:pb-12 sm:px-[200px]">
       <div class="text-center sm:text-left mb-4 sm:mb-0">
-        <p class="font-standard text-sm">
+        <p class="font-standard text-sm leading-6">
           Sanneloes van Kessel<br>
           Casteren, Noord-Brabant, Nederland<br>
           <a href="mailto:info@sanneloesfotografie.nl" class="hover:underline">info@sanneloesfotografie.nl</a><br>
@@ -10,11 +10,16 @@
           KVK: 77018753
         </p>
       </div>
-      <div class="flex items-center justify-center mb-4 sm:mb-0">
+      <div class="flex items-center justify-center mb-4 sm:mb-0 order-first sm:order-none">
         <a href="/"><nuxt-img src="/assets/pictures/logo_klein.webp" alt="Sanneloes Fotografie" class="w-[200px] sm:w-[200px] h-auto"/></a>
       </div>
+      <div class="sm:hidden mb-4 flex justify-center">	
+        <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl text-black instagram-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
       <div>
-        <p class="font-standard text-center text-sm sm:text-right">
+        <p class="font-standard text-center text-sm sm:text-right leading-6">
           <a href="/algemene-voorwaarden" class="hover:underline">Algemene Voorwaarden</a>
           <br class="sm:inline"> <!-- 1 enter op kleine schermen -->
           <br class="hidden sm:inline"> <!-- Extra enter op grote schermen -->
@@ -23,22 +28,27 @@
           <br class="sm:inline"> <!-- 1 enter op kleine schermen -->
           <br class="hidden sm:inline"> <!-- Extra enter op grote schermen -->
 
-          <!-- <a @click="navigateToSection('faq')" class="hover:underline cursor-pointer">FAQ</a> -->
           <a href="/FAQS" class="hover:underline">FAQ</a>
-
-          
         </p>
       </div>
     </div>
     
-    <section class="flex grid grid-cols-2 items-center justify-center px-[10px] sm:px-[150px] py-4 bg-buttonColor text-sm">	
+    <div class="border-b-[3px] border-black mb-4 sm:hidden w-[40%] flex mx-auto"></div>
+
+    <div>
+      <p class="sm:hidden text-black uppercase whitespace-nowrap font-standard text-center mb-4">
+          © 2025 Sanneloes Fotografie
+        </p>
+    </div>
+
+    <section class="hidden sm:flex w-full items-center justify-between px-[10px] sm:px-[150px] py-4 bg-buttonColor text-sm">	
       <div>
         <p class="text-white uppercase whitespace-nowrap">
           © 2025 Sanneloes Fotografie
         </p>
       </div>
       <!-- Social Media - Outside of Links Section -->
-      <div class="flex justify-end">	
+      <div>	
         <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl text-white instagram-icon">
           <i class="fa-brands fa-instagram"></i>
         </a>
@@ -47,6 +57,7 @@
 
   </footer>
 </template>
+
 
 <style scoped>
   /* .instagram-icon i {

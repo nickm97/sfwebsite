@@ -38,7 +38,7 @@
 
       <p class="font-standard font-light text-[16px] mt-4 text-center">
         Voor veelgestelde vragen kun je naar deze pagina gaan
-        <a href="/FAQS" rel="noopener noreferrer" class="underline">FAQS</a>
+        <a href="/FAQS" rel="noopener noreferrer" class="underline">FAQS</a>.
       </p>
 
       <p class="font-standard font-light text-[16px] mt-4 text-center">

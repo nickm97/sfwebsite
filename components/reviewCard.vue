@@ -10,7 +10,7 @@
       <p class="group-hover:hidden font-light font-standard text-xs py-1">
         {{ review.date }}
       </p>
-      <div class="group-hover:flex hidden text-left px-2 py-1 text-xs select-none pointer-events-none">
+      <div class="group-hover:flex hidden text-left px-2 py-1 text-xs select-none pointer-events-none break-words whitespace-normal">
         <p>"{{ review.text }}"</p>
       </div>
     </div>

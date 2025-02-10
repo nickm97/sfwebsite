@@ -22,6 +22,9 @@
           <button @click="nextImage" class="bg-black text-white p-2 rounded-full">▶</button>
         </div>
       </div>
+      <p class="sm:hidden uppercase font-standard text-[14px] font-light">
+        SCROLL TO SEE MORE
+      </p>
     </div>
   </template>
   
