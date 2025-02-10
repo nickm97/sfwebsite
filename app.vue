@@ -30,7 +30,7 @@
               <NuxtLink to="/pregnancy" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Pregnancy</NuxtLink>
               <NuxtLink to="/newborn" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Newborn</NuxtLink>
               <NuxtLink to="/family" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Family</NuxtLink>
-              <NuxtLink to="/couples" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Lovers</NuxtLink>
+              <NuxtLink to="/lovers" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Lovers</NuxtLink>
               <NuxtLink to="/boudoir" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Boudoir</NuxtLink>
             </div>
           </div>

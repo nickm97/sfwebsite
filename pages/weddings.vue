@@ -10,21 +10,21 @@
       />
     </div>
     <div>
-      <p class="absolute top-1/2 left-[5%] transform -translate-x-1/2 -translate-y-1/2 
-          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         Weddings
       </p>
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
-    <div class="w-[70%]">
-      <p class="text-white uppercase font-standard font-bold">
+  <section class="flex flex-col items-center px-6 py-10 bg-buttonColor">
+    <div class="w-full sm:w-[70%]">
+      <p class="text-white uppercase font-standard text-left font-bold">
         Bruiloften
       </p>
     </div>
-    <div class="mt-6 w-[70%]">
+    <div class="mt-6 w-full sm:w-[70%]">
       <p class="text-white font-standard font-light">
         WOEHOEEE! Wat ontzettend leuk dat jullie gaan trouwen. Van harte gefeliciteerd! 
         Er zal nu van alles op jullie af komen en jullie zullen voor veel keuzes komen te staan, 
@@ -35,10 +35,11 @@
     </div>
   </section>
 
+
   <section class="items-center justify-center">
     <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_2">
-  
-      <!-- Afbeelding -->
+    
+      <!-- Afbeelding 1 -->
       <div class="px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/wedding-page/wedding-photo-qoute.webp"
@@ -47,25 +48,88 @@
         />
       </div>
 
-      <div class="px-4 flex items-center justify-center">
+      <!-- Afbeelding 2 (naar rechts uitgelijnd op kleine schermen) -->
+      <div class="px-4 flex sm:items-center justify-center sm:ml-0">
         <nuxt-img
           src="/assets/pictures/wedding-page/wedding-qoute-01.webp"
           alt="Sanneloes"
-          class="w-[300px] sm:w-[400px]"
+          class="w-[250px] sm:w-[400px] translate-x-10 sm:translate-x-0"
         />
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-100 flex items-center justify-center px-6 py-[75px] bg-background_4">
-    <div class="absolute ml-[-88%] z-10">
+
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center px-6 py-[75px] bg-background_4">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
-        class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
+        class="w-[100px] sm:w-[80px] sm:h-[400px] rotate-90 sm:rotate-0"
       />
     </div>
-    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+
+    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-6 -mt-12">
+      <nuxt-img
+        src="/assets/pictures/wedding-page/love-stories.webp"
+        alt="Love Stories"
+        class="w-[100px]"
+      />
+    </div>
+
+    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden">
+      <!-- Slider container -->
+      <div ref="sliderContainer" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+        <!-- Tile 1 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+          <img
+            src="/assets/pictures/wedding-page/rick&marlou.webp"
+            alt="Tile Image 1"
+            class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <h2 class="text-2xl font-playFair mb-2">RICK EN MARLOU</h2>
+            <button @click="redirect('/wedding050225-01')" class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+              View More
+            </button>
+          </div>
+        </div>
+
+        <!-- Tile 2 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+          <img
+            src="/assets/pictures/wedding-page/gijs&britt.webp"
+            alt="Tile Image 2"
+            class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <h2 class="text-2xl font-playFair mb-2">GIJS EN BRITT</h2>
+            <button @click="redirect('/wedding050225-02')" class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+              View More
+            </button>
+          </div>
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+          <img
+            src="/assets/pictures/wedding-page/sam&inge.webp"
+            alt="Tile Image 3"
+            class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <h2 class="text-2xl font-playFair mb-2">SAM EN INGE</h2>
+            <button @click="redirect('/wedding050225-03')" class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
@@ -123,8 +187,8 @@
   <section class="items-center justify-center bg-buttonColor">
     <div class="flex flex-col sm:flex-row sm:gap-16 items-center justify-center py-12 w-full sm:max-w-[1200px] sm:mx-auto">
       <!-- Tekst -->
-      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-4 sm:py-0 px-4 sm:px-0">
-        <p class="font-standard font-light text-[16px] text-white">
+      <div class="flex flex-col w-full sm:w-1/2 text-left sm:text-left py-0 pb-12 sm:py-0 px-4 sm:px-0">
+        <p class="font-standard font-light text-[14.5px] text-white">
           Ik maak <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Ik vang de momenten waarop 
           heel hard gelachen wordt of als er een traan over een wang rolt. Ik heb aandacht voor kleine dingen, 
           zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, ik voel emoties 
@@ -163,33 +227,34 @@
   </section>
 
   <section>
-    <div class="relative h-screen max-h-[calc(100vh)]">
+    <div class="relative sm:h-screen sm:max-h-[calc(100vh)]">
       <nuxt-img
         src="/assets/pictures/wedding-page/banner-i-notice.webp"
         alt="Wedding Background"
-        class="w-full h-full object-cover object-bottom"style="object-position: center 80%;"
+        class="h-[calc(100vh-300px)] sm:w-full sm:h-full object-cover sm:object-cover sm:object-bottom"
+        style="object-position: center 80%;"
       /> 
 
       <!-- Tekst gecentreerd bovenin -->
       <p class="absolute w-full top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-          text-white text-[50px] font-bold font-playFair uppercase text-center">
+          text-white text-[20px] sm:text-[50px] font-bold font-playFair uppercase text-center">
         I notice connections, emotions and details
       </p>
 
       <!-- Knop onder de tekst -->
-      <div class="absolute w-full top-[18%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
+      <div class="absolute w-full top-[22%] sm:top-[18%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center">
         <button
           @click="scrollToSection"
           class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
-          cursor-pointer border-[1px] border-white font-bold text-black text-[14.5px]">
+          cursor-pointer border-[1px] border-white font-bold text-black text-[12.5px]">
           IK WIL GRAAG MEER INFORMATIE
         </button>
       </div>
     </div>
   </section>
 
-  <section class="justify-center bg-buttonColor py-12">
-    <div class="flex items-center justify-center gap-[20px] px-12">
+  <section class="justify-center bg-buttonColor pt-12 pb-[100px] sm:pb-12">
+    <div class="flex items-center justify-center gap-[20px] sm:px-12 px-10 ">
       <p class="text-white font-standard font-light text-[14.5px]">
         YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn 
         jullie helemaal verzot op het land waar jullie willen gaan trouwen en daar ga ik maar al te graag 
@@ -205,21 +270,87 @@
       </p>
     </div>
     <div>
-      <p class="uppercase text-white font-playFair text-[50px] mt-6 px-12">
+      <p class="uppercase text-white font-playFair text-[18px] sm:text-[50px] mt-6 w-full px-10 sm:px-12">
         Trouwen in het buitenland
       </p>
     </div>
   </section>
 
-  <section class="bg-gray-100 flex items-center justify-center px-6 py-[75px] bg-background_4">
-    <div class="absolute ml-[-88%] z-10">
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center px-6 pb-6 sm:py-[75px] bg-background_4">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
-        class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
+        class="w-[100px] sm:w-[80px] sm:h-[400px] rotate-90 sm:rotate-0"
       />
     </div>
-    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+
+    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-6 -mt-12">
+      <nuxt-img
+        src="/assets/pictures/wedding-page/love-stories.webp"
+        alt="Love Stories"
+        class="w-[100px]"
+      />
+    </div>
+
+    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden">
+      <!-- Slider container -->
+      <div ref="sliderContainer" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+        <!-- Tile 1 -->
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+        <img
+          src="/assets/pictures/wedding-page/tom&cynthia.webp"
+          alt="Tile Image 1"
+          class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">TOM EN CYNTHIA</h2>
+          <button
+            @click="redirect('/wedding050225-01')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+      <!-- Tile 2 -->
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+        <img
+          src="/assets/pictures/wedding-page/brit&lotte.webp"
+          alt="Tile Image 2"
+          class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">BRIT EN LOTTE</h2>
+          <button
+            @click="redirect('/wedding050225-02')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+      <!-- Tile 3 -->
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+        <img
+          src="/assets/pictures/wedding-page/david&serena.webp"
+          alt="Tile Image 3"
+          class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+          <h2 class="text-2xl font-playFair mb-2">DAVID EN SERENA</h2>
+          <button
+            @click="redirect('/wedding050225-03')"
+            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
@@ -425,8 +556,34 @@
   }
 
   const weddingImages = ref([
+    { src: "/assets/pictures/wedding-page/ward&nicky.webp", alt: "Ward & Nicky", title: "WARD EN NICKY", link: "/wedding050225-06" },
     { src: "/assets/pictures/wedding-page/peter&evy.webp", alt: "Peter & Evy", title: "PETER EN EVY", link: "/wedding050225-05" },
     { src: "/assets/pictures/wedding-page/martijn&kristel.webp", alt: "Martijn & Kristel", title: "MARTIJN EN KRISTEL", link: "/wedding050225-04" },
-    { src: "/assets/pictures/wedding-page/ward&nicky.webp", alt: "Ward & Nicky", title: "WARD EN NICKY", link: "/wedding050225-06" }
   ]);
+
+  const sliderContainer = ref(1)
+  
+  onMounted(() => {
+  // Gebruik setTimeout om er zeker van te zijn dat de DOM volledig geladen is
+  setTimeout(() => {
+    if (sliderContainer.value) {
+      // Bereken de totale breedte van de container
+      const containerWidth = sliderContainer.value.offsetWidth;
+      
+      // Bereken de breedte van een enkel item
+      const itemWidth = sliderContainer.value.querySelector('div').offsetWidth;
+
+      // Bereken hoeveel items er in totaal zijn
+      const totalItems = sliderContainer.value.children.length;
+
+      // Bereken de scrollpositie om de middelste afbeelding te tonen
+      const middleItemIndex = Math.floor(totalItems / 2);
+      const middlePosition = middleItemIndex * itemWidth - (containerWidth / 2) + (itemWidth / 2);
+      
+      // Stel de scrollLeft in om het midden te bereiken
+      sliderContainer.value.scrollLeft = 1;
+    }
+  }, 100); // Wacht even zodat de elementen geladen zijn voordat je de scroll instelt
+});
+
 </script>
