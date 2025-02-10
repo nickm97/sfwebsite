@@ -25,7 +25,7 @@
     </div>
     <div class="sm:hidden">
       <p class="absolute top-[50%] left-[10%] transform -translate-x-1/2 -translate-y-1/2 
-          text-black text-[60px] sm:text-[80px]  tracking-widest font-playFair uppercase text-center 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         Shoots
       </p>

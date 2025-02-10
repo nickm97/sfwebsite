@@ -1,16 +1,23 @@
 <template>
   <section>
     <!-- background pic -->
-    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+    <div class="relative h-screen max-h-[calc(100vh-150px)] hidden sm:block">
       <nuxt-img
         src="/assets/pictures/pregnancy-page/banner.webp"
         alt="Newborn Background"
         class="w-full h-full object-cover object-center"style="object-position: center 30%;"
       />
     </div>
-    <div>
-      <p class="absolute top-1/2 left-[5%] transform -translate-x-1/2 -translate-y-1/2 
-          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+    <div class="relative h-screen max-h-[calc(100vh-150px)] sm:hidden">
+      <nuxt-img
+        src="/assets/pictures/pregnancy-page/banner-mobile.webp"
+        alt="Shoots Background"
+        class="w-full h-full object-cover object-center"style="object-position: center 45%;"
+      />
+    </div>
+    <div class="sm:hidden">
+      <p class="absolute top-[50%] left-[10%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         Pregnancy
       </p>

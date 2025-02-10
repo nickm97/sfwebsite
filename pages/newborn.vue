@@ -3,11 +3,11 @@
     <!-- background pic -->
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-  src="/assets/pictures/newborn-page/banner.webp"
-  alt="Newborn Background"
-  class="w-full h-full object-cover object-center newborn-banner"
-  style="object-position: center 30%;"
-/>
+        src="/assets/pictures/newborn-page/banner.webp"
+        alt="Newborn Background"
+        class="w-full h-full object-cover object-center newborn-banner"
+        style="object-position: center 30%;"
+      />
 
     </div>
     <div>
