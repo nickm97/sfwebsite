@@ -23,7 +23,9 @@
           <br class="sm:inline"> <!-- 1 enter op kleine schermen -->
           <br class="hidden sm:inline"> <!-- Extra enter op grote schermen -->
 
-          <a @click="navigateToSection('faq')" class="hover:underline cursor-pointer">FAQ</a>
+          <!-- <a @click="navigateToSection('faq')" class="hover:underline cursor-pointer">FAQ</a> -->
+          <a href="/FAQS" class="hover:underline">FAQ</a>
+
           
         </p>
       </div>
@@ -56,49 +58,50 @@
 </style>
 
 <script>
-export default {
-  methods: {
-  navigateToSection(sectionId) {
-    const targetPage = '/contact';
 
-    if (this.$route && this.$route.path !== targetPage) {
-      // Als je Vue Router gebruikt, navigeer naar de andere pagina
-      this.$router.push(targetPage).then(() => {
-        // Wacht even om er zeker van te zijn dat de DOM is geladen
-        this.scrollToSectionAfterNavigation(sectionId);
-      });
-    } else if (window.location.pathname !== targetPage) {
-      // Als je geen Vue Router gebruikt, navigeer met window.location
-      window.location.href = `${targetPage}#${sectionId}`;
+// export default {
+//   methods: {
+//   navigateToSection(sectionId) {
+//     const targetPage = '/contact';
+
+//     if (this.$route && this.$route.path !== targetPage) {
+//       // Als je Vue Router gebruikt, navigeer naar de andere pagina
+//       this.$router.push(targetPage).then(() => {
+//         // Wacht even om er zeker van te zijn dat de DOM is geladen
+//         this.scrollToSectionAfterNavigation(sectionId);
+//       });
+//     } else if (window.location.pathname !== targetPage) {
+//       // Als je geen Vue Router gebruikt, navigeer met window.location
+//       window.location.href = `${targetPage}#${sectionId}`;
       
-      // Gebruik een event listener om te wachten tot de pagina is geladen
-      window.addEventListener('load', () => {
-        this.scrollToSection(sectionId);
-      });
-    } else {
-      // Als je al op de pagina bent, scroll direct
-      this.scrollToSection(sectionId);
-    }
-  },
+//       // Gebruik een event listener om te wachten tot de pagina is geladen
+//       window.addEventListener('load', () => {
+//         this.scrollToSection(sectionId);
+//       });
+//     } else {
+//       // Als je al op de pagina bent, scroll direct
+//       this.scrollToSection(sectionId);
+//     }
+//   },
 
-  scrollToSectionAfterNavigation(sectionId) {
-    // Wacht een klein beetje na navigatie voor scrollen
-    setTimeout(() => {
-      this.scrollToSection(sectionId);
-    }, 100); // Pas aan indien nodig
-  },
+//   scrollToSectionAfterNavigation(sectionId) {
+//     // Wacht een klein beetje na navigatie voor scrollen
+//     setTimeout(() => {
+//       this.scrollToSection(sectionId);
+//     }, 100); // Pas aan indien nodig
+//   },
 
-  scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-}
-
-
+//   scrollToSection(sectionId) {
+//     const section = document.getElementById(sectionId);
+//     if (section) {
+//       section.scrollIntoView({ behavior: 'smooth' });
+//     }
+//   }
+// }
 
 
-};
+
+
+// };
 
 </script>
