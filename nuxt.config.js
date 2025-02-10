@@ -8,6 +8,13 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Meow+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Send+Flowers&family=Waterfall&display=swap",
         },
       ],
+      script: [
+        {
+          hid: 'vercel-analytics',
+          src: 'https://analytics.vercel.app/analytics.js',
+          async: true,
+        },
+      ],
     },
   },
   compatibilityDate: '2024-11-01',
