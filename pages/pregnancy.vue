@@ -15,8 +15,8 @@
         class="w-full h-full object-cover object-center"style="object-position: center 45%;"
       />
     </div>
-    <div class="sm:hidden">
-      <p class="absolute top-[50%] left-[10%] transform -translate-x-1/2 -translate-y-1/2 
+    <div>
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         Pregnancy

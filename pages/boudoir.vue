@@ -1,29 +1,37 @@
 <template>
   <section>
     <!-- background pic -->
-    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+    <div class="hidden sm:block relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/boudoir-page/banner.webp"
-        alt="Family Background"
-        class="w-full h-full object-cover object-center"style="object-position: center 35%;"
+        alt="Sanneloes fotografie boudoir"
+        class="w-full h-full object-cover object-center"
+        style="object-position: center 35%;"
+      />
+    </div>
+    <div class="sm:hidden relative h-screen max-h-[calc(100vh-150px)]">
+      <nuxt-img
+        src="/assets/pictures/boudoir-page/boudoir-photo-qoute.webp"
+        alt="Sanneloes fotografie boudoir"
+        class="w-full h-full object-cover object-center"
       />
     </div>
     <div>
-      <p class="absolute top-1/2 left-[5%] transform -translate-x-1/2 -translate-y-1/2 
-          text-white text-[80px] tracking-widest font-playFair uppercase text-center 
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         BOUDOIR
       </p>
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
-    <div class="w-[70%]">
-      <p class="text-white uppercase font-standard font-bold">
+  <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-buttonColor">
+    <div class="w-full sm:w-[70%]">
+      <p class="text-white uppercase font-standard text-left font-bold">
         BOUDOIR
       </p>
     </div>
-    <div class="mt-6 w-[70%]">
+    <div class="mt-6 w-full sm:w-[70%]">
       <p class="text-white font-standard font-light">
         Een boudoirshoot is meer dan alleen een fotoshoot – het is jou op je krachtigst neerzetten. 
         Het is een kans om je lichaam, je zelfvertrouwen en je unieke schoonheid te omarmen. Of je 
@@ -35,7 +43,7 @@
     </div>
   </section>
 
-  <section class="items-center justify-center">
+  <section class="hidden sm:block items-center justify-center">
     <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
   
       <!-- Afbeelding -->
@@ -59,20 +67,20 @@
 
   <section class="relative">
     <!-- background pic -->
-    <div class="h-screen max-h-[calc(100vh-100px)]">
+    <div class="max-h-[calc(100vh-150px)] sm:h-screen sm:max-h-[calc(100vh-100px)]">
       <nuxt-img
         src="/assets/pictures/boudoir-page/banner-02.webp"
         alt="Family Background"
         class="w-full h-full object-cover object-center"
       />
     </div>
-    <div class="absolute top-1/2 left-[25%] transform -translate-x-1/2 -translate-y-1/2 
-          text-white tracking-widest uppercase text-center">
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+    <div class="absolute top-1/2 left-1/2 sm:left-[25%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white tracking-widest uppercase text-center w-[300px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 w-full">
         <img
           src="/assets/pictures/boudoir-page/boudoir-photo-02.webp"
           alt="Tile Image 1"
-          class="h-[500px] object-cover group-hover:scale-105 transition-transform duration-500"
+          class="w-full max-w-[400px] sm:max-w-[350px]  object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <!-- <h2 class="text-2xl font-playFair mb-2">JAY EN SANNE</h2> -->
@@ -89,11 +97,11 @@
   </section>
 
   <section>
-    <div class="bg-background_2 flex items-center justify-center px-6 py-20">
-      <div class="flex flex-col items-center justify-center">
-        <div class="w-[90%] flex flex-row">
-          <div class="flex flex-col w-[60%]">
-            <p class="font-playFair text-4xl font-light">
+    <div class="bg-background_2 flex items-center justify-center px-4 pt-12 pb-[90px] sm:px-6 sm:py-20">
+      <div class="flex flex-col items-center justify-center relative">
+        <div class="sm:w-[80%] sm:gap-6 flex sm:flex-row flex-col">
+          <div class="flex flex-col sm:w-[60%]">
+            <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
               WHAT TO EXPECT?
             </p>
             <ul class="list-disc pl-6 font-standard text-[14.5px] font-light leading-[2rem] py-6">
@@ -105,8 +113,8 @@
             </ul>
             
           </div> 
-          <div class="flex flex-col w-[60%]">
-            <p class="font-playFair text-4xl font-light">
+          <div class="flex flex-col sm:w-[60%]">
+            <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
               PACKAGES AND PRICES
             </p>
             <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[2rem] py-6">
@@ -122,7 +130,7 @@
           <button
             @click="redirect('/contact')"
             class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
-            cursor-pointer border-[0.5px] border-white text-black text-[14.5px] uppercase">
+            cursor-pointer border-[0.5px] border-white text-black text-[13px] sm:text-[14.5px] uppercase">
             Boek jouw boudoirshoot eN LAAT JEZELF STRALEN
           </button>
         </div>
@@ -138,7 +146,63 @@
         class="w-100 h-500 sm:w-[80px] sm:h-[400px] "
       />
     </div> -->
-    <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
+      <div v-for="(slider_boudoir, index) in 1" :key="index" ref="sliders_boudoir" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+        <!-- Tile 1 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+          <img
+            src="/assets/pictures/boudoir-page/boudoir-01.webp"
+            alt="Tile Image 1"
+            class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <!-- <h2 class="text-2xl font-playFair mb-2">JAY EN SANNE</h2> -->
+            <button
+              @click="redirect('/boudoir050225-01')"
+              class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+        <!-- Tile 2 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+          <img
+            src="/assets/pictures/boudoir-page/boudoir-02.webp"
+            alt="Tile Image 2"
+            class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <!-- <h2 class="text-2xl font-playFair mb-2">GUUS EN LISA</h2> -->
+            <button
+              @click="redirect('/boudoir050225-02')"
+              class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+        <!-- Tile 3 -->
+        <div class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0">
+          <img
+            src="/assets/pictures/boudoir-page/boudoir-03.webp"
+            alt="Tile Image 3"
+            class="w-[270px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+            <!-- <h2 class="text-2xl font-playFair mb-2">WARD EN NICKY</h2> -->
+            <button
+              @click="redirect('/boudoir050225-03')"
+              class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
@@ -194,10 +258,10 @@
   </section>
 
   <section class="flex flex-col items-center justify-center px-2 py-2 bg-buttonColor">	
-    <div class=" w-[70%] flex items-center justify-center">
+    <div class="w-full sm:w-[70%] flex items-center justify-center">
       <nuxt-img
           src="/assets/pictures/boudoir-page/boudoir-qoute-02.webp"
-          alt="Tell Stories"
+          alt="Sanneloes fotografie boudoir"
           class=""
       />
     </div>
@@ -209,6 +273,26 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
+import { ref, onMounted, nextTick } from "vue";
+
+  const sliders_boudoir = ref([]); // Array van refs voor meerdere sliders
+
+const scrollToMiddle = (slider_boudoir) => {
+  if (slider_boudoir) {
+    const tileWidth = 270 +16; // 270px breedte + 8px gap
+    const middleTileIndex = 1; // Tweede afbeelding (index 1)
+
+    // Scrollpositie berekenen
+    slider_boudoir.scrollLeft =
+      middleTileIndex * tileWidth - slider_boudoir.clientWidth / 2 + tileWidth / 2;
+  }
+};
+
+onMounted(() => {
+  nextTick(() => {
+    sliders_boudoir.value.forEach((slider_boudoir) => scrollToMiddle(slider_boudoir));
+  });
+});
 
 const router = useRouter();
 function scrollToNextSection() {
