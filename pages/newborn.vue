@@ -19,25 +19,22 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center bg-buttonColor">	
-    <div class="sm:px-6 px-4 py-10">
-        <div class="sm:w-[70%]">
-          <p class="text-white uppercase font-standard font-bold">
-            BABY'S
-          </p>
-        </div>
-      <div class="mt-6 sm:w-[70%]">
-        <p class="text-white font-standard font-light">
-          De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, kostbare details 
+  <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-buttonColor">
+    <div class="w-full sm:w-[70%]">
+      <p class="text-white uppercase font-standard text-left font-bold">
+        BABY'S
+      </p>
+    </div>
+    <div class="mt-6 w-full sm:w-[70%]">
+      <p class="text-white font-standard font-light">
+        De eerste dagen met je kleintje zijn magisch, vol liefde en kleine, kostbare details 
           die je nooit wilt vergeten. Die piepkleine handjes, zachte haartjes en rustige slaapplekjes 
           – ze groeien sneller dan je denkt.<br>
           Met een newborn fotoshoot leg ik deze bijzondere momenten vast op een pure, tijdloze manier. 
           Geen druk, geen haast – alleen liefdevolle beelden van jullie nieuwe begin. We creëren samen 
           een ontspannen sfeer, zodat zowel jullie als jullie kleintje zich op hun gemak voelen.
-        </p>
-      </div>
+      </p>
     </div>
-    
   </section>
 
   <section class="items-center justify-center">
@@ -63,8 +60,8 @@
   </section>
 
   <section>
-    <div class="bg-background_2 flex items-center justify-center px-4 py-12 sm:px-6 sm:py-20">
-      <div class="flex flex-col items-center justify-center">
+    <div class="bg-background_2 flex items-center justify-center px-4 pt-12 pb-[90px] sm:px-6 sm:py-20">
+      <div class="flex flex-col items-center justify-center relative">
         <div class="sm:w-[80%] sm:gap-6 flex sm:flex-row flex-col">
           <div class="flex flex-col sm:w-[60%]">
             <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
@@ -102,6 +99,13 @@
             Boek jouw newbornshoot en leg jullie mooiste begin vast
           </button>
         </div>
+        <div class="sm:hidden absolute left-[-1px] bottom-[-120px]">
+          <nuxt-img
+          src="/assets/pictures/newborn-page/extra-aanbod-mobile.webp"
+          alt="Extra aanbod"
+          class="h-[100px] sm:w-[250px] sm:h-[250px]"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -128,7 +132,7 @@
   </section>
 
   <section class="bg-background_4 flex items-center justify-center px-6 pb-12">
-    <h1 class="font-playFair uppercase absolute text-6xl left-1/2 transform translate-x-[-50%] top-[-220px]">Newborn</h1>
+    <!-- <h1 class="font-playFair uppercase absolute text-6xl left-1/2 transform translate-x-[-50%] top-[-220px]">Newborn</h1> -->
     <div class="absolute ml-[-88%] z-10 hidden sm:block">
       <nuxt-img
         src="/assets/pictures/newborn-page/little-stories.webp"

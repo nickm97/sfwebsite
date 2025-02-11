@@ -36,29 +36,26 @@
       </p>
   </section>
 
-  <section class="flex flex-col items-center justify-center bg-buttonColor">	
-    <p class="font-playFair uppercase text-center w-full text-white text-[12px]">
+  <section class="flex flex-col items-center sm:px-6 sm:pt-10 pb-10 bg-buttonColor">
+    <p class="sm:hidden font-playFair uppercase text-center w-full text-white text-[12px] w-full mb-4">
       PREGNANCY-NEWBORN-LITTLE FAMILIES-COUPLES-BOUDOIR
     </p>
-    <div class="sm:px-6 px-4 py-10">
-      <div class="sm:w-[70%]">
-        <p class="text-white uppercase font-standard font-bold">
-          FOTOSHOOTS
-        </p>
-      </div>
-      <div class="mt-6 sm:w-[70%]">
-        <p class="text-white font-standard font-light">
-          Een fotoshoot bij Sanneloes Fotografie gaat niet om stom poseren, 
+    <div class="w-full sm:w-[70%] px-4">
+      <p class="text-white uppercase font-standard text-left font-bold">
+        FOTOSHOOTS
+      </p>
+    </div>
+    <div class="mt-6 w-full sm:w-[70%] px-4">
+      <p class="text-white font-standard font-light">
+        Een fotoshoot bij Sanneloes Fotografie gaat niet om stom poseren, 
           je ongemakkelijk voelen en je anders voordoen dan je bent. Het draait 
           om het vastleggen van échte momenten, precies zoals ze gebeuren. Geen 
           stijve poses of geforceerde glimlachen, maar spontane, oprechte beelden 
           waarin jij, je familie of je geliefden centraal staan. Dit zijn de foto's 
           waarin je jezelf herkent – de kleine blikken, het echte gelach, de subtiele 
           aanrakingen die het verhaal vertellen van wie jij bent.
-        </p>
-      </div>
+      </p>
     </div>
-    
   </section>
 
   <section class="items-center justify-center">
