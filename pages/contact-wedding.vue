@@ -4,7 +4,7 @@
         <iframe
         
         
-         class="w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto "
+         class="w-[calc(100%-25px)] sm:w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto "
           id="sn-form-01ysk"
           src="https://app.studioninja.co/contactform/parser/0a800fc9-93e4-1c01-8194-3c2e8aff7820/0a800fc9-93e4-1c01-8194-3c2e8b237822"
           allowfullscreen

@@ -17,19 +17,19 @@
       <nuxt-img
         src="/assets/pictures/studio-page/banner-title.webp"
         alt="Family Background"
-        class="w-[400px] object-cover object-center absolute top-1/2 right-[25%] transform translate-x-1/2 -translate-y-1/2"
+        class="w-[400px] object-cover object-center absolute top-1/2 right-1/2 sm:right-[25%] transform translate-x-1/2 -translate-y-1/2"
       />
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center px-6 py-10 bg-background_2">	
-    <div class="w-[70%]">
-      <p class="text-black uppercase font-standard font-bold">
+  <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-background_2">
+    <div class="w-full sm:w-[70%]">
+      <p class="text-white uppercase font-standard text-left font-bold">
         Daylight studio
       </p>
     </div>
-    <div class="mt-6 w-[70%]">
-      <p class="text-black font-standard font-light">
+    <div class="mt-6 w-full sm:w-[70%]">
+      <p class="text-white font-standard font-light">
         Eind 2023 begon ik Daylight Studio La Luz. Een droom die werkelijkheid werd. Een eigen studioruimte met 
         veel daglicht, gezellig, maar neutraal ingericht waar ik mooie en creatieve beelden kan maken, maar ook 
         collega´s kan laten profiteren van de ruimte. Elkaar vooruit helpen is zeker een doel wat betreft de studio.<br><br>
@@ -57,7 +57,7 @@
     <div class="flex flex-col sm:flex-row sm:gap-0 items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
   
       <!-- Afbeelding -->
-      <div class="px-4 flex items-center justify-center w-[50%]">
+      <div class="px-4 flex items-center justify-center sm:w-[50%]">
         <nuxt-img
           src="/assets/pictures/studio-page/studio-photo-qoute.webp"
           alt="Sanneloes"
@@ -65,8 +65,8 @@
         />
       </div>
 
-      <div class="px-4 flex items-center justify-center w-[40%] text-center">
-        <p class="font-playFair text-[50px] text-[#ad9989] uppercase">
+      <div class="px-4 flex items-center justify-center sm:w-[40%] text-center mt-8 sm:mt-0">
+        <p class="font-playFair text-[26px] sm:text-[50px] text-[#ad9989] uppercase">
           Where there is light there is creativity 
           And where there is creativity, there are endless possibilities
         </p>
@@ -76,20 +76,73 @@
   </section>
 
 
-  <section class="bg-background_4 flex items-center justify-center">
+  <section class="hidden bg-background_4 sm:flex items-center justify-center">
 
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
-    <div v-for="(photo, index) in photos" :key="index">
+    <div v-for="(photo, index) in imageUrls" :key="index">
       <!-- Gebruik nu de nuxt-img component voor lazy loading -->
-      <nuxt-img :src="photo.url" :alt="photo.alt" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
+      <nuxt-img :src="photo.url" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
     </div>
   </div>
   </section>
 
+
+  <section class="sm:hidden relative flex justify-center items-center w-full overflow-hidden bg-background_4 pb-12">
+    <div ref="slider" class="flex gap-4 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+      <div
+        v-for="(image, index) in imageUrls"
+        :key="index"
+        class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0 transition-all duration-500"
+        @click="scrollToIndex(index)"
+      >
+        <img
+          :src="image.url"
+          :alt="'Image ' + (index + 1)"
+          class="w-[270px] object-cover transition-transform duration-500"
+        />
+      </div>
+    </div>
+  </section>
+  
+  
+  
   <footer-sf></footer-sf>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted, nextTick } from "vue";
+
+const imageUrls = ref([
+  { url: "/assets/pictures/boudoir-page/boudoir-01.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-02.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-03.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-04.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-05.webp" }
+]);
+
+const slider = ref(null);
+const currentIndex = ref(2); // Standaard middelste afbeelding
+
+const scrollToIndex = (index) => {
+  if (slider.value) {
+    const tileWidth = 270 + 16; // 270px breedte + 16px gap
+    slider.value.scrollLeft = index * tileWidth - slider.value.clientWidth / 2 + tileWidth / 2;
+    currentIndex.value = index;
+  }
+};
+
+onMounted(() => {
+  nextTick(() => scrollToIndex(currentIndex.value));
+});
+</script>
+
+<style>
+/* Verbergt scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+</style>
+<!-- <script>
 export default {
   data() {
     return {
@@ -116,5 +169,5 @@ export default {
     };
   }
 };
-</script>
+</script> -->
 

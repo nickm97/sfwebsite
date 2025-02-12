@@ -17,18 +17,18 @@
       <nuxt-img
         src="/assets/pictures/savvy-page/banner-title.webp"
         alt="Family Background"
-        class="w-[700px] object-cover object-center absolute top-1/2 right-[50%] transform translate-x-1/2 -translate-y-1/2"
+        class="w-[550px] sm:w-[700px] object-cover object-center absolute top-1/2 right-[50%] transform translate-x-1/2 -translate-y-1/2"
       />
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center px-6 py-10 bg-buttonColor">	
-    <div class="w-[70%]">
-      <p class="text-white uppercase font-standard font-bold">
+  <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-buttonColor">
+    <div class="w-full sm:w-[70%]">
+      <p class="text-white uppercase font-standard text-left font-bold">
         VERHUUR VAN STYLING ITEMS VOOR JOUW BRUILOFT, BABYSHOWER, FEEST OF EVENT
       </p>
     </div>
-    <div class="mt-6 w-[70%]">
+    <div class="mt-6 w-full sm:w-[70%]">
       <p class="text-white font-standard font-light">
         Half 2024 startte ik samen met mijn lieve moeder Yvette, Savvy Styling. Al járen dacht ik iets te 
         willen doen met aankleding van bruiloften, maar hoe en wat wist ik niet precies, totdat ik op een 
@@ -64,7 +64,7 @@
         />
       </div>
 
-      <div class="px-4 flex items-center justify-center">
+      <div class="px-4 flex items-center justify-center mt-8 sm:mt-0">
         <nuxt-img
           src="/assets/pictures/savvy-page/styling-qoute-01.webp"
           alt="Sanneloes"
@@ -75,43 +75,66 @@
   </section>
 
 
-  <section class="bg-background_4 flex items-center justify-center">
+  <section class="hidden bg-background_4 sm:flex items-center justify-center">
+
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
-      <div v-for="(photo, index) in photos" :key="index">
+      <div v-for="(photo, index) in imageUrls" :key="index">
         <!-- Gebruik nu de nuxt-img component voor lazy loading -->
-        <nuxt-img :src="photo.url" :alt="photo.alt" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
+        <nuxt-img :src="photo.url" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
       </div>
     </div>
   </section>
 
+
+  <section class="sm:hidden relative flex justify-center items-center w-full overflow-hidden bg-background_4 pb-12">
+    <div ref="slider_events" class="flex gap-4 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
+      <div
+        v-for="(image, index) in imageUrls"
+        :key="index"
+        class="relative group rounded-lg overflow-hidden bg-gray-300 shrink-0 transition-all duration-500"
+        @click="scrollToIndex(index)"
+      >
+        <img
+          :src="image.url"
+          :alt="'Image ' + (index + 1)"
+          class="w-[270px] object-cover transition-transform duration-500"
+        />
+      </div>
+    </div>
+  </section>
+  <footer-sf></footer-sf>
 </template>
 
+<script setup>
+import { ref, onMounted, nextTick } from "vue";
 
-<script>
-export default {
-  data() {
-    return {
-      photos: [ 
-      { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_08772-2.webp', alt: 'SF_08772-2.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_08781-2.webp', alt: 'SF_08781-2.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09098.webp', alt: 'SF_09098.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09105.webp', alt: 'SF_09105.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09140.webp', alt: 'SF_09140.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09158.webp', alt: 'SF_09158.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09165.webp', alt: 'SF_09165.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09166.webp', alt: 'SF_09166.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09172.webp', alt: 'SF_09172.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09176.webp', alt: 'SF_09176.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09269.webp', alt: 'SF_09269.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09283.webp', alt: 'SF_09283.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09311.webp', alt: 'SF_09311.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09338.webp', alt: 'SF_09338.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09372.webp', alt: 'SF_09372.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09566-2.webp', alt: 'SF_09566-2.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09635.webp', alt: 'SF_09635.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09938.webp', alt: 'SF_09938.webp' }
-] 
-    };
+const imageUrls = ref([
+  { url: "/assets/pictures/boudoir-page/boudoir-01.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-02.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-03.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-04.webp" },
+  { url: "/assets/pictures/boudoir-page/boudoir-05.webp" }
+]);
+
+const slider_events = ref(null);
+const currentIndex = ref(2); // Standaard middelste afbeelding
+
+const scrollToIndex = (index) => {
+  if (slider_events.value) {
+    const tileWidth = 270 + 16; // 270px breedte + 16px gap
+    slider_events.value.scrollLeft = index * tileWidth - slider_events.value.clientWidth / 2 + tileWidth / 2;
+    currentIndex.value = index;
   }
 };
+
+onMounted(() => {
+  nextTick(() => scrollToIndex(currentIndex.value));
+});
 </script>
+
+<style>
+/* Verbergt scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+</style>

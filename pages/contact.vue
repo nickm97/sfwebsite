@@ -1,9 +1,13 @@
  
 <template>
-  <section class="flex justify-center bg-[#fffcf7] py-6 h-full">
+  <section  class="flex flex-col sm:flex-row bg-[#f7f0ec] sm:bg-[#fffcf7] h-full pb-6">
+
     <!-- Linker kolom -->
-    <div class="w-1/2 flex flex-col items-center ">
-      <p class="text-[15px] font-standard text-center px-[80px] font-light mb-6">
+    <div id="contact-form" class="sm:w-1/2 flex flex-col items-center py-6">
+      <p class="font-playFair text-[28px] font-bold sm:hidden">
+        CONTACT
+      </p>
+      <p class="sm:text-[15px] text-[14.5px] font-standard text-center px-4 sm:px-[80px] font-light mb-6">
         Wat leuk dat je geïnteresseerd bent in een shoot bij mij!<br><br>
         Of het nu een bruiloft, lifestyle of brandingshoot is, je bent aan het juiste adres. 
         Super leuk dat je/jullie misschien voor mijn lens wil(len) staan.<br><br> 
@@ -16,12 +20,12 @@
         <nuxt-img
           src="/assets/pictures/contact-page/contact-back.webp"
           alt="Sanneloes Fotografie Logo"
-          class="object-cover h-[45px] sm:h-[575px] rounded-xl"
+          class="object-cover w-[400px] sm:w-[400px] rounded-xl"
         />
         <nuxt-img
           src="/assets/pictures/contact-page/contact-01.webp"
           alt="Sanneloes Fotografie Logo"
-          class="object-cover h-[45px] sm:h-[475px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="object-cover w-[350px] sm:w-[350px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         />
       </div>
 
@@ -31,8 +35,8 @@
     </div>
 
     <!-- Rechter kolom -->
-    <div class="w-1/2 flex flex-col items-center">
-      <p class="text-[50px] font-playFair">
+    <div class="sm:w-1/2 flex flex-col items-center">
+      <p class="text-[30px] mt-8 sm:mt-0 sm:text-[50px] font-playFair">
         CONTACT FORMULIER
       </p>
 
@@ -50,7 +54,7 @@
 
       <!-- Contact formulier -->
       <iframe
-        class="w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto mt-4"
+        class="w-[calc(100%-25px)] sm:w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto mt-4"
         id="sn-form-lnjgg"
         src="https://app.studioninja.co/contactform/parser/0a800fc9-93e4-1c01-8194-3c2e8aff7820/0a800fc9-93e4-1c01-8194-3c50f32e02a8"
         allowfullscreen
@@ -155,10 +159,10 @@ export default {
 </script>
 
 <style scoped>
-  .instagram-icon i {
-    background: linear-gradient(45deg, #F77737, #FDCB82, #9B59B6);
-    background-clip: text;
-    color: transparent;
-}
+  @media (max-width: 640px) { /* Alleen op schermen kleiner dan 640px */
+    #contact-form {
+      background: linear-gradient(to bottom, #d3c9bf 60%, #f7f0ec 40%);
+    }
+  }
   
 </style>

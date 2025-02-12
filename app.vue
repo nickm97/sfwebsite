@@ -93,7 +93,7 @@
             <NuxtLink to="/shoots" class="nav-link-mobile" @click="closeMenu">SHOOTS</NuxtLink>
             <NuxtLink to="/branding" class="nav-link-mobile" @click="closeMenu">BRANDING</NuxtLink>
             <NuxtLink to="/portfolio" class="nav-link-mobile" @click="closeMenu">PORTFOLIO</NuxtLink>
-            <NuxtLink to="/portfolio" class="nav-link-mobile" @click="closeMenu">EVENT STYLING</NuxtLink>
+            <NuxtLink to="/event-styling" class="nav-link-mobile" @click="closeMenu">EVENT STYLING</NuxtLink>
             <NuxtLink to="/daylightstudio" class="nav-link-mobile" @click="closeMenu">DAYLIGHT STUDIO</NuxtLink>
             <NuxtLink to="/about" class="nav-link-mobile" @click="closeMenu">ABOUT</NuxtLink>
             <NuxtLink to="/contact" class="nav-link-mobile" @click="closeMenu">CONTACT</NuxtLink>
