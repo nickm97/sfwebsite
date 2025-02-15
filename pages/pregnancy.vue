@@ -1,18 +1,19 @@
 <template>
-  <section>
-    <!-- background pic -->
+  <section class="hidden sm:block">
     <div class="relative h-screen max-h-[calc(100vh-150px)] hidden sm:block">
       <nuxt-img
         src="/assets/pictures/pregnancy-page/banner.webp"
         alt="Newborn Background"
-        class="w-full h-full object-cover object-center"style="object-position: center 30%;"
+        class="w-full h-full object-cover object-center"
+        style="object-position: center 30%;"
       />
     </div>
     <div class="relative h-screen max-h-[calc(100vh-150px)] sm:hidden">
       <nuxt-img
         src="/assets/pictures/pregnancy-page/banner-mobile.webp"
         alt="Shoots Background"
-        class="w-full h-full object-cover object-center"style="object-position: center 45%;"
+        class="w-full h-full object-cover object-center"
+        style="object-position: center 45%;"
       />
     </div>
     <div>
@@ -20,6 +21,17 @@
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         Pregnancy
+      </p>
+    </div>
+  </section>
+
+  <section class="sm:hidden">
+    <!-- background pic -->
+    <div class="bg-[url(/assets/pictures/pregnancy-page/banner-mobile.webp)] h-[500px] bg-cover bg-center relative">
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+          Pregnancy
       </p>
     </div>
   </section>
@@ -61,7 +73,7 @@
         <img
           src="/assets/pictures/pregnancy-page/pregnancy-astrid.webp"
           alt="Tile Image 1"
-          class="w-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+          class="w-[400px] object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg"
         />
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">ASTRID</h2>
@@ -280,11 +292,12 @@ const scrollToMiddle = (slider_pregnancy) => {
 };
 
 onMounted(() => {
-  nextTick(() => {
+nextTick(() => {
+  setTimeout(() => {
     sliders_pregnancy.value.forEach((slider_pregnancy) => scrollToMiddle(slider_pregnancy));
-  });
+  }, 500); // Kleine vertraging van 100ms
 });
-
+});
   const router = useRouter();
   function scrollToNextSection() {
     // Scroll naar de volgende sectie (vervang de selector naar je gewenste sectie)

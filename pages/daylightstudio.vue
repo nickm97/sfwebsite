@@ -136,12 +136,7 @@ onMounted(() => {
 });
 </script>
 
-<style>
-/* Verbergt scrollbars */
-::-webkit-scrollbar {
-  display: none;
-}
-</style>
+
 <!-- <script>
 export default {
   data() {

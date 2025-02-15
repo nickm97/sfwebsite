@@ -1,6 +1,6 @@
 <template>
 
-<section>
+<section class="hidden sm:block">
     <!-- background pic -->
     <div class="relative h-screen max-h-[calc(100vh-150px)] hidden sm:block">
       <nuxt-img
@@ -34,6 +34,21 @@
           text-white text-[26px] font-playFair uppercase text-center w-full hidden sm:block">
         PREGNANCY - NEWBORN - LITTLE FAMILIES - COUPLES - BOUDOIR
       </p>
+  </section>
+
+  <section class="sm:hidden">
+    <!-- background pic -->
+    <div class="bg-[url(/assets/pictures/shoots-page/banner-mobile.webp)] h-[500px] bg-cover bg-center relative">
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+          Shoots
+      </p>
+      <p class="absolute bottom-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[26px] font-playFair uppercase text-center w-full hidden sm:block px-4">
+        PREGNANCY - NEWBORN - LITTLE FAMILIES - COUPLES - BOUDOIR
+      </p>
+    </div>
   </section>
 
   <section class="flex flex-col items-center sm:px-6 sm:pt-10 pb-10 bg-buttonColor">

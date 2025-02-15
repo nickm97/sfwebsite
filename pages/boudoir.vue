@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="hidden sm:block">
     <!-- background pic -->
     <div class="hidden sm:block relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
@@ -21,6 +21,17 @@
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
         BOUDOIR
+      </p>
+    </div>
+  </section>
+
+  <section class="sm:hidden">
+    <!-- background pic -->
+    <div class="bg-[url(/assets/pictures/boudoir-page/boudoir-photo-qoute.webp)] h-[500px] bg-cover bg-center relative">
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90 whitespace-nowrap">
+          Boudoir
       </p>
     </div>
   </section>
@@ -290,10 +301,11 @@ const scrollToMiddle = (slider_boudoir) => {
 
 onMounted(() => {
   nextTick(() => {
-    sliders_boudoir.value.forEach((slider_boudoir) => scrollToMiddle(slider_boudoir));
+    setTimeout(() => {
+      sliders_boudoir.value.forEach((slider_boudoir) => scrollToMiddle(slider_boudoir));
+    }, 100); // Kleine vertraging van 100ms
   });
 });
-
 const router = useRouter();
 function scrollToNextSection() {
   // Scroll naar de volgende sectie (vervang de selector naar je gewenste sectie)

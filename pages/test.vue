@@ -6,10 +6,10 @@
 
     <div class="cards">
       <label class="card" for="item-1" id="song-1">
-        <img src="/assets/pictures/boudoir-page/boudoir-01.webp" alt="song">
+        <img src="/assets/pictures/boudoir-page/boudoir-03.webp" alt="song">
       </label>
       <label class="card" for="item-2" id="song-2">
-        <img src="/assets/pictures/boudoir-page/boudoir-02.webp" alt="song">
+        <img src="/assets/pictures/boudoir-page/boudoir-03.webp" alt="song">
       </label>
       <label class="card" for="item-3" id="song-3">
         <img src="/assets/pictures/boudoir-page/boudoir-03.webp" alt="song">

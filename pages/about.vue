@@ -10,7 +10,8 @@
         class="w-[100%] h-[300px] sm:h-[600px] bg-cover bg-center"
       />
     </div>
-    <div class="absolute" style="top: 18%; left: 5%;">
+    <div class="absolute top-[28%] left-[32%] sm:left-[25%] sm:top-[60%] transform -translate-x-1/2 -translate-y-1/2 ">
+      <!-- style="top: 18%; left: 5%;" -->
       <nuxt-img
         placeholder
         src="/assets/pictures/about-page/banner-photo.webp"
@@ -64,9 +65,9 @@
   </section>
 
   <describe-me></describe-me>
-  <section class="flex flex-col items-center justify-center text-center py-12 px-2 bg-buttonColor">
+  <section class="flex flex-col items-center justify-center text-center py-6 sm:py-12 px-4 sm:px-2 bg-buttonColor">
     <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
-      <p class="sm:w-1/2">
+      <p class="sm:w-1/2 text-left sm:text-center">
         Na het behalen van mijn diploma als leerkracht basisonderwijs, heb ik me vrijwel direct 
         ingeschreven bij de KVK onder de naam ‘Sanneloes Fotografie’. Het avontuur begon. Het opbouwen 
         van een klantenkring, ervaring opdoen, een portfolio opbouwen, fouten maken en heel veel leren. 
@@ -75,7 +76,7 @@
         daglicht studio popte op in mijn hoofd en ik besloot dit idee met veel enthousiasme en doorzettingsvermogen 
         aan te pakken. ZO GAAF!
       </p>
-      <p class="sm:w-1/2">
+      <p class="sm:w-1/2 text-left sm:text-center">
         Begin 2024 besloot ik samen met mijn vriend 3 maanden te gaan reizen in Azië. Een droom van ons beiden 
         om samen dit avontuur aan te gaan en herinneringen te maken. Het was ergens stiekem ook wel een beetje nodig. 
         Rust in mijn hoofd. Het is niet niks om een eigen bedrijf te runnen, ook in loondienst te zijn, het huishouden, 
@@ -95,26 +96,28 @@
       <nuxt-img
         src="/assets/pictures/about-page/me-01.webp"
         alt="Sanneloes Fotografie"
-        class="object-cover h-[45px] sm:h-[350px] z-10"
+        class="object-cover h-[175px] sm:h-[350px] z-10"
       />
       <nuxt-img
         src="/assets/pictures/about-page/me-02.webp"
         alt="Sanneloes Fotografie"
-        class="object-cover h-[45px] sm:h-[350px] z-10"
+        class="object-cover h-[175px] sm:h-[350px] z-10"
       />
       <nuxt-img
         src="/assets/pictures/about-page/me-03.webp"
         alt="Sanneloes Fotografie"
-        class="object-cover h-[45px] sm:h-[350px] z-10"
+        class="object-cover h-[175px] sm:h-[350px] z-10"
       />
 
-      <div class="absolute flex z-10" style="top: 16%; left: 29.75%;">
-        <p class="text-black text-5xl font-playFair uppercase text-center">
+      <div class="absolute flex z-10 top-1/2 sm:top-[50%] left-[33.9%] sm:left-[33.9%] transform -translate-x-1/2 -translate-y-1/2 ">
+        <!-- <div class="absolute flex z-10" style="top: 16%; left: 29.75%;"> -->
+        <p class="text-black text-[26px] sm:text-5xl font-playFair uppercase text-center">
           sa<br>nn<br>e
         </p>
       </div>
-      <div class="absolute flex z-10" style="top: 16%; right: 29.75%;">
-        <p class="text-black text-5xl font-playFair uppercase text-center">
+      <div class="absolute flex z-10 top-1/2 sm:top-[50%] right-[33.9%] sm:right-[33.9%] transform translate-x-1/2 -translate-y-1/2">
+        <!-- <div class="absolute flex z-10" style="top: 16%; right: 29.75%;"> -->
+        <p class="text-black text-[26px] sm:text-5xl font-playFair uppercase text-center">
           lo<br>es
         </p>
       </div>
@@ -123,14 +126,14 @@
 </section>
 
 
-  <section class="flex flex-col items-center justify-center text-center py-0 px-2 pb-[50px] bg-white">
+  <section class="flex flex-col items-center justify-center text-left sm:text-center py-0 px-2 pb-[50px] bg-white">
     <nuxt-img
       src="/assets/pictures/about-page/my-vision.webp"
       alt="Sanneloes Fotografie Logo"
-      class="object-cover h-[45px] sm:h-[150px] z-10 "
+      class="object-cover h-[100px] sm:h-[150px] z-10 "
     />
-    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-black sm:gap-12 py-0 font-standard text-[14.5px]">
-      <p class="sm:w-1/2">
+    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-black sm:gap-12 px-4 sm:px-0 py-0 font-standard text-[14.5px]">
+      <p class="sm:w-1/2 text-left sm:text-center">
         Waarom werd ik fotograaf? Wat maakt nou dat ik zo veel om dit vak geef? Dat ik zo veel waarde hecht 
         aan foto's? Een moeilijke vraag, waar ik echt wel even over na moest denken.<br><br>
 
@@ -142,7 +145,7 @@
         In aanrakingen, emoties vangen, kleine dingen waar jij misschien niet eens aan zou denken om te fotograferen.
         Om licht, creativiteit, vrijheid en nog het meest om iets te creëren wat <strong>waardevol</strong> is voor mijn klanten.   
       </p>
-      <p class="sm:w-1/2">
+      <p class="sm:w-1/2 text-left sm:text-center">
         Uiteindelijk gaat het als fotograaf namelijk helemaal niet om mij. 
         Het gaat om mooie of bijzondere <strong>herinneringen</strong> voor de klant vastleggen, 
         zodat zij daar nog jaren van kunnen genieten, maar ook zodat zij af en toe eens 

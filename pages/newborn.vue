@@ -1,6 +1,5 @@
 <template>
-  <section>
-    <!-- background pic -->
+  <section class="hidden sm:block">
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/newborn-page/banner.webp"
@@ -18,6 +17,18 @@
       </p>
     </div>
   </section>
+
+  <section class="sm:hidden">
+    <!-- background pic -->
+    <div class="bg-[url(/assets/pictures/newborn-page/banner.webp)] h-[500px] bg-cover bg-center relative">
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        Newborn
+      </p>
+    </div>
+  </section>
+
 
   <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-buttonColor">
     <div class="w-full sm:w-[70%]">
@@ -285,7 +296,9 @@ const scrollToMiddle = (slider_newborn) => {
 
 onMounted(() => {
   nextTick(() => {
-    sliders_newborn.value.forEach((slider_newborn) => scrollToMiddle(slider_newborn));
+    setTimeout(() => {
+      sliders_newborn.value.forEach((slider_newborn) => scrollToMiddle(slider_newborn));
+    }, 500); // Kleine vertraging van 100ms
   });
 });
 
