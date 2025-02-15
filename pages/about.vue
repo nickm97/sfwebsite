@@ -76,7 +76,7 @@
         daglicht studio popte op in mijn hoofd en ik besloot dit idee met veel enthousiasme en doorzettingsvermogen 
         aan te pakken. ZO GAAF!
       </p>
-      <p class="sm:w-1/2 text-left sm:text-center">
+      <p class="sm:w-1/2 text-left sm:text-center mt-4 sm:mt-0">
         Begin 2024 besloot ik samen met mijn vriend 3 maanden te gaan reizen in Azië. Een droom van ons beiden 
         om samen dit avontuur aan te gaan en herinneringen te maken. Het was ergens stiekem ook wel een beetje nodig. 
         Rust in mijn hoofd. Het is niet niks om een eigen bedrijf te runnen, ook in loondienst te zijn, het huishouden, 
@@ -111,13 +111,13 @@
 
       <div class="absolute flex z-10 top-1/2 sm:top-[50%] left-[33.9%] sm:left-[33.9%] transform -translate-x-1/2 -translate-y-1/2 ">
         <!-- <div class="absolute flex z-10" style="top: 16%; left: 29.75%;"> -->
-        <p class="text-black text-[26px] sm:text-5xl font-playFair uppercase text-center">
+        <p class="text-black text-[26px] sm:text-[50px] font-playFair uppercase text-center">
           sa<br>nn<br>e
         </p>
       </div>
       <div class="absolute flex z-10 top-1/2 sm:top-[50%] right-[33.9%] sm:right-[33.9%] transform translate-x-1/2 -translate-y-1/2">
         <!-- <div class="absolute flex z-10" style="top: 16%; right: 29.75%;"> -->
-        <p class="text-black text-[26px] sm:text-5xl font-playFair uppercase text-center">
+        <p class="text-black text-[26px] sm:text-[50px] font-playFair uppercase text-center">
           lo<br>es
         </p>
       </div>
@@ -175,16 +175,16 @@
   <wake-me-sf></wake-me-sf>
 
   <section>
-    <div class="flex justify-center w-full pt-[100px] pb-[50px] pl-[100px] pr-12">
-      <div class="flex relative items-center justify-center w-1/2">
+    <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12">
+      <div class="flex relative items-center justify-center w-full sm:w-1/2">
         <div>
           <nuxt-img
             src="/assets/pictures/about-page/describe-me-01.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[550px]"
+            class="object-cover w-full h-auto sm:h-[550px]"
           />
         </div>
-        <div class="p-1 bg-white absolute z-10 flex" style="top: 15%; left: 65%;">
+        <div class="hidden sm:flex p-1 bg-white absolute z-10" style="top: 15%; left: 65%;">
           <nuxt-img
             src="/assets/pictures/about-page/describe-me-02.webp"
             alt="Sanneloes Fotografie Logo"
@@ -192,7 +192,8 @@
           />
         </div>
       </div>
-      <div class="w-[calc(50%-100px)]">
+
+      <div class="sm:w-[calc(50%)] flex flex-col items-center justify-center text-center px-4">
         <div class="flex justify-center py-4">
           <p class="uppercase font-playFair text-2xl font-bold">How my sweet clients describe me</p>
         </div>

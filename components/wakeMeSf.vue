@@ -1,13 +1,13 @@
 <template>
     <div class="flex flex-col items-center px-4 py-16 bg-[url('/assets/pictures/about-page/banner-wake-me-up.webp')] bg-cover bg-center">  
       <!-- Desktop Grid Layout -->
-      <div class="hidden sm:grid grid-cols-9 gap-4">
-        <WakeMeCard v-for="(review, index) in reviews" :key="index" :review="review" />
+      <div class="hidden sm:grid grid-cols-9 gap-4 flex justify-center items-center">
+        <WakeMeCard v-for="(wakeMe, index) in wakeMes" :key="index" :wakeMe="wakeMe" />
       </div>
   
       <!-- Mobile Slider -->
       <div class="sm:hidden flex flex-col items-center relative w-full">
-        <WakeMeCard :review="reviews[currentIndex]" />
+        <WakeMeCard :wakeMe="wakeMes[currentIndex]" />
         
         <!-- Navigatie Knoppen -->
         <div class="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-0">
@@ -27,7 +27,7 @@
   import { ref } from 'vue'
   
   // Review data
-  const reviews = ref([
+  const wakeMes = ref([
     {
       name: "Kaas",
       text: "IK HOU VAN KAAS. Altijd als ik op reis ben, verlang ik naar kaas. Of het nou jong belegen, oude, feta, brie, fondue of geitenkaas is. Ik word er blij van."
