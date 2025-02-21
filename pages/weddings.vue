@@ -4,9 +4,10 @@
     <!-- background pic -->
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-        src="/assets/pictures/wedding-page/banner.jpg"
+        src="/assets/pictures/wedding-page/wedding-banner-01.webp"
         alt="Wedding Background"
         class="w-full h-full object-cover object-center"
+        placeholder
       />
     </div>
     <div>
@@ -48,14 +49,14 @@
 
 
   <section class="items-center justify-center">
-    <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 w-full sm:mx-auto bg-background_2">
+    <div class="flex flex-col sm:flex-row sm:gap-12 items-center justify-center py-12 xl:py-[120px] w-full sm:mx-auto bg-background_2">
     
       <!-- Afbeelding 1 -->
       <div class="sm:px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/wedding-page/wedding-photo-qoute.webp"
           alt="Sanneloes"
-          class="w-[300px] sm:w-[400px] rounded-lg"
+          class="w-[300px] sm:w-[400px] xl:w-[500px] rounded-lg"
         />
       </div>
 
@@ -72,7 +73,7 @@
 
 
   <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
-    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-75%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
@@ -80,7 +81,7 @@
       />
     </div>
 
-    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-1 -mt-12">
+    <div class="sm:hidden rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-1 -mt-12">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
@@ -88,7 +89,7 @@
       />
     </div>
 
-    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden">
+    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
       <!-- Slider container -->
       <div v-for="(slider, index) in 1" :key="index" ref="sliders" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
         <!-- Tile 1 -->
@@ -140,9 +141,9 @@
 
 
 
-    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 mx-auto">
       <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/rick&marlou.webp"
           alt="Tile Image 1"
@@ -159,7 +160,7 @@
         </div>
       </div>
       <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/gijs&britt.webp"
           alt="Tile Image 2"
@@ -176,7 +177,7 @@
         </div>
       </div>
       <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/sam&inge.webp"
           alt="Tile Image 3"
@@ -199,7 +200,7 @@
     <div class="flex flex-col sm:flex-row sm:gap-16 items-center justify-center py-12 w-full sm:max-w-[1200px] sm:mx-auto">
       <!-- Tekst -->
       <div class="flex flex-col w-full sm:w-1/2 text-left sm:text-left py-0 pb-12 sm:py-0 px-4 sm:px-0">
-        <p class="font-standard font-light text-[14.5px] text-white">
+        <p class="font-standard font-light text-[14.5px] text-white xl:text-[16px]">
           Ik maak <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Ik vang de momenten waarop 
           heel hard gelachen wordt of als er een traan over een wang rolt. Ik heb aandacht voor kleine dingen, 
           zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, ik voel emoties 
@@ -264,9 +265,9 @@
     </div>
   </section>
 
-  <section class="justify-center bg-buttonColor pt-12 pb-[100px] sm:pb-12">
-    <div class="flex items-center justify-center gap-[20px] sm:px-12 sm:px-10 px-4">
-      <p class="text-white font-standard font-light text-[14.5px]">
+  <section class="flex items-center flex-col justify-center bg-buttonColor pt-12 pb-[100px] sm:pb-12 items-center">
+    <div class="flex items-center justify-center gap-[20px] sm:px-12 sm:px-10 px-4 sm:w-[70%]">
+      <p class="text-white font-standard font-light text-[14.5px] xl:text-[16px] text-center ">
         YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn 
         jullie helemaal verzot op het land waar jullie willen gaan trouwen en daar ga ik maar al te graag 
         mee naartoe, want ‘HALLOOOO, je praat met een héle grote reisfanaat!’ Zelf heb ik al vele mooie reizen 
@@ -281,14 +282,14 @@
       </p>
     </div>
     <div>
-      <p class="uppercase text-white font-playFair text-[18px] sm:text-[50px] mt-6 w-full px-4 sm:px-10 sm:px-12">
+      <p class="uppercase text-center text-white font-playFair text-[18px] sm:text-[50px] mt-6 w-full px-4 sm:px-10 sm:px-12">
         Trouwen in het buitenland
       </p>
     </div>
   </section>
 
-  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 pb-20 sm:pb-6 sm:py-[75px] bg-background_4">
-    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-88%] sm:z-10">
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-75%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
@@ -296,7 +297,7 @@
       />
     </div>
 
-    <div class="rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-1 -mt-12">
+    <div class="sm:hidden rotate-90 sm:rotate-0 flex items-center justify-center h-[100px] mb-1 -mt-12">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
@@ -361,9 +362,9 @@
       </div>
     </div>
 
-    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 mx-auto">
       <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/tom&cynthia.webp"
           alt="Tile Image 1"
@@ -380,7 +381,7 @@
         </div>
       </div>
       <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/brit&lotte.webp"
           alt="Tile Image 2"
@@ -397,7 +398,7 @@
         </div>
       </div>
       <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/david&serena.webp"
           alt="Tile Image 3"
@@ -442,7 +443,7 @@
     </div>
     <div class="flex sm:flex-row flex-col items-center justify-center sm:gap-[20px] sm:w-[70%] sm:px-6 py-6">
       <div class="flex flex-col sm:w-2/3">
-        <p class="text-white font-standard font-light w-full px-4 sm:px-0 text-[14.5px] sm:text-[16px]">
+        <p class="text-white font-standard font-light w-full px-4 sm:px-0 text-[14.5px] sm:text-[16px] xl:text-[18px]">
         Prijzen vanaf €1800 inclusief BTW.<br>
         Vanaf 6 uur fotografie.<br><br>
 
@@ -578,6 +579,11 @@
         background-attachment: scroll;
       }
     }
+    @media only screen and (min-width: 1920px) {
+    .parallax {
+      min-height: 1000px;
+    }
+  }
 </style>
 
 <script setup>
@@ -626,7 +632,7 @@ onMounted(() => {
   nextTick(() => {
     setTimeout(() => {
       sliders.value.forEach((slider) => scrollToMiddle(slider));
-    }, 500); // Kleine vertraging van 100ms
+    }, 1500); // Kleine vertraging van 100ms
   });
 });
 </script>

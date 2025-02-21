@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="hidden sm:block">
     <!-- background pic -->
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
@@ -21,6 +21,37 @@
       />
     </div>
   </section>
+
+  <section class="sm:hidden">
+    <div class="bg-[url(/assets/pictures/studio-page/banner.webp)] h-[600px] bg-cover bg-center relative">
+      <div>
+        <nuxt-img
+          src="/assets/pictures/studio-page/banner-title.webp"
+          alt="Family Background"
+          class="w-[400px] object-cover object-center absolute top-1/2 right-1/2 sm:right-[25%] transform translate-x-1/2 -translate-y-1/2"
+        />
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <section>
+    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+      <nuxt-img
+        src="/assets/pictures/studio-page/banner.webp"
+        alt="Family Background"
+        class="w-full h-full object-cover object-center"style="object-position: center 60%;"
+      />
+    </div>
+    <div>
+      <nuxt-img
+        src="/assets/pictures/studio-page/banner-title.webp"
+        alt="Family Background"
+        class="w-[400px] object-cover object-center absolute top-1/2 right-1/2 sm:right-[25%] transform translate-x-1/2 -translate-y-1/2"
+      />
+    </div>
+  </section> -->
 
   <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-background_2">
     <div class="w-full sm:w-[70%]">
@@ -54,10 +85,10 @@
   </section>
 
   <section class="items-center justify-center">
-    <div class="flex flex-col sm:flex-row sm:gap-0 items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
-  
+    <div class="flex flex-col sm:flex-row sm:gap-[100px] items-center justify-center py-12 w-full sm:mx-auto bg-background_4">
+ 
       <!-- Afbeelding -->
-      <div class="px-4 flex items-center justify-center sm:w-[50%]">
+      <div class="px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/studio-page/studio-photo-qoute.webp"
           alt="Sanneloes"
@@ -65,7 +96,7 @@
         />
       </div>
 
-      <div class="px-4 flex items-center justify-center sm:w-[40%] text-center mt-8 sm:mt-0">
+      <div class="px-4 flex items-center justify-center sm:w-[500px] text-center mt-8 sm:mt-0">
         <p class="font-playFair text-[26px] sm:text-[50px] text-[#ad9989] uppercase">
           Where there is light there is creativity 
           And where there is creativity, there are endless possibilities
@@ -81,7 +112,7 @@
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
     <div v-for="(photo, index) in imageUrls" :key="index">
       <!-- Gebruik nu de nuxt-img component voor lazy loading -->
-      <nuxt-img :src="photo.url" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
+      <nuxt-img :src="photo.url" class="w-full max-w-[500px] break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
     </div>
   </div>
   </section>

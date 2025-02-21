@@ -126,14 +126,30 @@
   <section class="items-center justify-center">
     <div class="flex flex-col sm:flex-row sm:gap-16 items-center justify-center py-12 w-full sm:max-w-[1200px] sm:mx-auto">
   
-      <!-- Afbeelding -->
+      <!-- Afbeelding
       <div class="w-full sm:w-1/2 px-4 flex items-center justify-center">
         <nuxt-img
           src="/assets/pictures/home-page/review-home-page.webp"
           alt="Sanneloes"
           class="w-[300px] sm:w-[500px]"
         />
+      </div> -->
+      <!-- Afbeelding -->
+      <div class="w-full sm:w-1/2 px-4 flex items-center justify-center relative">
+        <nuxt-img
+          src="/assets/pictures/home-page/review-home-page-back.webp"
+          alt="Sanneloes"
+          class="w-[300px] sm:w-[400px] rounded-xl"
+        />
+
+        <nuxt-img
+          src="/assets/pictures/home-page/review-home-page.webp"
+          alt="Sanneloes"
+          class="w-[225px] sm:w-[325px] rounded-xl absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 border-[5px] border-border"
+        />
+
       </div>
+      
 
       <!-- Tekst -->
       <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-0 sm:py-0 px-4 sm:px-0">
@@ -246,7 +262,7 @@
 
   <section class="items-center justify-center bg-background_2">
     <div class="flex flex-col-reverse sm:flex-row sm:gap-16 items-center justify-center sm:py-12 py-10 w-full max-w-[1200px] mx-auto">
-      <div class="sm:w-1/2 px-12 sm:px-4 flex items-center justify-center">
+      <div class="sm:w-1/2 px-12 sm:px-4 flex items-center justify-center sm:justify-start">
         <div class="relative">
           <nuxt-img
             src="/assets/pictures/home-page/about-home-page.webp"
@@ -362,7 +378,7 @@
   </section>
 
   <section class="flex items-center justify-center sm:py-8">
-    <div class="flex-col">
+    <div class="flex-col w-full">
       <div class="flex items-center justify-center px-4 bg-background_2 py-6">
         <p class="text-black text-center uppercase font-standard sm:w-[60%]">
           omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!
@@ -509,16 +525,18 @@ function previousImage() {
     background-size: cover;
   }
 
-  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed
-  @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
+  
+  @media only screen and (min-width: 1920px) {
+    .parallax_02 {
+      min-height: 800px;
     }
   }
-  html, body {
-  overflow-x: hidden;
-} */
 
-  
+  @media only screen and (min-width: 1920px) {
+    .parallax {
+      min-height: 800px;
+    }
+  }
+
 
 </style>

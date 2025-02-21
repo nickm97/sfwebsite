@@ -60,7 +60,7 @@
         <nuxt-img
           src="/assets/pictures/savvy-page/styling-photo-qoute.webp"
           alt="Sanneloes"
-          class="w-[300px] sm:w-[400px] rounded-lg"
+          class="w-[300px] sm:w-[400px] xl:w-[500px] rounded-lg"
         />
       </div>
 

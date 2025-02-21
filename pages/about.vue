@@ -1,17 +1,17 @@
 
 <template class="bg-white">
 
-  <section id="banner">
-    <div>
+  <!-- <section id="banner">
+    <div class="h-[400px] sm:h-[600px]">
       <nuxt-img
         placeholder
         src="/assets/pictures/about-page/banner-background.webp"
         alt="Sanneloes fotografie"
-        class="w-[100%] h-[300px] sm:h-[600px] bg-cover bg-center"
+        class="w-[100%] h-full object-cover object-center"
       />
     </div>
-    <div class="absolute top-[28%] left-[32%] sm:left-[25%] sm:top-[60%] transform -translate-x-1/2 -translate-y-1/2 ">
-      <!-- style="top: 18%; left: 5%;" -->
+    <div class="absolute top-[38%] left-[32%] sm:left-[25%] sm:top-[60%] transform -translate-x-1/2 -translate-y-1/2 ">
+      
       <nuxt-img
         placeholder
         src="/assets/pictures/about-page/banner-photo.webp"
@@ -19,18 +19,58 @@
         class="h-[300px] w-[205px] sm:w-[430px] sm:h-[600px]"
       />
     </div>
-    <div class="absolute" style="top: 18%; right: 33%;">
+    <div class="absolute top-[15%] right-[-15%] sm:right-[23%] sm:top-[25%] transform -translate-x-1/2 -translate-y-1/2 ">
       <h1 class="uppercase font-playFair text-[40px] sm:text-[70px] tracking-widest">About</h1>
     </div>
-    <div class="absolute" style="top: 27%; right: 31%;">
+    <div class="absolute top-[22.5%] right-[-20%] sm:right-[20%] sm:top-[40%] transform -translate-x-1/2 -translate-y-1/2 ">
       <nuxt-img
         placeholder
         src="/assets/pictures/about-page/banner-name.webp"
         alt="Sanneloes fotografie"
-        class="w-[100%] h-[70px] sm:h-[175px] bg-cover bg-center"
+        class="w-[100%] h-[100px] sm:h-[175px] bg-cover bg-center"
       />
     </div>
-  </section>
+  </section> -->
+  <section id="banner" class="relative w-full h-[400px] sm:h-[600px] xl:h-[800px]">
+  <!-- Achtergrondafbeelding -->
+  <div class="absolute inset-0">
+    <nuxt-img
+      placeholder
+      src="/assets/pictures/about-page/banner-background.webp"
+      alt="Sanneloes fotografie"
+      class="w-full h-full object-cover"
+    />
+  </div>
+
+  <!-- Afbeelding iets meer naar links en naar beneden -->
+<div class="absolute top-[70%] left-[30%] sm:top-[60%] sm:left-[25%] xl:top-[70%] xl:left-[25%] transform -translate-x-1/2 -translate-y-1/2">
+  <nuxt-img
+    placeholder
+    src="/assets/pictures/about-page/banner-photo.webp"
+    alt="Sanneloes fotografie"
+    class="w-[205px] h-[300px] sm:w-[430px] sm:h-[600px]"
+  />
+</div>
+
+
+  <!-- Titel "About" rechtsboven -->
+  <div class="absolute top-[15%] right-4 sm:right-[30%] sm:top-[10%] xl:right-[35%] xl:top-[17%]">
+    <h1 class="uppercase font-playFair text-[40px] sm:text-[70px] tracking-widest">
+      About
+    </h1>
+  </div>
+
+  <!-- Naam afbeelding onder de titel -->
+  <div class="absolute top-[25%] right-4 sm:right-[30%] sm:top-[20%] xl:right-[35%] xl:top-[25%]">
+    <nuxt-img
+      placeholder
+      src="/assets/pictures/about-page/banner-name.webp"
+      alt="Sanneloes fotografie"
+      class="h-[100px] sm:h-[175px] w-auto"
+    />
+  </div>
+</section>
+
 
   <section class="flex flex-col items-center justify-center text-center py-0 px-2 pb-[50px] bg-buttonColor">
     <div class="hidden sm:flex items-center justify-center z-10">
@@ -96,28 +136,28 @@
       <nuxt-img
         src="/assets/pictures/about-page/me-01.webp"
         alt="Sanneloes Fotografie"
-        class="object-cover h-[175px] sm:h-[350px] z-10"
+        class="object-cover h-[155px] sm:h-[350px] z-10"
       />
       <nuxt-img
         src="/assets/pictures/about-page/me-02.webp"
         alt="Sanneloes Fotografie"
-        class="object-cover h-[175px] sm:h-[350px] z-10"
+        class="object-cover h-[155px] sm:h-[350px] z-10"
       />
       <nuxt-img
         src="/assets/pictures/about-page/me-03.webp"
         alt="Sanneloes Fotografie"
-        class="object-cover h-[175px] sm:h-[350px] z-10"
+        class="object-cover h-[155px] sm:h-[350px] z-10"
       />
 
       <div class="absolute flex z-10 top-1/2 sm:top-[50%] left-[33.9%] sm:left-[33.9%] transform -translate-x-1/2 -translate-y-1/2 ">
         <!-- <div class="absolute flex z-10" style="top: 16%; left: 29.75%;"> -->
-        <p class="text-black text-[26px] sm:text-[50px] font-playFair uppercase text-center">
+        <p class="text-black text-[22px] sm:text-[50px] font-playFair uppercase text-center">
           sa<br>nn<br>e
         </p>
       </div>
       <div class="absolute flex z-10 top-1/2 sm:top-[50%] right-[33.9%] sm:right-[33.9%] transform translate-x-1/2 -translate-y-1/2">
         <!-- <div class="absolute flex z-10" style="top: 16%; right: 29.75%;"> -->
-        <p class="text-black text-[26px] sm:text-[50px] font-playFair uppercase text-center">
+        <p class="text-black text-[22px] sm:text-[50px] font-playFair uppercase text-center">
           lo<br>es
         </p>
       </div>
@@ -173,9 +213,11 @@
   </section>
 
   <wake-me-sf></wake-me-sf>
+  
+  <div class="bg-[#d3c9bf] h-[inherit] py-12 px-2"></div>
 
   <section>
-    <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12">
+    <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] xl:py-[150px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12">
       <div class="flex relative items-center justify-center w-full sm:w-1/2">
         <div>
           <nuxt-img
@@ -184,55 +226,55 @@
             class="object-cover w-full h-auto sm:h-[550px]"
           />
         </div>
-        <div class="hidden sm:flex p-1 bg-white absolute z-10" style="top: 15%; left: 65%;">
+        <div class="hidden sm:flex p-1 bg-white absolute z-10 top-[50%] left-[70%] sm:top-[50%] sm:left-[70%] xl:top-[50%] xl:left-[70%] transform -translate-x-1/2 -translate-y-1/2">
           <nuxt-img
             src="/assets/pictures/about-page/describe-me-02.webp"
             alt="Sanneloes Fotografie Logo"
-            class="object-cover h-[45px] sm:h-[375px]"
+            class="object-cover h-[45px] sm:h-[375px] sm:w-[250px]"
           />
         </div>
       </div>
 
       <div class="sm:w-[calc(50%)] flex flex-col items-center justify-center text-center px-4">
         <div class="flex justify-center py-4">
-          <p class="uppercase font-playFair text-2xl font-bold">How my sweet clients describe me</p>
+          <p class="uppercase font-playFair text-2xl xl:text-4xl font-bold">How my sweet clients describe me</p>
         </div>
-
-        <div class="border-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
-          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+        
+        <div class="border-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] xl:text-[22px] flex justify-center w-1/2">
             LIEVE MEID
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
             PROFESSIONEEL
           </div>
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto uppercase font-playFair text-[15px]">
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] xl:text-[22px] justify-center mx-auto uppercase font-playFair text-[15px]">
           GEEFT JE EEN VERTROUWD GEVOEL
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
-          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             SOCIAAL
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
             GEPASSIONEERD
           </div>
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
-          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             LET OP DETAILS
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             ENERGIEK
           </div>
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto uppercase font-playFair text-[15px]">
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto uppercase font-playFair text-[15px] xl:text-[22px]">
           STELT JE OP JE GEMAK
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] justify-center mx-auto">
-          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2">
+        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+          <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             ENTHOUSIAST
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2">
+          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             TOEGANKELIJK
           </div>
         </div>

@@ -23,7 +23,7 @@
     <!-- Mobile: Overflow Slider -->
     <div class="xl:hidden flex flex-col items-center relative w-full overflow-hidden">
       <!-- Container voor afbeeldingen met horizontale scroll -->
-      <div class="flex w-full gap-6 overflow-x-auto scroll-smooth px-4">
+      <div class="flex w-full gap-4 overflow-x-auto scroll-smooth px-4">
         <a
           v-for="(link, index) in socialLinks"
           :key="index"

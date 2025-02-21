@@ -97,42 +97,55 @@
 
   <section>
     <div class="bg-background_2 flex items-center justify-center px-4 py-12 sm:px-6 sm:py-20">
-      <div class="flex flex-col items-center justify-center">
-        <div class="sm:w-[80%] flex sm:flex-row flex-col">
-          <div class="flex flex-col justify-center sm:w-[60%]">
-            <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
-              WHAT TO EXPECT?
-            </p>
-            <ul class="list-disc pl-4 sm:pl-6 font-standard font-light leading-[1rem] sm:leading-[2rem] py-6">
-              <li class="pl-2">Een ongedwongen en persoonlijke fotosessie</li>
-              <li class="pl-2">Beelden vol echtheid, warmte en emotie</li>
-              <li class="pl-2">In de studio, bij jullie thuis of op een buitenlocatie naar keuze</li>
-            </ul>
-            
-          </div> 
-          <p class="font-standard font-light sm:w-[40%] sm:text-[15px] text-[14.5px]">
-            We creëren samen een sfeer waarin jij/jullie je comfortabel voelt/voelen, zodat de foto's 
-            niet alleen mooi zijn, maar ook écht aanvoelen.<br><br>
-
-            Jouw connectie, gevoel, plezier, liefde of dagelijks leven is het waard om vastgelegd te worden. 
-            Eén keer knipperen en het moment is alweer voorbij. Het is toch zonde om maar te blijven knipperen 
-            en fijne momenten nooit te bevriezen in de tijd?
-
+      <div class="flex flex-col items-center text-center sm:text-left w-full max-w-6xl mx-auto">
+        
+        <!-- Titel goed uitlijnen en centreren -->
+        <div class=" w-full">
+          <p class="font-playFair text-[25px] sm:text-4xl font-light">
+            WHAT TO EXPECT?
           </p>
-        </div>       
-        <p class="font-standard font-light mt-10 sm:w-[80%] sm:text-[15px] text-[14.5px]">
+        </div>
+        
+      <div class="flex flex-col sm:flex-row gap-12 w-full items-start">
+    
+        <!-- Lijst met opsommingen -->
+        <div class="flex flex-col justify-start w-full sm:w-1/2">
+          <ul class="list-disc pl-4 sm:pl-6 font-standard font-light leading-[1rem] sm:leading-[2rem] py-6">
+            <li class="pl-2">Een ongedwongen en persoonlijke fotosessie</li>
+            <li class="pl-2">Beelden vol echtheid, warmte en emotie</li>
+            <li class="pl-2">In de studio, bij jullie thuis of op een buitenlocatie naar keuze</li>
+          </ul>
+        </div> 
+
+        <!-- Paragraaf tekst -->
+        <p class="font-standard font-light w-full sm:w-1/2 sm:text-[15px] text-[14.5px] sm:py-[24px] self-start">
+          We creëren samen een sfeer waarin jij/jullie je comfortabel voelt/voelen, zodat de foto's 
+          niet alleen mooi zijn, maar ook écht aanvoelen.<br><br>
+
+          Jouw connectie, gevoel, plezier, liefde of dagelijks leven is het waard om vastgelegd te worden. 
+          Eén keer knipperen en het moment is alweer voorbij. Het is toch zonde om maar te blijven knipperen 
+          en fijne momenten nooit te bevriezen in de tijd?
+        </p>
+      </div>
+
+        
+        <!-- Tweede paragraaf -->
+        <p class="font-standard font-light  w-full sm:text-[15px] text-[14.5px]">
           Boek jouw lifestyle shoot en leg het leven vast zoals het nú is óf boek 
           jouw boudoir shoot en kijk altijd vol trots naar jezelf. Je bent mooi zoals je bent, meid! Gun jezelf 
           ‘a moment of shine’.
         </p>
+
       </div>
     </div>
   </section>
 
-  <section class="bg-background_4 flex items-center justify-center px-2 sm:px-6 py-12 sm:py-[100px]">
-    <div class="relative grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-6 w-full">
+
+  <section class="bg-background_4 flex items-center justify-center px-12 sm:px-0 py-12 sm:py-[100px]">
+    <div class="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 max-w-screen-xl px-12 sm:px-0 sm:mx-auto ">
+      
       <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
         <img
           src="/assets/pictures/shoots-page/shoots-pregnancy.webp"
           alt="Tile Image 2"
@@ -150,7 +163,7 @@
       </div>
 
       <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
         <img
           src="/assets/pictures/shoots-page/shoots-newborn.webp"
           alt="Tile Image 1"
@@ -168,7 +181,7 @@
       </div>
       
       <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
         <img
           src="/assets/pictures/shoots-page/shoots-family.webp"
           alt="Tile Image 3"
@@ -184,7 +197,7 @@
           </button>
         </div>
       </div>
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
         <img
           src="/assets/pictures/shoots-page/shoots-couples.webp"
           alt="Tile Image 1"
@@ -201,7 +214,7 @@
         </div>
       </div>
       <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
         <img
           src="/assets/pictures/shoots-page/shoots-boudoir.webp"
           alt="Tile Image 2"

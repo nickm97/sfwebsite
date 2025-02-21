@@ -356,7 +356,7 @@ onMounted(() => {
 nextTick(() => {
   setTimeout(() => {
     sliders_families.value.forEach((slider_families) => scrollToMiddle(slider_families));
-  }, 500); // Kleine vertraging van 100ms
+  }, 1500); // Kleine vertraging van 100ms
 });
 });
   const router = useRouter();

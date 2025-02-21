@@ -298,7 +298,7 @@ onMounted(() => {
   nextTick(() => {
     setTimeout(() => {
       sliders_newborn.value.forEach((slider_newborn) => scrollToMiddle(slider_newborn));
-    }, 500); // Kleine vertraging van 100ms
+    }, 1500); // Kleine vertraging van 100ms
   });
 });
 
