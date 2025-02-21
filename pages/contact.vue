@@ -1,6 +1,6 @@
  
 <template>
-  <section  class="flex flex-col sm:flex-row bg-[#f7f0ec] sm:bg-[#fffcf7] h-full pb-6">
+  <section  class="flex flex-col sm:flex-row bg-[#f7f0ec] sm:bg-[#fffcf7] h-full pt-12 pb-[150px]">
 
     <!-- Linker kolom -->
     <div id="contact-form" class="sm:w-1/2 flex flex-col items-center py-6">

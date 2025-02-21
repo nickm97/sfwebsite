@@ -106,11 +106,11 @@
           </p>
         </div>
         
-      <div class="flex flex-col sm:flex-row gap-12 w-full items-start">
+      <div class="flex flex-col sm:flex-row sm:gap-12 w-full items-start">
     
         <!-- Lijst met opsommingen -->
         <div class="flex flex-col justify-start w-full sm:w-1/2">
-          <ul class="list-disc pl-4 sm:pl-6 font-standard font-light leading-[1rem] sm:leading-[2rem] py-6">
+          <ul class="list-disc pl-4 sm:pl-6 font-standard font-light sm:leading-[2rem] py-6 text-left">
             <li class="pl-2">Een ongedwongen en persoonlijke fotosessie</li>
             <li class="pl-2">Beelden vol echtheid, warmte en emotie</li>
             <li class="pl-2">In de studio, bij jullie thuis of op een buitenlocatie naar keuze</li>
@@ -118,7 +118,7 @@
         </div> 
 
         <!-- Paragraaf tekst -->
-        <p class="font-standard font-light w-full sm:w-1/2 sm:text-[15px] text-[14.5px] sm:py-[24px] self-start">
+        <p class="font-standard font-light w-full sm:w-1/2 sm:text-[15px] text-[14.5px] sm:py-[24px] sm:self-start text-left">
           We creëren samen een sfeer waarin jij/jullie je comfortabel voelt/voelen, zodat de foto's 
           niet alleen mooi zijn, maar ook écht aanvoelen.<br><br>
 
@@ -130,7 +130,7 @@
 
         
         <!-- Tweede paragraaf -->
-        <p class="font-standard font-light  w-full sm:text-[15px] text-[14.5px]">
+        <p class="font-standard font-light  w-full sm:text-[15px] text-[14.5px] mt-5 sm:mt-0 text-left ">
           Boek jouw lifestyle shoot en leg het leven vast zoals het nú is óf boek 
           jouw boudoir shoot en kijk altijd vol trots naar jezelf. Je bent mooi zoals je bent, meid! Gun jezelf 
           ‘a moment of shine’.
@@ -141,96 +141,101 @@
   </section>
 
 
-  <section class="bg-background_4 flex items-center justify-center px-12 sm:px-0 py-12 sm:py-[100px]">
-    <div class="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 max-w-screen-xl px-12 sm:px-0 sm:mx-auto ">
-      
-      <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
-        <img
-          src="/assets/pictures/shoots-page/shoots-pregnancy.webp"
-          alt="Tile Image 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 border-2 border-gray-300"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">PREGNANCY</h2>
-          <button
-            @click="redirect('/pregnancy')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
+  <section class="bg-background_4 flex items-center justify-center px-4 sm:px-12 py-12 sm:py-[100px]">
+  <div class="relative grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-screen-xl w-full">
+    
+    <!-- Tile 1 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <img
+        src="/assets/pictures/shoots-page/shoots-pregnancy.webp"
+        alt="Tile Image 2"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+        <h2 class="text-2xl font-playFair mb-2">PREGNANCY</h2>
+        <button
+          @click="redirect('/pregnancy')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          View More
+        </button>
       </div>
+    </div>
 
-      <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
-        <img
-          src="/assets/pictures/shoots-page/shoots-newborn.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 border-2 border-gray-300"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">NEWBORN</h2>
-          <button
-            @click="redirect('/newborn')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
+    <!-- Tile 2 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <img
+        src="/assets/pictures/shoots-page/shoots-newborn.webp"
+        alt="Tile Image 1"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+        <h2 class="text-2xl font-playFair mb-2">NEWBORN</h2>
+        <button
+          @click="redirect('/newborn')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          View More
+        </button>
       </div>
-      
-      <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
-        <img
-          src="/assets/pictures/shoots-page/shoots-family.webp"
-          alt="Tile Image 3"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 border-2 border-gray-300"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">FAMILY</h2>
-          <button
-            @click="redirect('/family')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
+    </div>
+
+    <!-- Tile 3 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <img
+        src="/assets/pictures/shoots-page/shoots-family.webp"
+        alt="Tile Image 3"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+        <h2 class="text-2xl font-playFair mb-2">FAMILY</h2>
+        <button
+          @click="redirect('/family')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          View More
+        </button>
       </div>
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
-        <img
-          src="/assets/pictures/shoots-page/shoots-couples.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 border-2 border-gray-300" 
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">LOVERS</h2>
-          <button
-            @click="redirect('/lovers')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
+    </div>
+
+    <!-- Tile 4 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <img
+        src="/assets/pictures/shoots-page/shoots-couples.webp"
+        alt="Tile Image 4"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+        <h2 class="text-2xl font-playFair mb-2">LOVERS</h2>
+        <button
+          @click="redirect('/lovers')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          View More
+        </button>
       </div>
-      <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 max-w-[550px] max-h-[800px]">
-        <img
-          src="/assets/pictures/shoots-page/shoots-boudoir.webp"
-          alt="Tile Image 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 border-2 border-gray-300"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">BOUDIOR</h2>
-          <button
-            @click="redirect('/boudoir')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            View More
-          </button>
-        </div>
+    </div>
+
+    <!-- Tile 5 -->
+    <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+      <img
+        src="/assets/pictures/shoots-page/shoots-boudoir.webp"
+        alt="Tile Image 5"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+        <h2 class="text-2xl font-playFair mb-2">BOUDOIR</h2>
+        <button
+          @click="redirect('/boudoir')"
+          class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          View More
+        </button>
       </div>
-      <div class="flex justify-center items-center">
+    </div>
+
+    <!-- Tekst onder de grid -->
+    <div class="flex justify-center items-center">
         <p class="uppercase text-center font-playFair text-[30px] sm:text-[70px] text-black">
           PRESERVE
           MOMENTS
@@ -239,9 +244,10 @@
 
         </p>
       </div>
-    </div>
 
-  </section>
+  </div>
+</section>
+
 
  
   <footer-sf></footer-sf>

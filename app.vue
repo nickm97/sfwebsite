@@ -21,12 +21,13 @@
             SHOOTS
           </NuxtLink> -->
           <!-- SHOOTS met dropdown -->
+          <!-- SHOOTS met dropdown -->
           <div class="relative group">
             <NuxtLink to="/shoots" class="font-standard tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
               SHOOTS
             </NuxtLink>
             <!-- Dropdown-menu -->
-            <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute left-0 mt-0 w-48 bg-white shadow-lg hidden group-hover:block transition-opacity duration-300">
               <NuxtLink to="/pregnancy" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Pregnancy</NuxtLink>
               <NuxtLink to="/newborn" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Newborn</NuxtLink>
               <NuxtLink to="/family" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Family</NuxtLink>
@@ -34,6 +35,7 @@
               <NuxtLink to="/boudoir" class="block px-4 py-2 text-black hover:bg-gray-100 font-standard uppercase">Boudoir</NuxtLink>
             </div>
           </div>
+
 
           <NuxtLink to="/branding" class="font-standard tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
             BRANDING

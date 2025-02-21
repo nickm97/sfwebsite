@@ -55,7 +55,7 @@
         <nuxt-img
           src="/assets/pictures/branding-page/branding-photo-qoute.webp"
           alt="Sanneloes"
-          class="w-[300px] sm:w-[400px] rounded-lg"
+          class="w-[300px] sm:w-[400px] xl:sm:w-[500px] rounded-lg"
         />
       </div>
 
@@ -71,7 +71,7 @@
 
   <section class="relative">
     <!-- background pic -->
-    <div class="h-screen max-h-[calc(100vh-100px)]">
+    <div class="h-screen max-h-[calc(100vh-300px)]">
       <nuxt-img
         src="/assets/pictures/branding-page/banner-02.webp"
         alt="Family Background"
@@ -87,6 +87,7 @@
           </button>
         </div>
   </section>
+
   <section>
     <div class="bg-background_2 flex items-center justify-center px-4 pt-12 pb-12 sm:px-6 sm:py-20">
       <div class="flex flex-col items-center justify-center relative">
@@ -124,13 +125,14 @@
               <li class="pl-2">XXL:    4 uur shoot         100 foto's       €1150 ex</li>
               <li class="pl-2">Extra foto's zijn bij te bestellen; los of via voordeelpakketten.</li>
             </ul>
-            <p class="font-standard text-[14.5px] font-light">
-              Andere wensen? Vraag vrijblijvend een offerte op voor jouw wensen.
-            </p>
+            
             <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[1.5rem] py-2">
               <li class="pl-2">Gebruik Daylight Studio La Luz vanaf €115 ex.</li>
               <li class="pl-2">Reiskosten: €0,60 per km. Bij shooten in Daylight Studio La Luz vervalt dit.</li>
             </ul>
+            <p class="font-standard text-[14.5px] font-light">
+              Andere wensen? Vraag vrijblijvend een offerte op voor jouw wensen.
+            </p>
           </div> 
         </div>       
       </div>
@@ -184,7 +186,7 @@
     </div>
   </section>
 
-  <section class="bg-background_4 flex items-center justify-center px-6 py-12">
+  <section class="bg-background_4 flex items-center justify-center px-6 pb-12">
     <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
 
       <div v-for="(slider_branding, index) in 1" :key="index" ref="sliders_branding" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
@@ -307,7 +309,7 @@
     </div>
   </section>
 
-  <section class="bg-background_4 flex items-center justify-center px-6 py-12">
+  <section class="bg-background_4 flex items-center justify-center px-6 pt-12 pb-24">
     <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
 
       <div v-for="(slider_branding, index) in 1" :key="index" ref="sliders_branding" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
