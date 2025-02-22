@@ -25,7 +25,7 @@ const toggleAnswer = (index) => {
 </script>
 
 <template>
-    <section id="faq" class="py-16 bg-background_4">
+    <section id="faq" class="py-16 bg-background_4 h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Image Section -->
@@ -33,7 +33,8 @@ const toggleAnswer = (index) => {
           <nuxt-img
             src="/assets/pictures/faqs.jpg"
             alt="First Image"
-            class="w-full object-cover"
+            class="w-full h-[700px] object-cover rounded-xl"
+            style="object-position: center 90%;"
           />
         </div>
 
@@ -55,6 +56,7 @@ const toggleAnswer = (index) => {
       </div>
     </div>
   </section>
+  <footer-sf></footer-sf>
 </template>
 
 

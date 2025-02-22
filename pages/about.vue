@@ -89,7 +89,7 @@
     </div>
     <div class="text-left px-4 sm:flex sm:w-[1300px] sm:text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light sm:text-[14.5px] text-[13px]">
       <p class="sm:w-1/2">
-        Hi! Mijn naam is Sanneloes van Kessel. Geboren in ‘98 en woon al zolang ik me kan herinneren 
+        Hi! Mijn naam is Sanneloes van Kessel en inderdaad mijn ouders konden niet kiezen tussen Sanne en Loes! Geboren in ‘98 en woon al zolang ik me kan herinneren 
         in het kleine dorpje Casteren. Op de middelbare school begon mijn passie voor fotografie. 
         M'n zusje stond vaak model en ik gebruikte mijn creativiteit voor het stylen, opmaken en het 
         vinden van mooie houdingen. We konden uren bezig zijn met het maken van de foto's en alles eromheen.  
@@ -98,10 +98,13 @@
         Toen ik eenmaal een studie moest kiezen, ben ik toch de PABO gaan doen. Het lesgeven sprak 
         me namelijk toch ook wel heel erg aan, maar de interesse voor fotografie bleef. Tijdens 
         mijn studie heb ik een minor gedaan in ‘Fotojournalistiek en Beeldredactie’ aan de Hogeschool 
-        Utrecht. Dit vond ik ZO leuk, dat ik dacht: ‘hier wil ik iets mee gaan doen’. Ik ben altijd al 
+        Utrecht. Dit vond ik ZO leuk, dat ik dacht: ‘hier wil ik iets mee gaan doen en van m'n hobby m'n werk maken’. Ik ben altijd 
         gegaan voor wat ik wil, dus zo gezegd, zo gedaan. 
       </p>
     </div>
+    <p class="max-w-[1200px] text-white mt-6 font-standard font-light">
+        Leuk weetje over bovenstaande quote: heel veel klanten geven aan dat mijn enthousiasme aanstekelijk werkt en omdat ik dat compliment ZO fijn vind, MOEST ik hem even benoemen. Als klanten op hun gemak en heel vrolijk zijn, straalt dat namelijk direct van de foto's en dáár ga ik voor!
+      </p>
   </section>
 
   <describe-me></describe-me>
@@ -186,8 +189,7 @@
         Om licht, creativiteit, vrijheid en nog het meest om iets te creëren wat <strong>waardevol</strong> is voor mijn klanten.   
       </p>
       <p class="sm:w-1/2 text-left sm:text-center">
-        Uiteindelijk gaat het als fotograaf namelijk helemaal niet om mij. 
-        Het gaat om mooie of bijzondere <strong>herinneringen</strong> voor de klant vastleggen, 
+        Uiteindelijk gaat het om mooie of bijzondere <strong>herinneringen</strong> voor de klant vastleggen, 
         zodat zij daar nog jaren van kunnen genieten, maar ook zodat zij af en toe eens 
         te kunnen <strong>ontsnappen uit het hier en nu</strong> en terug te kunnen naar een waardevolle tijd 
         of een fijn moment. Elke keer als ik foto's van mezelf uit het verleden terugkijk, 
@@ -204,10 +206,10 @@
   </section>
 
   <section class="flex flex-col items-center justify-center text-center py-12 px-2 bg-[#d3c9bf]">
-    <p class="uppercase font-playFair text-3xl text-black">
+    <p class="uppercase font-playFair text-2xl sm:text-[50px] text-black">
       You can wake me up for
     </p>
-    <p class="font-standard text-black text-sm ">
+    <p class="font-standard text-black text-sm mt-5 px-4 sm:px-0">
       Laten we meteen starten met een disclaimer: JE MAG ME NIET WAKKER MAKEN. Mijn slaap is veel te heilig. Ik slaap het liefst minstens 9 uur per nacht, dus mij niet bellen. 
     </p>
   </section>
@@ -217,8 +219,8 @@
   <div class="bg-[#d3c9bf] h-[inherit] py-12 px-2"></div>
 
   <section>
-    <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] xl:py-[150px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12">
-      <div class="flex relative items-center justify-center w-full sm:w-1/2">
+    <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] xl:py-[150px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12 bg-[url('/assets/pictures/about-page/banner-wake-me-up-02.webp')] bg-cover  sm:bg-[center_top_85%]">
+      <!-- <div class="flex relative items-center justify-center w-full sm:w-1/2">
         <div>
           <nuxt-img
             src="/assets/pictures/about-page/describe-me-01.webp"
@@ -233,52 +235,120 @@
             class="object-cover h-[45px] sm:h-[375px] sm:w-[250px]"
           />
         </div>
+      </div> -->
+      <div>
+        <nuxt-img
+          src="/assets/pictures/about-page/describe-me-03.webp"
+          alt="Sanneloes Fotografie Logo"
+          class="object-cover w-full h-auto sm:h-[600px] rounded-xl border-[2px] border-white"
+        />
       </div>
 
-      <div class="sm:w-[calc(50%)] flex flex-col items-center justify-center text-center px-4">
+      <div class="sm:w-[calc(50%)] flex flex-col items-center justify-center text-center px-4 text-white">
         <div class="flex justify-center py-4">
-          <p class="uppercase font-playFair text-2xl xl:text-4xl font-bold">How my sweet clients describe me</p>
+          <p class="uppercase font-playFair text-2xl xl:text-6xl font-bold py-4">How my sweet clients</p>
         </div>
         
-        <div class="border-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+        <div class="border-[1px] border-white p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
           <div class="uppercase font-playFair py-1 text-[15px] xl:text-[22px] flex justify-center w-1/2">
             LIEVE MEID
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
+          <div class="border-l-[1px] border-white py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
             PROFESSIONEEL
           </div>
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] xl:text-[22px] justify-center mx-auto uppercase font-playFair text-[15px]">
+        <div class="border-[1px] -mt-[1px] border-white p-2 flex w-[300px] xl:w-[450px] xl:text-[22px] justify-center mx-auto uppercase font-playFair text-[15px]">
           GEEFT JE EEN VERTROUWD GEVOEL
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+        <div class="border-[1px] -mt-[1px] border-white p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
           <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             SOCIAAL
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
+          <div class="border-l-[1px] border-white py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
             GEPASSIONEERD
           </div>
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+        <div class="border-[1px] -mt-[1px] border-white p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
           <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             LET OP DETAILS
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+          <div class="border-l-[1px] border-white py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             ENERGIEK
           </div>
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto uppercase font-playFair text-[15px] xl:text-[22px]">
+        <div class="border-[1px] -mt-[1px] border-white p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto uppercase font-playFair text-[15px] xl:text-[22px]">
           STELT JE OP JE GEMAK
         </div>
-        <div class="border-[1px] -mt-[1px] border-black p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+        <div class="border-[1px] -mt-[1px] border-white p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
           <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             ENTHOUSIAST
           </div>
-          <div class="border-l-[1px] border-black py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+          <div class="border-l-[1px] border-white py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
             TOEGANKELIJK
           </div>
         </div>
+        <div class="flex justify-center py-4">
+          <p class="uppercase font-playFair text-2xl xl:text-6xl font-bold py-4">describe me</p>
+        </div>
       </div>
+      <!-- <div class="sm:w-[calc(50%)] flex flex-col items-center justify-center text-center px-4 text-white relative">
+   
+        <div class="flex justify-center py-4">
+        <p class="uppercase font-playFair text-2xl xl:text-6xl font-bold">
+            How my sweet clients
+        </p>
+    </div>
+
+    <div class="absolute left-0 top-1/2 -translate-y-[30%] -translate-x-[-920px]">
+        <p class="uppercase font-playFair text-xl xl:text-6xl font-bold rotate-270 [writing-mode:vertical-rl]">
+            Describe me
+        </p>
+    </div>
+
+
+     <div class="py-10">
+      <div class="border border-white p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+        <div class="uppercase font-playFair py-1 text-[15px] xl:text-[22px] flex justify-center w-1/2">
+            LIEVE MEID
+        </div>
+        <div class="border-l border-white py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
+            PROFESSIONEEL
+        </div>
+        </div>
+        <div class="border border-white -mt-px p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto uppercase font-playFair text-[15px] xl:text-[22px]">
+            GEEFT JE EEN VERTROUWD GEVOEL
+        </div>
+        <div class="border border-white -mt-px p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+            <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+                SOCIAAL
+            </div>
+            <div class="border-l border-white py-1 uppercase font-playFair text-[15px] xl:text-[22px] flex justify-center w-1/2">
+                GEPASSIONEERD
+            </div>
+        </div>
+        <div class="border border-white -mt-px p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+            <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+                LET OP DETAILS
+            </div>
+            <div class="border-l border-white py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+                ENERGIEK
+            </div>
+        </div>
+        <div class="border border-white -mt-px p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto uppercase font-playFair text-[15px] xl:text-[22px]">
+            STELT JE OP JE GEMAK
+        </div>
+        <div class="border border-white -mt-px p-2 flex w-[300px] xl:w-[450px] justify-center mx-auto">
+            <div class="uppercase font-playFair py-1 text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+                ENTHOUSIAST
+            </div>
+            <div class="border-l border-white py-1 uppercase font-playFair text-[15px] flex justify-center w-1/2 xl:text-[22px]">
+                TOEGANKELIJK
+            </div>
+        </div> -->
+      <!-- </div> -->
+    
+<!-- </div> -->
+
     </div>
   </section>
 

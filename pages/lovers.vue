@@ -132,7 +132,7 @@
                 </div>
 
                 <!-- Afbeelding -->
-                <div class="hidden sm:flex absolute right-24 -top-[125px]">
+                <div class="hidden sm:flex absolute right-24 -top-[150px]">
                     <nuxt-img
                     src="/assets/pictures/newborn-page/extra-aanbod.webp"
                     alt="Extra aanbod"
@@ -205,7 +205,7 @@
                   @click="redirect('/lovers050225-01')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
-                  View More
+                  VIEW MORE
                 </button>
               </div>
             </div>
@@ -222,7 +222,7 @@
                   @click="redirect('/lovers050225-02')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
-                  View More
+                  VIEW MORE
                 </button>
               </div>
             </div>
@@ -239,7 +239,7 @@
                   @click="redirect('/lovers050225-03')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
-                  View More
+                  VIEW MORE
                 </button>
               </div>
             </div>
@@ -260,7 +260,7 @@
                 @click="redirect('/newborn')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
               >
-                View More
+                VIEW MORE
               </button>
             </div>
           </div>
@@ -277,7 +277,7 @@
                 @click="redirect('/strong-women')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
               >
-                View More
+                VIEW MORE
               </button>
             </div>
           </div>
@@ -294,7 +294,7 @@
                 @click="redirect('/strong-women')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
               >
-                View More
+                VIEW MORE
               </button>
             </div>
           </div>

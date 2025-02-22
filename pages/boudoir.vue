@@ -1,12 +1,35 @@
 <template>
+  <!-- <section class="flex h-[calc(100vh-70px)] w-full relative">
+
+ 
+  <div class="hidden sm:block flex-1 relative overflow-hidden">
+    <nuxt-img
+      src="/assets/pictures/boudoir-page/banner-left.webp"
+      alt="Left Image"
+      class="w-full h-full object-cover absolute transition-opacity duration-1000"
+      style="object-position: center 35%;"
+    />
+  </div>
+
+
+  <div class="sm:block flex-1 relative overflow-hidden">
+    <nuxt-img
+      src="/assets/pictures/boudoir-page/banner-right.webp"
+      alt="Right Image"
+      class="w-full h-full object-cover absolute transition-opacity duration-1000"
+      style="object-position: center 0%;"
+    />
+  </div>
+</section> -->
+
   <section class="hidden sm:block">
     <!-- background pic -->
     <div class="hidden sm:block relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-        src="/assets/pictures/boudoir-page/banner.webp"
+        src="/assets/pictures/boudoir-page/banner-04.webp"
         alt="Sanneloes fotografie boudoir"
         class="w-full h-full object-cover object-center"
-        style="object-position: center 35%;"
+        style="object-position: center 40%;"
       />
     </div>
     <div class="sm:hidden relative h-screen max-h-[calc(100vh-150px)]">
@@ -99,7 +122,7 @@
             @click="redirect('/boudoir050225-01')"
             class="px-6 py-2 border border-white text-white uppercase rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View more
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -172,7 +195,7 @@
               @click="redirect('/boudoir050225-01')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -189,7 +212,7 @@
               @click="redirect('/boudoir050225-02')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -206,7 +229,7 @@
               @click="redirect('/boudoir050225-03')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -227,7 +250,7 @@
             @click="redirect('/boudoir050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -244,7 +267,7 @@
             @click="redirect('/boudoir050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -261,7 +284,7 @@
             @click="redirect('/boudoir050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>

@@ -107,7 +107,7 @@
       </p>
     </div>
     <p class="text-white text-left sm:text-center font-standard sm:pt-6 font-light text-[14.5px] sm:text-[16px]">
-      Fotograaf voor bruiloften, branding en lifestyle shoots omgeving Eindhoven, Noord-Brabant
+      Fotograaf voor bruiloften, branding en lifestyle shoots omgeving Tilburg-Eindhoven, Noord-Brabant
     </p>
   </section>
 
@@ -154,7 +154,7 @@
       <!-- Tekst -->
       <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-0 sm:py-0 px-4 sm:px-0">
         <h1 class="uppercase font-playFair text-[28px] sm:text-4xl py-2">HEARTWARMING WORDS</h1>
-        <p class="font-standard font-light sm:text-xl text-[14.5px] text-left">
+        <p class="font-standard font-light sm:text-[18px] text-[14.5px] text-left">
           “Hoe zoek je nou dé juiste fotograaf voor je bruiloft? Nou: boek Sanneloes!<br><br>
           Zij is diegene die je er bij wilt hebben op je dag: vrolijk, energiek, enthousiast en 
           gepassioneerd. Een daggast met een camera in haar handen! De foto’s overtroffen al onze 
@@ -293,7 +293,7 @@
        
         
       </div>
-      <div class="flex-col sm:w-1/2 relative sm:px-0 px-4">
+      <div class="flex-col sm:w-[calc(50%+10px)] relative sm:px-0 px-4">
         <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
         <p class="block sm:block absolute text-[100px] sm:text-[125px] font-playFair left-1/2 transform translate-x-[-50%] sm:top-[-220px] top-[-130px] sm:text-white">ABOUT</p>
         <div class="absolute left-1/2 transform translate-x-[-50%] sm:top-[-125px] top-[-50px]">
@@ -309,18 +309,19 @@
             fulltime ondernemer; professioneel fotograaf, eigenaar van 
             <a href="https://daylightstudio-laluz.nl/" target="_blank" style="text-decoration: underline;">Daylight Studio La Luz</a> 
             en mede-oprichter van 
-            <a href="https://savvy-styling.nl/" target="_blank" style="text-decoration: underline;">Savvy Styling</a>. 
+            <a href="https://savvystyling.nl/" target="_blank" style="text-decoration: underline;">Savvy Styling</a>. 
             Een bezig bijtje kan je wel stellen.<br><br>
 
-            Ik hou ervan om unieke, échte en emotionele momenten vast te leggen die jouw 
-            verhaal op de mooiste en meest eerlijke manier vertelt. Ik wil dat connecties 
+            Jij wil unieke, échte en emotionele momenten vast laten leggen die jouw 
+            verhaal op de mooiste en meest eerlijke manier vertelt. Jij wil dat connecties 
             en dierbare momenten bevroren worden in de tijd, zodat jij, maar ook anderen 
-            na tientallen jaren nog veel plezier kunnen hebben van de foto’s. Zo blijven 
-            dierbare herinneringen en personen bevroren en zullen ze nooit vergeten worden.<br><br>
+            na tientallen jaren nog veel plezier kunnen hebben van de foto’s. Dat is precies 
+            waar ik voor sta en voor kan zorgen. Zo blijven dierbare herinneringen en 
+            personen bewaard in foto's en zullen ze nooit vergeten worden.<br><br>
 
-            Benieuwd naar wat ik maak? Neem rustig een kijkje op mijn website en kom meer 
-            te weten. Bij vragen, weet me te vinden via mijn 
-            <a href="https://sanneloesfotografie.nl/contact" style="text-decoration: underline;">contactpagina</a>.
+            Benieuwd naar wat ik maak en voor jou kan betekenen? Neem rustig een 
+            kijkje op mijn website en kom meer te weten. Bij vragen, weet me te vinden 
+            via mijn <a href="https://sanneloesfotografie.nl/contact" style="text-decoration: underline;">contactpagina</a>.
         </p>
 
         <div class="flex flex-col items-center justify-center py-6 font-standard">
@@ -381,9 +382,9 @@
     <div class="flex-col w-full">
       <div class="flex items-center justify-center px-4 bg-background_2 py-6">
         <p class="text-black text-center uppercase font-standard sm:w-[60%]">
-          omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!
+          omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!<br>
           keer je als klant teRUG EN KOM JE NOG EENS VOOR DE LENS STAAN? ONTVANG JE 5 
-          EXTRA FOTO'S CADEAU! GEEF BIJ JE RESERVERING <strong>‘TERUGKERENDE KLANT’</strong> AAN EN DOE JEZELF EEN CADEAUTJE
+          EXTRA FOTO'S CADEAU!<br> GEEF BIJ JE RESERVERING <strong>‘TERUGKERENDE KLANT’</strong> AAN EN DOE JEZELF EEN CADEAUTJE
         </p>
       </div>
     </div>

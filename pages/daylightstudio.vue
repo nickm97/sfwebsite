@@ -53,7 +53,7 @@
     </div>
   </section> -->
 
-  <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-background_2">
+  <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-[#ad9989]">
     <div class="w-full sm:w-[70%]">
       <p class="text-white uppercase font-standard text-left font-bold">
         Daylight studio
@@ -78,7 +78,7 @@
         Of je nu fotograaf bent of op zoek bent naar een fotograaf, La Luz staat klaar voor jou! Neem contact op
         voor meer informatie of om de studio te reserveren. <br>
         Neem gerust een kijkje op <a href="https://daylightstudio-laluz.nl/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">
-            Daylightstudio-laluz.nl
+            www.daylightstudio-laluz.nl
           </a>.
       </p>
     </div>

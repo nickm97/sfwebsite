@@ -25,15 +25,15 @@
   <section class="flex flex-col items-center px-4 sm:px-6 py-10 bg-buttonColor">
     <div class="w-full sm:w-[70%]">
       <p class="text-white uppercase font-standard text-left font-bold">
-        VERHUUR VAN STYLING ITEMS VOOR JOUW BRUILOFT, BABYSHOWER, FEEST OF EVENT
+        VERHUUR VAN STYLING ITEMS VOOR O.A. JOUW BRUILOFT, BABYSHOWER, FEEST OF EVENT
       </p>
     </div>
     <div class="mt-6 w-full sm:w-[70%]">
       <p class="text-white font-standard font-light">
         Half 2024 startte ik samen met mijn lieve moeder Yvette, Savvy Styling. Al járen dacht ik iets te 
         willen doen met aankleding van bruiloften, maar hoe en wat wist ik niet precies, totdat ik op een 
-        lange reis was. Ik kreeg inspiratie en wist het ineens. Samen met mijn c reatieve moeder wil ik een 
-        bedrijf beginnen die zich focust op het maken van decoratie en backdrops voor bruiloften, babyshowers 
+        lange reis was. Ik kreeg inspiratie en wist het ineens. Samen met mijn creatieve moeder wil ik een 
+        bedrijf beginnen die zich focust op het maken van decoratie en backdrops voor bruiloften, babyshowers, 
         feesten en evenementen. We focussen ons op duurzaamheid, creativiteit en stoppen zelf veel liefde en 
         tijd in al onze decoratiestukken die we dan aan klanten kunnen verhuren.<br><br>
 
@@ -41,13 +41,16 @@
         én het brengt direct sfeer. Om de stylingitems persoonlijk te maken, werken we met verschillende stijlen, 
         kleuren, bloemen, vormen en teksten. Voor ieder wat wils.<br><br>
 
-        Ga jij trouwen, geef je een groot feest, organiseer je een babyshower of een bedrijfsfeest? Wellicht 
+        Ga jij trouwen, geef je een groot feest, organiseer je een babyshower, genderreveal, een bedrijfsfeest of een ander leuk partijtje? Wellicht 
         zijn onze decoratiestukken dan wel wat voor jou! 
         En weet je wat het leuke is? Boek je Sanneloes Fotografie voor jouw bruiloft of event, maar zoek je ook 
         nog aankleding? Dan hebben wij speciale kortingen voor jouw decoratie items die jij huurt bij Savvy Styling!<br><br>
 
         Dus... Zoek jij persoonlijke, handgemaakte en mooie eyecatching decoratie voor jouw event? Neem contact 
-        op voor mogelijkheden of om decoratie items te reserveren. Bezoek www.savvystyling.nl voor meer informatie. 
+        op voor mogelijkheden of om decoratie items te reserveren. Bezoek 
+        <a href="https://savvystyling.nl/" target="_blank" style="text-decoration: underline;">Savvy Styling</a>  voor meer informatie. <br><br>
+        
+        <strong><u>Lancering website Savvy Styling: 25 maart 2025!</u></strong>
       </p>
     </div>
   </section>
@@ -75,11 +78,10 @@
   </section>
 
 
-  <section class="hidden bg-background_4 sm:flex items-center justify-center">
+  <!-- <section class="hidden bg-background_4 sm:flex items-center justify-center">
 
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
       <div v-for="(photo, index) in imageUrls" :key="index">
-        <!-- Gebruik nu de nuxt-img component voor lazy loading -->
         <nuxt-img :src="photo.url" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
       </div>
     </div>
@@ -101,7 +103,7 @@
         />
       </div>
     </div>
-  </section>
+  </section> -->
   <footer-sf></footer-sf>
 </template>
 

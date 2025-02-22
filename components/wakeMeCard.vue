@@ -5,7 +5,7 @@
         {{ wakeMe.name }}
       </p>
 
-      <div class="group-hover:flex hidden text-center text-white font-standard px-2 py-1 text-xs select-none pointer-events-none">
+      <div class="group-hover:flex hidden text-center text-white font-standard px-2 py-1 text-[16px] select-none pointer-events-none">
         <p>"{{ wakeMe.text }}"</p>
       </div>
     </div>

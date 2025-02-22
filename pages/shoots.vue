@@ -157,7 +157,7 @@
           @click="redirect('/pregnancy')"
           class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          View More
+          VIEW MORE
         </button>
       </div>
     </div>
@@ -175,7 +175,7 @@
           @click="redirect('/newborn')"
           class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          View More
+          VIEW MORE
         </button>
       </div>
     </div>
@@ -193,7 +193,7 @@
           @click="redirect('/family')"
           class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          View More
+          VIEW MORE
         </button>
       </div>
     </div>
@@ -211,7 +211,7 @@
           @click="redirect('/lovers')"
           class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          View More
+          VIEW MORE
         </button>
       </div>
     </div>
@@ -229,7 +229,7 @@
           @click="redirect('/boudoir')"
           class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
         >
-          View More
+          VIEW MORE
         </button>
       </div>
     </div>

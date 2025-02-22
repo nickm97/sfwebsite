@@ -81,7 +81,7 @@
             @click="redirect('/pregnancy050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -112,8 +112,8 @@
               <li class="pl-2">Een reguliere zwangerschapsshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) - €330 met partner, €285 alleen, €400 met gezin - inclusief BTW </li>
               <li class="pl-2">Een combishoot; zwangerschap én newborn incl. 20 foto's bij elke fotoshoot (zelf te kiezen uit een uitgebreide galerij) - €695</li>
               <li class="pl-2">Gebruik studio: +€39,50, bij gebruikmaken La Luz voor beide shoots +€54,50</li>
-              <li class="pl-2">Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.</li>
-              <li class="pl-2">Extra foto's zijn achteraf bij te bestellen met voordeelpakketten.</li>
+              <li class="pl-2">Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren</li>
+              <li class="pl-2">Extra foto's zijn achteraf bij te bestellen met voordeelpakketten</li>
               <li class="pl-2">Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW - per extra spread +€4,95</li>
             </ul>
             
@@ -155,7 +155,7 @@
               @click="redirect('/pregnancy050225-01')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -172,7 +172,7 @@
               @click="redirect('/pregnancy050225-04')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -189,7 +189,7 @@
               @click="redirect('/pregnancy050225-03')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -211,7 +211,7 @@
             @click="redirect('/pregnancy050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -228,7 +228,7 @@
             @click="redirect('/pregnancy050225-04')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -245,7 +245,7 @@
             @click="redirect('/pregnancy050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -258,7 +258,7 @@
       <nuxt-img
           src="/assets/pictures/pregnancy-page/greatest-love-story.webp"
           alt="Sanneloes fotografie zwangerschap"
-          class=""
+          class="h-[120px]"
       />
     </div>
     <div class="w-[90%] flex sm:hidden items-center justify-center">

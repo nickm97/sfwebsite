@@ -25,7 +25,7 @@
         <nuxt-img
           src="/assets/pictures/contact-page/contact-01.webp"
           alt="Sanneloes Fotografie Logo"
-          class="object-cover w-[350px] sm:w-[350px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="object-cover w-[350px] border-[3px] border-white sm:w-[325px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         />
       </div>
 
@@ -46,7 +46,7 @@
       </p>
 
       <p class="font-standard font-light text-[16px] mt-4 text-center">
-        Ga je trouwen en wil je de brochure ontvangen? Vul hier dan de 
+        Ga je trouwen en wil je de brochure ontvangen? Vul hier dan het 
         <a href="/contact-wedding" rel="noopener noreferrer" class="underline font-bold">
           ‘contactformulier bruiloft’
         </a> in.

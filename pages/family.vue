@@ -5,7 +5,8 @@
       <nuxt-img
         src="/assets/pictures/family-page/banner.webp"
         alt="Family Background"
-        class="w-full h-full object-cover object-center"style="object-position: center 20%;"
+        class="w-full h-full object-cover object-center"
+        style="object-position: center 10%;"
       />
     </div>
     <div class="">
@@ -74,7 +75,7 @@
             @click="redirect('/family050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -224,7 +225,7 @@
                     @click="redirect('/family050225-02')"
                     class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                   >
-                    View More
+                    VIEW MORE
                   </button>
                 </div>
               </div>
@@ -241,7 +242,7 @@
                     @click="redirect('/family050225-03')"
                     class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                   >
-                    View More
+                    VIEW MORE
                   </button>
                 </div>
               </div>
@@ -258,7 +259,7 @@
                     @click="redirect('/family050225-04')"
                     class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                   >
-                    View More
+                    VIEW MORE
                   </button>
                 </div>
               </div>
@@ -279,7 +280,7 @@
                   @click="redirect('/newborn')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
-                  View More
+                  VIEW MORE
                 </button>
               </div>
             </div>
@@ -296,7 +297,7 @@
                   @click="redirect('/strong-women')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
-                  View More
+                  VIEW MORE
                 </button>
               </div>
             </div>
@@ -313,7 +314,7 @@
                   @click="redirect('/strong-women')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
-                  View More
+                  VIEW MORE
                 </button>
               </div>
             </div>

@@ -102,7 +102,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">RICK EN MARLOU</h2>
             <button @click="redirect('/wedding050225-01')" class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -117,7 +117,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">GIJS EN BRITT</h2>
             <button @click="redirect('/wedding050225-02')" class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -132,7 +132,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">SAM EN INGE</h2>
             <button @click="redirect('/wedding050225-03')" class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -155,7 +155,7 @@
             @click="redirect('/wedding050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -172,7 +172,7 @@
             @click="redirect('/wedding050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -189,7 +189,7 @@
             @click="redirect('/wedding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -201,15 +201,15 @@
       <!-- Tekst -->
       <div class="flex flex-col w-full sm:w-1/2 text-left sm:text-left py-0 pb-12 sm:py-0 px-4 sm:px-0">
         <p class="font-standard font-light text-[14.5px] text-white xl:text-[16px]">
-          Ik maak <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Ik vang de momenten waarop 
-          heel hard gelachen wordt of als er een traan over een wang rolt. Ik heb aandacht voor kleine dingen, 
-          zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, ik voel emoties 
-          en ik lach hard met jullie mee. Wellicht moet ik bij mooie momenten ook af en toe een klein traantje wegpinken, 
-          want ‘sorry, not sorry’ ik ben gevoelig, haha.<br><br>
+          Jij wil <strong>tijdloze foto's</strong> met aandacht voor <strong>pure en échte momenten</strong>. Daarbij vang ik de momenten waarop 
+          heel hard gelachen wordt of als er een traan over een wang rolt. Er is aandacht voor kleine dingen, 
+          zoals een warme knuffel, een hand op je schouder of een intiem momentje. Ik zie details, voel emoties 
+          en lach hard met jullie mee. Wellicht moet ik bij mooie momenten ook af en toe een klein traantje wegpinken, 
+          want ‘sorry, not sorry’ ben gevoelig, haha.<br><br>
           Jullie kleurrijke galerij met ‘a touch of black and white’ zal een mix zijn van <strong>documentaire fotografie en editorial</strong>. 
-          Ik zoek naar mooi licht, sierlijke posities of interessante composities. Bij groepsfoto's trek ik al mijn <strong>enthousiasme</strong>
-          uit de kast om de foto's zo spontaan mogelijk te krijgen. Ik ben jullie ‘hypegirl’ bij jullie fotomoment met z'n 
-          tweetjes en verder ben ik heel de dag scherp op allerlei warme momenten om te vangen in een foto. Jullie genieten 
+          Er wordt naar mooi licht, sierlijke posities of interessante composities gezocht. Bij groepsfoto's wordt al mijn <strong>enthousiasme</strong>
+          uit de kast getrokken om de foto's zo spontaan mogelijk te krijgen. Jullie willen een echte ‘hypegirl’ bij jullie fotomoment met z'n 
+          tweetjes, waardoor jullie relaxt en enthousiast worden. Leave that to me! Verder ben ik heel de dag scherp op allerlei warme momenten om te vangen in een foto. Jullie genieten 
           gewoon van de dag, doen jullie ding en ik zorg voor de visuele herinnering van jullie bruiloft.
         </p>
       </div>
@@ -230,7 +230,7 @@
             @click="redirect('/wedding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div> -->
@@ -269,12 +269,10 @@
     <div class="flex items-center justify-center gap-[20px] sm:px-12 sm:px-10 px-4 sm:w-[70%]">
       <p class="text-white font-standard font-light text-[14.5px] xl:text-[16px] text-center ">
         YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn 
-        jullie helemaal verzot op het land waar jullie willen gaan trouwen en daar ga ik maar al te graag 
-        mee naartoe, want ‘HALLOOOO, je praat met een héle grote reisfanaat!’ Zelf heb ik al vele mooie reizen 
-        gemaakt in bijna alle continenten en ik geniet enorm van al het schoons wat je in andere landen ziet, 
-        wat je in Nederland niet of minder tegenkomt.<br><br>
+        jullie helemaal verzot op het land waar jullie willen gaan trouwen en daar mag je mij zeker mee naartoe nemen, want ‘HALLOOOO, je praat met een héle grote reisfanaat!’ Wie geniet nou niet enorm van al het schoons wat je in andere landen ziet, 
+        wat je in Nederland niet of minder tegenkomt?<br><br>
 
-        In 2024 heb ik een prachtige bruiloft in zuid-Spanje mogen vastleggen én heb ik mooie editorial foto’s 
+        In 2024 heb ik een prachtige bruiloft in zuid-Spanje mogen vastleggen én mooie editorial foto’s 
         kunnen maken van bruidsparen in Marrakech. In 2025 staat een gave bruiloft in midden Italië gepland en 
         hopelijk zal ik nog meer mooie bruiloften in het buitenland mogen bijwonen én fotograferen. Kan nu al 
         niet wachten op al dat moois! Ook voor <strong>‘Elopement Weddings’</strong> mag je zeker contact met mij opnemen. Ik 
@@ -321,7 +319,7 @@
             @click="redirect('/wedding050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -338,7 +336,7 @@
             @click="redirect('/wedding050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -355,7 +353,7 @@
             @click="redirect('/wedding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -376,7 +374,7 @@
             @click="redirect('/wedding050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -393,7 +391,7 @@
             @click="redirect('/wedding050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -410,7 +408,7 @@
             @click="redirect('/wedding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -486,9 +484,9 @@
           Ik doe mijn best om het gevoel van de dag terug te brengen in alle beelden, zodat jullie 
           jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br>
 
-          <strong>Ik vind jullie verhaal belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk 
+          <strong>Jullie verhaal is belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk 
           vinden, waar jullie van dromen, waarom je zo gek bent op elkaar, wat jullie chemie is, 
-          wie de belangrijkste mensen voor jullie zijn, enzovoorts, enzovoorts. Ik luister naar jullie. 
+          wie de belangrijkste mensen voor jullie zijn, enzovoorts, enzovoorts. Mijn oren zijn gespitst. 
           Ik leer jullie graag écht kennen. 
 
         </p>
@@ -534,9 +532,9 @@
           Ik doe mijn best om het gevoel van de dag terug te brengen in alle beelden, zodat jullie 
           jullie droomdag voor eeuwig levendig kunnen blijven herinneren zoals de dag ook écht voelde.<br><br>
 
-          <strong>Ik vind jullie verhaal belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk 
+          <strong>Jullie verhaal is belangrijk</strong>. Ik wil weten wie jullie zijn, wat jullie belangrijk 
           vinden, waar jullie van dromen, waarom je zo gek bent op elkaar, wat jullie chemie is, 
-          wie de belangrijkste mensen voor jullie zijn, enzovoorts, enzovoorts. Ik luister naar jullie. 
+          wie de belangrijkste mensen voor jullie zijn, enzovoorts, enzovoorts. Mijn oren zijn gespitst. 
           Ik leer jullie graag écht kennen. 
 
         </p>

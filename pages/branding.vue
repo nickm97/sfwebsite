@@ -79,11 +79,12 @@
       />
     </div>
     <div class="absolute bottom-[5%] right-1/2 sm:bottom-[5%] sm:right-[8%] transform translate-x-1/2 -translate-y-1/2">
-          <button
+      <h2 class="text-2xl font-playFair mb-4 text-white text-center">STUDIO KAE</h2>    
+      <button
             @click="redirect('/branding050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
   </section>
@@ -91,8 +92,8 @@
   <section>
     <div class="bg-background_2 flex items-center justify-center px-4 pt-12 pb-12 sm:px-6 sm:py-20">
       <div class="flex flex-col items-center justify-center relative">
-        <div class="sm:w-[80%] sm:gap-6 flex sm:flex-row flex-col">
-          <div class="flex flex-col sm:w-[60%]">
+        <div class="sm:w-[80%] sm:gap-24 flex sm:flex-row flex-col">
+          <div class="flex flex-col w-[600px]">
             <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
               WHAT TO EXPECT?
             </p>
@@ -102,28 +103,28 @@
               <li class="pl-2">Moodboards maken ter inspiratie van de shoot is altijd welkom</li>
               <li class="pl-2">Een ontspannen en gezellige sfeer tijdens de reportage</li>
             </ul>
-            <div class="w-full flex items-center justify-center">
+            <div class="w-full flex">
               <button
                 @click="redirect('/contact')"
                 class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
                 cursor-pointer border-[0.5px] border-white text-black text-[13px] sm:text-[14.5px] uppercase">
-                Boek jouw bedrijfsreportage en zorg voor een professionele uitstraling
+                Boek jouw bedrijfsreportage
               </button>
             </div>
           </div> 
           
-          <div class="flex flex-col sm:w-[60%] mt-8 sm:mt-0">
+          <div class="flex flex-col mt-8 sm:mt-0 w-[600px]">
             <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
               PACKAGES AND PRICES
             </p>
             <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[1.5rem] pt-6 pb-2">
-              <li class="pl-2">XS:     45 min. shoot       15 foto's         €265 ex</li>
-              <li class="pl-2">S:        1 uur shoot          25 foto's        €350 ex</li>
-              <li class="pl-2">M:       1,25 uur shoot     35 foto's         €460 ex</li>
-              <li class="pl-2">L:        1,5 uur shoot       50 foto's         €575 ex</li>
-              <li class="pl-2">XL:      2 uur shoot         65 foto's         €675 ex</li>
-              <li class="pl-2">XXL:    4 uur shoot         100 foto's       €1150 ex</li>
-              <li class="pl-2">Extra foto's zijn bij te bestellen; los of via voordeelpakketten.</li>
+              <!-- <li class="pl-2">XS:     45 min. shoot       15 foto's         €265 ex</li> -->
+              <li class="pl-2">        1 uur shoot       -   25 foto's   -     €350 excl.</li>
+              <!-- <li class="pl-2">M:       1,25 uur shoot     35 foto's         €460 ex</li> -->
+              <li class="pl-2">        1,5 uur shoot    -   50 foto's    -     €575 excl.</li>
+              <li class="pl-2">      2 uur shoot   -      65 foto's    -     €675 excl.</li>
+              <li class="pl-2">    4 uur shoot      -   100 foto's  -     €1150 excl.</li>
+              <li class="pl-2">Extra foto's zijn bij te bestellen; los of via voordeelpakketten</li>
             </ul>
             
             <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[1.5rem] py-2">
@@ -166,7 +167,7 @@
       </p>
       <p class="text-center font-standard font-light text-[16px]">
         <u>Inhoud reportage:</u><br>
-        4 shoot per jaar<br>
+        4 shoots per jaar<br>
         Een shoot tot 1,5 uur per keer<br>
         25 professionele foto's per shoot (mogelijkheid om extra foto's bij te bestellen)<br>
         Toegang tot een online galerij om de foto's uit te kiezen <br>
@@ -203,7 +204,7 @@
               @click="redirect('/branding050225-01')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -220,7 +221,7 @@
               @click="redirect('/branding050225-02')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -237,7 +238,7 @@
               @click="redirect('/branding050225-03')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -259,7 +260,7 @@
             @click="redirect('/branding050225-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -276,7 +277,7 @@
             @click="redirect('/branding050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -293,7 +294,7 @@
             @click="redirect('/branding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -326,7 +327,7 @@
               @click="redirect('/branding050225-04')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -343,7 +344,7 @@
               @click="redirect('/branding050225-05')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -361,7 +362,7 @@
               @click="redirect('/branding050225-06')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
-              View More
+              VIEW MORE
             </button>
           </div>
         </div>
@@ -382,7 +383,7 @@
             @click="redirect('/branding050225-04')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -399,7 +400,7 @@
             @click="redirect('/branding050225-05')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>
@@ -417,7 +418,7 @@
             @click="redirect('/branding050225-06')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            View More
+            VIEW MORE
           </button>
         </div>
       </div>

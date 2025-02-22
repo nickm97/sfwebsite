@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center px-4 py-16 bg-[url('/assets/pictures/about-page/banner-wake-me-up.webp')] bg-cover bg-[center_top_0%]">  
+  <div class="flex flex-col items-center px-4 py-16 sm:h-[500px] bg-[url('/assets/pictures/about-page/banner-wake-me-up-01.webp')] bg-cover  sm:bg-[center_top_85%]">  
     <!-- Desktop Grid Layout -->
-    <div class="hidden sm:grid grid-cols-9 gap-4 justify-center items-center">
+    <div class="hidden sm:grid grid-cols-9 gap-6 justify-center items-center">
       <WordsAbout v-for="(wakeMe, index) in wakeMes" :key="index" :wordsAbout="wakeMe" />
     </div>
 

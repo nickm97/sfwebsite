@@ -47,21 +47,11 @@
           <li>Het leveren van diensten en/of producten, zoals fotoalbums of digitale bestanden</li>
           <li>Contact met u opnemen voor afspraken of vragen over de opdracht</li>
           <li>Het versturen van facturen en het voldoen aan wettelijke verplichtingen, zoals belastingaangifte</li>
-          <li>Het verbeteren van onze website en diensten door middel van analytische cookies</li>
           <li>Het tonen van uw foto’s in onze portfolio, uitsluitend met uw expliciete toestemming</li>
         </ul>
       </section>
   
-      <section class="mb-8">
-        <h2 class="text-2xl font-standard text-gray-800 mb-4">Hoe lang bewaren wij persoonsgegevens?</h2>
-        <p class="text-gray-700 mb-4 font-standard">
-          Wij bewaren uw persoonsgegevens niet langer dan strikt noodzakelijk voor de doeleinden waarvoor wij deze hebben verzameld:
-        </p>
-        <ul class="list-disc list-inside text-gray-700 font-standard">
-          <li><strong>Persoonsgegevens:</strong> maximaal 7 jaar (conform wettelijke verplichtingen, zoals de Belastingdienst)</li>
-          <li><strong>Foto’s:</strong> 1 maand na afronding van de opdracht, tenzij anders overeengekomen</li>
-        </ul>
-      </section>
+      
   
       <section class="mb-8">
         <h2 class="text-2xl text-gray-800 mb-4 font-standard">Uw rechten</h2>
@@ -88,7 +78,6 @@
           Sanneloes Fotografie neemt passende maatregelen om uw gegevens te beschermen tegen verlies, ongeoorloofde toegang of misbruik. Denk hierbij aan:
         </p>
         <ul class="list-disc list-inside text-gray-700 mt-4 font-standard">
-          <li>Versleutelde opslag van digitale bestanden</li>
           <li>Beveiligde wachtwoorden voor alle systemen waarin persoonsgegevens staan</li>
           <li>Periodieke controle op beveiligingsmaatregelen</li>
           <li>Beveiligde verbindingen (SSL) op onze website</li>
