@@ -73,7 +73,7 @@
 
 
   <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
-    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-75%] sm:z-10">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-85%] xl:ml-[-75%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
@@ -143,7 +143,7 @@
 
     <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 mx-auto">
       <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/rick&marlou.webp"
           alt="Tile Image 1"
@@ -160,7 +160,7 @@
         </div>
       </div>
       <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/gijs&britt.webp"
           alt="Tile Image 2"
@@ -177,7 +177,7 @@
         </div>
       </div>
       <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/sam&inge.webp"
           alt="Tile Image 3"
@@ -287,7 +287,7 @@
   </section>
 
   <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
-    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-75%] sm:z-10">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-85%] xl:ml-[-75%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
@@ -362,7 +362,7 @@
 
     <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 mx-auto">
       <!-- Tile 1 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/tom&cynthia.webp"
           alt="Tile Image 1"
@@ -379,7 +379,7 @@
         </div>
       </div>
       <!-- Tile 2 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/brit&lotte.webp"
           alt="Tile Image 2"
@@ -396,7 +396,7 @@
         </div>
       </div>
       <!-- Tile 3 -->
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300 xl:w-[600px] xl:h-[800px]">
+      <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
           src="/assets/pictures/wedding-page/david&serena.webp"
           alt="Tile Image 3"
