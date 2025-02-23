@@ -16,7 +16,7 @@ for root, dirs, files in os.walk(current_dir):
             
             # # Maak de URL in het gewenste formaat
             url = f"{filep}/{file}"
-            alt = file
+            alt = "Sanneloes Fotografie Bruiloft"
             
             # Print de gewenste output
             print(f"{{ url: '{url}', alt: '{alt}' }},")

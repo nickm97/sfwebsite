@@ -257,7 +257,7 @@
             <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
               <h2 class="text-2xl font-playFair mb-2">JAY EN SANNE</h2>
               <button
-                @click="redirect('/newborn')"
+                @click="redirect('/lovers050225-01')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
               >
                 VIEW MORE
@@ -274,7 +274,7 @@
             <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
               <h2 class="text-2xl font-playFair mb-2">GUUS EN LISA</h2>
               <button
-                @click="redirect('/strong-women')"
+                @click="redirect('/lovers050225-02')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
               >
                 VIEW MORE
@@ -291,7 +291,7 @@
             <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
               <h2 class="text-2xl font-playFair mb-2">WARD EN NICKY</h2>
               <button
-                @click="redirect('/strong-women')"
+                @click="redirect('/lovers050225-03')"
                 class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
               >
                 VIEW MORE

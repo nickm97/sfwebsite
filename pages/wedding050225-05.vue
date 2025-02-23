@@ -10,52 +10,113 @@
     </div>
   </section>
 
-  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
-    <div v-for="(photo, index) in photos" :key="index">
-      <!-- Gebruik nu de nuxt-img component voor lazy loading -->
-      <nuxt-img :src="photo.url" :alt="photo.alt" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
+  <!-- Loader -->
+  <div v-if="isLoading" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+      <img src="/assets/pictures/logo_klein.webp" alt="Logo" class="max-w-[300px] max-h-[225px] animate-pulse" />
+      <p class="text-lg mt-4 font-standard font-light animate-pulse text-center">De gallerij wordt voor u opgehaald.<br>Een ongenblik geduld alstublieft.</p>
     </div>
-  </div>
 
-</template>
+  
+    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
+      <div v-for="(photo, index) in photos" :key="index">
+        <nuxt-img 
+          :src="photo.url" 
+          :alt="photo.alt" 
+          loading="lazy"
+          class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300"
+          @load="imageLoaded"
+        />
+      </div>
+    </div>
 
-<!-- <script>
-import photoList from '~/assets/photoList-wedding-tom-cynthia.json';
+  </template>
 
-export default {
-  data() {
-    return {
-      photos: photoList, // Foto's laden vanuit JSON-bestand
-    };
-  },
-};
-</script> -->
+  
 
-<script>
-export default {
-  data() {
-    return {
-      photos: [ 
-      { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_08772-2.webp', alt: 'SF_08772-2.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_08781-2.webp', alt: 'SF_08781-2.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09098.webp', alt: 'SF_09098.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09105.webp', alt: 'SF_09105.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09140.webp', alt: 'SF_09140.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09158.webp', alt: 'SF_09158.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09165.webp', alt: 'SF_09165.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09166.webp', alt: 'SF_09166.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09172.webp', alt: 'SF_09172.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09176.webp', alt: 'SF_09176.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09269.webp', alt: 'SF_09269.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09283.webp', alt: 'SF_09283.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09311.webp', alt: 'SF_09311.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09338.webp', alt: 'SF_09338.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09372.webp', alt: 'SF_09372.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09566-2.webp', alt: 'SF_09566-2.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09635.webp', alt: 'SF_09635.webp' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09938.webp', alt: 'SF_09938.webp' }
-] 
-    };
+<script setup>
+import { ref, onMounted } from 'vue';
+
+// Data
+const photos = ref([
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie107.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie12.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie124.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie126.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie129.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie137.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie157.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie1582.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie164.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie165.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie166.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie17.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie171.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie186.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie2.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie204.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie220.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie221.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie225.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie227.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie273.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie285.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie297.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie334.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie337.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie360.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie395.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie411.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie414.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie422.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie43.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie435.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie444.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie446bewerkt.webp', alt: 'Sanneloes Fotografie Bruiloften' },  
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie448.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie469.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie470.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie479.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie502.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie515.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie542.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie564.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie58.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie580VerbeterdNR.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie604.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie616VerbeterdNR.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie62.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie653.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie679.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie70.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie729.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie735.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie74.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie745.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie75.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie759bewerkt.webp', alt: 'Sanneloes Fotografie Bruiloften' },  
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie763.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie768.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie799.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie82.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+{ url: '/assets/pictures/wedding-page/wedding-050225-05/pictures/Sanneloes Fotografie828.webp', alt: 'Sanneloes Fotografie Bruiloften' },
+  // Voeg hier meer foto's toe...
+]);
+
+const isLoading = ref(true);
+const loadedImages = ref(0);
+
+// Functie wordt aangeroepen wanneer een afbeelding is geladen
+const imageLoaded = () => {
+  loadedImages.value++;
+  if (loadedImages.value >= photos.value.length) {
+    isLoading.value = false; // Verberg de loader als alle afbeeldingen geladen zijn
   }
 };
+
+onMounted(() => {
+  // Extra check: als er geen foto's zijn, verwijder dan direct de loader
+  if (photos.value.length === 0) {
+    isLoading.value = false;
+  }
+});
 </script>

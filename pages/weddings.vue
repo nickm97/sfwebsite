@@ -316,7 +316,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">TOM EN CYNTHIA</h2>
           <button
-            @click="redirect('/wedding050225-01')"
+            @click="redirect('/wedding010825-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -333,7 +333,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">BRIT EN LOTTE</h2>
           <button
-            @click="redirect('/wedding050225-02')"
+            @click="redirect('/wedding050225-07')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -350,7 +350,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">DAVID EN SERENA</h2>
           <button
-            @click="redirect('/wedding050225-03')"
+            @click="redirect('/wedding010825-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -371,7 +371,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">TOM EN CYNTHIA</h2>
           <button
-            @click="redirect('/wedding050225-01')"
+            @click="redirect('/wedding010825-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -388,7 +388,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">BRIT EN LOTTE</h2>
           <button
-            @click="redirect('/wedding050225-02')"
+            @click="redirect('/wedding050225-07')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -405,7 +405,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">DAVID EN SERENA</h2>
           <button
-            @click="redirect('/wedding050225-03')"
+            @click="redirect('/wedding010825-01')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE

@@ -106,19 +106,18 @@
     </div>
   </section>
 
-
+<!-- 
   <section class="hidden bg-background_4 sm:flex items-center justify-center">
 
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
     <div v-for="(photo, index) in imageUrls" :key="index">
-      <!-- Gebruik nu de nuxt-img component voor lazy loading -->
       <nuxt-img :src="photo.url" class="w-full max-w-[500px] break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
     </div>
   </div>
-  </section>
+  </section> -->
 
 
-  <section class="sm:hidden relative flex justify-center items-center w-full overflow-hidden bg-background_4 pb-12">
+  <!-- <section class="sm:hidden relative flex justify-center items-center w-full overflow-hidden bg-background_4 pb-12">
     <div ref="slider" class="flex gap-4 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
       <div
         v-for="(image, index) in imageUrls"
@@ -133,15 +132,72 @@
         />
       </div>
     </div>
-  </section>
+  </section> -->
   
   
+  <!-- Loader -->
+<div v-if="isLoading" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+    <img src="/assets/pictures/logo_klein.webp" alt="Logo" class="max-w-[300px] max-h-[225px] animate-pulse" />
+    <p class="text-lg mt-4 font-standard font-light animate-pulse text-center">De gallerij wordt voor u opgehaald.<br>Een ongenblik geduld alstublieft.</p>
+  </div>
+
+
+  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
+    <div v-for="(photo, index) in photos" :key="index">
+      <nuxt-img 
+        :src="photo.url" 
+        :alt="photo.alt" 
+        loading="lazy"
+        class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300"
+        @load="imageLoaded"
+      />
+    </div>
+  </div>
   
   <footer-sf></footer-sf>
 </template>
 
 <script setup>
 import { ref, onMounted, nextTick } from "vue";
+
+// Data
+const photos = ref([
+{ url: '/assets/pictures/studio-page/pictures/DSC00296.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04376.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04380.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04385.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04463.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04466.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04477.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC04488.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC08236.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC08242.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/DSC08355.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/SF_06856.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/SF_06859.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/SF_06861.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/SF_06862.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+{ url: '/assets/pictures/studio-page/pictures/SLF00742.webp', alt: 'Sanneloes Fotografie Daylight studio La Luz' },
+// Voeg hier meer foto's toe...
+]);
+
+const isLoading = ref(true);
+const loadedImages = ref(0);
+
+// Functie wordt aangeroepen wanneer een afbeelding is geladen
+const imageLoaded = () => {
+loadedImages.value++;
+if (loadedImages.value >= photos.value.length) {
+  isLoading.value = false; // Verberg de loader als alle afbeeldingen geladen zijn
+}
+};
+
+onMounted(() => {
+// Extra check: als er geen foto's zijn, verwijder dan direct de loader
+if (photos.value.length === 0) {
+  isLoading.value = false;
+}
+});
 
 const imageUrls = ref([
   { url: "/assets/pictures/boudoir-page/boudoir-01.webp" },
@@ -162,9 +218,9 @@ const scrollToIndex = (index) => {
   }
 };
 
-onMounted(() => {
-  nextTick(() => scrollToIndex(currentIndex.value));
-});
+// onMounted(() => {
+//   nextTick(() => scrollToIndex(currentIndex.value));
+// });
 </script>
 
 

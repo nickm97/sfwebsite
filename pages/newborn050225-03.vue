@@ -3,60 +3,87 @@
       <div class="w-[50%] flex items-center justify-center">
         <!-- canva 800x300 160 lettertype -->
         <nuxt-img
-          src="/assets/pictures/newborn-page/newborn-050225-03/larie.webp"
+          src="/assets/pictures/newborn-page/newborn-050225-03/laurie.webp"
           alt="Sanneloes Fotografie Bruiloft"
           class="h-[120px] flex items-center justify-center"
         />
       </div>
     </section>
   
+    <!-- Loader -->
+  <div v-if="isLoading" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+      <img src="/assets/pictures/logo_klein.webp" alt="Logo" class="max-w-[300px] max-h-[225px] animate-pulse" />
+      <p class="text-lg mt-4 font-standard font-light animate-pulse text-center">De gallerij wordt voor u opgehaald.<br>Een ongenblik geduld alstublieft.</p>
+    </div>
+
+  
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
       <div v-for="(photo, index) in photos" :key="index">
-        <!-- Gebruik nu de nuxt-img component voor lazy loading -->
-        <nuxt-img :src="photo.url" :alt="photo.alt" class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300" />
+        <nuxt-img 
+          :src="photo.url" 
+          :alt="photo.alt" 
+          loading="lazy"
+          class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300"
+          @load="imageLoaded"
+        />
       </div>
     </div>
-  
+
   </template>
+
   
-  <!-- <script>
-  import photoList from '~/assets/photoList-wedding-tom-cynthia.json';
-  
-  export default {
-    data() {
-      return {
-        photos: photoList, // Foto's laden vanuit JSON-bestand
-      };
-    },
-  };
-  </script> -->
-  
-  <script>
-  export default {
-    data() {
-      return {
-        photos: [ 
-        { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_08772-2.webp', alt: 'SF_08772-2.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_08781-2.webp', alt: 'SF_08781-2.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09098.webp', alt: 'SF_09098.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09105.webp', alt: 'SF_09105.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09140.webp', alt: 'SF_09140.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09158.webp', alt: 'SF_09158.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09165.webp', alt: 'SF_09165.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09166.webp', alt: 'SF_09166.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09172.webp', alt: 'SF_09172.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09176.webp', alt: 'SF_09176.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09269.webp', alt: 'SF_09269.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09283.webp', alt: 'SF_09283.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09311.webp', alt: 'SF_09311.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09338.webp', alt: 'SF_09338.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09372.webp', alt: 'SF_09372.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09566-2.webp', alt: 'SF_09566-2.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09635.webp', alt: 'SF_09635.webp' },
-  { url: '/assets/pictures/wedding-page/wedding-010825-02/pictures/SF_09938.webp', alt: 'SF_09938.webp' }
-  ] 
-      };
-    }
-  };
-  </script>
-  
+
+<script setup>
+import { ref, onMounted } from 'vue';
+
+// Data
+const photos = ref([
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (12 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (14 van 75)-3.webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (14 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (16 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (18 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (2 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (2 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (20 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (23 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (26 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (31 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (32 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (33 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (34 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (35 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (37 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (38 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (4 van 42).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (40 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (49 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (5 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (51 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (56 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (61 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (65 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (71 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (73 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+{ url: '/assets/pictures/newborn-page/newborn-050225-03/pictures/SanneloesFotografie (8 van 75).webp', alt: 'Sanneloes Fotografie Newborn' },
+  // Voeg hier meer foto's toe...
+]);
+
+const isLoading = ref(true);
+const loadedImages = ref(0);
+
+// Functie wordt aangeroepen wanneer een afbeelding is geladen
+const imageLoaded = () => {
+  loadedImages.value++;
+  if (loadedImages.value >= photos.value.length) {
+    isLoading.value = false; // Verberg de loader als alle afbeeldingen geladen zijn
+  }
+};
+
+onMounted(() => {
+  // Extra check: als er geen foto's zijn, verwijder dan direct de loader
+  if (photos.value.length === 0) {
+    isLoading.value = false;
+  }
+});
+</script>

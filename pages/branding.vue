@@ -201,7 +201,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">O-KAY HAARMODE</h2>
             <button
-              @click="redirect('/branding050225-01')"
+              @click="redirect('/branding050225-02')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
               VIEW MORE
@@ -218,7 +218,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">CLASSIC TRUST</h2>
             <button
-              @click="redirect('/branding050225-02')"
+              @click="redirect('/branding050225-03')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
               VIEW MORE
@@ -235,7 +235,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">LA FORMA</h2>
             <button
-              @click="redirect('/branding050225-03')"
+              @click="redirect('/branding050225-04')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
               VIEW MORE
@@ -257,7 +257,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">O-KAY HAARMODE</h2>
           <button
-            @click="redirect('/branding050225-01')"
+            @click="redirect('/branding050225-02')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -274,7 +274,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">CLASSIC TRUST</h2>
           <button
-            @click="redirect('/branding050225-02')"
+            @click="redirect('/branding050225-03')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -291,7 +291,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">LA FORMA</h2>
           <button
-            @click="redirect('/branding050225-03')"
+            @click="redirect('/branding050225-04')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -324,7 +324,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">DUTCH TOTAAL FOTOGRAFIE</h2>
             <button
-              @click="redirect('/branding050225-04')"
+              @click="redirect('/branding050225-05')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
               VIEW MORE
@@ -341,7 +341,7 @@
           <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
             <h2 class="text-2xl font-playFair mb-2">DOKTER ES</h2>
             <button
-              @click="redirect('/branding050225-05')"
+              @click="redirect('/branding050225-06')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
               VIEW MORE
@@ -359,7 +359,7 @@
             <h2 class="text-2xl font-playFair mb-2">LIANNE RIETBERG</h2>
             <h2 class="text-xl font-playFair mb-2">EXCLUSIVE WEDDINGS AND EVENTS</h2>
             <button
-              @click="redirect('/branding050225-06')"
+              @click="redirect('/branding050225-07')"
               class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
             >
               VIEW MORE
@@ -380,7 +380,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">DUTCH TOTAAL FOTOGRAFIE</h2>
           <button
-            @click="redirect('/branding050225-04')"
+            @click="redirect('/branding050225-05')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -397,7 +397,7 @@
         <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
           <h2 class="text-2xl font-playFair mb-2">DOKTER ES</h2>
           <button
-            @click="redirect('/branding050225-05')"
+            @click="redirect('/branding050225-06')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
@@ -415,7 +415,7 @@
           <h2 class="text-2xl font-playFair mb-2">LIANNE RIETBERG</h2>
           <h2 class="text-xl font-playFair mb-2">EXCLUSIVE WEDDINGS AND EVENTS</h2>
           <button
-            @click="redirect('/branding050225-06')"
+            @click="redirect('/branding050225-07')"
             class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
             VIEW MORE
