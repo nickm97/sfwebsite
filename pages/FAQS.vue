@@ -25,7 +25,7 @@ const toggleAnswer = (index) => {
 </script>
 
 <template>
-    <section id="faq" class="py-16 bg-background_4 h-screen">
+    <section id="faq" class="py-16 bg-background_4 h-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Image Section -->

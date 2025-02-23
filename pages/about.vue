@@ -205,13 +205,16 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center text-center py-12 px-2 bg-[#d3c9bf]">
+  <section class="flex flex-col items-center justify-center text-center pt-12 pb-6 px-2 bg-[#d3c9bf]">
     <p class="uppercase font-playFair text-2xl sm:text-[50px] text-black">
       You can wake me up for
     </p>
     <p class="font-standard text-black text-sm mt-5 px-4 sm:px-0">
       Laten we meteen starten met een disclaimer: JE MAG ME NIET WAKKER MAKEN. Mijn slaap is veel te heilig. Ik slaap het liefst minstens 9 uur per nacht, dus mij niet bellen. 
     </p>
+    <p class="hidden sm:flex uppercase font-standard text-center text-sm sm:text-md mt-8">
+            TAP TO READ
+        </p>
   </section>
 
   <wake-me-sf></wake-me-sf>
@@ -236,11 +239,11 @@
           />
         </div>
       </div> -->
-      <div>
+      <div class="px-12 py-12 sm:py-0 sm:px-0">
         <nuxt-img
           src="/assets/pictures/about-page/describe-me-03.webp"
           alt="Sanneloes Fotografie Logo"
-          class="object-cover w-full h-auto sm:h-[600px] rounded-xl border-[2px] border-white"
+          class="object-cover  sm:h-[600px] rounded-xl border-[2px] border-white"
         />
       </div>
 
