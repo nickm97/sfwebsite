@@ -108,12 +108,14 @@
     <!-- Page Content -->
     <main>
       <NuxtPage />
+      <Analytics />
     </main>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import { Analytics } from '@vercel/analytics/vue';
 
 const menuOpen = ref(false)
 
