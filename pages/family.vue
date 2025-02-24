@@ -277,7 +277,7 @@
               <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
                 <!-- <h2 class="text-2xl font-playFair mb-2">DAISY</h2> -->
                 <button
-                  @click="redirect('/newborn')"
+                  @click="redirect('/family050225-02')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
                   VIEW MORE
@@ -294,7 +294,7 @@
               <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
                 <!-- <h2 class="text-2xl font-playFair mb-2">ASTRID</h2> -->
                 <button
-                  @click="redirect('/strong-women')"
+                  @click="redirect('/family050225-03')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
                   VIEW MORE
@@ -311,7 +311,7 @@
               <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
                 <!-- <h2 class="text-2xl font-playFair mb-2">PUCK</h2> -->
                 <button
-                  @click="redirect('/strong-women')"
+                  @click="redirect('/family050225-04')"
                   class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                 >
                   VIEW MORE

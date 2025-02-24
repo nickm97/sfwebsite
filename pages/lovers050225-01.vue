@@ -38,20 +38,20 @@ import { ref, onMounted } from 'vue';
 
 // Data
 const photos = ref([
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_07987.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08020.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08169.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08236.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08324.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08330.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08411.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08454.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08481.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08578.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08592.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08646.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08759.webp', alt: 'Sanneloes Fotografie Lovers' },
-{ url: '/assets/pictures/couples-page/lovers050225-01/pictures/SF_08794.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_07987.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08020.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08169.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08236.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08324.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08330.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08411.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08454.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08481.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08578.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08592.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08646.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08759.webp', alt: 'Sanneloes Fotografie Lovers' },
+{ url: '/assets/pictures/couples-page/lovers-050225-01/pictures/SF_08794.webp', alt: 'Sanneloes Fotografie Lovers' },
 // Voeg hier meer foto's toe...
 ]);
 
