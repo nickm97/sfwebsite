@@ -1,6 +1,6 @@
 <template>
 
-  <section class="hidden sm:block">
+<!-- <section class="hidden sm:block">
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/wedding-page/banner.jpg"
@@ -11,6 +11,16 @@
       />
     </div>
     <div>
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        Weddings
+      </p>
+    </div>
+  </section> -->
+
+  <section class="hidden sm:block">
+    <div class="bg-[url(/assets/pictures/wedding-page/banner.jpg)] h-[600px] bg-cover bg-center relative">
       <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
@@ -558,6 +568,19 @@
     }
   }
 
+  .parallax-banner {
+      /* The image used */
+      background-image: url("/public/assets/pictures/wedding-page/banner-scroll.webp");
+
+      min-height: 400px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
   .parallax {
       /* The image used */
       background-image: url("/public/assets/pictures/wedding-page/banner-scroll.webp");
