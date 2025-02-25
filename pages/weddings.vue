@@ -1,8 +1,25 @@
 <template>
 
-  <section class="hidden sm:block">
-    <!-- background pic -->
+  <!-- <section class="hidden sm:block">
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
+      <nuxt-img
+        src="/assets/pictures/wedding-page/banner.jpg"
+        alt="Wedding Background"
+        class="w-full h-full object-cover object-center"
+        placeholder
+      />
+    </div>
+    <div>
+      <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
+          text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
+          -rotate-90">
+        Weddings
+      </p>
+    </div>
+  </section> -->
+  <section class="hidden sm:block relative">
+    <!-- background pic -->
+    <div class="h-[600px]">
       <nuxt-img
         src="/assets/pictures/wedding-page/banner.jpg"
         alt="Wedding Background"
