@@ -26,7 +26,7 @@
     <!-- background pic -->
     <div class="hidden sm:block relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-        src="/assets/pictures/boudoir-page/banner-04.webp"
+        src="/assets/pictures/boudoir-page/banner-04.jpg"
         alt="Sanneloes fotografie boudoir"
         class="w-full h-full object-cover object-center"
         placeholder
