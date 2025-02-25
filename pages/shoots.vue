@@ -2,14 +2,14 @@
 
 <section class="hidden sm:block">
     <!-- background pic -->
-    <div class="relative h-screen max-h-[calc(100vh-150px)] hidden sm:block">
+    <!-- <div class="relative h-screen max-h-[calc(100vh-150px)] hidden sm:block">
       <nuxt-img
         src="/assets/pictures/shoots-page/banner.webp"
         alt="Shoots Background"
         placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 45%;"
       />
-    </div>
+    </div> -->
     <div class="relative h-screen max-h-[calc(100vh-150px)] sm:hidden">
       <nuxt-img
         src="/assets/pictures/shoots-page/banner-mobile.webp"
@@ -18,7 +18,7 @@
         class="w-full h-full object-cover object-center"style="object-position: center 45%;"
       />
     </div>
-    <div class="sm:block hidden">
+    <div class="bg-[url(/assets/pictures/shoots-page/banner.webp)] h-screen max-h-[calc(100vh-150px)] bg-cover bg-center relative">
       <p class="absolute top-[60%] left-[5%] transform -translate-x-1/2 -translate-y-1/2 
           text-white text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">

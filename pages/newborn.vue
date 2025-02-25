@@ -1,6 +1,6 @@
 <template>
   <section class="hidden sm:block">
-    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+    <!-- <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/newborn-page/banner.webp"
         alt="Newborn Background"
@@ -9,8 +9,8 @@
         style="object-position: center 30%;"
       />
 
-    </div>
-    <div>
+    </div> -->
+    <div class="bg-[url(/assets/pictures/newborn-page/banner.webp)] h-screen max-h-[calc(100vh-150px)] bg-cover bg-center relative">
       <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
@@ -217,58 +217,6 @@
       </div>
     </div>
     
-
-
-    <!-- <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/newborn-page/newborn-luen.webp"
-          alt="Tile Image 1"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">LUÉN</h2>
-          <button
-            @click="redirect('/newborn050225-01')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            VIEW MORE
-          </button>
-        </div>
-      </div>
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/newborn-page/newborn-lois.webp"
-          alt="Tile Image 2"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">LOÏS</h2>
-          <button
-            @click="redirect('/newborn050225-02')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            VIEW MORE
-          </button>
-        </div>
-      </div>
-      <div class="relative group rounded-lg overflow-hidden bg-gray-300">
-        <img
-          src="/assets/pictures/newborn-page/newborn-laurie.webp"
-          alt="Tile Image 3"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
-          <h2 class="text-2xl font-playFair mb-2">LAURIE</h2>
-          <button
-            @click="redirect('/newborn050225-03')"
-            class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            VIEW MORE
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
             <!-- Tile 1 -->

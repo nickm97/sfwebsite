@@ -1,15 +1,15 @@
 <template>
   <section class="hidden sm:block">
     <!-- background pic -->
-    <div class="relative h-screen max-h-[calc(100vh-150px)]">
+    <!-- <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/couples-page/banner.webp"
         alt="Lovers Background"
         placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 50%;"
       />
-    </div>
-    <div>
+    </div> -->
+    <div class="bg-[url(/assets/pictures/couples-page/banner.webp)] h-screen max-h-[calc(100vh-150px)] bg-cover bg-center relative">
       <p class="absolute top-1/2 right-[10%] sm:right-[5%] transform translate-x-1/2 -translate-y-1/2 
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">

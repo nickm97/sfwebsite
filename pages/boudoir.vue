@@ -24,7 +24,7 @@
 
   <section class="hidden sm:block">
     <!-- background pic -->
-    <div class="hidden sm:block relative h-screen max-h-[calc(100vh-150px)]">
+    <!-- <div class="hidden sm:block relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/boudoir-page/banner-04.jpg"
         alt="Sanneloes fotografie boudoir"
@@ -32,7 +32,7 @@
         placeholder
         style="object-position: center 40%;"
       />
-    </div>
+    </div> -->
     <div class="sm:hidden relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/boudoir-page/boudoir-photo-qoute.webp"
@@ -41,7 +41,7 @@
         class="w-full h-full object-cover object-center"
       />
     </div>
-    <div>
+    <div class="bg-[url(/assets/pictures/boudoir-page/banner-04.jpg)] h-screen max-h-[calc(100vh-150px)] bg-cover bg-center relative">
       <p class="absolute top-1/2 left-[10%] sm:left-[5%] transform -translate-x-1/2 -translate-y-1/2 
           text-white text-[60px] sm:text-[80px] tracking-widest font-playFair uppercase text-center 
           -rotate-90">
