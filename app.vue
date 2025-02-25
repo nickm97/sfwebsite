@@ -8,7 +8,7 @@
     <!-- Navbar -->
     <nav class="sticky top-0 z-[100] bg-white text-black sm:px-12 py-2 flex items-center h-[70px] border-b-1 border-gray-500">
 
-      <div class="hidden lg:grid grid-cols-3 w-full items-center">
+      <div class="hidden sm:grid grid-cols-3 w-full items-center">
         
         <div class="flex items-center space-x-6 justify-start">
           <NuxtLink to="/" class="font-standard tracking-wide text-sizeNavText hover:text-gray-400 hover:-translate-y-1 transform transition duration-300">
@@ -68,15 +68,16 @@
         
       </div>
 
-      <div class="lg:hidden w-full flex items-center px-2 justify-between">
+      <div class="sm:hidden w-full flex items-center px-2 justify-between">
         <div class="flex justify-start">
-            <NuxtLink to="/">
-              <img src="/public/logo.svg" alt="Sanneloes Fotografie" class="w-[250px] h-auto" />
-            </NuxtLink>
+          <NuxtLink to="/">
+            <nuxt-img src="/logo.webp" alt="Sanneloes Fotografie" width="250" height="auto" />
+          </NuxtLink>
+
           </div>
 
           
-        <div v-show="menuOpen" class="absolute top-[70px] left-0 w-full bg-white border-t border-gray-300 shadow-lg lg:hidden">
+        <div v-show="menuOpen"  ref="menuRef" class="absolute top-[70px] left-0 w-full bg-white border-t border-gray-300 shadow-lg lg:hidden">
           <div class="flex flex-col items-center space-y-4 py-6">
             <NuxtLink to="/" class="nav-link-mobile" @click="closeMenu">HOME</NuxtLink>
             <NuxtLink to="/weddings" class="nav-link-mobile" @click="closeMenu">WEDDINGS</NuxtLink>

@@ -5,6 +5,7 @@
       <nuxt-img
         src="/assets/pictures/studio-page/banner.webp"
         alt="Family Background"
+        placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 60%;"
       />
     </div>

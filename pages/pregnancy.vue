@@ -3,7 +3,8 @@
     <div class="relative h-screen max-h-[calc(100vh-150px)] hidden sm:block">
       <nuxt-img
         src="/assets/pictures/pregnancy-page/banner.webp"
-        alt="Newborn Background"
+        alt="Zwangerschap Background"
+        placeholder
         class="w-full h-full object-cover object-center"
         style="object-position: center 30%;"
       />
@@ -11,7 +12,8 @@
     <div class="relative h-screen max-h-[calc(100vh-150px)] sm:hidden">
       <nuxt-img
         src="/assets/pictures/pregnancy-page/banner-mobile.webp"
-        alt="Shoots Background"
+        alt="Zwangerschap Background"
+        placeholder
         class="w-full h-full object-cover object-center"
         style="object-position: center 45%;"
       />

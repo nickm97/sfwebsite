@@ -6,6 +6,7 @@
       <nuxt-img
         src="/assets/pictures/shoots-page/banner.webp"
         alt="Shoots Background"
+        placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 45%;"
       />
     </div>
@@ -13,6 +14,7 @@
       <nuxt-img
         src="/assets/pictures/shoots-page/banner-mobile.webp"
         alt="Shoots Background"
+        placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 45%;"
       />
     </div>
@@ -51,7 +53,7 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center sm:px-6 sm:pt-10 pb-10 bg-buttonColor">
+  <section class="flex flex-col items-center sm:px-6 sm:pt-10 pt-4 pb-10 bg-buttonColor">
     <p class="sm:hidden font-playFair uppercase text-center w-full text-white text-[12px] w-full mb-4">
       PREGNANCY-NEWBORN-LITTLE FAMILIES-COUPLES-BOUDOIR
     </p>

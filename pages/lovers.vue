@@ -4,7 +4,8 @@
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/couples-page/banner.webp"
-        alt="Family Background"
+        alt="Lovers Background"
+        placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 50%;"
       />
     </div>
@@ -113,13 +114,13 @@
 
   <div class="flex flex-col-reverse sm:flex-col">
     <section class="flex flex-col">
-            <div class="flex bg-background_4 items-center justify-center relative pt-12 pb-6">
+            <div class="flex bg-background_4 items-center justify-center relative pt-12 xs:pb-6">
                 <!-- Tekstgedeelte -->
                 <div class="flex flex-col items-center justify-center pb-6 font-standard bg-background_4 text-center">
                     <p class="font-playFair text-[26px] sm:text-4xl font-light leading-[2.5rem] py-4">
                         OUR LOVE STORY - PACKAGE
                     </p>
-                    <p class="font-standard sm:max-w-[1300px] px-4 sm:px-0 text-left sm:text-center">
+                    <p class="font-standard font-light sm:max-w-[1300px] px-4 sm:px-0 text-left sm:text-center">
                       Wil je jullie relatie op een unieke, realistische manier laten vastleggen? Wil jij niet een 
                       fase vastleggen, maar ook een echte ervaring? Met een conceptshoot creëren we samen een fotoserie 
                       die helemaal bij jullie verhaal past. Geen “standaard” shoot in de studio of op de heide, maar 
@@ -144,8 +145,11 @@
 
             <div class="flex flex-col sm:flex-row justify-center bg-background_4 gap-6 pb-12">
                 <div class="sm:w-[50%] px-4 sm:px-0">
-                    <p class="font-standard text-right font-light">
-                        <u class="font-medium">Inhoud reportage:</u><br>
+                    <p class="font-medium font-bold text-left xs:text-right">
+                      Inhoud reportage
+                    </p>
+                    <p class="font-standard text-left xs:text-right font-light">
+                        
                         Een shoot van 1 tot 1.5 uur<br>
                         25 professionele foto's per shoot (mogelijkheid om extra foto's bij te bestellen)<br>
                         Toegang tot een online galerij om de foto's uit te kiezen <br>
@@ -156,8 +160,8 @@
                     </p>
                 </div>
                 <div class="sm:w-[50%] px-4 sm:px-0">
-                    <p>
-                        <u>Voorbeelden kunnen zijn:</u>
+                    <p class="font-medium font-bold">
+                        Voorbeelden kunnen zijn
                     </p>
                     <ul class="list-disc pl-6 font-standard font-light leading-[1.5rem]">
                         <li>Picknicken en vliegeren in de natuur</li>

@@ -4,7 +4,8 @@
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
         src="/assets/pictures/savvy-page/banner.webp"
-        alt="Family Background"
+        alt="Savvy styling Background"
+        placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 60%;"
       />
     </div>
@@ -16,7 +17,7 @@
       </p> -->
       <nuxt-img
         src="/assets/pictures/savvy-page/banner-title.webp"
-        alt="Family Background"
+        alt="Savvy styling Background"
         class="w-[550px] sm:w-[700px] object-cover object-center absolute top-1/2 right-[50%] transform translate-x-1/2 -translate-y-1/2"
       />
     </div>

@@ -58,8 +58,8 @@ const socialLinks = ref([
   { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/lief.webp", text: "Lief" },
   { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/creatief.webp", text: "Creatief" },
   { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/zorgzaam.webp", text: "Zorgzaam" },
-  { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/harde-werker.webp", text: "Harde Werker" },
   { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/reislustig.webp", text: "Reislustig" },
+  { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/harde-werker.webp", text: "Doorzetter" },
   { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/open.webp", text: "Open" },
   { url: "https://www.instagram.com/sanneloesfotografie", image: "/assets/pictures/about-page/enthousiast.webp", text: "Enthousiast" }
 ])

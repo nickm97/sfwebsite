@@ -29,6 +29,7 @@
         src="/assets/pictures/boudoir-page/banner-04.webp"
         alt="Sanneloes fotografie boudoir"
         class="w-full h-full object-cover object-center"
+        placeholder
         style="object-position: center 40%;"
       />
     </div>
@@ -36,6 +37,7 @@
       <nuxt-img
         src="/assets/pictures/boudoir-page/boudoir-photo-qoute.webp"
         alt="Sanneloes fotografie boudoir"
+        placeholder
         class="w-full h-full object-cover object-center"
       />
     </div>

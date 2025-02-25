@@ -91,19 +91,20 @@
       alt="Sanneloes Fotografie Logo"
       class="sm:hidden object-cover h-[80px]"
     />
-    <div class="sm:flex sm:w-[1250px] text-left sm:text-left text-[14.5px] sm:text-[16px] text-white items-center sm:gap-12 py-4 sm:py-6 font-standard font-light">
+    <div class="sm:flex xs:px-12 sm:w-[1250px] text-left sm:text-left text-[14.5px] sm:text-[16px] text-white items-center sm:gap-12 py-4 sm:py-6 font-standard font-light">
       <p class="sm:w-1/2">
-        Sanneloes is een professionele en creatieve fotografe die de kunst 
-        van het vastleggen van bijzondere momenten beheerst. Met een oog voor 
-        detail en een passie voor storytelling, biedt Sanneloes Fotografie unieke
-        fotosessies die emoties en spontaniteit benadrukken. Liefde voor jezelf of 
-        elkaar staat voorop. 
+        Je leven zit vol bijzondere momenten die het waard zijn om vastgelegd te worden. 
+        Of het nu gaat om een trouwdag, een gezinsshoot, zwangerschap, jullie pasgeboren 
+        kindje of een professioneel portret. Jouw unieke verhaal verdient het om op beeld 
+        te worden gevangen. Met een oog voor detail en passie voor storytelling leg ik deze
+        momenten graag voor je vast. 
       </p>
       <p class="mt-4 sm:mt-0 sm:w-1/2">
-        Of het nu gaat om pure portretten, bruiloften of plezierige gezinsfoto's, 
-        de stijl van Sanneloes combineert warmte en authenticiteit. De beelden vertellen
-        een verhaal dat je keer op keer wilt herbeleven. Perfect voor iedereen die op zoek 
-        is naar tijdloze herinneringen! Dat alles in een jasje van liefde, plezier en echtheid.
+        We creëren een ontspannen 
+        sfeer zodat jij jezelf kunt zijn. Emoties en spontaniteit worden benadrukt in jullie verhaal 
+        en warmte, plezier en authenticiteit staan centraal. Het resultaat? Foto’s die niet alleen 
+        voor een trots gevoel zorgen, maar ook de emoties en herinneringen van dat moment vastleggen, 
+        precies zoals jij het hebt ervaren.
       </p>
     </div>
     <p class="text-white text-left sm:text-center font-standard sm:pt-6 font-light text-[14.5px] sm:text-[16px]">
@@ -152,9 +153,9 @@
       
 
       <!-- Tekst -->
-      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-0 sm:py-0 px-4 sm:px-0">
+      <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left py-0 sm:py-0 px-8 xs:px-4 mt-8 xs:mt-0 sm:px-0 xs:px-24">
         <h1 class="uppercase font-playFair text-[28px] sm:text-4xl py-2">HEARTWARMING WORDS</h1>
-        <p class="font-standard font-light sm:text-[18px] text-[14.5px] text-left">
+        <p class="font-standard font-light xs:text-[18px] text-[14.5px] text-left">
           “Hoe zoek je nou dé juiste fotograaf voor je bruiloft? Nou: boek Sanneloes!<br><br>
           Zij is diegene die je er bij wilt hebben op je dag: vrolijk, energiek, enthousiast en 
           gepassioneerd. Een daggast met een camera in haar handen! De foto’s overtroffen al onze 
@@ -165,7 +166,7 @@
         <nuxt-img
           src="/assets/pictures/home-page/review-name.webp"
           alt="Sanneloes"
-          class="w-[80px] sm:w-[100px] hidden sm:block"
+          class="w-[80px] sm:w-[100px] block sm:block xs:block"
         />
       </div>
 
@@ -173,7 +174,7 @@
   </section>
 
   <!-- New Section with Title and Photos -->
-  <section class="px-[10px] md:px-[140px] items flex-col items-center justify-center pt-0 sm:pt-6 pb-12 sm:pb-[100px] sm:bg-buttonColor">
+  <section class="xs:px-12 px-[10px] md:px-[140px] items flex-col items-center justify-center pt-0 sm:pt-6 pb-12 sm:pb-[100px] sm:bg-buttonColor">
     <p class="hidden sm:block text-4xl font-playFair text-white font-light text-center mb-8 mt-12">
       PHOTOGRAPHY AND INFORMATION
     </p>
@@ -293,9 +294,9 @@
        
         
       </div>
-      <div class="flex-col sm:w-[calc(50%+10px)] relative sm:px-0 px-4">
+      <div class="flex-col sm:w-[calc(50%+10px)] relative sm:px-0 px-4 xs:px-24">
         <!-- "ABOUT" tekst met absolute positie en naar boven verplaatst -->
-        <p class="block sm:block absolute text-[100px] sm:text-[125px] font-playFair left-1/2 transform translate-x-[-50%] sm:top-[-220px] top-[-130px] sm:text-white">ABOUT</p>
+        <p class="block sm:block absolute text-[100px] sm:text-[125px] font-playFair left-1/2 transform translate-x-[-50%] sm:top-[-220px] top-[-130px] text-white">ABOUT</p>
         <div class="absolute left-1/2 transform translate-x-[-50%] sm:top-[-125px] top-[-50px]">
           <nuxt-img
             src="/assets/pictures/home-page/about-sanneloes.webp"
@@ -525,7 +526,17 @@ function previousImage() {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @supports (-webkit-touch-callout: none) {
+  .parallax {
+    background-attachment: scroll; /* Fallback voor iOS */
+  }
+}
 
+  @supports (-webkit-touch-callout: none) {
+  .parallax_02 {
+    background-attachment: scroll; /* Fallback voor iOS */
+  }
+}
   
   @media only screen and (min-width: 1920px) {
     .parallax_02 {

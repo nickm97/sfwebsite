@@ -17,7 +17,7 @@
     </div>
 
   
-    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
+    <div class="columns-1 xs:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
       <div v-for="(photo, index) in photos" :key="index">
         <nuxt-img 
           :src="photo.url" 
@@ -38,27 +38,42 @@ import { ref, onMounted } from 'vue';
 
 // Data
 const photos = ref([
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01788.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01790.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01831.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01834.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01841.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01852.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01853.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01864.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01866.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01876.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01884.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01888.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01892.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01896.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01901.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01912.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01932.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01940.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01943.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01947.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
-{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-03/pictures/SF_01958.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01596.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01608.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01643.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01679.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01680.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01701.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01715.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01742.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01788.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01809.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01825.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01839.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01874.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01892.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01897.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01911.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01977.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_01982.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02018.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02037.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02041.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02049.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02100.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02119.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02159.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02186.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02191.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02208.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02222.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02245.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02254.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02268.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02279.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02296.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02344.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
+{ url: '/assets/pictures/pregnancy-page/pregnancy-050225-02/pictures/SF_02367.webp', alt: 'Sanneloes Fotografie Zwangerschap' },
   // Voeg hier meer foto's toe...
 ]);
 

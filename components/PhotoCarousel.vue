@@ -18,11 +18,11 @@
       </div>
   
       <!-- Pijltjes links/rechts -->
-      <button @click="prevImage" class="absolute top-1/2 -left-8 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-black transition">
+      <button @click="prevImage" class="absolute top-1/2 left-4 xs:-left-8 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-black transition">
         ❮
       </button>
       <!-- bg-black/50 -->
-      <button @click="nextImage" class="absolute top-1/2 -right-8 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-black transition">
+      <button @click="nextImage" class="absolute top-1/2 right-4 xs:-right-8 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-black transition">
         ❯
       </button>
     </div>

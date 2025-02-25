@@ -5,7 +5,9 @@
       <nuxt-img
         src="/assets/pictures/branding-page/banner.webp"
         alt="Family Background"
+        placeholder
         class="w-full h-full object-cover object-center"style="object-position: center 35%;"
+        
       />
     </div>
     <div>
@@ -78,7 +80,7 @@
         class="w-full h-full object-cover object-center"
       />
     </div>
-    <div class="absolute bottom-[5%] right-1/2 sm:bottom-[5%] sm:right-[8%] transform translate-x-1/2 -translate-y-1/2">
+    <div class="absolute bottom-[-3%] right-1/2 sm:bottom-[5%] sm:right-[8%] transform translate-x-1/2 -translate-y-1/2">
       <h2 class="text-2xl font-playFair mb-4 text-white text-center">STUDIO KAE</h2>    
       <button
             @click="redirect('/branding050225-01')"
@@ -92,8 +94,8 @@
   <section>
     <div class="bg-background_2 flex items-center justify-center px-4 pt-12 pb-12 sm:px-6 sm:py-20">
       <div class="flex flex-col items-center justify-center relative">
-        <div class="sm:w-[80%] sm:gap-24 flex sm:flex-row flex-col">
-          <div class="flex flex-col w-[600px]">
+        <div class="sm:w-[80%] sm:gap-6 flex sm:flex-row flex-col">
+          <div class="flex flex-col sm:w-[60%]">
             <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
               WHAT TO EXPECT?
             </p>
@@ -103,7 +105,7 @@
               <li class="pl-2">Moodboards maken ter inspiratie van de shoot is altijd welkom</li>
               <li class="pl-2">Een ontspannen en gezellige sfeer tijdens de reportage</li>
             </ul>
-            <div class="w-full flex">
+            <div class="w-full flex xs:justify-start justify-center">
               <button
                 @click="redirect('/contact')"
                 class="px-4 py-2 rounded-full bg-buttonColor_2 bg-opacity-50 hover:bg-opacity-100  font-standard 
@@ -113,7 +115,7 @@
             </div>
           </div> 
           
-          <div class="flex flex-col mt-8 sm:mt-0 w-[600px]">
+          <div class="flex flex-col sm:w-[60%] mt-8 sm:mt-0">
             <p class="font-playFair text-center sm:text-left sm:text-4xl text-[25px] font-light">
               PACKAGES AND PRICES
             </p>
@@ -154,26 +156,28 @@
         BUSINESS STORYTELLING - PACKAGE
       </p>
       <p class="sm:text-center font-standard font-light text-left text-[16px] py-6">
-        Een content refresh pakket. Dit is een pakket met 4 repeterende, maar vernieuwende shoots in 
+        Een content refresh pakket met 4 repeterende, maar vernieuwende shoots in 
         het jaar (denk daarbij aan elk kwartaal). Dit is ideaal als je je sociale media en website 
-        regelmatig wilt updaten met professioneel beeldmateriaal. Elke shoot duurt tot 1,5 uur en dan kan 
-        je elke shoot 25 foto's uitzoeken. Dan heb je 8 tot 9 nieuwe foto's per maand om te delen op je kanalen. 
-        Je betaalt dan €1299 excl BTW per jaar (met dit pakket bespaar je €251 excl BTW! en betaal je dus nog geen 
-        €325 per brandingshoot). Je zou dan bijvoorbeeld één keer mijn studio kunnen inzetten (of vaker als je dit 
-        zou willen) voor +€89 excl. BTW per keer, maar je zou ook andere locaties kunnen gebruiken voor nieuwe shoots, 
+        regelmatig wilt updaten met professioneel beeldmateriaal. 
+        Zo heb je 8 tot 9 nieuwe foto's per maand om te delen op je kanalen. Je zou dan bijvoorbeeld één keer 
+        mijn studio kunnen inzetten (of vaker als je dit zou willen) voor +€89 excl. BTW per keer, 
+        maar je zou ook andere locaties kunnen gebruiken voor nieuwe shoots, 
         zoals je eigen salon, de natuur, een cafeetje of park, een stadscentrum of andere plekken. Dit zorgt ervoor 
         dat je heel erg veel afwisselende beelden verzamelt in dit jaar en voor heel veel content zorgt.
 
       </p>
+      <p class="font-medium font-bold text-left xs:text-right">
+                      Inhoud reportage
+                    </p>
       <p class="text-center font-standard font-light text-[16px]">
-        <u>Inhoud reportage:</u><br>
+        
         4 shoots per jaar<br>
         Een shoot tot 1,5 uur per keer<br>
         25 professionele foto's per shoot (mogelijkheid om extra foto's bij te bestellen)<br>
         Toegang tot een online galerij om de foto's uit te kiezen <br>
+        Investering van €1299 excl. BTW per jaar (met dit pakket bespaar je €251 excl. BTW!) <br>
         Advies over kleding en styling<br>
         Concept en locatie in overleg - we bespreken wat passend is voor jullie<br>
-        €1299 exclusief BTW<br>
         Reiskosten €0,60 per km
       </p>
       <div class="flex flex-col items-center justify-center py-6 font-standard bg-background_4">

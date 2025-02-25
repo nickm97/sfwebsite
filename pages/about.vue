@@ -87,7 +87,7 @@
         class="object-cover h-[70px] sm:h-[150px] z-10 "
       />
     </div>
-    <div class="text-left px-4 sm:flex sm:w-[1300px] sm:text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light sm:text-[14.5px] text-[13px]">
+    <div class="text-left px-4 sm:flex sm:w-[1300px] sm:text-left text-white sm:gap-12 py-0 font-standard font-light sm:text-[14.5px] text-[13px]">
       <p class="sm:w-1/2">
         Hi! Mijn naam is Sanneloes van Kessel en inderdaad mijn ouders konden niet kiezen tussen Sanne en Loes! Geboren in ‘98 en woon al zolang ik me kan herinneren 
         in het kleine dorpje Casteren. Op de middelbare school begon mijn passie voor fotografie. 
@@ -102,7 +102,7 @@
         gegaan voor wat ik wil, dus zo gezegd, zo gedaan. 
       </p>
     </div>
-    <p class="max-w-[1200px] text-white mt-6 font-standard font-light">
+    <p class="max-w-[1200px] text-left xs:text-center px-4 text-white mt-6 font-standard font-light sm:text-[14.5px] text-[13px]">
         Leuk weetje over bovenstaande quote: heel veel klanten geven aan dat mijn enthousiasme aanstekelijk werkt en omdat ik dat compliment ZO fijn vind, MOEST ik hem even benoemen. Als klanten op hun gemak en heel vrolijk zijn, straalt dat namelijk direct van de foto's en dáár ga ik voor!
       </p>
   </section>
@@ -219,7 +219,7 @@
 
   <wake-me-sf></wake-me-sf>
   
-  <div class="bg-[#d3c9bf] h-[inherit] py-12 px-2"></div>
+  <!-- <div class="bg-[#d3c9bf] h-[inherit] py-12 px-2"></div> -->
 
   <section>
     <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] xl:py-[150px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12 bg-[url('/assets/pictures/about-page/banner-wake-me-up-02.webp')] bg-cover  sm:bg-[center_top_85%]">

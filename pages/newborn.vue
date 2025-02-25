@@ -4,6 +4,7 @@
       <nuxt-img
         src="/assets/pictures/newborn-page/banner.webp"
         alt="Newborn Background"
+        placeholder
         class="w-full h-full object-cover object-center newborn-banner"
         style="object-position: center 30%;"
       />
@@ -110,7 +111,7 @@
             Boek jouw newbornshoot en leg jullie mooiste begin vast
           </button>
         </div>
-        <div class="sm:hidden absolute left-[-1px] bottom-[-120px]">
+        <div class="sm:hidden absolute left-[-1px] bottom-[-120px] z-10">
           <nuxt-img
           src="/assets/pictures/newborn-page/extra-aanbod-mobile.webp"
           alt="Extra aanbod"
@@ -127,7 +128,7 @@
         <nuxt-img
         src="/assets/pictures/newborn-page/extra-aanbod.webp"
         alt="Extra aanbod"
-        class="sm:w-[250px] sm:h-[250px]"
+        class="sm:w-[250px] sm:h-[250px] z-10"
         />
     </div>
     <div class="flex flex-col items-center justify-center px-4 sm:px-6 py-10">

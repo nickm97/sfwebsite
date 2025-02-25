@@ -1,13 +1,13 @@
  
 <template>
-  <section  class="flex flex-col sm:flex-row bg-[#f7f0ec] sm:bg-[#fffcf7] h-full pt-12 pb-[150px]">
+  <section  class="flex flex-col-reverse sm:flex-row bg-[#fffcf7] h-full pt-12 pb-[150px]">
 
     <!-- Linker kolom -->
     <div id="contact-form" class="sm:w-1/2 flex flex-col items-center py-6">
-      <p class="font-playFair text-[28px] font-bold sm:hidden">
+      <p class="hidden font-playFair text-[28px] font-bold sm:hidden">
         CONTACT
       </p>
-      <p class="sm:text-[15px] text-[14.5px] font-standard text-center px-4 sm:px-[80px] font-light mb-6">
+      <p class="hidden xs:flex sm:text-[15px] text-[14.5px] font-standard text-center px-4 sm:px-[80px] font-light mb-6">
         Wat leuk dat je geïnteresseerd bent in een shoot bij mij!<br><br>
         Of het nu een bruiloft, lifestyle of brandingshoot is, je bent aan het juiste adres. 
         Super leuk dat je/jullie misschien voor mijn lens wil(len) staan.<br><br> 
@@ -20,12 +20,12 @@
         <nuxt-img
           src="/assets/pictures/contact-page/contact-back.webp"
           alt="Sanneloes Fotografie Logo"
-          class="object-cover w-[400px] sm:w-[400px] rounded-xl"
+          class="object-cover w-[400px] sm:w-[400px] rounded-xl px-12 xs:px-0"
         />
         <nuxt-img
           src="/assets/pictures/contact-page/contact-01.webp"
           alt="Sanneloes Fotografie Logo"
-          class="object-cover w-[350px] border-[3px] border-white sm:w-[325px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="px-12 xs:px-0 object-cover w-[350px] xs:border-[3px] xs:border-white sm:w-[325px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         />
       </div>
 
@@ -36,11 +36,18 @@
 
     <!-- Rechter kolom -->
     <div class="sm:w-1/2 flex flex-col items-center">
-      <p class="text-[30px] mt-8 sm:mt-0 sm:text-[50px] font-playFair">
+      <p class="text-[30px] mt-0 sm:mt-0 sm:text-[50px] font-playFair">
         CONTACT FORMULIER
       </p>
-
-      <p class="font-standard font-light text-[16px] mt-4 text-center">
+      <p class="xs:hidden sm:text-[15px] text-[14.5px] font-standard text-center px-4 sm:px-[80px] font-light mb-6">
+        Wat leuk dat je geïnteresseerd bent in een shoot bij mij!<br><br>
+        Of het nu een bruiloft, lifestyle of brandingshoot is, je bent aan het juiste adres. 
+        Super leuk dat je/jullie misschien voor mijn lens wil(len) staan.<br><br> 
+        Ik wil je vragen om het contactformulier zo volledig mogelijk in te vullen, zodat ik 
+        een zo compleet mogelijk beeld heb van je aanvraag.<br>
+        Alvast super bedankt! 
+      </p>
+      <p class="font-standard font-light text-[16px] mt-0 xs:mt-4 text-center">
         Voor veelgestelde vragen kun je naar deze pagina gaan
         <a href="/FAQS" rel="noopener noreferrer" class="underline">FAQS</a>.
       </p>
@@ -54,7 +61,7 @@
 
       <!-- Contact formulier -->
       <iframe
-        class="w-[calc(100%-25px)] sm:w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto mt-4"
+        class="mb-12 xs:mb-0 w-[calc(100%-25px)] sm:w-[600px] border-[4px] border-[#b6a89f] rounded-2xl mx-auto mt-4"
         id="sn-form-lnjgg"
         src="https://app.studioninja.co/contactform/parser/0a800fc9-93e4-1c01-8194-3c2e8aff7820/0a800fc9-93e4-1c01-8194-3c50f32e02a8"
         allowfullscreen

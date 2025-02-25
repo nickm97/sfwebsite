@@ -30,7 +30,7 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center px-6 py-10 bg-buttonColor">
+  <section class="flex flex-col items-center px-6 xs:px-24 py-10 bg-buttonColor">
     <div class="w-full sm:w-[70%]">
       <p class="text-white uppercase font-standard text-left font-bold">
         Bruiloften
@@ -72,7 +72,7 @@
   </section>
 
 
-  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
+  <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4 xs:mx-auto">
     <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-85%] xl:ml-[-75%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
@@ -89,7 +89,7 @@
       />
     </div>
 
-    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
+    <div class="sm:hidden xs:hidden flex flex-col items-center relative w-full overflow-hidden ">
       <!-- Slider container -->
       <div v-for="(slider, index) in 1" :key="index" ref="sliders" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
         <!-- Tile 1 -->
@@ -141,7 +141,7 @@
 
 
 
-    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 mx-auto">
+    <div class="hidden xs:flex sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 xs:px-12 mx-auto">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
@@ -265,7 +265,7 @@
     </div>
   </section>
 
-  <section class="flex items-center flex-col justify-center bg-buttonColor pt-12 pb-[100px] sm:pb-12 items-center">
+  <section class="flex items-center flex-col justify-center bg-buttonColor pt-12 pb-12 xs:px-12 sm:pb-8 items-center">
     <div class="flex items-center justify-center gap-[20px] sm:px-12 sm:px-10 px-4 sm:w-[70%]">
       <p class="text-white font-standard font-light text-[14.5px] xl:text-[16px] text-center ">
         YAAAAASSSS! Jullie houden net zo van het <strong>buitenland</strong> als ik. Waarschijnlijk zijn 
@@ -303,7 +303,7 @@
       />
     </div>
 
-    <div class="sm:hidden flex flex-col items-center relative w-full overflow-hidden ">
+    <div class="sm:hidden xs:hidden flex flex-col items-center relative w-full overflow-hidden ">
       <!-- Slider container -->
       <div v-for="(slider, index) in 1" :key="index" ref="sliders" class="flex gap-2 overflow-x-auto scroll-smooth px-4 whitespace-nowrap w-full">
         <!-- Tile 1 -->
@@ -360,7 +360,7 @@
       </div>
     </div>
 
-    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 mx-auto">
+    <div class="hidden xs:flex sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-0 xs:px-12 mx-auto">
       <!-- Tile 1 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300 sm:w-[400px] sm:h-[600px] xl:w-[600px] xl:h-[800px]">
         <img
