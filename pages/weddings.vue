@@ -4,7 +4,7 @@
     <!-- background pic -->
     <div class="relative h-screen max-h-[calc(100vh-150px)]">
       <nuxt-img
-        src="/assets/pictures/wedding-page/wedding-banner-01.webp"
+        src="/assets/pictures/wedding-page/banner.jpg"
         alt="Wedding Background"
         class="w-full h-full object-cover object-center"
         placeholder

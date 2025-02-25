@@ -67,10 +67,8 @@ const photos = ref([
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-72.webp', alt: 'Sanneloes Fotografie Newborn' },
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-74.webp', alt: 'Sanneloes Fotografie Newborn' },
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-75.webp', alt: 'Sanneloes Fotografie Newborn' },
-{ url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-76.webp', alt: 'Sanneloes Fotografie Newborn' },
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-78.webp', alt: 'Sanneloes Fotografie Newborn' },
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-85.webp', alt: 'Sanneloes Fotografie Newborn' },
-{ url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-9.webp', alt: 'Sanneloes Fotografie Newborn' },
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-90.webp', alt: 'Sanneloes Fotografie Newborn' },
 { url: '/assets/pictures/newborn-page/newborn-050225-01/pictures/SanneloesFotografie-98.webp', alt: 'Sanneloes Fotografie Newborn' },
   // Voeg hier meer foto's toe...

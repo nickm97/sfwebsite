@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col items-center px-4 py-16 sm:h-[500px] bg-[url('/assets/pictures/about-page/banner-wake-me-up-01.webp')] bg-cover  sm:bg-[center_top_85%]">  
+  <div class="flex flex-col items-center px-4 py-16 sm:h-[600px] bg-[url('/assets/pictures/about-page/banner-wake-me-up-01.webp')] bg-cover  sm:bg-[center_top_85%]">  
+    <p class="hidden sm:flex uppercase font-standard text-black font-light text-center text-sm sm:text-md mb-8">
+            TAP TO READ
+        </p>
     <!-- Desktop Grid Layout -->
     <div class="hidden sm:grid grid-cols-9 gap-6 justify-center items-center">
       <WordsAbout v-for="(wakeMe, index) in wakeMes" :key="index" :wordsAbout="wakeMe" />

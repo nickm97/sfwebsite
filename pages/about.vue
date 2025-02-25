@@ -87,7 +87,7 @@
         class="object-cover h-[70px] sm:h-[150px] z-10 "
       />
     </div>
-    <div class="text-left px-4 sm:flex sm:w-[1300px] sm:text-left text-white sm:gap-12 py-0 font-standard font-light sm:text-[14.5px] text-[13px]">
+    <div class="text-left px-4 sm:flex sm:w-[1300px] sm:text-left text-white sm:gap-12 py-0 font-standard font-light sm:text-[14.5px] text-[14.5px]">
       <p class="sm:w-1/2">
         Hi! Mijn naam is Sanneloes van Kessel en inderdaad mijn ouders konden niet kiezen tussen Sanne en Loes! Geboren in ‘98 en woon al zolang ik me kan herinneren 
         in het kleine dorpje Casteren. Op de middelbare school begon mijn passie voor fotografie. 
@@ -102,15 +102,15 @@
         gegaan voor wat ik wil, dus zo gezegd, zo gedaan. 
       </p>
     </div>
-    <p class="max-w-[1200px] text-left xs:text-center px-4 text-white mt-6 font-standard font-light sm:text-[14.5px] text-[13px]">
+    <p class="max-w-[1200px] text-left xs:text-center px-4 text-white mt-6 font-standard font-light sm:text-[14.5px] text-[14.5px]">
         Leuk weetje over bovenstaande quote: heel veel klanten geven aan dat mijn enthousiasme aanstekelijk werkt en omdat ik dat compliment ZO fijn vind, MOEST ik hem even benoemen. Als klanten op hun gemak en heel vrolijk zijn, straalt dat namelijk direct van de foto's en dáár ga ik voor!
       </p>
   </section>
 
   <describe-me></describe-me>
-  <section class="flex flex-col items-center justify-center text-center py-6 sm:py-12 px-4 sm:px-2 bg-buttonColor">
-    <div class="sm:flex sm:w-[1300px] text-center sm:text-left text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
-      <p class="sm:w-1/2 text-left sm:text-center">
+  <section class="flex flex-col items-center justify-center text-center py-6 sm:py-12 sm:px-2 bg-buttonColor">
+    <div class="sm:flex sm:w-[1300px] text-center sm:text-left px-4 text-white sm:gap-12 py-0 font-standard font-light text-[14.5px]">
+      <p class="sm:w-1/2 text-left sm:text-center px-4">
         Na het behalen van mijn diploma als leerkracht basisonderwijs, heb ik me vrijwel direct 
         ingeschreven bij de KVK onder de naam ‘Sanneloes Fotografie’. Het avontuur begon. Het opbouwen 
         van een klantenkring, ervaring opdoen, een portfolio opbouwen, fouten maken en heel veel leren. 
@@ -119,7 +119,7 @@
         daglicht studio popte op in mijn hoofd en ik besloot dit idee met veel enthousiasme en doorzettingsvermogen 
         aan te pakken. ZO GAAF!
       </p>
-      <p class="sm:w-1/2 text-left sm:text-center mt-4 sm:mt-0">
+      <p class="sm:w-1/2 text-left sm:text-center mt-4 sm:mt-0 px-4">
         Begin 2024 besloot ik samen met mijn vriend 3 maanden te gaan reizen in Azië. Een droom van ons beiden 
         om samen dit avontuur aan te gaan en herinneringen te maken. Het was ergens stiekem ook wel een beetje nodig. 
         Rust in mijn hoofd. Het is niet niks om een eigen bedrijf te runnen, ook in loondienst te zijn, het huishouden, 
@@ -132,7 +132,8 @@
   </section>
   
   <section>
-  <div class="flex items-center justify-center bg-[url('/assets/pictures/about-page/me-banner.webp')] bg-cover bg-center h-[450px]">
+  <div class="parallax-03 flex items-center justify-center  bg-cover bg-center h-[450px]">
+    <!-- bg-[url('/assets/pictures/about-page/me-banner.webp')] -->
     <!-- Container voor foto's en tekst -->
     <div class="relative flex flex-row items-center justify-center py-4 px-4 bg-buttonColor">
       <!-- Foto's -->
@@ -205,24 +206,23 @@
     </div>
   </section>
 
-  <section class="flex flex-col items-center justify-center text-center pt-12 pb-6 px-2 bg-[#d3c9bf]">
+  <section class="flex flex-col items-center justify-center text-center pt-12 pb-12 px-2 bg-[#d3c9bf]">
     <p class="uppercase font-playFair text-2xl sm:text-[50px] text-black">
       You can wake me up for
     </p>
     <p class="font-standard text-black text-sm mt-5 px-4 sm:px-0">
       Laten we meteen starten met een disclaimer: JE MAG ME NIET WAKKER MAKEN. Mijn slaap is veel te heilig. Ik slaap het liefst minstens 9 uur per nacht, dus mij niet bellen. 
     </p>
-    <p class="hidden sm:flex uppercase font-standard text-center text-sm sm:text-md mt-8">
-            TAP TO READ
-        </p>
+    
   </section>
 
   <wake-me-sf></wake-me-sf>
   
-  <!-- <div class="bg-[#d3c9bf] h-[inherit] py-12 px-2"></div> -->
-
+  <div class="bg-white h-[inherit] py-[1px] px-2"></div>
+  <!-- [#d3c9bf] -->
   <section>
-    <div class="flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] xl:py-[150px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12 bg-[url('/assets/pictures/about-page/banner-wake-me-up-02.webp')] bg-cover  sm:bg-[center_top_85%]">
+    <div class="parallax-04 flex flex-col sm:flex-row justify-center w-full sm:pt-[100px] pb-[50px] xl:py-[150px] px-0 sm:px-4 sm:pl-[100px] sm:pr-12 bg-cover  sm:bg-[center_top_85%]">
+      <!-- bg-[url('/assets/pictures/about-page/banner-wake-me-up-02.webp')] -->
       <!-- <div class="flex relative items-center justify-center w-full sm:w-1/2">
         <div>
           <nuxt-img
@@ -363,6 +363,40 @@
   // setup() {
 </script>
 <style scoped>
-  
+  .parallax-03 {
+    /* The image used */
+    background-image: url('/assets/pictures/about-page/me-banner.webp');
+
+    min-height: 450px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @supports (-webkit-touch-callout: none) {
+  .parallax-03 {
+    background-attachment: scroll; /* Fallback voor iOS */
+  }
+}
+
+.parallax-04 {
+    /* The image used */
+    background-image: url('/assets/pictures/about-page/banner-wake-me-up-02.webp');
+
+    min-height: 450px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @supports (-webkit-touch-callout: none) {
+  .parallax-04 {
+    background-attachment: scroll; /* Fallback voor iOS */
+  }
+}
 </style>
   

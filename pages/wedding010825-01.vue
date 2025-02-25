@@ -60,7 +60,6 @@ const photos = ref([
 { url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07721.webp', alt: 'Sanneloes Fotografie Bruiloft' },
 { url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07723.webp', alt: 'Sanneloes Fotografie Bruiloft' },
 { url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07778.webp', alt: 'Sanneloes Fotografie Bruiloft' },
-{ url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07807.webp', alt: 'Sanneloes Fotografie Bruiloft' },
 { url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07814-2.webp', alt: 'Sanneloes Fotografie Bruiloft' },
 { url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07865.webp', alt: 'Sanneloes Fotografie Bruiloft' },
 { url: '/assets/pictures/wedding-page/wedding-010825-01/pictures/SF_07908.webp', alt: 'Sanneloes Fotografie Bruiloft' },

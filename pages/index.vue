@@ -383,8 +383,8 @@
     <div class="flex-col w-full">
       <div class="flex items-center justify-center px-4 bg-background_2 py-6">
         <p class="text-black text-center uppercase font-standard sm:w-[60%]">
-          omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!<br>
-          keer je als klant teRUG EN KOM JE NOG EENS VOOR DE LENS STAAN? ONTVANG JE 5 
+          Omdat ik m'N LIEVE KLANTEN ZO DANKBAAR BEN, HEB IK EEN CADEAUTJE!<br>
+          Keer je als klant teRUG EN KOM JE NOG EENS VOOR DE LENS STAAN? ONTVANG JE 5 
           EXTRA FOTO'S CADEAU!<br> GEEF BIJ JE RESERVERING <strong>‘TERUGKERENDE KLANT’</strong> AAN EN DOE JEZELF EEN CADEAUTJE
         </p>
       </div>

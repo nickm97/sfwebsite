@@ -37,7 +37,6 @@ import { ref, onMounted } from 'vue';
 
 // Data
 const photos = ref([
-{ url: '/assets/pictures/wedding-page/wedding-050225-03/pictures/SF_00378.webp', alt: 'Sanneloes Fotografie Bruiloften' },
 { url: '/assets/pictures/wedding-page/wedding-050225-03/pictures/SF_00534.webp', alt: 'Sanneloes Fotografie Bruiloften' },
 { url: '/assets/pictures/wedding-page/wedding-050225-03/pictures/SF_00557.webp', alt: 'Sanneloes Fotografie Bruiloften' },
 { url: '/assets/pictures/wedding-page/wedding-050225-03/pictures/SF_00597.webp', alt: 'Sanneloes Fotografie Bruiloften' },

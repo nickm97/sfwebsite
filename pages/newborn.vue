@@ -218,8 +218,8 @@
     </div>
     
 
-    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
-      <!-- Tile 1 -->
+
+    <!-- <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
           src="/assets/pictures/newborn-page/newborn-luen.webp"
@@ -236,7 +236,6 @@
           </button>
         </div>
       </div>
-      <!-- Tile 2 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
           src="/assets/pictures/newborn-page/newborn-lois.webp"
@@ -253,7 +252,6 @@
           </button>
         </div>
       </div>
-      <!-- Tile 3 -->
       <div class="relative group rounded-lg overflow-hidden bg-gray-300">
         <img
           src="/assets/pictures/newborn-page/newborn-laurie.webp"
@@ -270,7 +268,61 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <div class="hidden sm:flex relative grid grid-cols-1 sm:grid-cols-3 gap-2 px-24 sm:px-0 w-[85%]">
+            <!-- Tile 1 -->
+            <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+              <img
+                src="/assets/pictures/newborn-page/newborn-luen.webp"
+                alt="Tile Image 1"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+                <!-- <h2 class="text-2xl font-playFair mb-2">DAISY</h2> -->
+                <button
+                  @click="redirect('/newborn050225-01')"
+                  class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+                >
+                  VIEW MORE
+                </button>
+              </div>
+            </div>
+            <!-- Tile 2 -->
+            <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+              <img
+                src="/assets/pictures/newborn-page/newborn-lois.webp"
+                alt="Tile Image 2"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+                <!-- <h2 class="text-2xl font-playFair mb-2">ASTRID</h2> -->
+                <button
+                  @click="redirect('/newborn050225-02')"
+                  class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+                >
+                  VIEW MORE
+                </button>
+              </div>
+            </div>
+            <!-- Tile 3 -->
+            <div class="relative group rounded-lg overflow-hidden bg-gray-300">
+              <img
+                src="/assets/pictures/newborn-page/newborn-laurie.webp"
+                alt="Tile Image 3"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 flex flex-col justify-end items-center text-white py-8">
+                <!-- <h2 class="text-2xl font-playFair mb-2">PUCK</h2> -->
+                <button
+                  @click="redirect('/newborn050225-03')"
+                  class="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+                >
+                  VIEW MORE
+                </button>
+              </div>
+            </div>
+          </div>
   </section>
 
   <section class="flex flex-col items-center justify-center px-2 py-2 bg-buttonColor">	
