@@ -249,13 +249,14 @@
   </section>
 
   <section>
-    <div class="relative sm:h-screen sm:max-h-[calc(100vh)]">
-      <nuxt-img
+    <div class="bg-[url(/assets/pictures/wedding-page/banner-i-notice.webp)] h-screen max-h-[calc(100vh-150px)] bg-cover bg-center relative">
+      
+      <!-- <nuxt-img
         src="/assets/pictures/wedding-page/banner-i-notice.webp"
         alt="Wedding Background"
         class="h-[calc(100vh-300px)] sm:w-full sm:h-full object-cover sm:object-cover sm:object-bottom"
         style="object-position: center 80%;"
-      /> 
+      />  -->
 
       <!-- Tekst gecentreerd bovenin -->
       <p class="absolute w-[99%] top-[15%] sm:top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 
