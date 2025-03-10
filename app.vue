@@ -94,13 +94,13 @@
             <i :class="menuOpen ? 'fa-solid fa-xmark' : 'fa-light fa-bars'"></i>
         </button> -->
         <button @click="toggleMenu" class="lg:hidden text-3xl p-2">
-  <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-8 h-8">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-  </svg>
-  <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-8 h-8">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-  </svg>
-</button>
+          <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
       </div>
 
     </nav>
@@ -110,6 +110,7 @@
     <main>
       <NuxtPage />
       <Analytics />
+      <ScrollToTop />
     </main>
   </div>
 </template>
@@ -117,6 +118,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Analytics } from '@vercel/analytics/vue';
+import ScrollToTop from '~/components/ScrollToTop.vue';
 
 const menuOpen = ref(false)
 

@@ -132,7 +132,7 @@
   </section>
   
   <section>
-  <div class="parallax-03 flex items-center justify-center  bg-cover bg-center h-[450px]">
+  <div class="parallax-03 flex items-center justify-center">
     <!-- bg-[url('/assets/pictures/about-page/me-banner.webp')] -->
     <!-- Container voor foto's en tekst -->
     <div class="relative flex flex-row items-center justify-center py-4 px-4 bg-buttonColor">

@@ -13,7 +13,7 @@
   <!-- Loader -->
 <div v-if="isLoading" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
     <img src="/assets/pictures/logo_klein.webp" alt="Logo" class="max-w-[300px] max-h-[225px] animate-pulse" />
-    <p class="text-lg mt-4 font-standard font-light animate-pulse text-center">De gallerij wordt voor u opgehaald.<br>Een ongenblik geduld alstublieft.</p>
+    <p class="text-lg mt-4 font-standard font-light animate-pulse text-center">De galerij wordt voor u opgehaald.<br>Een ongenblik geduld alstublieft.</p>
   </div>
 
 

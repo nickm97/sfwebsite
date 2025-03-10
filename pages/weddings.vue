@@ -298,7 +298,7 @@
   </section>
 
   <section class="bg-background_4 sm:flex flex-col sm:flex-row items-center justify-center sm:px-6 py-[75px] bg-background_4">
-    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-85%] xl:ml-[-75%] sm:z-10">
+    <div class="hidden sm:flex items-center justify-center sm:absolute sm:ml-[-85%] xl:ml-[-95%] sm:z-10">
       <nuxt-img
         src="/assets/pictures/wedding-page/love-stories.webp"
         alt="Love Stories"
