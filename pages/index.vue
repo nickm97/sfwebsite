@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-  <section class="flex h-[calc(100vh-70px)] w-full relative">
+  <main>
+    <h1 class="hidden">Fotograaf in Eindhoven – Sanneloes Fotografie</h1>
+    <section class="flex h-[calc(100vh-70px)] w-full relative">
 
     <!-- Left Image (Slideshow) -->
     <div class="hidden sm:block flex-1 relative overflow-hidden">
@@ -78,9 +80,9 @@
       <div class="text-[13px]">SCROLL TO DISCOVER MORE</div>
       <i class="fa-solid fa-chevron-down text-sm mt-1"></i>
     </div>
-  </section>
+    </section>
 
-  <section class="flex flex-col items-center justify-center text-center py-12 px-4 pb-[50px] bg-buttonColor">
+    <section class="flex flex-col items-center justify-center text-center py-12 px-4 pb-[50px] bg-buttonColor">
     <nuxt-img
       src="/assets/pictures/home-page/dare_a_little.webp"
       alt="Sanneloes Fotografie Logo"
@@ -110,9 +112,9 @@
     <p class="text-white text-left sm:text-center font-standard sm:pt-6 font-light text-[14.5px] sm:text-[16px]">
       Fotograaf voor bruiloften, branding en lifestyle shoots omgeving Tilburg-Eindhoven, Noord-Brabant
     </p>
-  </section>
+    </section>
 
-  <section class="relative parallax">
+    <section class="relative parallax">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
       <!-- Knop -->
@@ -122,11 +124,11 @@
           Laat mij jullie verhaal vastleggen
       </a>
     </div>
-  </section>
+    </section>
 
-  <section class="items-center justify-center">
+    <section class="items-center justify-center">
     <div class="flex flex-col sm:flex-row sm:gap-16 items-center justify-center py-12 w-full sm:max-w-[1200px] sm:mx-auto">
-  
+
       <!-- Afbeelding
       <div class="w-full sm:w-1/2 px-4 flex items-center justify-center">
         <nuxt-img
@@ -171,10 +173,10 @@
       </div>
 
     </div>
-  </section>
+    </section>
 
-  <!-- New Section with Title and Photos -->
-  <section class="xs:px-12 px-[10px] md:px-[140px] items flex-col items-center justify-center pt-0 sm:pt-6 pb-12 sm:pb-[100px] sm:bg-buttonColor">
+    <!-- New Section with Title and Photos -->
+    <section class="xs:px-12 px-[10px] md:px-[140px] items flex-col items-center justify-center pt-0 sm:pt-6 pb-12 sm:pb-[100px] sm:bg-buttonColor">
     <p class="hidden sm:block text-4xl font-playFair text-white font-light text-center mb-8 mt-12">
       PHOTOGRAPHY AND INFORMATION
     </p>
@@ -247,9 +249,9 @@
       </div>
     </div>
     </div>
-  </section>
+    </section>
 
-  <section class="relative parallax_02">
+    <section class="relative parallax_02">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
       <!-- Knop -->
@@ -259,9 +261,9 @@
           Laat mij jullie verhaal vastleggen
       </a> -->
     </div>
-  </section>
+    </section>
 
-  <section class="items-center justify-center bg-background_2">
+    <section class="items-center justify-center bg-background_2">
     <div class="flex flex-col-reverse sm:flex-row sm:gap-16 items-center justify-center sm:py-12 py-10 w-full max-w-[1200px] mx-auto">
       <div class="sm:w-1/2 px-12 sm:px-4 flex items-center justify-center sm:justify-start">
         <div class="relative">
@@ -291,7 +293,7 @@
             LIO
           </p>
         </div>
-       
+      
         
       </div>
       <div class="flex-col sm:w-[calc(50%+10px)] relative sm:px-0 px-4 xs:px-24">
@@ -336,12 +338,12 @@
       </div>
 
     </div>
-  </section>
-  
-  <!-- <reviews-sf></reviews-sf> -->
-  <reviews-carousel></reviews-carousel>
+    </section>
 
-  <section class="bg-buttonColor flex items-center justify-center py-12">
+    <!-- <reviews-sf></reviews-sf> -->
+    <reviews-carousel></reviews-carousel>
+
+    <section class="bg-buttonColor flex items-center justify-center py-12">
     <div class="flex-col">
       <div class="flex items-center justify-center text-white text-center font-standard font-light max-w-[600px] px-4">
         <p>
@@ -359,9 +361,9 @@
         </button>
       </div>
     </div>
-  </section>
+    </section>
 
-  <section>
+    <section>
     <div class="flex-col items-center justify-center py-12">
       <div class="flex items-center justify-center py-2 gap-6">
         <a href="https://www.instagram.com/sanneloesfotografie/" target="_blank" class="text-4xl text-black instagram-icon">
@@ -377,9 +379,9 @@
 
     </div>
 
-  </section>
+    </section>
 
-  <section class="flex items-center justify-center sm:py-8">
+    <section class="flex items-center justify-center sm:py-8">
     <div class="flex-col w-full">
       <div class="flex items-center justify-center px-4 bg-background_2 py-6">
         <p class="text-black text-center uppercase font-standard sm:w-[60%]">
@@ -389,9 +391,11 @@
         </p>
       </div>
     </div>
-  </section>
+    </section>
 
-  <footer-sf></footer-sf>
+    <footer-sf></footer-sf>
+  </main>
+  
 </template>
 
 <script setup>
@@ -498,6 +502,39 @@ function previousImage() {
   onMounted(() => {
     startSlideshow(); // Start de slideshow bij het laden van de component
   });
+
+  definePageMeta({
+  title: 'Sanneloes Fotografie – Bruiloften, Gezinnen & Branding in Eindhoven',
+  meta: [
+    {
+      name: 'description',
+      content: 'Sanneloes Fotografie legt pure momenten vast. Gespecialiseerd in bruiloften, gezinnen, koppels & branding shoots. Actief in Eindhoven en Noord-Brabant.'
+    },
+    {
+      name: 'keywords',
+      content: 'fotograaf eindhoven, bruiloft fotograaf, gezin fotoshoot, koppel shoot, branding fotografie, daylight studio, fotografie noord-brabant'
+    },
+    {
+      property: 'og:title',
+      content: 'Sanneloes Fotografie – Pure en Professionele Fotografie in Brabant'
+    },
+    {
+      property: 'og:description',
+      content: 'Fotograaf met oog voor sfeer en verbinding. Van bruiloft tot branding. Ook beschikbaar: Daylight Studio La Luz in Eindhoven.'
+    },
+    {
+      property: 'og:image',
+      content: 'https://sanneloesfotografie.nl/public/assets/banner-image-03-01.webp' 
+    },
+    {
+      property: 'og:url',
+      content: 'https://sanneloesfotografie.nl'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://sanneloesfotografie.nl' }
+  ]
+})
 </script>
 
 <style scoped>

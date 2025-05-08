@@ -107,7 +107,7 @@
 
     
     <!-- Page Content -->
-    <main>
+    <main @contextmenu.prevent>
       <NuxtPage />
       <Analytics />
       <ScrollToTop />
