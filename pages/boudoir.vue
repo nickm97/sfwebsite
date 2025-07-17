@@ -154,10 +154,11 @@
               PACKAGES AND PRICES
             </p>
             <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[2rem] py-6">
-              <li class="pl-2">Een reguliere boudoirshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) wat plaats zal vinden in Daylight Studio La Luz in Eindhoven - €360 inclusief BTW</li>
+              <li class="pl-2">Een reguliere boudoirshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) wat plaats zal vinden in Daylight Studio La Luz in Eindhoven - €375 inclusief BTW</li>
               <li class="pl-2">Reiskosten zijn inbegrepen als de shoot in de studio plaatsvindt</li>
+              <li class="pl-2">Inclusief fine art 15x15 albumpje - 20 pagina's - per extra spread +€4,95</li>
               <li class="pl-2">Extra foto's zijn achteraf bij te bestellen met voordeelpakketten</li>
-              <li class="pl-2">Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW - per extra spread +€4,95</li>
+              
             </ul>
             
           </div> 

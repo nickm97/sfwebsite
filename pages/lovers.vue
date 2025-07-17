@@ -91,7 +91,7 @@
               PACKAGES AND PRICES
             </p>
             <ul class="list-disc pl-6 font-standard font-light text-[15px] leading-[2rem] py-6">
-              <li class="pl-2">Een reguliere loveshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) - €330 incl BTW</li>
+              <li class="pl-2">Een reguliere loveshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) - €350 incl BTW</li>
               <li class="pl-2">Gebruik studio: +€39,50</li>
               <li class="pl-2">Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren.</li>
               <li class="pl-2">Extra foto's zijn achteraf bij te bestellen met voordeelpakketten.</li>

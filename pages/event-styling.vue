@@ -51,7 +51,7 @@
         op voor mogelijkheden of om decoratie items te reserveren. Bezoek 
         <a href="https://savvystyling.nl/" target="_blank" style="text-decoration: underline;">Savvy Styling</a>  voor meer informatie. <br><br>
         
-        <strong><u>Lancering website Savvy Styling: 25 maart 2025!</u></strong>
+        <!-- <strong><u>Lancering website Savvy Styling: 25 maart 2025!</u></strong> -->
       </p>
     </div>
   </section>
@@ -62,7 +62,7 @@
       <!-- Afbeelding -->
       <div class="px-4 flex items-center justify-center">
         <nuxt-img
-          src="/assets/pictures/savvy-page/styling-photo-qoute.webp"
+          src="/assets/pictures/savvy-page/pictures/XXL-Flowers-combo-8.webp"
           alt="Sanneloes"
           class="w-[300px] sm:w-[400px] xl:w-[500px] rounded-lg"
         />
@@ -105,11 +105,64 @@
       </div>
     </div>
   </section> -->
+  <div v-if="isLoading" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+    <img src="/assets/pictures/logo_klein.webp" alt="Logo" class="max-w-[300px] max-h-[225px] animate-pulse" />
+    <p class="text-lg mt-4 font-standard font-light animate-pulse text-center">De galerij wordt voor u opgehaald.<br>Een ongenblik geduld alstublieft.</p>
+  </div>
+
+
+  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 py-4 space-y-4 px-4">
+    <div v-for="(photo, index) in photos" :key="index">
+      <nuxt-img 
+        :src="photo.url" 
+        :alt="photo.alt" 
+        loading="lazy"
+        class="w-full break-inside-avoid shadow-lg hover:scale-105 transition-transform duration-300"
+        @load="imageLoaded"
+      />
+    </div>
+  </div>
+
   <footer-sf></footer-sf>
 </template>
 
 <script setup>
 import { ref, onMounted, nextTick } from "vue";
+
+// Data
+const photos = ref([
+{ url: '/assets/pictures/savvy-page/pictures/Bar-Sign.webp', alt: 'Sanneloes Fotografie Savvy Styling La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Bobby-James-Duo-Backdrop-6.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Bora-Bora-Backdrop-3.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Bright-Eyes-Complete-Arch-Pastel-1.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Three-crazy-daisies-2.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Phlox-Creme-Brulee-Bar-Sign-6.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Bright-Eyes-Half-Arch-3.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Bright-Eyes-Half-Arch-13.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Bright-Eyes-Quarter-Arch-Colourful-2.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Honesty-Silver-Backdrop-9.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Sweet-Suzanne-Bar-Sign-6.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/Two-salmon-Queens-Backdrop-5.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/White-Jasmine-Bar-Sign.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/XXL-flower-combi-2.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/XXL-Flowers-combo-1.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/XXL-Flowers-combo-8.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/XXL-Flowers-combo-27.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+{ url: '/assets/pictures/savvy-page/pictures/XXL-Flowers-combo-BTS-2.webp', alt: 'Sanneloes Fotografie Savvy Styling  La Luz' },
+
+// Voeg hier meer foto's toe...
+]);
+
+const isLoading = ref(true);
+const loadedImages = ref(0);
+
+// Functie wordt aangeroepen wanneer een afbeelding is geladen
+const imageLoaded = () => {
+loadedImages.value++;
+if (loadedImages.value >= photos.value.length) {
+  isLoading.value = false; // Verberg de loader als alle afbeeldingen geladen zijn
+}
+};
 
 const imageUrls = ref([
   { url: "/assets/pictures/boudoir-page/boudoir-01.webp" },
@@ -131,6 +184,10 @@ const scrollToIndex = (index) => {
 };
 
 onMounted(() => {
+  // Extra check: als er geen foto's zijn, verwijder dan direct de loader
+if (photos.value.length === 0) {
+  isLoading.value = false;
+}
   nextTick(() => scrollToIndex(currentIndex.value));
 });
 </script>
