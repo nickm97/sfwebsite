@@ -111,16 +111,16 @@
               PACKAGES AND PRICES
             </p>
             <ul class="list-disc pl-6 font-standard font-light text-[14.5px] leading-[2rem] py-6">
-              <li class="pl-2">Een reguliere zwangerschapsshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) - €330 met partner, €285 alleen, €400 met gezin - inclusief BTW </li>
-              <li class="pl-2">Een combishoot; zwangerschap én newborn incl. 20 foto's bij elke fotoshoot (zelf te kiezen uit een uitgebreide galerij) - €695</li>
+              <li class="pl-2">Een reguliere zwangerschapsshoot incl. 20 foto's (zelf te kiezen uit een uitgebreide galerij) - €350 met partner, €300 alleen, €425 met gezin - inclusief BTW *</li>
+              <li class="pl-2">Een combishoot; zwangerschap én newborn incl. 20 foto's bij elke fotoshoot (zelf te kiezen uit een uitgebreide galerij en inclusief fine art fotoalbumpje 15x15 cm) - €725</li>
               <li class="pl-2">Gebruik studio: +€39,50, bij gebruikmaken La Luz voor beide shoots +€54,50</li>
               <li class="pl-2">Reiskosten zijn inbegrepen binnen een straal van 10 km rondom Casteren</li>
               <li class="pl-2">Extra foto's zijn achteraf bij te bestellen met voordeelpakketten</li>
-              <li class="pl-2">Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW - per extra spread +€4,95</li>
+              <li class="pl-2">* Fine art 15x15 albumpje - 20 pagina's €49,50 inclusief BTW - per extra spread +€4,95</li>
             </ul>
             
           </div> 
-        </div>       
+        </div>   
         <div class="w-full flex items-center justify-center">
           <button
             @click="redirect('/contact')"
